@@ -11543,6 +11543,34 @@
         "zh-chs": "阴影潜行者腿部护甲药剂",
         "en": "Tonic of Shadestalker's Leg Armor"
     },
+    "971525086": {
+        "zh-chs": "毒香根草药剂（长老之墓）",
+        "en": "Tonic of Noxious Vetiver (Tomb of Elders)"
+    },
+    "971525081": {
+        "zh-chs": "蜕皮药剂（长老之墓）",
+        "en": "Tonic of Exuviae (Tomb of Elders)"
+    },
+    "971525080": {
+        "zh-chs": "拾荒者的命运药剂（长老之墓）",
+        "en": "Tonic of Scavenger's Fate (Tomb of Elders)"
+    },
+    "971525083": {
+        "zh-chs": "苦乐参半药剂（长老之墓）",
+        "en": "Tonic of Bitter/Sweet (Tomb of Elders)"
+    },
+    "971525082": {
+        "zh-chs": "炫彩突袭药剂（长老之墓）",
+        "en": "Tonic of Chroma Rush (Tomb of Elders)"
+    },
+    "971525077": {
+        "zh-chs": "旅居者的故事药剂（长老之墓）",
+        "en": "Tonic of Sojourner's Tale (Tomb of Elders)"
+    },
+    "971525076": {
+        "zh-chs": "格网队长药剂（长老之墓）",
+        "en": "Tonic of Gridskipper (Tomb of Elders)"
+    },
     "921192195": {
         "zh-chs": "动能武器药剂",
         "en": "Tonic of Kinetic Weaponry"
@@ -11751,6 +11779,10 @@
         "zh-chs": "过载后膛填装榴弹发射器",
         "en": "Overload Breechloaded Grenade Launcher"
     },
+    "3803076565": {
+        "zh-chs": "授权模组：近战",
+        "en": "Authorized Mods: Melee"
+    },
     "2071562751": {
         "zh-chs": "冰霜附体",
         "en": "One with Frost"
@@ -11770,6 +11802,10 @@
     "2071562747": {
         "zh-chs": "快速冲击",
         "en": "Rapid Impacts"
+    },
+    "2071562744": {
+        "zh-chs": "紧急信号弹",
+        "en": "Emergency Flare"
     },
     "4037132128": {
         "zh-chs": "风寒",
@@ -11791,6 +11827,10 @@
         "zh-chs": "轨迹证据",
         "en": "Trace Evidence"
     },
+    "4037132135": {
+        "zh-chs": "置身其中",
+        "en": "The Thick of It"
+    },
     "611645149": {
         "zh-chs": "伊拉莫斯护甲",
         "en": "Armor of Eramis"
@@ -11811,6 +11851,10 @@
         "zh-chs": "视网膜灼烧",
         "en": "Retinal Burn"
     },
+    "611645146": {
+        "zh-chs": "治疗能量球",
+        "en": "Curative Orbs"
+    },
     "3117519998": {
         "zh-chs": "寒脑凝滞",
         "en": "Brain Freeze"
@@ -11830,6 +11874,10 @@
     "3117519994": {
         "zh-chs": "动能冲击",
         "en": "Kinetic Impacts"
+    },
+    "3117519993": {
+        "zh-chs": "电弧复合",
+        "en": "Arc Compounding"
     },
     "3125852681": {
         "zh-chs": "恩慈入场券",
@@ -52123,6 +52171,10 @@
         "zh-chs": "霸权",
         "en": "The Supremacy"
     },
+    "3810050398": {
+        "zh-chs": "book_s21_pj Book Title",
+        "en": "book_s21_pj Book Title"
+    },
     "882147437": {
         "zh-chs": "使命",
         "en": "Purpose"
@@ -59108,8 +59160,8 @@
         "en": "Daito White Rabbit"
     },
     "1576539047": {
-        "zh-chs": "黄金时代滑翔板",
-        "en": "Golden Age Skimmer"
+        "zh-chs": "远古烈日突击艇",
+        "en": "Ancient Solar Skiff"
     },
     "1576539044": {
         "zh-chs": "王蛇",
@@ -59796,8 +59848,8 @@
         "en": "Totembreaker's Mask"
     },
     "1784694924": {
-        "zh-chs": "布兰卡面具",
-        "en": "Blanka Mask"
+        "zh-chs": "布兰卡头盔",
+        "en": "Blanka Helmet"
     },
     "1958368075": {
         "zh-chs": "星芒冰影幼龙猎人护臂",
@@ -59932,8 +59984,8 @@
         "en": "Totembreaker's Helm"
     },
     "1809209864": {
-        "zh-chs": "布兰卡面具",
-        "en": "Blanka Mask"
+        "zh-chs": "布兰卡头盔",
+        "en": "Blanka Helmet"
     },
     "4287182959": {
         "zh-chs": "星芒冰影幼龙泰坦臂铠",
@@ -60068,8 +60120,8 @@
         "en": "Totembreaker's Hood"
     },
     "3094014459": {
-        "zh-chs": "布兰卡面具",
-        "en": "Blanka Mask"
+        "zh-chs": "布兰卡头盔",
+        "en": "Blanka Helmet"
     },
     "335988632": {
         "zh-chs": "星芒冰影幼龙术士手套",
@@ -60208,7 +60260,7 @@
         "en": "Yesterday's Question"
     },
     "3009199534": {
-        "zh-chs": "明日答案",
+        "zh-chs": "明日回答",
         "en": "Tomorrow's Answer"
     },
     "2378785953": {
@@ -60436,12 +60488,12 @@
         "en": "Return to Mars Set"
     },
     "4068802437": {
-        "zh-chs": "全新配件组合包",
-        "en": "New Accessory Bundles"
+        "zh-chs": "配件组合包",
+        "en": "Accessory Bundles"
     },
     "103018337": {
-        "zh-chs": "“篇章：怨魂”章节3护甲皮肤",
-        "en": "Episode: Revenant Act III Armor Ornaments"
+        "zh-chs": "纷繁纠缠套装",
+        "en": "Tangled Up Set"
     },
     "103018336": {
         "zh-chs": "“篇章：怨魂”章节1护甲皮肤",
@@ -60742,6 +60794,10 @@
     "2484360539": {
         "zh-chs": "心跳命运术士组合包",
         "en": "Doki Doki Destiny Warlock Bundle"
+    },
+    "3470260969": {
+        "zh-chs": "秘语白",
+        "en": "Chatterwhite"
     },
     "2367713531": {
         "zh-chs": "女王箔酊",
@@ -61284,8 +61340,8 @@
         "en": "Bright Dust"
     },
     "2239210988": {
-        "zh-chs": "光尘",
-        "en": "Bright Dust"
+        "zh-chs": "农历新年礼物",
+        "en": "Lunar New Year Gift"
     },
     "2868451638": {
         "zh-chs": "推荐物品",
@@ -61444,8 +61500,8 @@
         "en": "Eerie Weapons Engram"
     },
     "3610131410": {
-        "zh-chs": "恐怖故事",
-        "en": "Horror Story"
+        "zh-chs": "布瑞科技狼人",
+        "en": "BrayTech Werewolf"
     },
     "3171327109": {
         "zh-chs": "机械死神",
@@ -61464,8 +61520,8 @@
         "en": "Arcane Embrace"
     },
     "2006002391": {
-        "zh-chs": "恐怖故事",
-        "en": "Horror Story"
+        "zh-chs": "布瑞科技狼人",
+        "en": "BrayTech Werewolf"
     },
     "3606661184": {
         "zh-chs": "机械死神",
@@ -70480,7 +70536,7 @@
         "en": "Yesterday's Question"
     },
     "712113909": {
-        "zh-chs": "明日答案",
+        "zh-chs": "明日回答",
         "en": "Tomorrow's Answer"
     },
     "2068842367": {
@@ -87939,6 +87995,22 @@
         "zh-chs": "薄暮时分",
         "en": "Vespertine"
     },
+    "788073491": {
+        "zh-chs": "甜心指挥官",
+        "en": "Confectionary Commander"
+    },
+    "788073490": {
+        "zh-chs": "杰出享乐",
+        "en": "Epicurean Extraordinaire"
+    },
+    "788073493": {
+        "zh-chs": "手工猎人",
+        "en": "Handcrafted Hunter"
+    },
+    "788073492": {
+        "zh-chs": "亡魂平息",
+        "en": "Revenant Redress"
+    },
     "2041432007": {
         "zh-chs": "黑暗乙太收割者",
         "en": "Dark Ether Reaper"
@@ -88274,6 +88346,10 @@
     "2979324131": {
         "zh-chs": "天下斗士",
         "en": "World Warrior"
+    },
+    "3063212171": {
+        "zh-chs": "穿越风暴",
+        "en": "Through the Storm"
     },
     "3959701438": {
         "zh-chs": "破碎信使",
@@ -89407,6 +89483,14 @@
         "zh-chs": "无出其右",
         "en": "Secondary to None"
     },
+    "3502555216": {
+        "zh-chs": "脱狱者",
+        "en": "Jailbreaker"
+    },
+    "3502555217": {
+        "zh-chs": "牢房阻绝者",
+        "en": "Cell Blocker"
+    },
     "3502555218": {
         "zh-chs": "近身手炮",
         "en": "Hand to Hand Cannon"
@@ -89482,6 +89566,10 @@
     "2994789840": {
         "zh-chs": "波次杀手",
         "en": "Wave-Slayer"
+    },
+    "2994789841": {
+        "zh-chs": "古墓杀手",
+        "en": "Tombslayer"
     },
     "45262603": {
         "zh-chs": "终局",
@@ -93491,6 +93579,62 @@
         "zh-chs": "章节1 - 序章",
         "en": "Act I - Prologue"
     },
+    "677933016": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "677933013": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "627600132": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "4217299549": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "4166966660": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "4183744375": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "4133411518": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "1097224850": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "1080447268": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "1130780157": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "1130780152": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "1114002442": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "1030114411": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
+    "1013336824": {
+        "zh-chs": "章节2 - 盗墓者",
+        "en": "Act II - Grave Robber"
+    },
     "1833736701": {
         "zh-chs": "次要外勤工作I：木卫二",
         "en": "Minor Fieldwork I: Europa"
@@ -93683,6 +93827,90 @@
         "zh-chs": "章节1关键外勤工作",
         "en": "Act I Key Fieldwork"
     },
+    "2876166746": {
+        "zh-chs": "次要外勤工作I：木卫二",
+        "en": "Minor Fieldwork I: Europa"
+    },
+    "2859389159": {
+        "zh-chs": "次要外勤工作I：木卫二",
+        "en": "Minor Fieldwork I: Europa"
+    },
+    "2842611572": {
+        "zh-chs": "次要外勤工作I：木卫二",
+        "en": "Minor Fieldwork I: Europa"
+    },
+    "3403632781": {
+        "zh-chs": "次要外勤工作II：木卫二",
+        "en": "Minor Fieldwork II: Europa"
+    },
+    "3353300020": {
+        "zh-chs": "次要外勤工作II：木卫二",
+        "en": "Minor Fieldwork II: Europa"
+    },
+    "3370077607": {
+        "zh-chs": "次要外勤工作II：木卫二",
+        "en": "Minor Fieldwork II: Europa"
+    },
+    "488960532": {
+        "zh-chs": "次要外勤工作III：月球",
+        "en": "Minor Fieldwork III: Moon"
+    },
+    "539293421": {
+        "zh-chs": "次要外勤工作III：月球",
+        "en": "Minor Fieldwork III: Moon"
+    },
+    "522515834": {
+        "zh-chs": "次要外勤工作III：月球",
+        "en": "Minor Fieldwork III: Moon"
+    },
+    "480260823": {
+        "zh-chs": "次要外勤工作IV：月球",
+        "en": "Minor Fieldwork IV: Moon"
+    },
+    "497038410": {
+        "zh-chs": "次要外勤工作IV：月球",
+        "en": "Minor Fieldwork IV: Moon"
+    },
+    "513816125": {
+        "zh-chs": "次要外勤工作IV：月球",
+        "en": "Minor Fieldwork IV: Moon"
+    },
+    "459825958": {
+        "zh-chs": "主要外勤工作I：涅索斯",
+        "en": "Major Fieldwork I: Nessus"
+    },
+    "443048371": {
+        "zh-chs": "主要外勤工作I：涅索斯",
+        "en": "Major Fieldwork I: Nessus"
+    },
+    "3009574070": {
+        "zh-chs": "主要发现",
+        "en": "Major Findings"
+    },
+    "3533922969": {
+        "zh-chs": "主要外勤工作II：月球",
+        "en": "Major Fieldwork II: Moon"
+    },
+    "3483590080": {
+        "zh-chs": "主要外勤工作II：月球",
+        "en": "Major Fieldwork II: Moon"
+    },
+    "28531581": {
+        "zh-chs": "主要发现",
+        "en": "Major Findings"
+    },
+    "903432276": {
+        "zh-chs": "章节2关键外勤工作",
+        "en": "Act II Key Fieldwork"
+    },
+    "953765165": {
+        "zh-chs": "章节2关键外勤工作",
+        "en": "Act II Key Fieldwork"
+    },
+    "936987578": {
+        "zh-chs": "章节2关键外勤工作",
+        "en": "Act II Key Fieldwork"
+    },
     "1815800658": {
         "zh-chs": "非无生命",
         "en": "Na-Veskirisk"
@@ -93690,6 +93918,18 @@
     "1799023103": {
         "zh-chs": "非无生命",
         "en": "Na-Veskirisk"
+    },
+    "1903512837": {
+        "zh-chs": "盗墓者",
+        "en": "Grave Robber"
+    },
+    "1853179980": {
+        "zh-chs": "盗墓者",
+        "en": "Grave Robber"
+    },
+    "2548999208": {
+        "zh-chs": "便携午餐",
+        "en": "Packed Lunch"
     },
     "324700154": {
         "zh-chs": "药剂酿造指南",
@@ -93706,6 +93946,134 @@
     "3583181887": {
         "zh-chs": "药剂酿造指南",
         "en": "Tonic Brewing Guide"
+    },
+    "1331218608": {
+        "zh-chs": "便携午餐",
+        "en": "Packed Lunch"
+    },
+    "1381551369": {
+        "zh-chs": "便携午餐",
+        "en": "Packed Lunch"
+    },
+    "1364773782": {
+        "zh-chs": "便携午餐",
+        "en": "Packed Lunch"
+    },
+    "2229307750": {
+        "zh-chs": "私酿酊剂",
+        "en": "Bootleg Tincture"
+    },
+    "997814579": {
+        "zh-chs": "梦魇午餐",
+        "en": "Nightmare Lunch"
+    },
+    "981036864": {
+        "zh-chs": "梦魇午餐",
+        "en": "Nightmare Lunch"
+    },
+    "1031369753": {
+        "zh-chs": "梦魇午餐",
+        "en": "Nightmare Lunch"
+    },
+    "1014592166": {
+        "zh-chs": "梦魇午餐",
+        "en": "Nightmare Lunch"
+    },
+    "1234981140": {
+        "zh-chs": "堪称传说",
+        "en": "The Stuff of Legends"
+    },
+    "1251758727": {
+        "zh-chs": "堪称传说",
+        "en": "The Stuff of Legends"
+    },
+    "1268536442": {
+        "zh-chs": "堪称传说",
+        "en": "The Stuff of Legends"
+    },
+    "1285314029": {
+        "zh-chs": "堪称传说",
+        "en": "The Stuff of Legends"
+    },
+    "206541737": {
+        "zh-chs": "可疑便当",
+        "en": "A Dubious Bento"
+    },
+    "189764150": {
+        "zh-chs": "可疑便当",
+        "en": "A Dubious Bento"
+    },
+    "172986435": {
+        "zh-chs": "可疑便当",
+        "en": "A Dubious Bento"
+    },
+    "156208848": {
+        "zh-chs": "可疑便当",
+        "en": "A Dubious Bento"
+    },
+    "3211378182": {
+        "zh-chs": "可疑芹菜",
+        "en": "Dubious Celery"
+    },
+    "2767984521": {
+        "zh-chs": "世纪之蛋",
+        "en": "Century Egg"
+    },
+    "3479830026": {
+        "zh-chs": "武术纪念物",
+        "en": "Martial Mementos"
+    },
+    "3496607741": {
+        "zh-chs": "武术纪念物",
+        "en": "Martial Mementos"
+    },
+    "3446274852": {
+        "zh-chs": "武术纪念物",
+        "en": "Martial Mementos"
+    },
+    "3463052439": {
+        "zh-chs": "武术纪念物",
+        "en": "Martial Mementos"
+    },
+    "2769242608": {
+        "zh-chs": "毒蛇咬伤",
+        "en": "Snakebite"
+    },
+    "2786020195": {
+        "zh-chs": "毒蛇咬伤",
+        "en": "Snakebite"
+    },
+    "2802797782": {
+        "zh-chs": "毒蛇咬伤",
+        "en": "Snakebite"
+    },
+    "2254979135": {
+        "zh-chs": "昔时德瑞捷",
+        "en": "Dredgens of Yore"
+    },
+    "2238201420": {
+        "zh-chs": "昔时德瑞捷",
+        "en": "Dredgens of Yore"
+    },
+    "2288534277": {
+        "zh-chs": "昔时德瑞捷",
+        "en": "Dredgens of Yore"
+    },
+    "3599826322": {
+        "zh-chs": "梦魇击杀",
+        "en": "Nightmare Kills"
+    },
+    "3616603909": {
+        "zh-chs": "梦魇击杀",
+        "en": "Nightmare Kills"
+    },
+    "3566271052": {
+        "zh-chs": "梦魇击杀",
+        "en": "Nightmare Kills"
+    },
+    "3583048767": {
+        "zh-chs": "梦魇击杀",
+        "en": "Nightmare Kills"
     },
     "3995422990": {
         "zh-chs": "划分天梯",
