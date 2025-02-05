@@ -8,6 +8,8 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write # 赋予写入仓库内容的权限
     steps:
     - name: Checkout code
       uses: actions/checkout@v4

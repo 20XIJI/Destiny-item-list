@@ -1,9 +1,8 @@
 name: Install Dependencies
 
 on:
-  push:
-    branches:
-      - main
+    # 支持手动触发工作流
+    workflow_dispatch:
 
 jobs:
   build:
