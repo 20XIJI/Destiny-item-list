@@ -2,7 +2,7 @@ import requests
 import json
 import os
 import hashlib
-from datetime import datetime
+from datetime import datetime, UTC
 
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
 LANG_LIST = ['zh-chs', 'en']
@@ -48,7 +48,7 @@ def main():
     # 生成元数据
     metadata = {
         "version": current_version,
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(UTC).isoformat(),
         "item_count": len(combined),
         "data_hash": generate_item_hash(combined)
     }
