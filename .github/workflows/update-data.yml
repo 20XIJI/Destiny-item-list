@@ -1,0 +1,39 @@
+name: Update Item Data
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # 每天UTC时间3点运行
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install -r scripts/requirements.txt
+
+    - name: Run data fetcher
+      env:
+        BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
+      run: |
+        python scripts/fetch_items.py
+
+    - name: Commit changes
+      id: commit
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        
+        # 检测文件是否有变化
+        git diff --quiet || (git add item-list-8-2-0.json && \
+        git commit -m "Auto-update item data [skip ci]" && \
+        git push origin HEAD:${{ github.ref }})
