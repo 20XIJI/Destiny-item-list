@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "231142.25.01.27.1930-1-bnet.58334",
-    "timestamp": "2025-02-11T02:50:11.323164+00:00",
-    "item_count": 24442,
-    "data_hash": "02f1aca610836781869342f592207d9fdc2ca291998431df25dc430eb2e83819"
+    "version": "231142.25.01.27.1930-6-bnet.58430",
+    "timestamp": "2025-02-11T18:01:47.896837+00:00",
+    "item_count": 25314,
+    "data_hash": "b5b0510a717d3691d00eb3572632c2b4f3571ba2e1cbccd1563a52c69e76beb1"
   },
   "data": {
     "2899766705": {
@@ -4609,6 +4609,18 @@
     "2726346086": {
       "zh-chs": "提升“门徒誓约”专家武器的额外武器特征几率。",
       "en": "Increases Vow of the Disciple Adept extra weapon trait chance."
+    },
+    "3607181138": {
+      "zh-chs": "提高终局螺旋钻的初始掉落率。",
+      "en": "Increases initial Finality's Auger drop rate."
+    },
+    "1012197602": {
+      "zh-chs": "金字塔数据",
+      "en": "Pyramid Data"
+    },
+    "1083083516": {
+      "zh-chs": "隐秘研究",
+      "en": "Hidden Research"
     },
     "2257609142": {
       "zh-chs": "普通",
@@ -12337,6 +12349,14 @@
     "1603123106": {
       "zh-chs": "飞逝转移香精",
       "en": "Fleeting Metastasized Essentia"
+    },
+    "22243296": {
+      "zh-chs": "诅咒：叠加",
+      "en": "Curse: A Superposition"
+    },
+    "3199178216": {
+      "zh-chs": "傀儡骨质碎片",
+      "en": "Taken Osseous Fragment"
     },
     "3212065485": {
       "zh-chs": "雕刻：邪神残余",
@@ -52246,6 +52266,10 @@
       "zh-chs": "至日活动卡片升级",
       "en": "Solstice Event Card Upgrade"
     },
+    "3220240181": {
+      "zh-chs": "地牢探索者收藏",
+      "en": "Dungeon Delver Collection"
+    },
     "3484163880": {
       "zh-chs": "探险家包裹配件",
       "en": "Adventurer's Pack Accessories"
@@ -56026,6 +56050,10 @@
       "zh-chs": "末代追寻",
       "en": "Endling Seek"
     },
+    "2993751041": {
+      "zh-chs": "未来证明",
+      "en": "Future Proof"
+    },
     "3013191049": {
       "zh-chs": "纪念坐骑",
       "en": "Commemorative Steed"
@@ -56317,6 +56345,10 @@
     "538751803": {
       "zh-chs": "人造太阳",
       "en": "Artificial Sun"
+    },
+    "2244041240": {
+      "zh-chs": "孪生双魂",
+      "en": "Twin-Souled"
     },
     "3349747415": {
       "zh-chs": "玻璃拱顶纪念物追踪器",
@@ -58010,7 +58042,15 @@
       "zh-chs": "远古天启护臂",
       "en": "Ancient Apocalypse Grips"
     },
+    "3639816879": {
+      "zh-chs": "远古天启护臂",
+      "en": "Ancient Apocalypse Grips"
+    },
     "1314666277": {
+      "zh-chs": "远古天启胸甲",
+      "en": "Ancient Apocalypse Vest"
+    },
+    "207548065": {
       "zh-chs": "远古天启胸甲",
       "en": "Ancient Apocalypse Vest"
     },
@@ -58018,11 +58058,23 @@
       "zh-chs": "远古天启披风",
       "en": "Ancient Apocalypse Cloak"
     },
+    "3368700430": {
+      "zh-chs": "远古天启披风",
+      "en": "Ancient Apocalypse Cloak"
+    },
     "1267361154": {
       "zh-chs": "远古天启面具",
       "en": "Ancient Apocalypse Mask"
     },
+    "1896335568": {
+      "zh-chs": "远古天启面具",
+      "en": "Ancient Apocalypse Mask"
+    },
     "1698660093": {
+      "zh-chs": "远古天启腿铠",
+      "en": "Ancient Apocalypse Strides"
+    },
+    "1762083721": {
       "zh-chs": "远古天启腿铠",
       "en": "Ancient Apocalypse Strides"
     },
@@ -58190,7 +58242,15 @@
       "zh-chs": "放逐者护臂",
       "en": "Grips of the Exile"
     },
+    "2854025240": {
+      "zh-chs": "放逐者护臂",
+      "en": "Grips of the Exile"
+    },
     "875395086": {
+      "zh-chs": "放逐者胸甲",
+      "en": "Vest of the Exile"
+    },
+    "1629007932": {
       "zh-chs": "放逐者胸甲",
       "en": "Vest of the Exile"
     },
@@ -58198,11 +58258,23 @@
       "zh-chs": "放逐者披风",
       "en": "Cloak of the Exile"
     },
+    "338446411": {
+      "zh-chs": "放逐者披风",
+      "en": "Cloak of the Exile"
+    },
     "571925067": {
       "zh-chs": "放逐者面罩",
       "en": "Cover of the Exile"
     },
+    "2059601679": {
+      "zh-chs": "放逐者面罩",
+      "en": "Cover of the Exile"
+    },
     "150551028": {
+      "zh-chs": "放逐者战靴",
+      "en": "Boots of the Exile"
+    },
+    "1643656410": {
       "zh-chs": "放逐者战靴",
       "en": "Boots of the Exile"
     },
@@ -58310,7 +58382,15 @@
       "zh-chs": "羽翼竞争者",
       "en": "Wing Contender"
     },
+    "3034681814": {
+      "zh-chs": "羽翼竞争者",
+      "en": "Wing Contender"
+    },
     "3408834730": {
+      "zh-chs": "羽翼竞争者",
+      "en": "Wing Contender"
+    },
+    "220051784": {
       "zh-chs": "羽翼竞争者",
       "en": "Wing Contender"
     },
@@ -58318,7 +58398,15 @@
       "zh-chs": "羽翼竞争者",
       "en": "Wing Contender"
     },
+    "3881082126": {
+      "zh-chs": "羽翼竞争者",
+      "en": "Wing Contender"
+    },
     "693067797": {
+      "zh-chs": "羽翼竞争者",
+      "en": "Wing Contender"
+    },
+    "1064943697": {
       "zh-chs": "羽翼竞争者",
       "en": "Wing Contender"
     },
@@ -58326,7 +58414,15 @@
       "zh-chs": "羽翼竞争者",
       "en": "Wing Contender"
     },
+    "3054751781": {
+      "zh-chs": "羽翼竞争者",
+      "en": "Wing Contender"
+    },
     "3761819011": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "3384059383": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -58334,7 +58430,15 @@
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
+    "3074765785": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
     "2629204288": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "4096757830": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -58342,7 +58446,15 @@
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
+    "1549471512": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
     "1812185909": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "2042885489": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -58390,7 +58502,15 @@
       "zh-chs": "远古天启臂铠",
       "en": "Ancient Apocalypse Gauntlets"
     },
+    "968289293": {
+      "zh-chs": "远古天启臂铠",
+      "en": "Ancient Apocalypse Gauntlets"
+    },
     "1811579911": {
+      "zh-chs": "远古天启战甲",
+      "en": "Ancient Apocalypse Plate"
+    },
+    "3512588219": {
       "zh-chs": "远古天启战甲",
       "en": "Ancient Apocalypse Plate"
     },
@@ -58398,11 +58518,23 @@
       "zh-chs": "远古天启印记",
       "en": "Ancient Apocalypse Mark"
     },
+    "1366750484": {
+      "zh-chs": "远古天启印记",
+      "en": "Ancient Apocalypse Mark"
+    },
     "2002452096": {
       "zh-chs": "远古天启头盔",
       "en": "Ancient Apocalypse Helm"
     },
+    "3272445958": {
+      "zh-chs": "远古天启头盔",
+      "en": "Ancient Apocalypse Helm"
+    },
     "3694642467": {
+      "zh-chs": "远古天启胫甲",
+      "en": "Ancient Apocalypse Greaves"
+    },
+    "3739947031": {
       "zh-chs": "远古天启胫甲",
       "en": "Ancient Apocalypse Greaves"
     },
@@ -58570,7 +58702,15 @@
       "zh-chs": "放逐者臂铠",
       "en": "Gauntlets of the Exile"
     },
+    "2529663586": {
+      "zh-chs": "放逐者臂铠",
+      "en": "Gauntlets of the Exile"
+    },
     "2579999316": {
+      "zh-chs": "放逐者战甲",
+      "en": "Plate of the Exile"
+    },
+    "2628207034": {
       "zh-chs": "放逐者战甲",
       "en": "Plate of the Exile"
     },
@@ -58578,11 +58718,23 @@
       "zh-chs": "放逐者印记",
       "en": "Mark of the Exile"
     },
+    "9788213": {
+      "zh-chs": "放逐者印记",
+      "en": "Mark of the Exile"
+    },
     "1164471069": {
       "zh-chs": "放逐者头盔",
       "en": "Helm of the Exile"
     },
+    "1447074729": {
+      "zh-chs": "放逐者头盔",
+      "en": "Helm of the Exile"
+    },
     "272735286": {
+      "zh-chs": "放逐者胫甲",
+      "en": "Greaves of the Exile"
+    },
+    "1012826548": {
       "zh-chs": "放逐者胫甲",
       "en": "Greaves of the Exile"
     },
@@ -58690,7 +58842,15 @@
       "zh-chs": "羽翼戒律",
       "en": "Wing Discipline"
     },
+    "3041947774": {
+      "zh-chs": "羽翼戒律",
+      "en": "Wing Discipline"
+    },
     "2899275886": {
+      "zh-chs": "羽翼戒律",
+      "en": "Wing Discipline"
+    },
+    "2664994076": {
       "zh-chs": "羽翼戒律",
       "en": "Wing Discipline"
     },
@@ -58698,7 +58858,15 @@
       "zh-chs": "羽翼戒律",
       "en": "Wing Discipline"
     },
+    "3847138256": {
+      "zh-chs": "羽翼戒律",
+      "en": "Wing Discipline"
+    },
     "1613581523": {
+      "zh-chs": "羽翼戒律",
+      "en": "Wing Discipline"
+    },
+    "1564178759": {
       "zh-chs": "羽翼戒律",
       "en": "Wing Discipline"
     },
@@ -58706,7 +58874,15 @@
       "zh-chs": "羽翼戒律",
       "en": "Wing Discipline"
     },
+    "1016565787": {
+      "zh-chs": "羽翼戒律",
+      "en": "Wing Discipline"
+    },
     "273457849": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "672369541": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -58714,7 +58890,15 @@
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
+    "1242556131": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
     "3722981806": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "4021927132": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -58722,7 +58906,15 @@
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
+    "865222334": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
     "3207116971": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "293795567": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -58770,7 +58962,15 @@
       "zh-chs": "远古天启手套",
       "en": "Ancient Apocalypse Gloves"
     },
+    "1693103724": {
+      "zh-chs": "远古天启手套",
+      "en": "Ancient Apocalypse Gloves"
+    },
     "725297842": {
+      "zh-chs": "远古天启法袍",
+      "en": "Ancient Apocalypse Robes"
+    },
+    "4241589952": {
       "zh-chs": "远古天启法袍",
       "en": "Ancient Apocalypse Robes"
     },
@@ -58778,11 +58978,23 @@
       "zh-chs": "远古天启臂环",
       "en": "Ancient Apocalypse Bond"
     },
+    "756971831": {
+      "zh-chs": "远古天启臂环",
+      "en": "Ancient Apocalypse Bond"
+    },
     "754069623": {
       "zh-chs": "远古天启兜帽",
       "en": "Ancient Apocalypse Hood"
     },
+    "3021987691": {
+      "zh-chs": "远古天启兜帽",
+      "en": "Ancient Apocalypse Hood"
+    },
     "671423576": {
+      "zh-chs": "远古天启战靴",
+      "en": "Ancient Apocalypse Boots"
+    },
+    "1470817006": {
       "zh-chs": "远古天启战靴",
       "en": "Ancient Apocalypse Boots"
     },
@@ -58950,7 +59162,15 @@
       "zh-chs": "放逐者手套",
       "en": "Gloves of the Exile"
     },
+    "704898505": {
+      "zh-chs": "放逐者手套",
+      "en": "Gloves of the Exile"
+    },
     "861160515": {
+      "zh-chs": "放逐者法袍",
+      "en": "Robe of the Exile"
+    },
+    "122152503": {
       "zh-chs": "放逐者法袍",
       "en": "Robe of the Exile"
     },
@@ -58958,11 +59178,23 @@
       "zh-chs": "放逐者臂环",
       "en": "Bond of the Exile"
     },
+    "143601688": {
+      "zh-chs": "放逐者臂环",
+      "en": "Bond of the Exile"
+    },
     "495541988": {
       "zh-chs": "放逐者兜帽",
       "en": "Hood of the Exile"
     },
+    "2701632970": {
+      "zh-chs": "放逐者兜帽",
+      "en": "Hood of the Exile"
+    },
     "2808362207": {
+      "zh-chs": "放逐者护腿",
+      "en": "Legs of the Exile"
+    },
+    "837053731": {
       "zh-chs": "放逐者护腿",
       "en": "Legs of the Exile"
     },
@@ -59070,7 +59302,15 @@
       "zh-chs": "羽翼法则",
       "en": "Wing Theorem"
     },
+    "2532975303": {
+      "zh-chs": "羽翼法则",
+      "en": "Wing Theorem"
+    },
     "3441081953": {
+      "zh-chs": "羽翼法则",
+      "en": "Wing Theorem"
+    },
+    "1055088541": {
       "zh-chs": "羽翼法则",
       "en": "Wing Theorem"
     },
@@ -59078,7 +59318,15 @@
       "zh-chs": "羽翼法则",
       "en": "Wing Theorem"
     },
+    "3711090475": {
+      "zh-chs": "羽翼法则",
+      "en": "Wing Theorem"
+    },
     "119859462": {
+      "zh-chs": "羽翼法则",
+      "en": "Wing Theorem"
+    },
+    "1106028100": {
       "zh-chs": "羽翼法则",
       "en": "Wing Theorem"
     },
@@ -59086,7 +59334,15 @@
       "zh-chs": "羽翼法则",
       "en": "Wing Theorem"
     },
+    "781313686": {
+      "zh-chs": "羽翼法则",
+      "en": "Wing Theorem"
+    },
     "1578461326": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "3895829948": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -59094,7 +59350,15 @@
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
+    "3224735856": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
     "332170995": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "199445735": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -59102,7 +59366,15 @@
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
+    "2989732283": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
     "4086100104": {
+      "zh-chs": "英雄警戒",
+      "en": "Vigil of Heroes"
+    },
+    "3572799518": {
       "zh-chs": "英雄警戒",
       "en": "Vigil of Heroes"
     },
@@ -59254,7 +59526,15 @@
       "zh-chs": "灾祸装饰袖套",
       "en": "Calamity Rig Sleeves"
     },
+    "941282909": {
+      "zh-chs": "灾祸装饰袖套",
+      "en": "Calamity Rig Sleeves"
+    },
     "3570900471": {
+      "zh-chs": "灾祸装饰胸甲",
+      "en": "Calamity Rig Vest"
+    },
+    "2967958507": {
       "zh-chs": "灾祸装饰胸甲",
       "en": "Calamity Rig Vest"
     },
@@ -59262,7 +59542,15 @@
       "zh-chs": "灾祸装饰披风",
       "en": "Calamity Rig Cloak"
     },
+    "3293679620": {
+      "zh-chs": "灾祸装饰披风",
+      "en": "Calamity Rig Cloak"
+    },
     "1207531728": {
+      "zh-chs": "灾祸装饰面具",
+      "en": "Calamity Rig Mask"
+    },
+    "1413646678": {
       "zh-chs": "灾祸装饰面具",
       "en": "Calamity Rig Mask"
     },
@@ -59270,7 +59558,15 @@
       "zh-chs": "灾祸装饰腿铠",
       "en": "Calamity Rig Strides"
     },
+    "3119153287": {
+      "zh-chs": "灾祸装饰腿铠",
+      "en": "Calamity Rig Strides"
+    },
     "1125953881": {
+      "zh-chs": "钢铁祭品护臂",
+      "en": "Iron Truage Grips"
+    },
+    "698294437": {
       "zh-chs": "钢铁祭品护臂",
       "en": "Iron Truage Grips"
     },
@@ -59278,7 +59574,15 @@
       "zh-chs": "钢铁祭品胸甲",
       "en": "Iron Truage Vest"
     },
+    "1788221571": {
+      "zh-chs": "钢铁祭品胸甲",
+      "en": "Iron Truage Vest"
+    },
     "665784782": {
+      "zh-chs": "艾弗里迪特护肩",
+      "en": "Mantle of Efrideet"
+    },
+    "2031170172": {
       "zh-chs": "艾弗里迪特护肩",
       "en": "Mantle of Efrideet"
     },
@@ -59286,7 +59590,15 @@
       "zh-chs": "钢铁祭品胄盔",
       "en": "Iron Truage Casque"
     },
+    "269397470": {
+      "zh-chs": "钢铁祭品胄盔",
+      "en": "Iron Truage Casque"
+    },
     "4018139467": {
+      "zh-chs": "钢铁祭品战靴",
+      "en": "Iron Truage Boots"
+    },
+    "2550623247": {
       "zh-chs": "钢铁祭品战靴",
       "en": "Iron Truage Boots"
     },
@@ -59294,7 +59606,15 @@
       "zh-chs": "钢铁记忆护臂",
       "en": "Iron Remembrance Grips"
     },
+    "3742527360": {
+      "zh-chs": "钢铁记忆护臂",
+      "en": "Iron Remembrance Grips"
+    },
     "2810038838": {
+      "zh-chs": "钢铁记忆胸甲",
+      "en": "Iron Remembrance Vest"
+    },
+    "4079614900": {
       "zh-chs": "钢铁记忆胸甲",
       "en": "Iron Remembrance Vest"
     },
@@ -59302,7 +59622,15 @@
       "zh-chs": "记忆披风",
       "en": "Cloak of Remembrance"
     },
+    "2551249699": {
+      "zh-chs": "记忆披风",
+      "en": "Cloak of Remembrance"
+    },
     "2936230179": {
+      "zh-chs": "钢铁记忆之胄",
+      "en": "Iron Remembrance Casque"
+    },
+    "3144750103": {
       "zh-chs": "钢铁记忆之胄",
       "en": "Iron Remembrance Casque"
     },
@@ -59310,7 +59638,15 @@
       "zh-chs": "钢铁记忆腿铠",
       "en": "Iron Remembrance Strides"
     },
+    "966848994": {
+      "zh-chs": "钢铁记忆腿铠",
+      "en": "Iron Remembrance Strides"
+    },
     "2863819165": {
+      "zh-chs": "钢铁豪情护臂",
+      "en": "Iron Fellowship Grips"
+    },
+    "1726065449": {
       "zh-chs": "钢铁豪情护臂",
       "en": "Iron Fellowship Grips"
     },
@@ -59318,7 +59654,15 @@
       "zh-chs": "钢铁豪情胸甲",
       "en": "Iron Fellowship Vest"
     },
+    "2902329623": {
+      "zh-chs": "钢铁豪情胸甲",
+      "en": "Iron Fellowship Vest"
+    },
     "344804890": {
+      "zh-chs": "钢铁豪情披风",
+      "en": "Iron Fellowship Cloak"
+    },
+    "1709963256": {
       "zh-chs": "钢铁豪情披风",
       "en": "Iron Fellowship Cloak"
     },
@@ -59326,7 +59670,15 @@
       "zh-chs": "钢铁豪情之胄",
       "en": "Iron Fellowship Casque"
     },
+    "3743691434": {
+      "zh-chs": "钢铁豪情之胄",
+      "en": "Iron Fellowship Casque"
+    },
     "510020159": {
+      "zh-chs": "钢铁豪情腿铠",
+      "en": "Iron Fellowship Strides"
+    },
+    "940822787": {
       "zh-chs": "钢铁豪情腿铠",
       "en": "Iron Fellowship Strides"
     },
@@ -59334,7 +59686,15 @@
       "zh-chs": "钢铁共战护臂",
       "en": "Iron Symmachy Grips"
     },
+    "179758314": {
+      "zh-chs": "钢铁共战护臂",
+      "en": "Iron Symmachy Grips"
+    },
     "2772262012": {
+      "zh-chs": "钢铁共战胸甲",
+      "en": "Iron Symmachy Vest"
+    },
+    "1137434578": {
       "zh-chs": "钢铁共战胸甲",
       "en": "Iron Symmachy Vest"
     },
@@ -59342,7 +59702,15 @@
       "zh-chs": "钢铁共战披风",
       "en": "Iron Symmachy Cloak"
     },
+    "2826830765": {
+      "zh-chs": "钢铁共战披风",
+      "en": "Iron Symmachy Cloak"
+    },
     "3875549237": {
+      "zh-chs": "钢铁共战面具",
+      "en": "Iron Symmachy Mask"
+    },
+    "4025410673": {
       "zh-chs": "钢铁共战面具",
       "en": "Iron Symmachy Mask"
     },
@@ -59350,7 +59718,15 @@
       "zh-chs": "钢铁共战腿铠",
       "en": "Iron Symmachy Strides"
     },
+    "2851870940": {
+      "zh-chs": "钢铁共战腿铠",
+      "en": "Iron Symmachy Strides"
+    },
     "1959672649": {
+      "zh-chs": "钢铁祭品护臂",
+      "en": "Iron Truage Grips"
+    },
+    "152550357": {
       "zh-chs": "钢铁祭品护臂",
       "en": "Iron Truage Grips"
     },
@@ -59358,7 +59734,15 @@
       "zh-chs": "钢铁祭品胸甲",
       "en": "Iron Truage Vest"
     },
+    "3215932179": {
+      "zh-chs": "钢铁祭品胸甲",
+      "en": "Iron Truage Vest"
+    },
     "2534676958": {
+      "zh-chs": "艾弗里迪特护肩",
+      "en": "Mantle of Efrideet"
+    },
+    "3188702156": {
       "zh-chs": "艾弗里迪特护肩",
       "en": "Mantle of Efrideet"
     },
@@ -59366,7 +59750,15 @@
       "zh-chs": "钢铁祭品胄盔",
       "en": "Iron Truage Casque"
     },
+    "4224297358": {
+      "zh-chs": "钢铁祭品胄盔",
+      "en": "Iron Truage Casque"
+    },
     "2251614491": {
+      "zh-chs": "钢铁祭品战靴",
+      "en": "Iron Truage Boots"
+    },
+    "2905700895": {
       "zh-chs": "钢铁祭品战靴",
       "en": "Iron Truage Boots"
     },
@@ -59374,7 +59766,15 @@
       "zh-chs": "钢铁意志手套",
       "en": "Iron Will Sleeves"
     },
+    "3157594934": {
+      "zh-chs": "钢铁意志手套",
+      "en": "Iron Will Sleeves"
+    },
     "2509940440": {
+      "zh-chs": "钢铁意志胸甲",
+      "en": "Iron Will Vest"
+    },
+    "1901196910": {
       "zh-chs": "钢铁意志胸甲",
       "en": "Iron Will Vest"
     },
@@ -59382,11 +59782,23 @@
       "zh-chs": "钢铁意志披风",
       "en": "Iron Will Cloak"
     },
+    "3063795377": {
+      "zh-chs": "钢铁意志披风",
+      "en": "Iron Will Cloak"
+    },
     "2399134521": {
       "zh-chs": "钢铁意志面具",
       "en": "Iron Will Mask"
     },
+    "2410737925": {
+      "zh-chs": "钢铁意志面具",
+      "en": "Iron Will Mask"
+    },
     "2653909130": {
+      "zh-chs": "钢铁意志战靴",
+      "en": "Iron Will Boots"
+    },
+    "1193316520": {
       "zh-chs": "钢铁意志战靴",
       "en": "Iron Will Boots"
     },
@@ -59554,7 +59966,15 @@
       "zh-chs": "巴克里斯面具",
       "en": "Mask of Bakris"
     },
+    "2340850909": {
+      "zh-chs": "巴克里斯面具",
+      "en": "Mask of Bakris"
+    },
     "2415768376": {
+      "zh-chs": "阿斯瑞思之拥",
+      "en": "Athrys's Embrace"
+    },
+    "2879305550": {
       "zh-chs": "阿斯瑞思之拥",
       "en": "Athrys's Embrace"
     },
@@ -59562,7 +59982,15 @@
       "zh-chs": "烬齿护手",
       "en": "Cinder Pinion Grasps"
     },
+    "2997491826": {
+      "zh-chs": "烬齿护手",
+      "en": "Cinder Pinion Grasps"
+    },
     "886273156": {
+      "zh-chs": "烬齿胸甲",
+      "en": "Cinder Pinion Vest"
+    },
+    "792320746": {
       "zh-chs": "烬齿胸甲",
       "en": "Cinder Pinion Vest"
     },
@@ -59570,7 +59998,15 @@
       "zh-chs": "烬齿披风",
       "en": "Cinder Pinion Cloak"
     },
+    "3204561957": {
+      "zh-chs": "烬齿披风",
+      "en": "Cinder Pinion Cloak"
+    },
     "1413409069": {
+      "zh-chs": "烬齿风帽",
+      "en": "Cinder Pinion Cowl"
+    },
+    "2889504953": {
       "zh-chs": "烬齿风帽",
       "en": "Cinder Pinion Cowl"
     },
@@ -59578,7 +60014,15 @@
       "zh-chs": "烬齿腿铠",
       "en": "Cinder Pinion Strides"
     },
+    "3716635620": {
+      "zh-chs": "烬齿腿铠",
+      "en": "Cinder Pinion Strides"
+    },
     "146223817": {
+      "zh-chs": "火卫一守卫护手",
+      "en": "Phobos Warden Grasps"
+    },
+    "2691087957": {
       "zh-chs": "火卫一守卫护手",
       "en": "Phobos Warden Grasps"
     },
@@ -59586,7 +60030,15 @@
       "zh-chs": "火卫一守卫背心",
       "en": "Phobos Warden Vest"
     },
+    "1896884883": {
+      "zh-chs": "火卫一守卫背心",
+      "en": "Phobos Warden Vest"
+    },
     "4006721630": {
+      "zh-chs": "火卫一守卫披风",
+      "en": "Phobos Warden Cloak"
+    },
+    "1869654860": {
       "zh-chs": "火卫一守卫披风",
       "en": "Phobos Warden Cloak"
     },
@@ -59594,7 +60046,15 @@
       "zh-chs": "火卫一守卫面具",
       "en": "Phobos Warden Mask"
     },
+    "2467867662": {
+      "zh-chs": "火卫一守卫面具",
+      "en": "Phobos Warden Mask"
+    },
     "438165659": {
+      "zh-chs": "火卫一守卫腿铠",
+      "en": "Phobos Warden Strides"
+    },
+    "1149271199": {
       "zh-chs": "火卫一守卫腿铠",
       "en": "Phobos Warden Strides"
     },
@@ -59602,7 +60062,15 @@
       "zh-chs": "灾祸装饰手铠",
       "en": "Calamity Rig Gauntlets"
     },
+    "3663176799": {
+      "zh-chs": "灾祸装饰手铠",
+      "en": "Calamity Rig Gauntlets"
+    },
     "777526069": {
+      "zh-chs": "灾祸装饰战甲",
+      "en": "Calamity Rig Plate"
+    },
+    "1912716657": {
       "zh-chs": "灾祸装饰战甲",
       "en": "Calamity Rig Plate"
     },
@@ -59610,7 +60078,15 @@
       "zh-chs": "灾祸装饰印记",
       "en": "Calamity Rig Mark"
     },
+    "1038737566": {
+      "zh-chs": "灾祸装饰印记",
+      "en": "Calamity Rig Mark"
+    },
     "1896287986": {
+      "zh-chs": "灾祸装饰头盔",
+      "en": "Calamity Rig Helm"
+    },
+    "296152704": {
       "zh-chs": "灾祸装饰头盔",
       "en": "Calamity Rig Helm"
     },
@@ -59618,7 +60094,15 @@
       "zh-chs": "灾祸装饰胫甲",
       "en": "Calamity Rig Greaves"
     },
+    "2950782681": {
+      "zh-chs": "灾祸装饰胫甲",
+      "en": "Calamity Rig Greaves"
+    },
     "1473724751": {
+      "zh-chs": "钢铁祭品臂铠",
+      "en": "Iron Truage Gauntlets"
+    },
+    "3253441555": {
       "zh-chs": "钢铁祭品臂铠",
       "en": "Iron Truage Gauntlets"
     },
@@ -59626,7 +60110,15 @@
       "zh-chs": "钢铁祭品战甲",
       "en": "Iron Truage Plate"
     },
+    "2805433653": {
+      "zh-chs": "钢铁祭品战甲",
+      "en": "Iron Truage Plate"
+    },
     "1352108388": {
+      "zh-chs": "拉德加斯特的铁腰带",
+      "en": "Radegast's Iron Sash"
+    },
+    "2900728138": {
       "zh-chs": "拉德加斯特的铁腰带",
       "en": "Radegast's Iron Sash"
     },
@@ -59634,7 +60126,15 @@
       "zh-chs": "钢铁祭品头盔",
       "en": "Iron Truage Helm"
     },
+    "3776321676": {
+      "zh-chs": "钢铁祭品头盔",
+      "en": "Iron Truage Helm"
+    },
     "2048225009": {
+      "zh-chs": "钢铁祭品胫甲",
+      "en": "Iron Truage Greaves"
+    },
+    "2536085421": {
       "zh-chs": "钢铁祭品胫甲",
       "en": "Iron Truage Greaves"
     },
@@ -59642,7 +60142,15 @@
       "zh-chs": "钢铁记忆臂铠",
       "en": "Iron Remembrance Gauntlets"
     },
+    "3566338354": {
+      "zh-chs": "钢铁记忆臂铠",
+      "en": "Iron Remembrance Gauntlets"
+    },
     "1177873348": {
+      "zh-chs": "钢铁记忆战甲",
+      "en": "Iron Remembrance Plate"
+    },
+    "2427081642": {
       "zh-chs": "钢铁记忆战甲",
       "en": "Iron Remembrance Plate"
     },
@@ -59650,7 +60158,15 @@
       "zh-chs": "记忆印记",
       "en": "Mark of Remembrance"
     },
+    "2650869989": {
+      "zh-chs": "记忆印记",
+      "en": "Mark of Remembrance"
+    },
     "2368311917": {
+      "zh-chs": "钢铁记忆头盔",
+      "en": "Iron Remembrance Helm"
+    },
+    "2094168185": {
       "zh-chs": "钢铁记忆头盔",
       "en": "Iron Remembrance Helm"
     },
@@ -59658,7 +60174,15 @@
       "zh-chs": "钢铁记忆胫甲",
       "en": "Iron Remembrance Greaves"
     },
+    "736550308": {
+      "zh-chs": "钢铁记忆胫甲",
+      "en": "Iron Remembrance Greaves"
+    },
     "1245456047": {
+      "zh-chs": "钢铁豪情臂铠",
+      "en": "Iron Fellowship Gauntlets"
+    },
+    "3850234099": {
       "zh-chs": "钢铁豪情臂铠",
       "en": "Iron Fellowship Gauntlets"
     },
@@ -59666,7 +60190,15 @@
       "zh-chs": "钢铁豪情战甲",
       "en": "Iron Fellowship Plate"
     },
+    "3318677781": {
+      "zh-chs": "钢铁豪情战甲",
+      "en": "Iron Fellowship Plate"
+    },
     "4054509252": {
+      "zh-chs": "钢铁豪情印记",
+      "en": "Iron Fellowship Mark"
+    },
+    "3434863786": {
       "zh-chs": "钢铁豪情印记",
       "en": "Iron Fellowship Mark"
     },
@@ -59674,7 +60206,15 @@
       "zh-chs": "钢铁豪情头盔",
       "en": "Iron Fellowship Helm"
     },
+    "2905536492": {
+      "zh-chs": "钢铁豪情头盔",
+      "en": "Iron Fellowship Helm"
+    },
     "1395498705": {
+      "zh-chs": "钢铁豪情胫甲",
+      "en": "Iron Fellowship Greaves"
+    },
+    "2660725645": {
       "zh-chs": "钢铁豪情胫甲",
       "en": "Iron Fellowship Greaves"
     },
@@ -59682,7 +60222,15 @@
       "zh-chs": "钢铁共战臂铠",
       "en": "Iron Symmachy Gauntlets"
     },
+    "2879998696": {
+      "zh-chs": "钢铁共战臂铠",
+      "en": "Iron Symmachy Gauntlets"
+    },
     "3251195262": {
+      "zh-chs": "钢铁共战战甲",
+      "en": "Iron Symmachy Plate"
+    },
+    "3600661228": {
       "zh-chs": "钢铁共战战甲",
       "en": "Iron Symmachy Plate"
     },
@@ -59690,7 +60238,15 @@
       "zh-chs": "钢铁共战印记",
       "en": "Iron Symmachy Mark"
     },
+    "397729467": {
+      "zh-chs": "钢铁共战印记",
+      "en": "Iron Symmachy Mark"
+    },
     "4161524635": {
+      "zh-chs": "钢铁共战头盔",
+      "en": "Iron Symmachy Helm"
+    },
+    "4229934495": {
       "zh-chs": "钢铁共战头盔",
       "en": "Iron Symmachy Helm"
     },
@@ -59698,7 +60254,15 @@
       "zh-chs": "钢铁共战胫甲",
       "en": "Iron Symmachy Greaves"
     },
+    "449889866": {
+      "zh-chs": "钢铁共战胫甲",
+      "en": "Iron Symmachy Greaves"
+    },
     "1148460187": {
+      "zh-chs": "钢铁祭品臂铠",
+      "en": "Iron Truage Gauntlets"
+    },
+    "3753382047": {
       "zh-chs": "钢铁祭品臂铠",
       "en": "Iron Truage Gauntlets"
     },
@@ -59706,7 +60270,15 @@
       "zh-chs": "钢铁祭品战甲",
       "en": "Iron Truage Plate"
     },
+    "3883022513": {
+      "zh-chs": "钢铁祭品战甲",
+      "en": "Iron Truage Plate"
+    },
     "860168648": {
+      "zh-chs": "拉德加斯特的铁腰带",
+      "en": "Radegast's Iron Sash"
+    },
+    "2312764638": {
       "zh-chs": "拉德加斯特的铁腰带",
       "en": "Radegast's Iron Sash"
     },
@@ -59714,7 +60286,15 @@
       "zh-chs": "钢铁祭品头盔",
       "en": "Iron Truage Helm"
     },
+    "1874827456": {
+      "zh-chs": "钢铁祭品头盔",
+      "en": "Iron Truage Helm"
+    },
     "23061005": {
+      "zh-chs": "钢铁祭品胫甲",
+      "en": "Iron Truage Greaves"
+    },
+    "2341107225": {
       "zh-chs": "钢铁祭品胫甲",
       "en": "Iron Truage Greaves"
     },
@@ -59722,7 +60302,15 @@
       "zh-chs": "钢铁意志臂铠",
       "en": "Iron Will Gauntlets"
     },
+    "3852825844": {
+      "zh-chs": "钢铁意志臂铠",
+      "en": "Iron Will Gauntlets"
+    },
     "230314682": {
+      "zh-chs": "钢铁意志战甲",
+      "en": "Iron Will Plate"
+    },
+    "2293707032": {
       "zh-chs": "钢铁意志战甲",
       "en": "Iron Will Plate"
     },
@@ -59730,11 +60318,23 @@
       "zh-chs": "钢铁意志印记",
       "en": "Iron Will Mark"
     },
+    "2912463567": {
+      "zh-chs": "钢铁意志印记",
+      "en": "Iron Will Mark"
+    },
     "2105414511": {
       "zh-chs": "钢铁意志头盔",
       "en": "Iron Will Helm"
     },
+    "3067591475": {
+      "zh-chs": "钢铁意志头盔",
+      "en": "Iron Will Helm"
+    },
     "1602419024": {
+      "zh-chs": "钢铁意志胫甲",
+      "en": "Iron Will Greaves"
+    },
+    "3513036502": {
       "zh-chs": "钢铁意志胫甲",
       "en": "Iron Will Greaves"
     },
@@ -59902,7 +60502,15 @@
       "zh-chs": "珍贵伤痕",
       "en": "Precious Scars"
     },
+    "3487479939": {
+      "zh-chs": "珍贵伤痕",
+      "en": "Precious Scars"
+    },
     "1467044898": {
+      "zh-chs": "冰瀑衣钵",
+      "en": "Icefall Mantle"
+    },
+    "3855438068": {
       "zh-chs": "冰瀑衣钵",
       "en": "Icefall Mantle"
     },
@@ -59910,7 +60518,15 @@
       "zh-chs": "烬齿手铠",
       "en": "Cinder Pinion Gauntlets"
     },
+    "3650390908": {
+      "zh-chs": "烬齿手铠",
+      "en": "Cinder Pinion Gauntlets"
+    },
     "3601794530": {
+      "zh-chs": "烬齿战甲",
+      "en": "Cinder Pinion Plate"
+    },
+    "1740905008": {
       "zh-chs": "烬齿战甲",
       "en": "Cinder Pinion Plate"
     },
@@ -59918,7 +60534,15 @@
       "zh-chs": "烬齿印记",
       "en": "Cinder Pinion Mark"
     },
+    "2310598311": {
+      "zh-chs": "烬齿印记",
+      "en": "Cinder Pinion Mark"
+    },
     "3991622471": {
+      "zh-chs": "烬齿头盔",
+      "en": "Cinder Pinion Helm"
+    },
+    "2001962619": {
       "zh-chs": "烬齿头盔",
       "en": "Cinder Pinion Helm"
     },
@@ -59926,7 +60550,15 @@
       "zh-chs": "烬齿胫甲",
       "en": "Cinder Pinion Greaves"
     },
+    "4027344350": {
+      "zh-chs": "烬齿胫甲",
+      "en": "Cinder Pinion Greaves"
+    },
     "1465405235": {
+      "zh-chs": "火卫一守卫臂铠",
+      "en": "Phobos Warden Gauntlets"
+    },
+    "2086437031": {
       "zh-chs": "火卫一守卫臂铠",
       "en": "Phobos Warden Gauntlets"
     },
@@ -59934,7 +60566,15 @@
       "zh-chs": "火卫一守卫胸甲",
       "en": "Phobos Warden Plate"
     },
+    "3187910761": {
+      "zh-chs": "火卫一守卫胸甲",
+      "en": "Phobos Warden Plate"
+    },
     "3958993808": {
+      "zh-chs": "火卫一守卫印记",
+      "en": "Phobos Warden Mark"
+    },
+    "2769684630": {
       "zh-chs": "火卫一守卫印记",
       "en": "Phobos Warden Mark"
     },
@@ -59942,7 +60582,15 @@
       "zh-chs": "火卫一守卫头盔",
       "en": "Phobos Warden Helm"
     },
+    "3732924936": {
+      "zh-chs": "火卫一守卫头盔",
+      "en": "Phobos Warden Helm"
+    },
     "1200256005": {
+      "zh-chs": "火卫一守卫胫甲",
+      "en": "Phobos Warden Greaves"
+    },
+    "2472122753": {
       "zh-chs": "火卫一守卫胫甲",
       "en": "Phobos Warden Greaves"
     },
@@ -59950,7 +60598,15 @@
       "zh-chs": "灾祸装饰手套",
       "en": "Calamity Rig Gloves"
     },
+    "3310241668": {
+      "zh-chs": "灾祸装饰手套",
+      "en": "Calamity Rig Gloves"
+    },
     "3651039338": {
+      "zh-chs": "灾祸装饰法袍",
+      "en": "Calamity Rig Robes"
+    },
+    "2976734344": {
       "zh-chs": "灾祸装饰法袍",
       "en": "Calamity Rig Robes"
     },
@@ -59958,7 +60614,15 @@
       "zh-chs": "灾祸装饰臂环",
       "en": "Calamity Rig Bond"
     },
+    "3323319039": {
+      "zh-chs": "灾祸装饰臂环",
+      "en": "Calamity Rig Bond"
+    },
     "3813221631": {
+      "zh-chs": "灾祸装饰兜帽",
+      "en": "Calamity Rig Cover"
+    },
+    "234708547": {
       "zh-chs": "灾祸装饰兜帽",
       "en": "Calamity Rig Cover"
     },
@@ -59966,7 +60630,15 @@
       "zh-chs": "灾祸装饰战靴",
       "en": "Calamity Rig Boots"
     },
+    "362902214": {
+      "zh-chs": "灾祸装饰战靴",
+      "en": "Calamity Rig Boots"
+    },
     "2549582030": {
+      "zh-chs": "钢铁祭品手套",
+      "en": "Iron Truage Gloves"
+    },
+    "4085321596": {
       "zh-chs": "钢铁祭品手套",
       "en": "Iron Truage Gloves"
     },
@@ -59974,7 +60646,15 @@
       "zh-chs": "钢铁祭品法衣",
       "en": "Iron Truage Vestments"
     },
+    "924313136": {
+      "zh-chs": "钢铁祭品法衣",
+      "en": "Iron Truage Vestments"
+    },
     "478854451": {
+      "zh-chs": "帖木儿的铁臂环",
+      "en": "Timur's Iron Bond"
+    },
+    "1494006439": {
       "zh-chs": "帖木儿的铁臂环",
       "en": "Timur's Iron Bond"
     },
@@ -59982,7 +60662,15 @@
       "zh-chs": "钢铁祭品兜帽",
       "en": "Iron Truage Hood"
     },
+    "2436893307": {
+      "zh-chs": "钢铁祭品兜帽",
+      "en": "Iron Truage Hood"
+    },
     "337692872": {
+      "zh-chs": "钢铁祭品护腿",
+      "en": "Iron Truage Legs"
+    },
+    "167307742": {
       "zh-chs": "钢铁祭品护腿",
       "en": "Iron Truage Legs"
     },
@@ -59990,7 +60678,15 @@
       "zh-chs": "钢铁记忆手套",
       "en": "Iron Remembrance Gloves"
     },
+    "279578169": {
+      "zh-chs": "钢铁记忆手套",
+      "en": "Iron Remembrance Gloves"
+    },
     "4144779347": {
+      "zh-chs": "钢铁记忆胸甲",
+      "en": "Iron Remembrance Vestments"
+    },
+    "2768502727": {
       "zh-chs": "钢铁记忆胸甲",
       "en": "Iron Remembrance Vestments"
     },
@@ -59998,7 +60694,15 @@
       "zh-chs": "记忆臂环",
       "en": "Bond of Remembrance"
     },
+    "3617033640": {
+      "zh-chs": "记忆臂环",
+      "en": "Bond of Remembrance"
+    },
     "1466284308": {
+      "zh-chs": "钢铁记忆兜帽",
+      "en": "Iron Remembrance Hood"
+    },
+    "4005993978": {
       "zh-chs": "钢铁记忆兜帽",
       "en": "Iron Remembrance Hood"
     },
@@ -60006,7 +60710,15 @@
       "zh-chs": "钢铁记忆腿铠",
       "en": "Iron Remembrance Legs"
     },
+    "3510230835": {
+      "zh-chs": "钢铁记忆腿铠",
+      "en": "Iron Remembrance Legs"
+    },
     "1465485698": {
+      "zh-chs": "钢铁豪情手套",
+      "en": "Iron Fellowship Gloves"
+    },
+    "350442704": {
       "zh-chs": "钢铁豪情手套",
       "en": "Iron Fellowship Gloves"
     },
@@ -60014,7 +60726,15 @@
       "zh-chs": "钢铁豪情法袍",
       "en": "Iron Fellowship Robes"
     },
+    "1011791524": {
+      "zh-chs": "钢铁豪情法袍",
+      "en": "Iron Fellowship Robes"
+    },
     "219816655": {
+      "zh-chs": "钢铁豪情臂环",
+      "en": "Iron Fellowship Bond"
+    },
+    "959456403": {
       "zh-chs": "钢铁豪情臂环",
       "en": "Iron Fellowship Bond"
     },
@@ -60022,7 +60742,15 @@
       "zh-chs": "钢铁豪情兜帽",
       "en": "Iron Fellowship Hood"
     },
+    "3553325799": {
+      "zh-chs": "钢铁豪情兜帽",
+      "en": "Iron Fellowship Hood"
+    },
     "3551208252": {
+      "zh-chs": "钢铁豪情战靴",
+      "en": "Iron Fellowship Boots"
+    },
+    "812524306": {
       "zh-chs": "钢铁豪情战靴",
       "en": "Iron Fellowship Boots"
     },
@@ -60030,7 +60758,15 @@
       "zh-chs": "钢铁共战手套",
       "en": "Iron Symmachy Gloves"
     },
+    "2398693243": {
+      "zh-chs": "钢铁共战手套",
+      "en": "Iron Symmachy Gloves"
+    },
     "996946801": {
+      "zh-chs": "钢铁共战法袍",
+      "en": "Iron Symmachy Robes"
+    },
+    "1912252717": {
       "zh-chs": "钢铁共战法袍",
       "en": "Iron Symmachy Robes"
     },
@@ -60038,7 +60774,15 @@
       "zh-chs": "钢铁共战臂环",
       "en": "Iron Symmachy Bond"
     },
+    "547853538": {
+      "zh-chs": "钢铁共战臂环",
+      "en": "Iron Symmachy Bond"
+    },
     "2645763830": {
+      "zh-chs": "钢铁共战兜帽",
+      "en": "Iron Symmachy Hood"
+    },
+    "3106353652": {
       "zh-chs": "钢铁共战兜帽",
       "en": "Iron Symmachy Hood"
     },
@@ -60046,7 +60790,15 @@
       "zh-chs": "钢铁共战战靴",
       "en": "Iron Symmachy Boots"
     },
+    "3982212757": {
+      "zh-chs": "钢铁共战战靴",
+      "en": "Iron Symmachy Boots"
+    },
     "267960270": {
+      "zh-chs": "钢铁祭品手套",
+      "en": "Iron Truage Gloves"
+    },
+    "1599155324": {
       "zh-chs": "钢铁祭品手套",
       "en": "Iron Truage Gloves"
     },
@@ -60054,7 +60806,15 @@
       "zh-chs": "钢铁祭品法衣",
       "en": "Iron Truage Vestments"
     },
+    "4021652784": {
+      "zh-chs": "钢铁祭品法衣",
+      "en": "Iron Truage Vestments"
+    },
     "108286515": {
+      "zh-chs": "帖木儿的铁臂环",
+      "en": "Timur's Iron Bond"
+    },
+    "296378791": {
       "zh-chs": "帖木儿的铁臂环",
       "en": "Timur's Iron Bond"
     },
@@ -60062,7 +60822,15 @@
       "zh-chs": "钢铁祭品兜帽",
       "en": "Iron Truage Hood"
     },
+    "4245694331": {
+      "zh-chs": "钢铁祭品兜帽",
+      "en": "Iron Truage Hood"
+    },
     "2351038408": {
+      "zh-chs": "钢铁祭品护腿",
+      "en": "Iron Truage Legs"
+    },
+    "1976108766": {
       "zh-chs": "钢铁祭品护腿",
       "en": "Iron Truage Legs"
     },
@@ -60070,7 +60838,15 @@
       "zh-chs": "钢铁意志手套",
       "en": "Iron Will Gloves"
     },
+    "1527328167": {
+      "zh-chs": "钢铁意志手套",
+      "en": "Iron Will Gloves"
+    },
     "1412970845": {
+      "zh-chs": "钢铁意志胸甲",
+      "en": "Iron Will Vestments"
+    },
+    "1205337961": {
       "zh-chs": "钢铁意志胸甲",
       "en": "Iron Will Vestments"
     },
@@ -60078,11 +60854,23 @@
       "zh-chs": "钢铁意志臂环",
       "en": "Iron Will Bond"
     },
+    "787111830": {
+      "zh-chs": "钢铁意志臂环",
+      "en": "Iron Will Bond"
+    },
     "3598520298": {
       "zh-chs": "钢铁意志兜帽",
       "en": "Iron Will Hood"
     },
+    "3173816072": {
+      "zh-chs": "钢铁意志兜帽",
+      "en": "Iron Will Hood"
+    },
     "2914474757": {
+      "zh-chs": "钢铁意志战靴",
+      "en": "Iron Will Steps"
+    },
+    "1913013889": {
       "zh-chs": "钢铁意志战靴",
       "en": "Iron Will Steps"
     },
@@ -60250,7 +61038,15 @@
       "zh-chs": "黎明副歌",
       "en": "Dawn Chorus"
     },
+    "1198134926": {
+      "zh-chs": "黎明副歌",
+      "en": "Dawn Chorus"
+    },
     "2780717641": {
+      "zh-chs": "亡灵之握",
+      "en": "Necrotic Grip"
+    },
+    "1421355221": {
       "zh-chs": "亡灵之握",
       "en": "Necrotic Grip"
     },
@@ -60258,7 +61054,15 @@
       "zh-chs": "烬齿手套",
       "en": "Cinder Pinion Gloves"
     },
+    "737419447": {
+      "zh-chs": "烬齿手套",
+      "en": "Cinder Pinion Gloves"
+    },
     "539816333": {
+      "zh-chs": "烬齿法袍",
+      "en": "Cinder Pinion Robes"
+    },
+    "3765731481": {
       "zh-chs": "烬齿法袍",
       "en": "Cinder Pinion Robes"
     },
@@ -60266,7 +61070,15 @@
       "zh-chs": "烬齿臂环",
       "en": "Cinder Pinion Bond"
     },
+    "2602975238": {
+      "zh-chs": "烬齿臂环",
+      "en": "Cinder Pinion Bond"
+    },
     "1346827258": {
+      "zh-chs": "烬齿兜帽",
+      "en": "Cinder Pinion Cover"
+    },
+    "1009346008": {
       "zh-chs": "烬齿兜帽",
       "en": "Cinder Pinion Cover"
     },
@@ -60274,7 +61086,15 @@
       "zh-chs": "烬齿战靴",
       "en": "Cinder Pinion Boots"
     },
+    "2945177393": {
+      "zh-chs": "烬齿战靴",
+      "en": "Cinder Pinion Boots"
+    },
     "1021381486": {
+      "zh-chs": "火卫一守卫手套",
+      "en": "Phobos Warden Gloves"
+    },
+    "1700920860": {
       "zh-chs": "火卫一守卫手套",
       "en": "Phobos Warden Gloves"
     },
@@ -60282,7 +61102,15 @@
       "zh-chs": "火卫一守卫法袍",
       "en": "Phobos Warden Robes"
     },
+    "1872688848": {
+      "zh-chs": "火卫一守卫法袍",
+      "en": "Phobos Warden Robes"
+    },
     "736382419": {
+      "zh-chs": "火卫一守卫臂环",
+      "en": "Phobos Warden Bond"
+    },
+    "3884696647": {
       "zh-chs": "火卫一守卫臂环",
       "en": "Phobos Warden Bond"
     },
@@ -60290,7 +61118,15 @@
       "zh-chs": "火卫一守卫风帽",
       "en": "Phobos Warden Cowl"
     },
+    "52492571": {
+      "zh-chs": "火卫一守卫风帽",
+      "en": "Phobos Warden Cowl"
+    },
     "3104459624": {
+      "zh-chs": "火卫一守卫战靴",
+      "en": "Phobos Warden Boots"
+    },
+    "2077874558": {
       "zh-chs": "火卫一守卫战靴",
       "en": "Phobos Warden Boots"
     },
@@ -60546,7 +61382,15 @@
       "zh-chs": "惨胜飞升护手",
       "en": "Pyrrhic Ascent Grasps"
     },
+    "183582177": {
+      "zh-chs": "惨胜飞升护手",
+      "en": "Pyrrhic Ascent Grasps"
+    },
     "2540765499": {
+      "zh-chs": "惨胜飞升胸甲",
+      "en": "Pyrrhic Ascent Vest"
+    },
+    "3939284543": {
       "zh-chs": "惨胜飞升胸甲",
       "en": "Pyrrhic Ascent Vest"
     },
@@ -60554,11 +61398,23 @@
       "zh-chs": "惨胜飞升披风",
       "en": "Pyrrhic Ascent Cloak"
     },
+    "1240056416": {
+      "zh-chs": "惨胜飞升披风",
+      "en": "Pyrrhic Ascent Cloak"
+    },
     "1001798188": {
       "zh-chs": "惨胜飞升面具",
       "en": "Pyrrhic Ascent Mask"
     },
+    "1224060546": {
+      "zh-chs": "惨胜飞升面具",
+      "en": "Pyrrhic Ascent Mask"
+    },
     "120441703": {
+      "zh-chs": "惨胜飞升腿铠",
+      "en": "Pyrrhic Ascent Strides"
+    },
+    "3287081371": {
       "zh-chs": "惨胜飞升腿铠",
       "en": "Pyrrhic Ascent Strides"
     },
@@ -60670,6 +61526,10 @@
       "zh-chs": "全知之眼",
       "en": "Omnioculus"
     },
+    "2168238205": {
+      "zh-chs": "全知之眼",
+      "en": "Omnioculus"
+    },
     "3350504921": {
       "zh-chs": "执政官手铠",
       "en": "Praefectus Gauntlets"
@@ -60694,7 +61554,15 @@
       "zh-chs": "惨胜飞升臂铠",
       "en": "Pyrrhic Ascent Gauntlets"
     },
+    "2300822101": {
+      "zh-chs": "惨胜飞升臂铠",
+      "en": "Pyrrhic Ascent Gauntlets"
+    },
     "2671565007": {
+      "zh-chs": "惨胜飞升战甲",
+      "en": "Pyrrhic Ascent Plate"
+    },
+    "3533534867": {
       "zh-chs": "惨胜飞升战甲",
       "en": "Pyrrhic Ascent Plate"
     },
@@ -60702,11 +61570,23 @@
       "zh-chs": "惨胜飞升印记",
       "en": "Pyrrhic Ascent Mark"
     },
+    "3506304844": {
+      "zh-chs": "惨胜飞升印记",
+      "en": "Pyrrhic Ascent Mark"
+    },
     "1260563064": {
       "zh-chs": "惨胜飞升头盔",
       "en": "Pyrrhic Ascent Helm"
     },
+    "2077601806": {
+      "zh-chs": "惨胜飞升头盔",
+      "en": "Pyrrhic Ascent Helm"
+    },
     "2016308379": {
+      "zh-chs": "惨胜飞升胫甲",
+      "en": "Pyrrhic Ascent Greaves"
+    },
+    "759005343": {
       "zh-chs": "惨胜飞升胫甲",
       "en": "Pyrrhic Ascent Greaves"
     },
@@ -60818,6 +61698,10 @@
       "zh-chs": "陨星胸甲",
       "en": "Cuirass of the Falling Star"
     },
+    "462967561": {
+      "zh-chs": "陨星胸甲",
+      "en": "Cuirass of the Falling Star"
+    },
     "3245065734": {
       "zh-chs": "执政官手套",
       "en": "Praefectus Gloves"
@@ -60842,7 +61726,15 @@
       "zh-chs": "惨胜飞升手套",
       "en": "Pyrrhic Ascent Gloves"
     },
+    "2928349050": {
+      "zh-chs": "惨胜飞升手套",
+      "en": "Pyrrhic Ascent Gloves"
+    },
     "2304861612": {
+      "zh-chs": "惨胜飞升胸甲",
+      "en": "Pyrrhic Ascent Vestment"
+    },
+    "3464883458": {
       "zh-chs": "惨胜飞升胸甲",
       "en": "Pyrrhic Ascent Vestment"
     },
@@ -60850,11 +61742,23 @@
       "zh-chs": "惨胜飞升臂环",
       "en": "Pyrrhic Ascent Bond"
     },
+    "2204419101": {
+      "zh-chs": "惨胜飞升臂环",
+      "en": "Pyrrhic Ascent Bond"
+    },
     "4161591237": {
       "zh-chs": "惨胜飞升兜帽",
       "en": "Pyrrhic Ascent Hood"
     },
+    "332192961": {
+      "zh-chs": "惨胜飞升兜帽",
+      "en": "Pyrrhic Ascent Hood"
+    },
     "469005214": {
+      "zh-chs": "惨胜飞升战靴",
+      "en": "Pyrrhic Ascent Boots"
+    },
+    "755662092": {
       "zh-chs": "惨胜飞升战靴",
       "en": "Pyrrhic Ascent Boots"
     },
@@ -60963,6 +61867,10 @@
       "en": "Phoenix's Fire"
     },
     "3301944824": {
+      "zh-chs": "战斗和谐护肩",
+      "en": "Mantle of Battle Harmony"
+    },
+    "1073231502": {
       "zh-chs": "战斗和谐护肩",
       "en": "Mantle of Battle Harmony"
     },
@@ -61338,6 +62246,10 @@
       "zh-chs": "噬星者之鳞",
       "en": "Star-Eater Scales"
     },
+    "1197776562": {
+      "zh-chs": "噬星者之鳞",
+      "en": "Star-Eater Scales"
+    },
     "2819858798": {
       "zh-chs": "锻造机械师臂铠",
       "en": "Forged Machinist Gauntlets"
@@ -61502,6 +62414,10 @@
       "zh-chs": "燃烧舞步之道",
       "en": "The Path of Burning Steps"
     },
+    "1392922876": {
+      "zh-chs": "燃烧舞步之道",
+      "en": "The Path of Burning Steps"
+    },
     "2615721245": {
       "zh-chs": "韧化成型手套",
       "en": "Annealed Shaper Gloves"
@@ -61663,6 +62579,10 @@
       "en": "Solstice Boots (Renewed)"
     },
     "3045642045": {
+      "zh-chs": "汇编器战靴",
+      "en": "Boots of the Assembler"
+    },
+    "1260343369": {
       "zh-chs": "汇编器战靴",
       "en": "Boots of the Assembler"
     },
@@ -61914,7 +62834,15 @@
       "zh-chs": "钢铁先驱者护臂",
       "en": "Iron Forerunner Grips"
     },
+    "1059479825": {
+      "zh-chs": "钢铁先驱者护臂",
+      "en": "Iron Forerunner Grips"
+    },
     "1615052875": {
+      "zh-chs": "钢铁先驱者胸甲",
+      "en": "Iron Forerunner Vest"
+    },
+    "2233602319": {
       "zh-chs": "钢铁先驱者胸甲",
       "en": "Iron Forerunner Vest"
     },
@@ -61922,7 +62850,15 @@
       "zh-chs": "钢铁先驱者披风",
       "en": "Iron Forerunner Cloak"
     },
+    "2159167152": {
+      "zh-chs": "钢铁先驱者披风",
+      "en": "Iron Forerunner Cloak"
+    },
     "2255073244": {
+      "zh-chs": "钢铁先驱者面具",
+      "en": "Iron Forerunner Mask"
+    },
+    "2733913394": {
       "zh-chs": "钢铁先驱者面具",
       "en": "Iron Forerunner Mask"
     },
@@ -61930,7 +62866,15 @@
       "zh-chs": "钢铁先驱者腿铠",
       "en": "Iron Forerunner Strides"
     },
+    "3731724843": {
+      "zh-chs": "钢铁先驱者腿铠",
+      "en": "Iron Forerunner Strides"
+    },
     "1659679091": {
+      "zh-chs": "违禁收集者护臂",
+      "en": "Illicit Collector Grips"
+    },
+    "3876012135": {
       "zh-chs": "违禁收集者护臂",
       "en": "Illicit Collector Grips"
     },
@@ -61938,7 +62882,15 @@
       "zh-chs": "违禁收集者胸甲",
       "en": "Illicit Collector Vest"
     },
+    "2772236585": {
+      "zh-chs": "违禁收集者胸甲",
+      "en": "Illicit Collector Vest"
+    },
     "3909729744": {
+      "zh-chs": "违禁收集者披风",
+      "en": "Illicit Collector Cloak"
+    },
+    "3796222038": {
       "zh-chs": "违禁收集者披风",
       "en": "Illicit Collector Cloak"
     },
@@ -61946,7 +62898,15 @@
       "zh-chs": "违禁收集者面具",
       "en": "Illicit Collector Mask"
     },
+    "2669950408": {
+      "zh-chs": "违禁收集者面具",
+      "en": "Illicit Collector Mask"
+    },
     "1394633029": {
+      "zh-chs": "违禁收集者腿铠",
+      "en": "Illicit Collector Strides"
+    },
+    "709164353": {
       "zh-chs": "违禁收集者腿铠",
       "en": "Illicit Collector Strides"
     },
@@ -61954,7 +62914,15 @@
       "zh-chs": "违禁哨兵护臂",
       "en": "Illicit Sentry Grips"
     },
+    "4198182657": {
+      "zh-chs": "违禁哨兵护臂",
+      "en": "Illicit Sentry Grips"
+    },
     "2655279451": {
+      "zh-chs": "违禁哨兵胸甲",
+      "en": "Illicit Sentry Vest"
+    },
+    "1588913887": {
       "zh-chs": "违禁哨兵胸甲",
       "en": "Illicit Sentry Vest"
     },
@@ -61962,7 +62930,15 @@
       "zh-chs": "违禁哨兵披风",
       "en": "Illicit Sentry Cloak"
     },
+    "2292621312": {
+      "zh-chs": "违禁哨兵披风",
+      "en": "Illicit Sentry Cloak"
+    },
     "1000646860": {
+      "zh-chs": "违禁哨兵面具",
+      "en": "Illicit Sentry Mask"
+    },
+    "3729506850": {
       "zh-chs": "违禁哨兵面具",
       "en": "Illicit Sentry Mask"
     },
@@ -61970,7 +62946,15 @@
       "zh-chs": "违禁哨兵腿铠",
       "en": "Illicit Sentry Strides"
     },
+    "3749148603": {
+      "zh-chs": "违禁哨兵腿铠",
+      "en": "Illicit Sentry Strides"
+    },
     "2943943681": {
+      "zh-chs": "违禁入侵者护臂",
+      "en": "Illicit Invader Grips"
+    },
+    "2307892413": {
       "zh-chs": "违禁入侵者护臂",
       "en": "Illicit Invader Grips"
     },
@@ -61978,7 +62962,15 @@
       "zh-chs": "违禁入侵者胸甲",
       "en": "Illicit Invader Vest"
     },
+    "3599713355": {
+      "zh-chs": "违禁入侵者胸甲",
+      "en": "Illicit Invader Vest"
+    },
     "1431190694": {
+      "zh-chs": "违禁入侵者披风",
+      "en": "Illicit Invader Cloak"
+    },
+    "2950694244": {
       "zh-chs": "违禁入侵者披风",
       "en": "Illicit Invader Cloak"
     },
@@ -61986,7 +62978,15 @@
       "zh-chs": "违禁入侵者面具",
       "en": "Illicit Invader Mask"
     },
+    "420543798": {
+      "zh-chs": "违禁入侵者面具",
+      "en": "Illicit Invader Mask"
+    },
     "143821939": {
+      "zh-chs": "违禁入侵者腿铠",
+      "en": "Illicit Invader Strides"
+    },
+    "683632999": {
       "zh-chs": "违禁入侵者腿铠",
       "en": "Illicit Invader Strides"
     },
@@ -61994,7 +62994,15 @@
       "zh-chs": "违禁收割者护臂",
       "en": "Illicit Reaper Grips"
     },
+    "415227049": {
+      "zh-chs": "违禁收割者护臂",
+      "en": "Illicit Reaper Grips"
+    },
     "3971188131": {
+      "zh-chs": "违禁收割者胸甲",
+      "en": "Illicit Reaper Vest"
+    },
+    "767948183": {
       "zh-chs": "违禁收割者胸甲",
       "en": "Illicit Reaper Vest"
     },
@@ -62002,11 +63010,23 @@
       "zh-chs": "违禁收割者披风",
       "en": "Illicit Reaper Cloak"
     },
+    "3870549112": {
+      "zh-chs": "违禁收割者披风",
+      "en": "Illicit Reaper Cloak"
+    },
     "4144123204": {
       "zh-chs": "违禁收割者面具",
       "en": "Illicit Reaper Mask"
     },
+    "2432853034": {
+      "zh-chs": "违禁收割者面具",
+      "en": "Illicit Reaper Mask"
+    },
     "1737518783": {
+      "zh-chs": "违禁收割者腿铠",
+      "en": "Illicit Reaper Strides"
+    },
+    "3924951683": {
       "zh-chs": "违禁收割者腿铠",
       "en": "Illicit Reaper Strides"
     },
@@ -62230,7 +63250,15 @@
       "zh-chs": "浪子腿铠",
       "en": "Prodigal Strides"
     },
+    "3224066584": {
+      "zh-chs": "假面舞者风帽",
+      "en": "Masquerader's Cowl"
+    },
     "1702288800": {
+      "zh-chs": "光辉跳舞机",
+      "en": "Radiant Dance Machines"
+    },
+    "4166850854": {
       "zh-chs": "光辉跳舞机",
       "en": "Radiant Dance Machines"
     },
@@ -62238,7 +63266,15 @@
       "zh-chs": "钢铁先驱者臂铠",
       "en": "Iron Forerunner Gauntlets"
     },
+    "4222584181": {
+      "zh-chs": "钢铁先驱者臂铠",
+      "en": "Iron Forerunner Gauntlets"
+    },
     "2344353519": {
+      "zh-chs": "钢铁先驱者战甲",
+      "en": "Iron Forerunner Plate"
+    },
+    "3282450867": {
       "zh-chs": "钢铁先驱者战甲",
       "en": "Iron Forerunner Plate"
     },
@@ -62246,7 +63282,15 @@
       "zh-chs": "钢铁先驱者印记",
       "en": "Iron Forerunner Mark"
     },
+    "1165790188": {
+      "zh-chs": "钢铁先驱者印记",
+      "en": "Iron Forerunner Mark"
+    },
     "3106439832": {
+      "zh-chs": "钢铁先驱者头盔",
+      "en": "Iron Forerunner Helm"
+    },
+    "2064212142": {
       "zh-chs": "钢铁先驱者头盔",
       "en": "Iron Forerunner Helm"
     },
@@ -62254,7 +63298,15 @@
       "zh-chs": "钢铁先驱者胫甲",
       "en": "Iron Forerunner Greaves"
     },
+    "2660082239": {
+      "zh-chs": "钢铁先驱者胫甲",
+      "en": "Iron Forerunner Greaves"
+    },
     "2716373471": {
+      "zh-chs": "违禁收集者臂铠",
+      "en": "Illicit Collector Gauntlets"
+    },
+    "2981276707": {
       "zh-chs": "违禁收集者臂铠",
       "en": "Illicit Collector Gauntlets"
     },
@@ -62262,7 +63314,15 @@
       "zh-chs": "违禁收集者战甲",
       "en": "Illicit Collector Plate"
     },
+    "448147429": {
+      "zh-chs": "违禁收集者战甲",
+      "en": "Illicit Collector Plate"
+    },
     "1630402260": {
+      "zh-chs": "违禁收集者印记",
+      "en": "Illicit Collector Mark"
+    },
+    "1243425594": {
       "zh-chs": "违禁收集者印记",
       "en": "Illicit Collector Mark"
     },
@@ -62270,7 +63330,15 @@
       "zh-chs": "违禁收集者头盔",
       "en": "Illicit Collector Helm"
     },
+    "1256736028": {
+      "zh-chs": "违禁收集者头盔",
+      "en": "Illicit Collector Helm"
+    },
     "1637623713": {
+      "zh-chs": "违禁收集者胫甲",
+      "en": "Illicit Collector Greaves"
+    },
+    "3437505629": {
       "zh-chs": "违禁收集者胫甲",
       "en": "Illicit Collector Greaves"
     },
@@ -62278,7 +63346,15 @@
       "zh-chs": "违禁哨兵臂铠",
       "en": "Illicit Sentry Gauntlets"
     },
+    "476791533": {
+      "zh-chs": "违禁哨兵臂铠",
+      "en": "Illicit Sentry Gauntlets"
+    },
     "3423777255": {
+      "zh-chs": "违禁哨兵战甲",
+      "en": "Illicit Sentry Plate"
+    },
+    "2535975195": {
       "zh-chs": "违禁哨兵战甲",
       "en": "Illicit Sentry Plate"
     },
@@ -62286,7 +63362,15 @@
       "zh-chs": "违禁哨兵印记",
       "en": "Illicit Sentry Mark"
     },
+    "4084143604": {
+      "zh-chs": "违禁哨兵印记",
+      "en": "Illicit Sentry Mark"
+    },
     "417977312": {
+      "zh-chs": "违禁哨兵头盔",
+      "en": "Illicit Sentry Helm"
+    },
+    "716883942": {
       "zh-chs": "违禁哨兵头盔",
       "en": "Illicit Sentry Helm"
     },
@@ -62294,7 +63378,15 @@
       "zh-chs": "违禁哨兵胫甲",
       "en": "Illicit Sentry Greaves"
     },
+    "2055524983": {
+      "zh-chs": "违禁哨兵胫甲",
+      "en": "Illicit Sentry Greaves"
+    },
     "685165933": {
+      "zh-chs": "违禁入侵者臂铠",
+      "en": "Illicit Invader Gauntlets"
+    },
+    "986956153": {
       "zh-chs": "违禁入侵者臂铠",
       "en": "Illicit Invader Gauntlets"
     },
@@ -62302,7 +63394,15 @@
       "zh-chs": "违禁入侵者战甲",
       "en": "Illicit Invader Plate"
     },
+    "760706311": {
+      "zh-chs": "违禁入侵者战甲",
+      "en": "Illicit Invader Plate"
+    },
     "1066605642": {
+      "zh-chs": "违禁入侵者印记",
+      "en": "Illicit Invader Mark"
+    },
+    "2397722856": {
       "zh-chs": "违禁入侵者印记",
       "en": "Illicit Invader Mark"
     },
@@ -62310,7 +63410,15 @@
       "zh-chs": "违禁入侵者头盔",
       "en": "Illicit Invader Helm"
     },
+    "3970937914": {
+      "zh-chs": "违禁入侵者头盔",
+      "en": "Illicit Invader Helm"
+    },
     "931507503": {
+      "zh-chs": "违禁入侵者胫甲",
+      "en": "Illicit Invader Greaves"
+    },
+    "2853425267": {
       "zh-chs": "违禁入侵者胫甲",
       "en": "Illicit Invader Greaves"
     },
@@ -62318,7 +63426,15 @@
       "zh-chs": "违禁收割者臂铠",
       "en": "Illicit Reaper Gauntlets"
     },
+    "3802805445": {
+      "zh-chs": "违禁收割者臂铠",
+      "en": "Illicit Reaper Gauntlets"
+    },
     "1148781279": {
+      "zh-chs": "违禁收割者战甲",
+      "en": "Illicit Reaper Plate"
+    },
+    "3607545635": {
       "zh-chs": "违禁收割者战甲",
       "en": "Illicit Reaper Plate"
     },
@@ -62326,11 +63442,23 @@
       "zh-chs": "违禁收割者印记",
       "en": "Illicit Reaper Mark"
     },
+    "1469993244": {
+      "zh-chs": "违禁收割者印记",
+      "en": "Illicit Reaper Mark"
+    },
     "1909470440": {
       "zh-chs": "违禁收割者头盔",
       "en": "Illicit Reaper Helm"
     },
+    "3373908478": {
+      "zh-chs": "违禁收割者头盔",
+      "en": "Illicit Reaper Helm"
+    },
     "4148887147": {
+      "zh-chs": "违禁收割者胫甲",
+      "en": "Illicit Reaper Greaves"
+    },
+    "617836335": {
       "zh-chs": "违禁收割者胫甲",
       "en": "Illicit Reaper Greaves"
     },
@@ -62554,7 +63682,15 @@
       "zh-chs": "浪子胫甲",
       "en": "Prodigal Greaves"
     },
+    "199733460": {
+      "zh-chs": "假面舞者头盔",
+      "en": "Masquerader's Helm"
+    },
     "3267996858": {
+      "zh-chs": "没有B计划",
+      "en": "No Backup Plans"
+    },
+    "740593432": {
       "zh-chs": "没有B计划",
       "en": "No Backup Plans"
     },
@@ -62562,7 +63698,15 @@
       "zh-chs": "钢铁先驱者手套",
       "en": "Iron Forerunner Gloves"
     },
+    "2271192476": {
+      "zh-chs": "钢铁先驱者手套",
+      "en": "Iron Forerunner Gloves"
+    },
     "1821747970": {
+      "zh-chs": "钢铁先驱者胸甲",
+      "en": "Iron Forerunner Vestments"
+    },
+    "1911399760": {
       "zh-chs": "钢铁先驱者胸甲",
       "en": "Iron Forerunner Vestments"
     },
@@ -62570,7 +63714,15 @@
       "zh-chs": "钢铁先驱者臂环",
       "en": "Iron Forerunner Bond"
     },
+    "3923407559": {
+      "zh-chs": "钢铁先驱者臂环",
+      "en": "Iron Forerunner Bond"
+    },
     "2217519207": {
+      "zh-chs": "钢铁先驱者兜帽",
+      "en": "Iron Forerunner Hood"
+    },
+    "622764187": {
       "zh-chs": "钢铁先驱者兜帽",
       "en": "Iron Forerunner Hood"
     },
@@ -62578,7 +63730,15 @@
       "zh-chs": "钢铁先驱者战靴",
       "en": "Iron Forerunner Boots"
     },
+    "2648146174": {
+      "zh-chs": "钢铁先驱者战靴",
+      "en": "Iron Forerunner Boots"
+    },
     "1960663290": {
+      "zh-chs": "违禁收集者手套",
+      "en": "Illicit Collector Gloves"
+    },
+    "3671588056": {
       "zh-chs": "违禁收集者手套",
       "en": "Illicit Collector Gloves"
     },
@@ -62586,7 +63746,15 @@
       "zh-chs": "违禁收集者法袍",
       "en": "Illicit Collector Robes"
     },
+    "1200919036": {
+      "zh-chs": "违禁收集者法袍",
+      "en": "Illicit Collector Robes"
+    },
     "2938035991": {
+      "zh-chs": "违禁收集者臂环",
+      "en": "Illicit Collector Bond"
+    },
+    "2020782603": {
       "zh-chs": "违禁收集者臂环",
       "en": "Illicit Collector Bond"
     },
@@ -62594,7 +63762,15 @@
       "zh-chs": "违禁收集者兜帽",
       "en": "Illicit Collector Hood"
     },
+    "3577148367": {
+      "zh-chs": "违禁收集者兜帽",
+      "en": "Illicit Collector Hood"
+    },
     "3641592628": {
+      "zh-chs": "违禁收集者战靴",
+      "en": "Illicit Collector Boots"
+    },
+    "2461218970": {
       "zh-chs": "违禁收集者战靴",
       "en": "Illicit Collector Boots"
     },
@@ -62602,7 +63778,15 @@
       "zh-chs": "违禁哨兵手套",
       "en": "Illicit Sentry Gloves"
     },
+    "3825975800": {
+      "zh-chs": "违禁哨兵手套",
+      "en": "Illicit Sentry Gloves"
+    },
     "844443758": {
+      "zh-chs": "违禁哨兵法袍",
+      "en": "Illicit Sentry Robes"
+    },
+    "3259487516": {
       "zh-chs": "违禁哨兵法袍",
       "en": "Illicit Sentry Robes"
     },
@@ -62610,7 +63794,15 @@
       "zh-chs": "违禁哨兵臂环",
       "en": "Illicit Sentry Bond"
     },
+    "4100036523": {
+      "zh-chs": "违禁哨兵臂环",
+      "en": "Illicit Sentry Bond"
+    },
     "1262430251": {
+      "zh-chs": "违禁哨兵兜帽",
+      "en": "Illicit Sentry Hood"
+    },
+    "4178321775": {
       "zh-chs": "违禁哨兵兜帽",
       "en": "Illicit Sentry Hood"
     },
@@ -62618,7 +63810,15 @@
       "zh-chs": "违禁哨兵战靴",
       "en": "Illicit Sentry Boots"
     },
+    "384806842": {
+      "zh-chs": "违禁哨兵战靴",
+      "en": "Illicit Sentry Boots"
+    },
     "175511444": {
+      "zh-chs": "违禁入侵者手套",
+      "en": "Illicit Invader Gloves"
+    },
+    "3181759866": {
       "zh-chs": "违禁入侵者手套",
       "en": "Illicit Invader Gloves"
     },
@@ -62626,7 +63826,15 @@
       "zh-chs": "违禁入侵者法袍",
       "en": "Illicit Invader Robes"
     },
+    "2510227202": {
+      "zh-chs": "违禁入侵者法袍",
+      "en": "Illicit Invader Robes"
+    },
     "3426527713": {
+      "zh-chs": "违禁入侵者臂环",
+      "en": "Illicit Invader Bond"
+    },
+    "1249762845": {
       "zh-chs": "违禁入侵者臂环",
       "en": "Illicit Invader Bond"
     },
@@ -62634,7 +63842,15 @@
       "zh-chs": "违禁入侵者兜帽",
       "en": "Illicit Invader Hood"
     },
+    "585603777": {
+      "zh-chs": "违禁入侵者兜帽",
+      "en": "Illicit Invader Hood"
+    },
     "38792606": {
+      "zh-chs": "违禁入侵者战靴",
+      "en": "Illicit Invader Boots"
+    },
+    "1009072908": {
       "zh-chs": "违禁入侵者战靴",
       "en": "Illicit Invader Boots"
     },
@@ -62642,7 +63858,15 @@
       "zh-chs": "违禁收割者手套",
       "en": "Illicit Reaper Gloves"
     },
+    "2157486560": {
+      "zh-chs": "违禁收割者手套",
+      "en": "Illicit Reaper Gloves"
+    },
     "1852587798": {
+      "zh-chs": "违禁收割者法袍",
+      "en": "Illicit Reaper Robes"
+    },
+    "2002770452": {
       "zh-chs": "违禁收割者法袍",
       "en": "Illicit Reaper Robes"
     },
@@ -62650,11 +63874,23 @@
       "zh-chs": "违禁收割者臂环",
       "en": "Illicit Reaper Bond"
     },
+    "3898129411": {
+      "zh-chs": "违禁收割者臂环",
+      "en": "Illicit Reaper Bond"
+    },
     "2013313923": {
       "zh-chs": "违禁收割者兜帽",
       "en": "Illicit Reaper Hood"
     },
+    "3769720823": {
+      "zh-chs": "违禁收割者兜帽",
+      "en": "Illicit Reaper Hood"
+    },
     "3552091116": {
+      "zh-chs": "违禁收割者战靴",
+      "en": "Illicit Reaper Boots"
+    },
+    "1317166018": {
       "zh-chs": "违禁收割者战靴",
       "en": "Illicit Reaper Boots"
     },
@@ -62878,7 +64114,15 @@
       "zh-chs": "浪子战鞋",
       "en": "Prodigal Steps"
     },
+    "2545426109": {
+      "zh-chs": "假面舞者兜帽",
+      "en": "Masquerader's Hood"
+    },
     "300502917": {
+      "zh-chs": "虚无镣铐",
+      "en": "Nothing Manacles"
+    },
+    "1704880129": {
       "zh-chs": "虚无镣铐",
       "en": "Nothing Manacles"
     },
@@ -63294,7 +64538,15 @@
       "zh-chs": "蝰蛇护臂",
       "en": "Viperidax Grips"
     },
+    "2859670382": {
+      "zh-chs": "蝰蛇护臂",
+      "en": "Viperidax Grips"
+    },
     "3934586864": {
+      "zh-chs": "蝰蛇胸甲",
+      "en": "Viperidax Vest"
+    },
+    "2677528310": {
       "zh-chs": "蝰蛇胸甲",
       "en": "Viperidax Vest"
     },
@@ -63302,11 +64554,23 @@
       "zh-chs": "蝰蛇披风",
       "en": "Viperidax Cloak"
     },
+    "3812440761": {
+      "zh-chs": "蝰蛇披风",
+      "en": "Viperidax Cloak"
+    },
     "2381337281": {
       "zh-chs": "蝰蛇头盔",
       "en": "Viperidax Helmet"
     },
+    "3809684989": {
+      "zh-chs": "蝰蛇头盔",
+      "en": "Viperidax Helmet"
+    },
     "1254421266": {
+      "zh-chs": "蝰蛇腿铠",
+      "en": "Viperidax Strides"
+    },
+    "405311520": {
       "zh-chs": "蝰蛇腿铠",
       "en": "Viperidax Strides"
     },
@@ -63334,7 +64598,15 @@
       "zh-chs": "獠牙效忠护臂",
       "en": "Tusked Allegiance Grips"
     },
+    "383741192": {
+      "zh-chs": "獠牙效忠护臂",
+      "en": "Tusked Allegiance Grips"
+    },
     "4144240158": {
+      "zh-chs": "獠牙效忠胸甲",
+      "en": "Tusked Allegiance Vest"
+    },
+    "1212061836": {
       "zh-chs": "獠牙效忠胸甲",
       "en": "Tusked Allegiance Vest"
     },
@@ -63342,11 +64614,23 @@
       "zh-chs": "獠牙效忠披风",
       "en": "Tusked Allegiance Cloak"
     },
+    "4239455707": {
+      "zh-chs": "獠牙效忠披风",
+      "en": "Tusked Allegiance Cloak"
+    },
     "2516879931": {
       "zh-chs": "獠牙效忠面具",
       "en": "Tusked Allegiance Mask"
     },
+    "3201358143": {
+      "zh-chs": "獠牙效忠面具",
+      "en": "Tusked Allegiance Mask"
+    },
     "3056950148": {
+      "zh-chs": "獠牙效忠腿铠",
+      "en": "Tusked Allegiance Strides"
+    },
+    "359499754": {
       "zh-chs": "獠牙效忠腿铠",
       "en": "Tusked Allegiance Strides"
     },
@@ -63378,7 +64662,15 @@
       "zh-chs": "复兴之握",
       "en": "Renewal Grasps"
     },
+    "1879568799": {
+      "zh-chs": "复兴之握",
+      "en": "Renewal Grasps"
+    },
     "1703551922": {
+      "zh-chs": "凋零游侠",
+      "en": "Blight Ranger"
+    },
+    "1014208": {
       "zh-chs": "凋零游侠",
       "en": "Blight Ranger"
     },
@@ -63386,7 +64678,15 @@
       "zh-chs": "盛名颂扬护臂",
       "en": "Clutch Extol Grips"
     },
+    "2733974969": {
+      "zh-chs": "盛名颂扬护臂",
+      "en": "Clutch Extol Grips"
+    },
     "2969535443": {
+      "zh-chs": "盛名颂扬胸甲",
+      "en": "Clutch Extol Vest"
+    },
+    "1900451399": {
       "zh-chs": "盛名颂扬胸甲",
       "en": "Clutch Extol Vest"
     },
@@ -63394,7 +64694,15 @@
       "zh-chs": "盛名颂扬披风",
       "en": "Clutch Extol Cloak"
     },
+    "2748982312": {
+      "zh-chs": "盛名颂扬披风",
+      "en": "Clutch Extol Cloak"
+    },
     "1767106452": {
+      "zh-chs": "盛名颂扬面具",
+      "en": "Clutch Extol Mask"
+    },
+    "2165423482": {
       "zh-chs": "盛名颂扬面具",
       "en": "Clutch Extol Mask"
     },
@@ -63402,7 +64710,15 @@
       "zh-chs": "盛名颂扬腿铠",
       "en": "Clutch Extol Strides"
     },
+    "1669660339": {
+      "zh-chs": "盛名颂扬腿铠",
+      "en": "Clutch Extol Strides"
+    },
     "619556600": {
+      "zh-chs": "画绒护臂",
+      "en": "Photosuede Grips"
+    },
+    "1232437646": {
       "zh-chs": "画绒护臂",
       "en": "Photosuede Grips"
     },
@@ -63410,7 +64726,15 @@
       "zh-chs": "画绒胸甲",
       "en": "Photosuede Vest"
     },
+    "253950230": {
+      "zh-chs": "画绒胸甲",
+      "en": "Photosuede Vest"
+    },
     "3691455821": {
+      "zh-chs": "画绒披风",
+      "en": "Photosuede Cloak"
+    },
+    "4195360985": {
       "zh-chs": "画绒披风",
       "en": "Photosuede Cloak"
     },
@@ -63418,7 +64742,15 @@
       "zh-chs": "画绒面具",
       "en": "Photosuede Mask"
     },
+    "2182452253": {
+      "zh-chs": "画绒面具",
+      "en": "Photosuede Mask"
+    },
     "2949791538": {
+      "zh-chs": "画绒腿铠",
+      "en": "Photosuede Strides"
+    },
+    "3815376960": {
       "zh-chs": "画绒腿铠",
       "en": "Photosuede Strides"
     },
@@ -63446,7 +64778,15 @@
       "zh-chs": "蝰蛇臂铠",
       "en": "Viperidax Gauntlets"
     },
+    "3174721418": {
+      "zh-chs": "蝰蛇臂铠",
+      "en": "Viperidax Gauntlets"
+    },
     "1740888860": {
+      "zh-chs": "蝰蛇战甲",
+      "en": "Viperidax Plate"
+    },
+    "2417743858": {
       "zh-chs": "蝰蛇战甲",
       "en": "Viperidax Plate"
     },
@@ -63454,11 +64794,23 @@
       "zh-chs": "蝰蛇印记",
       "en": "Viperidax Mark"
     },
+    "2664825549": {
+      "zh-chs": "蝰蛇印记",
+      "en": "Viperidax Mark"
+    },
     "371726421": {
       "zh-chs": "蝰蛇头盔",
       "en": "Viperidax Helmet"
     },
+    "3041739793": {
+      "zh-chs": "蝰蛇头盔",
+      "en": "Viperidax Helmet"
+    },
     "978215630": {
+      "zh-chs": "蝰蛇胫甲",
+      "en": "Viperidax Greaves"
+    },
+    "425782652": {
       "zh-chs": "蝰蛇胫甲",
       "en": "Viperidax Greaves"
     },
@@ -63486,7 +64838,15 @@
       "zh-chs": "獠牙效忠臂铠",
       "en": "Tusked Allegiance Gauntlets"
     },
+    "3676720668": {
+      "zh-chs": "獠牙效忠臂铠",
+      "en": "Tusked Allegiance Gauntlets"
+    },
     "438108034": {
+      "zh-chs": "獠牙效忠板甲",
+      "en": "Tusked Allegiance Plate"
+    },
+    "3551061712": {
       "zh-chs": "獠牙效忠板甲",
       "en": "Tusked Allegiance Plate"
     },
@@ -63494,11 +64854,23 @@
       "zh-chs": "獠牙效忠印记",
       "en": "Tusked Allegiance Mark"
     },
+    "1268102215": {
+      "zh-chs": "獠牙效忠印记",
+      "en": "Tusked Allegiance Mark"
+    },
     "2240729575": {
       "zh-chs": "獠牙效忠头盔",
       "en": "Tusked Allegiance Helmet"
     },
+    "2028292379": {
+      "zh-chs": "獠牙效忠头盔",
+      "en": "Tusked Allegiance Helmet"
+    },
     "2270509928": {
+      "zh-chs": "獠牙效忠胫甲",
+      "en": "Tusked Allegiance Greaves"
+    },
+    "4053674366": {
       "zh-chs": "獠牙效忠胫甲",
       "en": "Tusked Allegiance Greaves"
     },
@@ -63530,7 +64902,15 @@
       "zh-chs": "白霜-Z",
       "en": "Hoarfrost-Z"
     },
+    "1336321181": {
+      "zh-chs": "白霜-Z",
+      "en": "Hoarfrost-Z"
+    },
     "3316517958": {
+      "zh-chs": "罗蕾莱辉煌头盔",
+      "en": "Loreley Splendor Helm"
+    },
+    "2738914052": {
       "zh-chs": "罗蕾莱辉煌头盔",
       "en": "Loreley Splendor Helm"
     },
@@ -63538,7 +64918,15 @@
       "zh-chs": "盛名颂扬臂铠",
       "en": "Clutch Extol Gauntlets"
     },
+    "3471717205": {
+      "zh-chs": "盛名颂扬臂铠",
+      "en": "Clutch Extol Gauntlets"
+    },
     "2478547407": {
+      "zh-chs": "盛名颂扬战甲",
+      "en": "Clutch Extol Plate"
+    },
+    "2957859219": {
       "zh-chs": "盛名颂扬战甲",
       "en": "Clutch Extol Plate"
     },
@@ -63546,7 +64934,15 @@
       "zh-chs": "盛名颂扬印记",
       "en": "Clutch Extol Mark"
     },
+    "2930629196": {
+      "zh-chs": "盛名颂扬印记",
+      "en": "Clutch Extol Mark"
+    },
     "2102025592": {
+      "zh-chs": "盛名颂扬头盔",
+      "en": "Clutch Extol Helmet"
+    },
+    "3248496910": {
       "zh-chs": "盛名颂扬头盔",
       "en": "Clutch Extol Helmet"
     },
@@ -63554,7 +64950,15 @@
       "zh-chs": "盛名颂扬胫甲",
       "en": "Clutch Extol Greaves"
     },
+    "1929900447": {
+      "zh-chs": "盛名颂扬胫甲",
+      "en": "Clutch Extol Greaves"
+    },
     "212971972": {
+      "zh-chs": "画绒臂铠",
+      "en": "Photosuede Gauntlets"
+    },
+    "3651818922": {
       "zh-chs": "画绒臂铠",
       "en": "Photosuede Gauntlets"
     },
@@ -63562,7 +64966,15 @@
       "zh-chs": "画绒战甲",
       "en": "Photosuede Plate"
     },
+    "2358069650": {
+      "zh-chs": "画绒战甲",
+      "en": "Photosuede Plate"
+    },
     "456484913": {
+      "zh-chs": "画绒印记",
+      "en": "Photosuede Mark"
+    },
+    "374248557": {
       "zh-chs": "画绒印记",
       "en": "Photosuede Mark"
     },
@@ -63570,7 +64982,15 @@
       "zh-chs": "画绒头盔",
       "en": "Photosuede Helmet"
     },
+    "1138336561": {
+      "zh-chs": "画绒头盔",
+      "en": "Photosuede Helmet"
+    },
     "2143618030": {
+      "zh-chs": "画绒胫甲",
+      "en": "Photosuede Greaves"
+    },
+    "2817346460": {
       "zh-chs": "画绒胫甲",
       "en": "Photosuede Greaves"
     },
@@ -63598,7 +65018,15 @@
       "zh-chs": "蝰蛇手套",
       "en": "Viperidax Gloves"
     },
+    "646222889": {
+      "zh-chs": "蝰蛇手套",
+      "en": "Viperidax Gloves"
+    },
     "959484195": {
+      "zh-chs": "蝰蛇法袍",
+      "en": "Viperidax Robes"
+    },
+    "1517474839": {
       "zh-chs": "蝰蛇法袍",
       "en": "Viperidax Robes"
     },
@@ -63606,11 +65034,23 @@
       "zh-chs": "蝰蛇臂环",
       "en": "Viperidax Bond"
     },
+    "325108472": {
+      "zh-chs": "蝰蛇臂环",
+      "en": "Viperidax Bond"
+    },
     "4291183556": {
       "zh-chs": "蝰蛇兜帽",
       "en": "Viperidax Hood"
     },
+    "2663848874": {
+      "zh-chs": "蝰蛇兜帽",
+      "en": "Viperidax Hood"
+    },
     "1884579135": {
+      "zh-chs": "蝰蛇战靴",
+      "en": "Viperidax Boots"
+    },
+    "4155947523": {
       "zh-chs": "蝰蛇战靴",
       "en": "Viperidax Boots"
     },
@@ -63638,7 +65078,15 @@
       "zh-chs": "獠牙效忠手套",
       "en": "Tusked Allegiance Gloves"
     },
+    "4122910995": {
+      "zh-chs": "獠牙效忠手套",
+      "en": "Tusked Allegiance Gloves"
+    },
     "3465627817": {
+      "zh-chs": "獠牙效忠法袍",
+      "en": "Tusked Allegiance Robes"
+    },
+    "1014299701": {
       "zh-chs": "獠牙效忠法袍",
       "en": "Tusked Allegiance Robes"
     },
@@ -63646,11 +65094,23 @@
       "zh-chs": "獠牙效忠臂环",
       "en": "Tusked Allegiance Bond"
     },
+    "1109594186": {
+      "zh-chs": "獠牙效忠臂环",
+      "en": "Tusked Allegiance Bond"
+    },
     "849255710": {
       "zh-chs": "獠牙效忠兜帽",
       "en": "Tusked Allegiance Hood"
     },
+    "350823820": {
+      "zh-chs": "獠牙效忠兜帽",
+      "en": "Tusked Allegiance Hood"
+    },
     "693728753": {
+      "zh-chs": "獠牙效忠战靴",
+      "en": "Tusked Allegiance Boots"
+    },
+    "3405554861": {
       "zh-chs": "獠牙效忠战靴",
       "en": "Tusked Allegiance Boots"
     },
@@ -63682,7 +65142,15 @@
       "zh-chs": "锇素手套",
       "en": "Osmiomancy Gloves"
     },
+    "2161392874": {
+      "zh-chs": "锇素手套",
+      "en": "Osmiomancy Gloves"
+    },
     "511888814": {
+      "zh-chs": "割线纤维",
+      "en": "Secant Filaments"
+    },
+    "538538204": {
       "zh-chs": "割线纤维",
       "en": "Secant Filaments"
     },
@@ -63690,7 +65158,15 @@
       "zh-chs": "盛名颂扬手套",
       "en": "Clutch Extol Gloves"
     },
+    "3337944718": {
+      "zh-chs": "盛名颂扬手套",
+      "en": "Clutch Extol Gloves"
+    },
     "3261819408": {
+      "zh-chs": "盛名颂扬法袍",
+      "en": "Clutch Extol Robes"
+    },
+    "2664742934": {
       "zh-chs": "盛名颂扬法袍",
       "en": "Clutch Extol Robes"
     },
@@ -63698,7 +65174,15 @@
       "zh-chs": "盛名颂扬臂环",
       "en": "Clutch Extol Bond"
     },
+    "2311186393": {
+      "zh-chs": "盛名颂扬臂环",
+      "en": "Clutch Extol Bond"
+    },
     "1259299553": {
+      "zh-chs": "盛名颂扬兜帽",
+      "en": "Clutch Extol Hood"
+    },
+    "4287959325": {
       "zh-chs": "盛名颂扬兜帽",
       "en": "Clutch Extol Hood"
     },
@@ -63706,7 +65190,15 @@
       "zh-chs": "盛名颂扬战靴",
       "en": "Clutch Extol Boots"
     },
+    "1625916736": {
+      "zh-chs": "盛名颂扬战靴",
+      "en": "Clutch Extol Boots"
+    },
     "671664021": {
+      "zh-chs": "画绒手套",
+      "en": "Photosuede Gloves"
+    },
+    "2150208209": {
       "zh-chs": "画绒手套",
       "en": "Photosuede Gloves"
     },
@@ -63714,7 +65206,15 @@
       "zh-chs": "画绒法袍",
       "en": "Photosuede Robes"
     },
+    "3784881871": {
+      "zh-chs": "画绒法袍",
+      "en": "Photosuede Robes"
+    },
     "4156676002": {
+      "zh-chs": "画绒臂环",
+      "en": "Photosuede Bond"
+    },
+    "3010462832": {
       "zh-chs": "画绒臂环",
       "en": "Photosuede Bond"
     },
@@ -63722,7 +65222,15 @@
       "zh-chs": "画绒兜帽",
       "en": "Photosuede Hood"
     },
+    "1593841906": {
+      "zh-chs": "画绒兜帽",
+      "en": "Photosuede Hood"
+    },
     "2713820407": {
+      "zh-chs": "画绒战靴",
+      "en": "Photosuede Boots"
+    },
+    "1891772651": {
       "zh-chs": "画绒战靴",
       "en": "Photosuede Boots"
     },
@@ -64302,7 +65810,15 @@
       "zh-chs": "返祖神像护臂",
       "en": "Atavistic Idol Grips"
     },
+    "4236667838": {
+      "zh-chs": "返祖神像护臂",
+      "en": "Atavistic Idol Grips"
+    },
     "2355943840": {
+      "zh-chs": "返祖神像胸甲",
+      "en": "Atavistic Idol Vest"
+    },
+    "3382832422": {
       "zh-chs": "返祖神像胸甲",
       "en": "Atavistic Idol Vest"
     },
@@ -64310,7 +65826,15 @@
       "zh-chs": "返祖神像面具",
       "en": "Atavistic Idol Mask"
     },
+    "3891912205": {
+      "zh-chs": "返祖神像面具",
+      "en": "Atavistic Idol Mask"
+    },
     "162269058": {
+      "zh-chs": "返祖神像腿铠",
+      "en": "Atavistic Idol Strides"
+    },
+    "891829968": {
       "zh-chs": "返祖神像腿铠",
       "en": "Atavistic Idol Strides"
     },
@@ -64318,7 +65842,15 @@
       "zh-chs": "返祖神像披风",
       "en": "Atavistic Idol Cloak"
     },
+    "3771606505": {
+      "zh-chs": "返祖神像披风",
+      "en": "Atavistic Idol Cloak"
+    },
     "3453042252": {
+      "zh-chs": "卡利班之手",
+      "en": "Caliban's Hand"
+    },
+    "786697890": {
       "zh-chs": "卡利班之手",
       "en": "Caliban's Hand"
     },
@@ -64363,6 +65895,10 @@
       "en": "Candescent Strides (Unkindled)"
     },
     "1443166262": {
+      "zh-chs": "第二次机会",
+      "en": "Second Chance"
+    },
+    "3991827892": {
       "zh-chs": "第二次机会",
       "en": "Second Chance"
     },
@@ -64430,7 +65966,15 @@
       "zh-chs": "返祖神像臂铠",
       "en": "Atavistic Idol Gauntlets"
     },
+    "175003048": {
+      "zh-chs": "返祖神像臂铠",
+      "en": "Atavistic Idol Gauntlets"
+    },
     "2627533758": {
+      "zh-chs": "返祖神像战甲",
+      "en": "Atavistic Idol Plate"
+    },
+    "2197274028": {
       "zh-chs": "返祖神像战甲",
       "en": "Atavistic Idol Plate"
     },
@@ -64438,11 +65982,23 @@
       "zh-chs": "返祖神像头盔",
       "en": "Atavistic Idol Helmet"
     },
+    "3755738975": {
+      "zh-chs": "返祖神像头盔",
+      "en": "Atavistic Idol Helmet"
+    },
     "1026828708": {
       "zh-chs": "返祖神像胫甲",
       "en": "Atavistic Idol Greaves"
     },
+    "2086016266": {
+      "zh-chs": "返祖神像胫甲",
+      "en": "Atavistic Idol Greaves"
+    },
     "2381515079": {
+      "zh-chs": "返祖神像印记",
+      "en": "Atavistic Idol Mark"
+    },
+    "1104664699": {
       "zh-chs": "返祖神像印记",
       "en": "Atavistic Idol Mark"
     },
@@ -64487,6 +66043,10 @@
       "en": "Candescent Greaves (Unkindled)"
     },
     "1624882687": {
+      "zh-chs": "火焰润雨",
+      "en": "Rain of Fire"
+    },
+    "1750413635": {
       "zh-chs": "火焰润雨",
       "en": "Rain of Fire"
     },
@@ -64554,7 +66114,15 @@
       "zh-chs": "返祖神像手套",
       "en": "Atavistic Idol Gloves"
     },
+    "529088743": {
+      "zh-chs": "返祖神像手套",
+      "en": "Atavistic Idol Gloves"
+    },
     "124944413": {
+      "zh-chs": "返祖神像胸甲",
+      "en": "Atavistic Idol Vestments"
+    },
+    "434356905": {
       "zh-chs": "返祖神像胸甲",
       "en": "Atavistic Idol Vestments"
     },
@@ -64562,11 +66130,23 @@
       "zh-chs": "返祖神像兜帽",
       "en": "Atavistic Idol Hood"
     },
+    "3617994312": {
+      "zh-chs": "返祖神像兜帽",
+      "en": "Atavistic Idol Hood"
+    },
     "2353371845": {
       "zh-chs": "返祖神像战靴",
       "en": "Atavistic Idol Boots"
     },
+    "1657208257": {
+      "zh-chs": "返祖神像战靴",
+      "en": "Atavistic Idol Boots"
+    },
     "1586932304": {
+      "zh-chs": "返祖神像臂环",
+      "en": "Atavistic Idol Bond"
+    },
+    "1458342358": {
       "zh-chs": "返祖神像臂环",
       "en": "Atavistic Idol Bond"
     },
@@ -64910,7 +66490,15 @@
       "zh-chs": "双桅船杀手护臂",
       "en": "Ketchkiller's Grips"
     },
+    "2160775258": {
+      "zh-chs": "双桅船杀手护臂",
+      "en": "Ketchkiller's Grips"
+    },
     "92499596": {
+      "zh-chs": "双桅船杀手胸甲",
+      "en": "Ketchkiller's Vest"
+    },
+    "1901340770": {
       "zh-chs": "双桅船杀手胸甲",
       "en": "Ketchkiller's Vest"
     },
@@ -64918,7 +66506,15 @@
       "zh-chs": "双桅船杀手面具",
       "en": "Ketchkiller's Mask"
     },
+    "3838798113": {
+      "zh-chs": "双桅船杀手面具",
+      "en": "Ketchkiller's Mask"
+    },
     "2121983870": {
+      "zh-chs": "双桅船杀手腿铠",
+      "en": "Ketchkiller's Strides"
+    },
+    "2840844524": {
       "zh-chs": "双桅船杀手腿铠",
       "en": "Ketchkiller's Strides"
     },
@@ -64926,7 +66522,15 @@
       "zh-chs": "双桅船杀手披风",
       "en": "Ketchkiller's Cloak"
     },
+    "39811837": {
+      "zh-chs": "双桅船杀手披风",
+      "en": "Ketchkiller's Cloak"
+    },
     "461841403": {
+      "zh-chs": "矛隼胸甲",
+      "en": "Gyrfalcon's Hauberk"
+    },
+    "1343614591": {
       "zh-chs": "矛隼胸甲",
       "en": "Gyrfalcon's Hauberk"
     },
@@ -64954,7 +66558,15 @@
       "zh-chs": "双桅船杀手臂铠",
       "en": "Ketchkiller's Gauntlets"
     },
+    "1136162598": {
+      "zh-chs": "双桅船杀手臂铠",
+      "en": "Ketchkiller's Gauntlets"
+    },
     "130618344": {
+      "zh-chs": "双桅船杀手战甲",
+      "en": "Ketchkiller's Plate"
+    },
+    "384833278": {
       "zh-chs": "双桅船杀手战甲",
       "en": "Ketchkiller's Plate"
     },
@@ -64962,7 +66574,15 @@
       "zh-chs": "双桅船杀手头盔",
       "en": "Ketchkiller's Helmet"
     },
+    "642468533": {
+      "zh-chs": "双桅船杀手头盔",
+      "en": "Ketchkiller's Helmet"
+    },
     "1640403802": {
+      "zh-chs": "双桅船杀手胫甲",
+      "en": "Ketchkiller's Greaves"
+    },
+    "1218431672": {
       "zh-chs": "双桅船杀手胫甲",
       "en": "Ketchkiller's Greaves"
     },
@@ -64970,7 +66590,15 @@
       "zh-chs": "双桅船杀手印记",
       "en": "Ketchkiller's Mark"
     },
+    "1830049473": {
+      "zh-chs": "双桅船杀手印记",
+      "en": "Ketchkiller's Mark"
+    },
     "1703598057": {
+      "zh-chs": "点接触炮架",
+      "en": "Point-Contact Cannon Brace"
+    },
+    "2855987957": {
       "zh-chs": "点接触炮架",
       "en": "Point-Contact Cannon Brace"
     },
@@ -64998,7 +66626,15 @@
       "zh-chs": "双桅船杀手手套",
       "en": "Ketchkiller's Gloves"
     },
+    "3071673277": {
+      "zh-chs": "双桅船杀手手套",
+      "en": "Ketchkiller's Gloves"
+    },
     "3833868247": {
+      "zh-chs": "双桅船杀手法袍",
+      "en": "Ketchkiller's Robes"
+    },
+    "2165756235": {
       "zh-chs": "双桅船杀手法袍",
       "en": "Ketchkiller's Robes"
     },
@@ -65006,7 +66642,15 @@
       "zh-chs": "双桅船杀手兜帽",
       "en": "Ketchkiller's Hood"
     },
+    "1184324662": {
+      "zh-chs": "双桅船杀手兜帽",
+      "en": "Ketchkiller's Hood"
+    },
     "2030782835": {
+      "zh-chs": "双桅船杀手战靴",
+      "en": "Ketchkiller's Boots"
+    },
+    "1447413863": {
       "zh-chs": "双桅船杀手战靴",
       "en": "Ketchkiller's Boots"
     },
@@ -65014,7 +66658,15 @@
       "zh-chs": "双桅船杀手臂环",
       "en": "Ketchkiller's Bond"
     },
+    "1516737124": {
+      "zh-chs": "双桅船杀手臂环",
+      "en": "Ketchkiller's Bond"
+    },
     "1849149215": {
+      "zh-chs": "堕落者日星",
+      "en": "Fallen Sunstar"
+    },
+    "3332521187": {
       "zh-chs": "堕落者日星",
       "en": "Fallen Sunstar"
     },
@@ -65394,7 +67046,15 @@
       "zh-chs": "灵巫华服护臂",
       "en": "Techeun's Regalia Grips"
     },
+    "1823096493": {
+      "zh-chs": "灵巫华服护臂",
+      "en": "Techeun's Regalia Grips"
+    },
     "3995603239": {
+      "zh-chs": "灵巫华服胸甲",
+      "en": "Techeun's Regalia Vest"
+    },
+    "411392731": {
       "zh-chs": "灵巫华服胸甲",
       "en": "Techeun's Regalia Vest"
     },
@@ -65402,11 +67062,23 @@
       "zh-chs": "灵巫华服面具",
       "en": "Techeun's Regalia Mask"
     },
+    "4127253158": {
+      "zh-chs": "灵巫华服面具",
+      "en": "Techeun's Regalia Mask"
+    },
     "4290220099": {
       "zh-chs": "灵巫华服腿铠",
       "en": "Techeun's Regalia Strides"
     },
+    "2659396151": {
+      "zh-chs": "灵巫华服腿铠",
+      "en": "Techeun's Regalia Strides"
+    },
     "840487990": {
+      "zh-chs": "灵巫华服披风",
+      "en": "Techeun's Regalia Cloak"
+    },
+    "4069779892": {
       "zh-chs": "灵巫华服披风",
       "en": "Techeun's Regalia Cloak"
     },
@@ -65458,7 +67130,15 @@
       "zh-chs": "曲腹蛛的伪装",
       "en": "Cyrtarachne's Facade"
     },
+    "2876818003": {
+      "zh-chs": "曲腹蛛的伪装",
+      "en": "Cyrtarachne's Facade"
+    },
     "428806571": {
+      "zh-chs": "灵巫华服臂铠",
+      "en": "Techeun's Regalia Gauntlets"
+    },
+    "330959343": {
       "zh-chs": "灵巫华服臂铠",
       "en": "Techeun's Regalia Gauntlets"
     },
@@ -65466,7 +67146,15 @@
       "zh-chs": "灵巫华服战甲",
       "en": "Techeun's Regalia Plate"
     },
+    "1064014305": {
+      "zh-chs": "灵巫华服战甲",
+      "en": "Techeun's Regalia Plate"
+    },
     "1089162050": {
+      "zh-chs": "灵巫华服头盔",
+      "en": "Techeun's Regalia Helmet"
+    },
+    "2140114448": {
       "zh-chs": "灵巫华服头盔",
       "en": "Techeun's Regalia Helmet"
     },
@@ -65474,7 +67162,15 @@
       "zh-chs": "灵巫华服胫甲",
       "en": "Techeun's Regalia Greaves"
     },
+    "2794451401": {
+      "zh-chs": "灵巫华服胫甲",
+      "en": "Techeun's Regalia Greaves"
+    },
     "1968283192": {
+      "zh-chs": "灵巫华服印记",
+      "en": "Techeun's Regalia Mark"
+    },
+    "2860879950": {
       "zh-chs": "灵巫华服印记",
       "en": "Techeun's Regalia Mark"
     },
@@ -65526,7 +67222,15 @@
       "zh-chs": "中止之跃",
       "en": "Abeyant Leap"
     },
+    "100404736": {
+      "zh-chs": "中止之跃",
+      "en": "Abeyant Leap"
+    },
     "3031934630": {
+      "zh-chs": "灵巫华服手套",
+      "en": "Techeun's Regalia Gloves"
+    },
+    "2497712996": {
       "zh-chs": "灵巫华服手套",
       "en": "Techeun's Regalia Gloves"
     },
@@ -65534,7 +67238,15 @@
       "zh-chs": "灵巫华服法袍",
       "en": "Techeun's Regalia Robes"
     },
+    "465983464": {
+      "zh-chs": "灵巫华服法袍",
+      "en": "Techeun's Regalia Robes"
+    },
     "3056490591": {
+      "zh-chs": "灵巫华服兜帽",
+      "en": "Techeun's Regalia Hood"
+    },
+    "3270464419": {
       "zh-chs": "灵巫华服兜帽",
       "en": "Techeun's Regalia Hood"
     },
@@ -65542,7 +67254,15 @@
       "zh-chs": "灵巫华服战靴",
       "en": "Techeun's Regalia Boots"
     },
+    "2460368678": {
+      "zh-chs": "灵巫华服战靴",
+      "en": "Techeun's Regalia Boots"
+    },
     "1159113819": {
+      "zh-chs": "灵巫华服臂环",
+      "en": "Techeun's Regalia Bond"
+    },
+    "3764139999": {
       "zh-chs": "灵巫华服臂环",
       "en": "Techeun's Regalia Bond"
     },
@@ -65591,6 +67311,10 @@
       "en": "Thunderhead Bond"
     },
     "2463947681": {
+      "zh-chs": "浮游孢子",
+      "en": "Swarmers"
+    },
+    "817162333": {
       "zh-chs": "浮游孢子",
       "en": "Swarmers"
     },
@@ -73126,7 +74850,15 @@
       "zh-chs": "钢铁共战护臂",
       "en": "Iron Symmachy Grips"
     },
+    "498027823": {
+      "zh-chs": "钢铁共战护臂",
+      "en": "Iron Symmachy Grips"
+    },
     "3112906149": {
+      "zh-chs": "钢铁共战胸甲",
+      "en": "Iron Symmachy Vest"
+    },
+    "3229394465": {
       "zh-chs": "钢铁共战胸甲",
       "en": "Iron Symmachy Vest"
     },
@@ -73134,11 +74866,23 @@
       "zh-chs": "钢铁共战披风",
       "en": "Iron Symmachy Cloak"
     },
+    "2095579534": {
+      "zh-chs": "钢铁共战披风",
+      "en": "Iron Symmachy Cloak"
+    },
     "1618191618": {
       "zh-chs": "钢铁共战面具",
       "en": "Iron Symmachy Mask"
     },
+    "3049513808": {
+      "zh-chs": "钢铁共战面具",
+      "en": "Iron Symmachy Mask"
+    },
     "2049490557": {
+      "zh-chs": "钢铁共战腿铠",
+      "en": "Iron Symmachy Strides"
+    },
+    "2915261961": {
       "zh-chs": "钢铁共战腿铠",
       "en": "Iron Symmachy Strides"
     },
@@ -73450,7 +75194,15 @@
       "zh-chs": "钢铁共战臂铠",
       "en": "Iron Symmachy Gauntlets"
     },
+    "1574445691": {
+      "zh-chs": "钢铁共战臂铠",
+      "en": "Iron Symmachy Gauntlets"
+    },
     "3420845681": {
+      "zh-chs": "钢铁共战战甲",
+      "en": "Iron Symmachy Plate"
+    },
+    "452971053": {
       "zh-chs": "钢铁共战战甲",
       "en": "Iron Symmachy Plate"
     },
@@ -73458,11 +75210,23 @@
       "zh-chs": "钢铁共战印记",
       "en": "Iron Symmachy Mark"
     },
+    "3383539170": {
+      "zh-chs": "钢铁共战印记",
+      "en": "Iron Symmachy Mark"
+    },
     "1127757814": {
       "zh-chs": "钢铁共战头盔",
       "en": "Iron Symmachy Helm"
     },
+    "2282106100": {
+      "zh-chs": "钢铁共战头盔",
+      "en": "Iron Symmachy Helm"
+    },
     "1084553865": {
+      "zh-chs": "钢铁共战胫甲",
+      "en": "Iron Symmachy Greaves"
+    },
+    "3157965205": {
       "zh-chs": "钢铁共战胫甲",
       "en": "Iron Symmachy Greaves"
     },
@@ -73774,7 +75538,15 @@
       "zh-chs": "钢铁共战手套",
       "en": "Iron Symmachy Gloves"
     },
+    "2503371658": {
+      "zh-chs": "钢铁共战手套",
+      "en": "Iron Symmachy Gloves"
+    },
     "3543613212": {
+      "zh-chs": "钢铁共战法袍",
+      "en": "Iron Symmachy Robes"
+    },
+    "2446730226": {
       "zh-chs": "钢铁共战法袍",
       "en": "Iron Symmachy Robes"
     },
@@ -73782,11 +75554,23 @@
       "zh-chs": "钢铁共战臂环",
       "en": "Iron Symmachy Bond"
     },
+    "2693811917": {
+      "zh-chs": "钢铁共战臂环",
+      "en": "Iron Symmachy Bond"
+    },
     "3147146325": {
       "zh-chs": "钢铁共战兜帽",
       "en": "Iron Symmachy Hood"
     },
+    "2370390033": {
+      "zh-chs": "钢铁共战兜帽",
+      "en": "Iron Symmachy Hood"
+    },
     "3753635534": {
+      "zh-chs": "钢铁共战战靴",
+      "en": "Iron Symmachy Boots"
+    },
+    "4049400188": {
       "zh-chs": "钢铁共战战靴",
       "en": "Iron Symmachy Boots"
     },
@@ -76166,6 +77950,10 @@
       "zh-chs": "耐寒腿铠",
       "en": "Winterhart Strides"
     },
+    "2352138838": {
+      "zh-chs": "假面舞者风帽",
+      "en": "Masquerader's Cowl"
+    },
     "518930465": {
       "zh-chs": "至日护手（重燃）",
       "en": "Solstice Grasps (Rekindled)"
@@ -76270,7 +78058,15 @@
       "zh-chs": "刺客风帽",
       "en": "Assassin's Cowl"
     },
+    "1304967988": {
+      "zh-chs": "刺客风帽",
+      "en": "Assassin's Cowl"
+    },
     "1734144409": {
+      "zh-chs": "机工诡诈臂袖",
+      "en": "Mechaneer's Tricksleeves"
+    },
+    "1860140389": {
       "zh-chs": "机工诡诈臂袖",
       "en": "Mechaneer's Tricksleeves"
     },
@@ -76278,7 +78074,15 @@
       "zh-chs": "雷电通流",
       "en": "Raiden Flux"
     },
+    "1547375670": {
+      "zh-chs": "雷电通流",
+      "en": "Raiden Flux"
+    },
     "2766109874": {
+      "zh-chs": "巨龙之影",
+      "en": "The Dragon's Shadow"
+    },
+    "827034816": {
       "zh-chs": "巨龙之影",
       "en": "The Dragon's Shadow"
     },
@@ -76286,7 +78090,15 @@
       "zh-chs": "觅敌者",
       "en": "Foetracer"
     },
+    "4122177783": {
+      "zh-chs": "觅敌者",
+      "en": "Foetracer"
+    },
     "193869522": {
+      "zh-chs": "幸运裤",
+      "en": "Lucky Pants"
+    },
+    "738161504": {
       "zh-chs": "幸运裤",
       "en": "Lucky Pants"
     },
@@ -76294,7 +78106,15 @@
       "zh-chs": "奥菲斯钻机",
       "en": "Orpheus Rig"
     },
+    "2453538631": {
+      "zh-chs": "奥菲斯钻机",
+      "en": "Orpheus Rig"
+    },
     "193869520": {
+      "zh-chs": "踢踏5",
+      "en": "St0mp-EE5"
+    },
+    "1437610838": {
       "zh-chs": "踢踏5",
       "en": "St0mp-EE5"
     },
@@ -76302,7 +78122,15 @@
       "zh-chs": "永劫雨燕",
       "en": "Aeon Swift"
     },
+    "2999252751": {
+      "zh-chs": "永劫雨燕",
+      "en": "Aeon Swift"
+    },
     "1163283805": {
+      "zh-chs": "双子座小丑",
+      "en": "Gemini Jester"
+    },
+    "3953384297": {
       "zh-chs": "双子座小丑",
       "en": "Gemini Jester"
     },
@@ -76310,7 +78138,15 @@
       "zh-chs": "盘蛇苞片",
       "en": "Ophidia Spathe"
     },
+    "750483560": {
+      "zh-chs": "盘蛇苞片",
+      "en": "Ophidia Spathe"
+    },
     "3562696927": {
+      "zh-chs": "虫骸头冠",
+      "en": "Wormhusk Crown"
+    },
+    "1912340771": {
       "zh-chs": "虫骸头冠",
       "en": "Wormhusk Crown"
     },
@@ -76318,7 +78154,15 @@
       "zh-chs": "加拉诺碎片",
       "en": "Shards of Galanor"
     },
+    "949131991": {
+      "zh-chs": "加拉诺碎片",
+      "en": "Shards of Galanor"
+    },
     "691578978": {
+      "zh-chs": "守誓者",
+      "en": "Oathkeeper"
+    },
+    "3518379440": {
       "zh-chs": "守誓者",
       "en": "Oathkeeper"
     },
@@ -76326,7 +78170,15 @@
       "zh-chs": "第六郊狼",
       "en": "The Sixth Coyote"
     },
+    "2970820409": {
+      "zh-chs": "第六郊狼",
+      "en": "The Sixth Coyote"
+    },
     "1474735276": {
+      "zh-chs": "鬼神胸甲",
+      "en": "Gwisin Vest"
+    },
+    "1245100546": {
       "zh-chs": "鬼神胸甲",
       "en": "Gwisin Vest"
     },
@@ -76334,7 +78186,15 @@
       "zh-chs": "骗徒的握手",
       "en": "Liar's Handshake"
     },
+    "3477988437": {
+      "zh-chs": "骗徒的握手",
+      "en": "Liar's Handshake"
+    },
     "475652357": {
+      "zh-chs": "幼年阿罕卡拉之脊",
+      "en": "Young Ahamkara's Spine"
+    },
+    "3814033537": {
       "zh-chs": "幼年阿罕卡拉之脊",
       "en": "Young Ahamkara's Spine"
     },
@@ -76342,7 +78202,15 @@
       "zh-chs": "幸运覆盆子",
       "en": "Lucky Raspberry"
     },
+    "1264955704": {
+      "zh-chs": "幸运覆盆子",
+      "en": "Lucky Raspberry"
+    },
     "1321354572": {
+      "zh-chs": "傻瓜雷达",
+      "en": "Knucklehead Radar"
+    },
+    "3345357730": {
       "zh-chs": "傻瓜雷达",
       "en": "Knucklehead Radar"
     },
@@ -76350,7 +78218,15 @@
       "zh-chs": "星界夜鹰",
       "en": "Celestial Nighthawk"
     },
+    "776110297": {
+      "zh-chs": "星界夜鹰",
+      "en": "Celestial Nighthawk"
+    },
     "1053737370": {
+      "zh-chs": "忍野的誓言",
+      "en": "Shinobu's Vow"
+    },
+    "1339772536": {
       "zh-chs": "忍野的誓言",
       "en": "Shinobu's Vow"
     },
@@ -76358,7 +78234,15 @@
       "zh-chs": "失重引力子",
       "en": "Graviton Forfeit"
     },
+    "1692118511": {
+      "zh-chs": "失重引力子",
+      "en": "Graviton Forfeit"
+    },
     "1688602431": {
+      "zh-chs": "封印阿罕卡拉护手",
+      "en": "Sealed Ahamkara Grasps"
+    },
+    "736571395": {
       "zh-chs": "封印阿罕卡拉护手",
       "en": "Sealed Ahamkara Grasps"
     },
@@ -76366,7 +78250,15 @@
       "zh-chs": "冰霜-EE5",
       "en": "Fr0st-EE5"
     },
+    "3573404221": {
+      "zh-chs": "冰霜-EE5",
+      "en": "Fr0st-EE5"
+    },
     "2757274117": {
+      "zh-chs": "凯布利之刺",
+      "en": "Khepri's Sting"
+    },
+    "2005232513": {
       "zh-chs": "凯布利之刺",
       "en": "Khepri's Sting"
     },
@@ -78062,6 +79954,10 @@
       "zh-chs": "耐寒胫甲",
       "en": "Winterhart Greaves"
     },
+    "239189018": {
+      "zh-chs": "假面舞者头盔",
+      "en": "Masquerader's Helm"
+    },
     "3015197581": {
       "zh-chs": "至日臂铠（重燃）",
       "en": "Solstice Gauntlets (Rekindled)"
@@ -78166,7 +80062,15 @@
       "zh-chs": "凤巢",
       "en": "Phoenix Cradle"
     },
+    "124569297": {
+      "zh-chs": "凤巢",
+      "en": "Phoenix Cradle"
+    },
     "241462141": {
+      "zh-chs": "毁灭之牙肩甲",
+      "en": "Doom Fang Pauldron"
+    },
+    "1127615753": {
       "zh-chs": "毁灭之牙肩甲",
       "en": "Doom Fang Pauldron"
     },
@@ -78174,7 +80078,15 @@
       "zh-chs": "合成感受器",
       "en": "Synthoceps"
     },
+    "2986968300": {
+      "zh-chs": "合成感受器",
+      "en": "Synthoceps"
+    },
     "1192890598": {
+      "zh-chs": "圣火护心甲",
+      "en": "Hallowfire Heart"
+    },
+    "3179227684": {
       "zh-chs": "圣火护心甲",
       "en": "Hallowfire Heart"
     },
@@ -78182,7 +80094,15 @@
       "zh-chs": "沉默者面具",
       "en": "Mask of the Quiet One"
     },
+    "659786850": {
+      "zh-chs": "沉默者面具",
+      "en": "Mask of the Quiet One"
+    },
     "3539357318": {
+      "zh-chs": "猖獗雄狮",
+      "en": "Lion Rampant"
+    },
+    "2470306500": {
       "zh-chs": "猖獗雄狮",
       "en": "Lion Rampant"
     },
@@ -78190,7 +80110,15 @@
       "zh-chs": "和平守护者",
       "en": "Peacekeepers"
     },
+    "4206471995": {
+      "zh-chs": "和平守护者",
+      "en": "Peacekeepers"
+    },
     "1654461647": {
+      "zh-chs": "永劫安泰",
+      "en": "Aeon Safe"
+    },
+    "1103301267": {
       "zh-chs": "永劫安泰",
       "en": "Aeon Safe"
     },
@@ -78198,7 +80126,15 @@
       "zh-chs": "凯布利角盔",
       "en": "Khepri's Horn"
     },
+    "1626181388": {
+      "zh-chs": "凯布利角盔",
+      "en": "Khepri's Horn"
+    },
     "1734844650": {
+      "zh-chs": "苍白苏醒",
+      "en": "Ashen Wake"
+    },
+    "2068320776": {
       "zh-chs": "苍白苏醒",
       "en": "Ashen Wake"
     },
@@ -78206,7 +80142,15 @@
       "zh-chs": "虫神爱抚",
       "en": "Wormgod Caress"
     },
+    "30837423": {
+      "zh-chs": "虫神爱抚",
+      "en": "Wormgod Caress"
+    },
     "1848640623": {
+      "zh-chs": "大熊狂怒",
+      "en": "Ursa Furiosa"
+    },
+    "746346035": {
       "zh-chs": "大熊狂怒",
       "en": "Ursa Furiosa"
     },
@@ -78214,7 +80158,15 @@
       "zh-chs": "至纯光能护心甲",
       "en": "Heart of Inmost Light"
     },
+    "3685096533": {
+      "zh-chs": "至纯光能护心甲",
+      "en": "Heart of Inmost Light"
+    },
     "2578771006": {
+      "zh-chs": "独眼面具",
+      "en": "One-Eyed Mask"
+    },
+    "2032448300": {
       "zh-chs": "独眼面具",
       "en": "One-Eyed Mask"
     },
@@ -78222,7 +80174,15 @@
       "zh-chs": "安泰俄斯护盾",
       "en": "Antaeus Wards"
     },
+    "3151924429": {
+      "zh-chs": "安泰俄斯护盾",
+      "en": "Antaeus Wards"
+    },
     "2240152949": {
+      "zh-chs": "据点",
+      "en": "Stronghold"
+    },
+    "2361452337": {
       "zh-chs": "据点",
       "en": "Stronghold"
     },
@@ -78230,7 +80190,15 @@
       "zh-chs": "ACD/0反馈栅",
       "en": "ACD/0 Feedback Fence"
     },
+    "3003155525": {
+      "zh-chs": "ACD/0反馈栅",
+      "en": "ACD/0 Feedback Fence"
+    },
     "1591207519": {
+      "zh-chs": "阿尔法·鲁皮之脊",
+      "en": "Crest of Alpha Lupi"
+    },
+    "1323691427": {
       "zh-chs": "阿尔法·鲁皮之脊",
       "en": "Crest of Alpha Lupi"
     },
@@ -78238,7 +80206,15 @@
       "zh-chs": "亚克兴角战役钻机",
       "en": "Actium War Rig"
     },
+    "3882493260": {
+      "zh-chs": "亚克兴角战役钻机",
+      "en": "Actium War Rig"
+    },
     "3216110440": {
+      "zh-chs": "难以逾越的颅骨堡垒",
+      "en": "An Insurmountable Skullfort"
+    },
+    "2574258558": {
       "zh-chs": "难以逾越的颅骨堡垒",
       "en": "An Insurmountable Skullfort"
     },
@@ -78246,7 +80222,15 @@
       "zh-chs": "沙丘行者",
       "en": "Dunemarchers"
     },
+    "533201397": {
+      "zh-chs": "沙丘行者",
+      "en": "Dunemarchers"
+    },
     "106575079": {
+      "zh-chs": "圣人14号的头盔",
+      "en": "Helm of Saint-14"
+    },
+    "1555319323": {
       "zh-chs": "圣人14号的头盔",
       "en": "Helm of Saint-14"
     },
@@ -78254,7 +80238,15 @@
       "zh-chs": "Mk.44让开",
       "en": "Mk. 44 Stand Asides"
     },
+    "3580701310": {
+      "zh-chs": "Mk.44让开",
+      "en": "Mk. 44 Stand Asides"
+    },
     "3874247549": {
+      "zh-chs": "医疗设备",
+      "en": "Armamentarium"
+    },
+    "708773129": {
       "zh-chs": "医疗设备",
       "en": "Armamentarium"
     },
@@ -78262,7 +80254,15 @@
       "zh-chs": "永恒战士",
       "en": "Eternal Warrior"
     },
+    "3739489832": {
+      "zh-chs": "永恒战士",
+      "en": "Eternal Warrior"
+    },
     "2255796155": {
+      "zh-chs": "游隼胫甲",
+      "en": "Peregrine Greaves"
+    },
+    "2155785663": {
       "zh-chs": "游隼胫甲",
       "en": "Peregrine Greaves"
     },
@@ -79958,6 +81958,10 @@
       "zh-chs": "耐寒战靴",
       "en": "Winterhart Boots"
     },
+    "2213504923": {
+      "zh-chs": "假面舞者兜帽",
+      "en": "Masquerader's Hood"
+    },
     "2685001662": {
       "zh-chs": "至日手套（重燃）",
       "en": "Solstice Gloves (Rekindled)"
@@ -80062,7 +82066,15 @@
       "zh-chs": "风暴舞者之拥",
       "en": "Stormdancer's Brace"
     },
+    "3134564286": {
+      "zh-chs": "风暴舞者之拥",
+      "en": "Stormdancer's Brace"
+    },
     "3844826440": {
+      "zh-chs": "卡恩斯坦臂章",
+      "en": "Karnstein Armlets"
+    },
+    "1317159774": {
       "zh-chs": "卡恩斯坦臂章",
       "en": "Karnstein Armlets"
     },
@@ -80070,7 +82082,15 @@
       "zh-chs": "狡诈严冬",
       "en": "Winter's Guile"
     },
+    "2875090959": {
+      "zh-chs": "狡诈严冬",
+      "en": "Winter's Guile"
+    },
     "370930766": {
+      "zh-chs": "神圣黎明之翼",
+      "en": "Wings of Sacred Dawn"
+    },
+    "4099345916": {
       "zh-chs": "神圣黎明之翼",
       "en": "Wings of Sacred Dawn"
     },
@@ -80078,7 +82098,15 @@
       "zh-chs": "风暴头冠",
       "en": "Crown of Tempests"
     },
+    "1313836869": {
+      "zh-chs": "风暴头冠",
+      "en": "Crown of Tempests"
+    },
     "3381022970": {
+      "zh-chs": "异界之眸",
+      "en": "Eye of Another World"
+    },
+    "2646648024": {
       "zh-chs": "异界之眸",
       "en": "Eye of Another World"
     },
@@ -80086,7 +82114,15 @@
       "zh-chs": "奈扎雷克原罪",
       "en": "Nezarec's Sin"
     },
+    "609164671": {
+      "zh-chs": "奈扎雷克原罪",
+      "en": "Nezarec's Sin"
+    },
     "4136768282": {
+      "zh-chs": "月之阵营靴",
+      "en": "Lunafaction Boots"
+    },
+    "4044402424": {
       "zh-chs": "月之阵营靴",
       "en": "Lunafaction Boots"
     },
@@ -80094,7 +82130,15 @@
       "zh-chs": "永劫灵魂",
       "en": "Aeon Soul"
     },
+    "1469355180": {
+      "zh-chs": "永劫灵魂",
+      "en": "Aeon Soul"
+    },
     "1725917554": {
+      "zh-chs": "辐径晚星",
+      "en": "Vesper of Radius"
+    },
+    "2924540416": {
       "zh-chs": "辐径晚星",
       "en": "Vesper of Radius"
     },
@@ -80102,7 +82146,15 @@
       "zh-chs": "血红炼金术",
       "en": "Sanguine Alchemy"
     },
+    "3310823353": {
+      "zh-chs": "血红炼金术",
+      "en": "Sanguine Alchemy"
+    },
     "2428181146": {
+      "zh-chs": "真理之容",
+      "en": "Verity's Brow"
+    },
+    "2287231352": {
       "zh-chs": "真理之容",
       "en": "Verity's Brow"
     },
@@ -80110,7 +82162,15 @@
       "zh-chs": "反转之握",
       "en": "Contraverse Hold"
     },
+    "987042032": {
+      "zh-chs": "反转之握",
+      "en": "Contraverse Hold"
+    },
     "4057299718": {
+      "zh-chs": "炫火",
+      "en": "Chromatic Fire"
+    },
+    "2780654660": {
       "zh-chs": "炫火",
       "en": "Chromatic Fire"
     },
@@ -80118,7 +82178,15 @@
       "zh-chs": "凤凰法则",
       "en": "Phoenix Protocol"
     },
+    "221852859": {
+      "zh-chs": "凤凰法则",
+      "en": "Phoenix Protocol"
+    },
     "121305948": {
+      "zh-chs": "地磁安定靴",
+      "en": "Geomag Stabilizers"
+    },
+    "2366624690": {
       "zh-chs": "地磁安定靴",
       "en": "Geomag Stabilizers"
     },
@@ -80126,7 +82194,15 @@
       "zh-chs": "逃逸艺术家",
       "en": "Getaway Artist"
     },
+    "2243205274": {
+      "zh-chs": "逃逸艺术家",
+      "en": "Getaway Artist"
+    },
     "3787517196": {
+      "zh-chs": "炎阳护腕",
+      "en": "Sunbracers"
+    },
+    "2647373794": {
       "zh-chs": "炎阳护腕",
       "en": "Sunbracers"
     },
@@ -80134,7 +82210,15 @@
       "zh-chs": "星火协议",
       "en": "Starfire Protocol"
     },
+    "673296954": {
+      "zh-chs": "星火协议",
+      "en": "Starfire Protocol"
+    },
     "1030017949": {
+      "zh-chs": "阿罕卡拉之颅",
+      "en": "Skull of Dire Ahamkara"
+    },
+    "1564784937": {
       "zh-chs": "阿罕卡拉之颅",
       "en": "Skull of Dire Ahamkara"
     },
@@ -80142,7 +82226,15 @@
       "zh-chs": "横断之步",
       "en": "Transversive Steps"
     },
+    "1130536756": {
+      "zh-chs": "横断之步",
+      "en": "Transversive Steps"
+    },
     "3627185503": {
+      "zh-chs": "毒蛇面貌",
+      "en": "Ophidian Aspect"
+    },
+    "2825573027": {
       "zh-chs": "毒蛇面貌",
       "en": "Ophidian Aspect"
     },
@@ -80150,7 +82242,15 @@
       "zh-chs": "雄鹿",
       "en": "The Stag"
     },
+    "1101032348": {
+      "zh-chs": "雄鹿",
+      "en": "The Stag"
+    },
     "3288917178": {
+      "zh-chs": "阿罕卡拉之爪",
+      "en": "Claws of Ahamkara"
+    },
+    "231864088": {
       "zh-chs": "阿罕卡拉之爪",
       "en": "Claws of Ahamkara"
     },
@@ -80158,7 +82258,15 @@
       "zh-chs": "神化面纱",
       "en": "Apotheosis Veil"
     },
+    "3732407823": {
+      "zh-chs": "神化面纱",
+      "en": "Apotheosis Veil"
+    },
     "3948284065": {
+      "zh-chs": "星云之歌",
+      "en": "Astrocyte Verse"
+    },
+    "1152128861": {
       "zh-chs": "星云之歌",
       "en": "Astrocyte Verse"
     },
@@ -80842,6 +82950,10 @@
       "zh-chs": "投弹手",
       "en": "The Bombardiers"
     },
+    "3111111216": {
+      "zh-chs": "投弹手",
+      "en": "The Bombardiers"
+    },
     "2070517134": {
       "zh-chs": "羽翼竞争者",
       "en": "Wing Contender"
@@ -80986,6 +83098,10 @@
       "zh-chs": "断绝末路",
       "en": "Severance Enclosure"
     },
+    "1529271412": {
+      "zh-chs": "断绝末路",
+      "en": "Severance Enclosure"
+    },
     "3522021318": {
       "zh-chs": "羽翼戒律",
       "en": "Wing Discipline"
@@ -81127,6 +83243,10 @@
       "en": "Righteous Boots"
     },
     "235591051": {
+      "zh-chs": "冥火之刺",
+      "en": "Promethium Spur"
+    },
+    "3117433295": {
       "zh-chs": "冥火之刺",
       "en": "Promethium Spur"
     },
@@ -81362,7 +83482,15 @@
       "zh-chs": "雷兽的挽具",
       "en": "Raiju's Harness"
     },
+    "859980511": {
+      "zh-chs": "雷兽的挽具",
+      "en": "Raiju's Harness"
+    },
     "3797729472": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
+    "3705995974": {
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
@@ -81370,7 +83498,15 @@
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
+    "2784431276": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
     "2680535688": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
+    "2060830238": {
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
@@ -81378,7 +83514,15 @@
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
+    "324262400": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
     "87665893": {
+      "zh-chs": "双生凤凰披风",
+      "en": "Binary Phoenix Cloak"
+    },
+    "1125545953": {
       "zh-chs": "双生凤凰披风",
       "en": "Binary Phoenix Cloak"
     },
@@ -81386,7 +83530,15 @@
       "zh-chs": "双生凤凰披风",
       "en": "Binary Phoenix Cloak"
     },
+    "2498795383": {
+      "zh-chs": "双生凤凰披风",
+      "en": "Binary Phoenix Cloak"
+    },
     "2094233929": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
+    "3237668309": {
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
@@ -81394,7 +83546,15 @@
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
+    "3370984619": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
     "2492669178": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
+    "1428449496": {
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
@@ -81402,7 +83562,15 @@
       "zh-chs": "万剑破空4.1",
       "en": "Swordflight 4.1"
     },
+    "3262231598": {
+      "zh-chs": "万剑破空4.1",
+      "en": "Swordflight 4.1"
+    },
     "1959285715": {
+      "zh-chs": "主动进攻",
+      "en": "The Took Offense"
+    },
+    "378242631": {
       "zh-chs": "主动进攻",
       "en": "The Took Offense"
     },
@@ -81410,7 +83578,15 @@
       "zh-chs": "主动进攻",
       "en": "The Took Offense"
     },
+    "1923654025": {
+      "zh-chs": "主动进攻",
+      "en": "The Took Offense"
+    },
     "2408514352": {
+      "zh-chs": "主动进攻",
+      "en": "The Took Offense"
+    },
+    "2947742646": {
       "zh-chs": "主动进攻",
       "en": "The Took Offense"
     },
@@ -81418,7 +83594,15 @@
       "zh-chs": "主动进攻",
       "en": "The Took Offense"
     },
+    "2724714408": {
+      "zh-chs": "主动进攻",
+      "en": "The Took Offense"
+    },
     "1269679141": {
+      "zh-chs": "主动进攻",
+      "en": "The Took Offense"
+    },
+    "4141497761": {
       "zh-chs": "主动进攻",
       "en": "The Took Offense"
     },
@@ -81510,7 +83694,15 @@
       "zh-chs": "西坦壁垒",
       "en": "Citan's Ramparts"
     },
+    "4153158613": {
+      "zh-chs": "西坦壁垒",
+      "en": "Citan's Ramparts"
+    },
     "2845947996": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
+    "3310367410": {
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
@@ -81518,7 +83710,15 @@
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
+    "2871646800": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
     "2674680132": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
+    "202522666": {
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
@@ -81526,7 +83726,15 @@
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
+    "1297276708": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
     "3884544409": {
+      "zh-chs": "双生凤凰印记",
+      "en": "Binary Phoenix Mark"
+    },
+    "426311013": {
       "zh-chs": "双生凤凰印记",
       "en": "Binary Phoenix Mark"
     },
@@ -81534,7 +83742,15 @@
       "zh-chs": "双生凤凰印记",
       "en": "Binary Phoenix Mark"
     },
+    "1244941587": {
+      "zh-chs": "双生凤凰印记",
+      "en": "Binary Phoenix Mark"
+    },
     "1727248109": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
+    "1838197241": {
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
@@ -81542,7 +83758,15 @@
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
+    "1779562599": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
     "1807196134": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
+    "480579364": {
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
@@ -81550,7 +83774,15 @@
       "zh-chs": "凤凰纷争0型",
       "en": "Phoenix Strife Type 0"
     },
+    "3333728402": {
+      "zh-chs": "凤凰纷争0型",
+      "en": "Phoenix Strife Type 0"
+    },
     "768769183": {
+      "zh-chs": "原位避难所",
+      "en": "The Shelter in Place"
+    },
+    "652077411": {
       "zh-chs": "原位避难所",
       "en": "The Shelter in Place"
     },
@@ -81558,7 +83790,15 @@
       "zh-chs": "原位避难所",
       "en": "The Shelter in Place"
     },
+    "3112088101": {
+      "zh-chs": "原位避难所",
+      "en": "The Shelter in Place"
+    },
     "3014775444": {
+      "zh-chs": "避难所印记",
+      "en": "Mark of Shelter"
+    },
+    "400987770": {
       "zh-chs": "避难所印记",
       "en": "Mark of Shelter"
     },
@@ -81566,7 +83806,15 @@
       "zh-chs": "原位避难所",
       "en": "The Shelter in Place"
     },
+    "1037962076": {
+      "zh-chs": "原位避难所",
+      "en": "The Shelter in Place"
+    },
     "3984883553": {
+      "zh-chs": "原位避难所",
+      "en": "The Shelter in Place"
+    },
+    "366078621": {
       "zh-chs": "原位避难所",
       "en": "The Shelter in Place"
     },
@@ -81658,7 +83906,15 @@
       "zh-chs": "邪冬的头盔",
       "en": "Felwinter's Helm"
     },
+    "2322164035": {
+      "zh-chs": "邪冬的头盔",
+      "en": "Felwinter's Helm"
+    },
     "1765728763": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
+    "1120180351": {
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
@@ -81666,7 +83922,15 @@
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
+    "1532935451": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
     "852430165": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
+    "4119202577": {
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
@@ -81674,7 +83938,15 @@
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
+    "3644983629": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
     "4269346472": {
+      "zh-chs": "双生凤凰臂环",
+      "en": "Binary Phoenix Bond"
+    },
+    "2974942014": {
       "zh-chs": "双生凤凰臂环",
       "en": "Binary Phoenix Bond"
     },
@@ -81682,7 +83954,15 @@
       "zh-chs": "双生凤凰臂环",
       "en": "Binary Phoenix Bond"
     },
+    "2727369858": {
+      "zh-chs": "双生凤凰臂环",
+      "en": "Binary Phoenix Bond"
+    },
     "1299272338": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
+    "879692448": {
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
@@ -81690,7 +83970,15 @@
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
+    "3857874452": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
     "215768941": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
+    "428574585": {
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
@@ -81698,7 +83986,15 @@
       "zh-chs": "安卡探索者IV",
       "en": "Ankaa Seeker IV"
     },
+    "3137243573": {
+      "zh-chs": "安卡探索者IV",
+      "en": "Ankaa Seeker IV"
+    },
     "2498588344": {
+      "zh-chs": "陌路溪谷IV",
+      "en": "Xenos Vale IV"
+    },
+    "854926798": {
       "zh-chs": "陌路溪谷IV",
       "en": "Xenos Vale IV"
     },
@@ -81706,7 +84002,15 @@
       "zh-chs": "陌路溪谷IV",
       "en": "Xenos Vale IV"
     },
+    "606510166": {
+      "zh-chs": "陌路溪谷IV",
+      "en": "Xenos Vale IV"
+    },
     "1805830669": {
+      "zh-chs": "陌路溪谷臂环",
+      "en": "Xenos Vale Bond"
+    },
+    "3848039961": {
       "zh-chs": "陌路溪谷臂环",
       "en": "Xenos Vale Bond"
     },
@@ -81714,7 +84018,15 @@
       "zh-chs": "陌路溪谷IV",
       "en": "Xenos Vale IV"
     },
+    "316472157": {
+      "zh-chs": "陌路溪谷IV",
+      "en": "Xenos Vale IV"
+    },
     "533855986": {
+      "zh-chs": "陌路溪谷IV",
+      "en": "Xenos Vale IV"
+    },
+    "3437969024": {
       "zh-chs": "陌路溪谷IV",
       "en": "Xenos Vale IV"
     },
@@ -81822,7 +84134,15 @@
       "zh-chs": "战争思维化身臂铠",
       "en": "Warmind's Avatar Gauntlets"
     },
+    "2771646207": {
+      "zh-chs": "战争思维化身臂铠",
+      "en": "Warmind's Avatar Gauntlets"
+    },
     "839296981": {
+      "zh-chs": "战争思维化身胸铠",
+      "en": "Warmind's Avatar Chestplate"
+    },
+    "1792528017": {
       "zh-chs": "战争思维化身胸铠",
       "en": "Warmind's Avatar Chestplate"
     },
@@ -81830,11 +84150,23 @@
       "zh-chs": "战争思维化身头盔",
       "en": "Warmind's Avatar Helm"
     },
+    "2531158304": {
+      "zh-chs": "战争思维化身头盔",
+      "en": "Warmind's Avatar Helm"
+    },
     "4270910189": {
       "zh-chs": "战争思维化身腿铠",
       "en": "Warmind's Avatar Legplates"
     },
+    "2080040441": {
+      "zh-chs": "战争思维化身腿铠",
+      "en": "Warmind's Avatar Legplates"
+    },
     "4256213288": {
+      "zh-chs": "战争思维化身印记",
+      "en": "Warmind's Avatar Mark"
+    },
+    "648267454": {
       "zh-chs": "战争思维化身印记",
       "en": "Warmind's Avatar Mark"
     },
@@ -81882,7 +84214,15 @@
       "zh-chs": "钢铁搭档臂铠",
       "en": "Iron Companion Gauntlets"
     },
+    "390263398": {
+      "zh-chs": "钢铁搭档臂铠",
+      "en": "Iron Companion Gauntlets"
+    },
     "735535272": {
+      "zh-chs": "钢铁搭档战甲",
+      "en": "Iron Companion Plate"
+    },
+    "2605320510": {
       "zh-chs": "钢铁搭档战甲",
       "en": "Iron Companion Plate"
     },
@@ -81890,7 +84230,15 @@
       "zh-chs": "钢铁搭档头盔",
       "en": "Iron Companion Helm"
     },
+    "4237588213": {
+      "zh-chs": "钢铁搭档头盔",
+      "en": "Iron Companion Helm"
+    },
     "2237216282": {
+      "zh-chs": "钢铁搭档胫甲",
+      "en": "Iron Companion Greaves"
+    },
+    "1960898552": {
       "zh-chs": "钢铁搭档胫甲",
       "en": "Iron Companion Greaves"
     },
@@ -81898,7 +84246,15 @@
       "zh-chs": "狼林印记",
       "en": "Wolfswood Mark"
     },
+    "4050536705": {
+      "zh-chs": "狼林印记",
+      "en": "Wolfswood Mark"
+    },
     "3574051505": {
+      "zh-chs": "卡德马斯山脊长矛帽",
+      "en": "Cadmus Ridge Lancecap"
+    },
+    "2147608557": {
       "zh-chs": "卡德马斯山脊长矛帽",
       "en": "Cadmus Ridge Lancecap"
     },
@@ -81906,7 +84262,15 @@
       "zh-chs": "战争思维化身手套",
       "en": "Warmind's Avatar Gloves"
     },
+    "684234484": {
+      "zh-chs": "战争思维化身手套",
+      "en": "Warmind's Avatar Gloves"
+    },
     "2710316218": {
+      "zh-chs": "战争思维化身法袍",
+      "en": "Warmind's Avatar Robes"
+    },
+    "956675864": {
       "zh-chs": "战争思维化身法袍",
       "en": "Warmind's Avatar Robes"
     },
@@ -81914,11 +84278,23 @@
       "zh-chs": "战争思维化身头饰",
       "en": "Warmind's Avatar Headpiece"
     },
+    "4193967411": {
+      "zh-chs": "战争思维化身头饰",
+      "en": "Warmind's Avatar Headpiece"
+    },
     "2471829328": {
       "zh-chs": "战争思维化身长裤",
       "en": "Warmind's Avatar Pants"
     },
+    "344445142": {
+      "zh-chs": "战争思维化身长裤",
+      "en": "Warmind's Avatar Pants"
+    },
     "1934312075": {
+      "zh-chs": "战争思维化身臂环",
+      "en": "Warmind's Avatar Bond"
+    },
+    "1575432399": {
       "zh-chs": "战争思维化身臂环",
       "en": "Warmind's Avatar Bond"
     },
@@ -81966,7 +84342,15 @@
       "zh-chs": "钢铁搭档手套",
       "en": "Iron Companion Gloves"
     },
+    "3640152843": {
+      "zh-chs": "钢铁搭档手套",
+      "en": "Iron Companion Gloves"
+    },
     "1011882337": {
+      "zh-chs": "钢铁搭档礼服",
+      "en": "Iron Companion Vestments"
+    },
+    "3827697821": {
       "zh-chs": "钢铁搭档礼服",
       "en": "Iron Companion Vestments"
     },
@@ -81974,7 +84358,15 @@
       "zh-chs": "钢铁搭档兜帽",
       "en": "Iron Companion Hood"
     },
+    "1391595268": {
+      "zh-chs": "钢铁搭档兜帽",
+      "en": "Iron Companion Hood"
+    },
     "1741360441": {
+      "zh-chs": "钢铁搭档护腿",
+      "en": "Iron Companion Legs"
+    },
+    "3717480197": {
       "zh-chs": "钢铁搭档护腿",
       "en": "Iron Companion Legs"
     },
@@ -81982,7 +84374,15 @@
       "zh-chs": "狼林臂环",
       "en": "Wolfswood Bond"
     },
+    "3664957074": {
+      "zh-chs": "狼林臂环",
+      "en": "Wolfswood Bond"
+    },
     "3831935023": {
+      "zh-chs": "巴利道斯织怒工",
+      "en": "Ballidorse Wrathweavers"
+    },
+    "1461236083": {
       "zh-chs": "巴利道斯织怒工",
       "en": "Ballidorse Wrathweavers"
     },
@@ -81990,7 +84390,15 @@
       "zh-chs": "战争思维化身臂套",
       "en": "Warmind's Avatar Vambraces"
     },
+    "2552188221": {
+      "zh-chs": "战争思维化身臂套",
+      "en": "Warmind's Avatar Vambraces"
+    },
     "4116381015": {
+      "zh-chs": "战争思维化身胸甲",
+      "en": "Warmind's Avatar Vest"
+    },
+    "1119192523": {
       "zh-chs": "战争思维化身胸甲",
       "en": "Warmind's Avatar Vest"
     },
@@ -81998,11 +84406,23 @@
       "zh-chs": "战争思维化身面具",
       "en": "Warmind's Avatar Mask"
     },
+    "664839606": {
+      "zh-chs": "战争思维化身面具",
+      "en": "Warmind's Avatar Mask"
+    },
     "1940895219": {
       "zh-chs": "战争思维化身护腿",
       "en": "Warmind's Avatar Legguards"
     },
+    "927928807": {
+      "zh-chs": "战争思维化身护腿",
+      "en": "Warmind's Avatar Legguards"
+    },
     "1949733158": {
+      "zh-chs": "战争思维化身披风",
+      "en": "Warmind's Avatar Cloak"
+    },
+    "470173412": {
       "zh-chs": "战争思维化身披风",
       "en": "Warmind's Avatar Cloak"
     },
@@ -82050,7 +84470,15 @@
       "zh-chs": "钢铁搭档袖甲",
       "en": "Iron Companion Sleeves"
     },
+    "1809794768": {
+      "zh-chs": "钢铁搭档袖甲",
+      "en": "Iron Companion Sleeves"
+    },
     "3419310182": {
+      "zh-chs": "钢铁搭档胸甲",
+      "en": "Iron Companion Vest"
+    },
+    "720153764": {
       "zh-chs": "钢铁搭档胸甲",
       "en": "Iron Companion Vest"
     },
@@ -82058,7 +84486,15 @@
       "zh-chs": "钢铁搭档面具",
       "en": "Iron Companion Mask"
     },
+    "717710567": {
+      "zh-chs": "钢铁搭档面具",
+      "en": "Iron Companion Mask"
+    },
     "2931145020": {
+      "zh-chs": "钢铁搭档战靴",
+      "en": "Iron Companion Boots"
+    },
+    "2271876370": {
       "zh-chs": "钢铁搭档战靴",
       "en": "Iron Companion Boots"
     },
@@ -82066,7 +84502,15 @@
       "zh-chs": "狼林披风",
       "en": "Wolfswood Cloak"
     },
+    "667818643": {
+      "zh-chs": "狼林披风",
+      "en": "Wolfswood Cloak"
+    },
     "2390471904": {
+      "zh-chs": "快速装弹松身裤",
+      "en": "Speedloader Slacks"
+    },
+    "3268063974": {
       "zh-chs": "快速装弹松身裤",
       "en": "Speedloader Slacks"
     },
@@ -82390,7 +84834,15 @@
       "zh-chs": "特里同之罪",
       "en": "Triton Vice"
     },
+    "3471438865": {
+      "zh-chs": "特里同之罪",
+      "en": "Triton Vice"
+    },
     "2007908580": {
+      "zh-chs": "NPA“鱼梁行者”护臂",
+      "en": "NPA \"Weir-Walker\" Grips"
+    },
+    "3755727818": {
       "zh-chs": "NPA“鱼梁行者”护臂",
       "en": "NPA \"Weir-Walker\" Grips"
     },
@@ -82398,7 +84850,15 @@
       "zh-chs": "NPA“鱼梁行者”夹克",
       "en": "NPA \"Weir-Walker\" Jacket"
     },
+    "1851971890": {
+      "zh-chs": "NPA“鱼梁行者”夹克",
+      "en": "NPA \"Weir-Walker\" Jacket"
+    },
     "3332065301": {
+      "zh-chs": "NPA“鱼梁行者”兜帽",
+      "en": "NPA \"Weir-Walker\" Hood"
+    },
+    "3622746193": {
       "zh-chs": "NPA“鱼梁行者”兜帽",
       "en": "NPA \"Weir-Walker\" Hood"
     },
@@ -82406,7 +84866,15 @@
       "zh-chs": "NPA“鱼梁行者”腿铠",
       "en": "NPA \"Weir-Walker\" Strides"
     },
+    "1706875836": {
+      "zh-chs": "NPA“鱼梁行者”腿铠",
+      "en": "NPA \"Weir-Walker\" Strides"
+    },
     "3499056977": {
+      "zh-chs": "NPA“鱼梁行者”披风",
+      "en": "NPA \"Weir-Walker\" Cloak"
+    },
+    "2798934285": {
       "zh-chs": "NPA“鱼梁行者”披风",
       "en": "NPA \"Weir-Walker\" Cloak"
     },
@@ -82494,7 +84962,15 @@
       "zh-chs": "纪念碑面具",
       "en": "Cenotaph Mask"
     },
+    "964294291": {
+      "zh-chs": "纪念碑面具",
+      "en": "Cenotaph Mask"
+    },
     "2966283697": {
+      "zh-chs": "NPA“鱼梁行者”手套",
+      "en": "NPA \"Weir-Walker\" Gloves"
+    },
+    "1253824749": {
       "zh-chs": "NPA“鱼梁行者”手套",
       "en": "NPA \"Weir-Walker\" Gloves"
     },
@@ -82502,7 +84978,15 @@
       "zh-chs": "NPA“鱼梁行者”法袍",
       "en": "NPA \"Weir-Walker\" Robes"
     },
+    "2147748635": {
+      "zh-chs": "NPA“鱼梁行者”法袍",
+      "en": "NPA \"Weir-Walker\" Robes"
+    },
     "1063769568": {
+      "zh-chs": "NPA“鱼梁行者”面甲",
+      "en": "NPA \"Weir-Walker\" Visor"
+    },
+    "1493917158": {
       "zh-chs": "NPA“鱼梁行者”面甲",
       "en": "NPA \"Weir-Walker\" Visor"
     },
@@ -82510,7 +84994,15 @@
       "zh-chs": "NPA“鱼梁行者”长裤",
       "en": "NPA \"Weir-Walker\" Pants"
     },
+    "2832558199": {
+      "zh-chs": "NPA“鱼梁行者”长裤",
+      "en": "NPA \"Weir-Walker\" Pants"
+    },
     "2400549110": {
+      "zh-chs": "NPA“鱼梁行者”臂环",
+      "en": "NPA \"Weir-Walker\" Bond"
+    },
+    "3695917044": {
       "zh-chs": "NPA“鱼梁行者”臂环",
       "en": "NPA \"Weir-Walker\" Bond"
     },
@@ -82598,7 +85090,15 @@
       "zh-chs": "NPA“鱼梁行者”臂铠",
       "en": "NPA \"Weir-Walker\" Gauntlets"
     },
+    "3737763286": {
+      "zh-chs": "NPA“鱼梁行者”臂铠",
+      "en": "NPA \"Weir-Walker\" Gauntlets"
+    },
     "3607600504": {
+      "zh-chs": "NPA“鱼梁行者”战甲",
+      "en": "NPA \"Weir-Walker\" Plate"
+    },
+    "3755073806": {
       "zh-chs": "NPA“鱼梁行者”战甲",
       "en": "NPA \"Weir-Walker\" Plate"
     },
@@ -82606,11 +85106,23 @@
       "zh-chs": "NPA“鱼梁行者”头盔",
       "en": "NPA \"Weir-Walker\" Helm"
     },
+    "3757833253": {
+      "zh-chs": "NPA“鱼梁行者”头盔",
+      "en": "NPA \"Weir-Walker\" Helm"
+    },
     "748663978": {
       "zh-chs": "NPA“鱼梁行者”护腿",
       "en": "NPA \"Weir-Walker\" Legguards"
     },
+    "923133256": {
+      "zh-chs": "NPA“鱼梁行者”护腿",
+      "en": "NPA \"Weir-Walker\" Legguards"
+    },
     "2386078741": {
+      "zh-chs": "NPA“鱼梁行者”印记",
+      "en": "NPA \"Weir-Walker\" Mark"
+    },
+    "938935377": {
       "zh-chs": "NPA“鱼梁行者”印记",
       "en": "NPA \"Weir-Walker\" Mark"
     },
@@ -82695,6 +85207,10 @@
       "en": "Sunlit Greaves (Unkindled)"
     },
     "90009855": {
+      "zh-chs": "乔木典狱官",
+      "en": "Arbor Warden"
+    },
+    "2199102019": {
       "zh-chs": "乔木典狱官",
       "en": "Arbor Warden"
     },
@@ -83122,7 +85638,15 @@
       "zh-chs": "蒙纱贡品护臂",
       "en": "Veiled Tithes Grips"
     },
+    "1724561611": {
+      "zh-chs": "蒙纱贡品护臂",
+      "en": "Veiled Tithes Grips"
+    },
     "4067720865": {
+      "zh-chs": "蒙纱贡品胸甲",
+      "en": "Veiled Tithes Vest"
+    },
+    "2870651229": {
       "zh-chs": "蒙纱贡品胸甲",
       "en": "Veiled Tithes Vest"
     },
@@ -83130,7 +85654,15 @@
       "zh-chs": "蒙纱贡品披风",
       "en": "Veiled Tithes Cloak"
     },
+    "3407894354": {
+      "zh-chs": "蒙纱贡品披风",
+      "en": "Veiled Tithes Cloak"
+    },
     "523074950": {
+      "zh-chs": "蒙纱贡品面具",
+      "en": "Veiled Tithes Mask"
+    },
+    "3074795460": {
       "zh-chs": "蒙纱贡品面具",
       "en": "Veiled Tithes Mask"
     },
@@ -83138,7 +85670,15 @@
       "zh-chs": "蒙纱贡品腿铠",
       "en": "Veiled Tithes Strides"
     },
+    "3912211141": {
+      "zh-chs": "蒙纱贡品腿铠",
+      "en": "Veiled Tithes Strides"
+    },
     "1602717624": {
+      "zh-chs": "光子护臂",
+      "en": "Photonic Grips"
+    },
+    "3281352910": {
       "zh-chs": "光子护臂",
       "en": "Photonic Grips"
     },
@@ -83146,7 +85686,15 @@
       "zh-chs": "光子胸甲",
       "en": "Photonic Vest"
     },
+    "3498657110": {
+      "zh-chs": "光子胸甲",
+      "en": "Photonic Vest"
+    },
     "1547183373": {
+      "zh-chs": "光子披风",
+      "en": "Photonic Cloak"
+    },
+    "2445219609": {
       "zh-chs": "光子披风",
       "en": "Photonic Cloak"
     },
@@ -83154,7 +85702,15 @@
       "zh-chs": "光子风帽",
       "en": "Photonic Cowl"
     },
+    "2742898269": {
+      "zh-chs": "光子风帽",
+      "en": "Photonic Cowl"
+    },
     "3932952562": {
+      "zh-chs": "光子战靴",
+      "en": "Photonic Boots"
+    },
+    "1569427840": {
       "zh-chs": "光子战靴",
       "en": "Photonic Boots"
     },
@@ -83202,6 +85758,10 @@
       "zh-chs": "守蛾人裹手",
       "en": "Mothkeeper's Wraps"
     },
+    "2867485074": {
+      "zh-chs": "守蛾人裹手",
+      "en": "Mothkeeper's Wraps"
+    },
     "3189374833": {
       "zh-chs": "碎志者之拳",
       "en": "Willbreaker's Fists"
@@ -83226,7 +85786,15 @@
       "zh-chs": "蒙纱贡品臂铠",
       "en": "Veiled Tithes Gauntlets"
     },
+    "3192094397": {
+      "zh-chs": "蒙纱贡品臂铠",
+      "en": "Veiled Tithes Gauntlets"
+    },
     "2953343703": {
+      "zh-chs": "蒙纱贡品战甲",
+      "en": "Veiled Tithes Plate"
+    },
+    "3450827339": {
       "zh-chs": "蒙纱贡品战甲",
       "en": "Veiled Tithes Plate"
     },
@@ -83234,7 +85802,15 @@
       "zh-chs": "蒙纱贡品印记",
       "en": "Veiled Tithes Mark"
     },
+    "2801808228": {
+      "zh-chs": "蒙纱贡品印记",
+      "en": "Veiled Tithes Mark"
+    },
     "1524622768": {
+      "zh-chs": "蒙纱贡品头盔",
+      "en": "Veiled Tithes Helm"
+    },
+    "1304745782": {
       "zh-chs": "蒙纱贡品头盔",
       "en": "Veiled Tithes Helm"
     },
@@ -83242,7 +85818,15 @@
       "zh-chs": "蒙纱贡品胫甲",
       "en": "Veiled Tithes Greaves"
     },
+    "1567834983": {
+      "zh-chs": "蒙纱贡品胫甲",
+      "en": "Veiled Tithes Greaves"
+    },
     "2147175386": {
+      "zh-chs": "融合黄金臂铠",
+      "en": "Fused Aurum Gauntlets"
+    },
+    "3256047672": {
       "zh-chs": "融合黄金臂铠",
       "en": "Fused Aurum Gauntlets"
     },
@@ -83250,7 +85834,15 @@
       "zh-chs": "融合黄金战甲",
       "en": "Fused Aurum Plate"
     },
+    "394983260": {
+      "zh-chs": "融合黄金战甲",
+      "en": "Fused Aurum Plate"
+    },
     "615681527": {
+      "zh-chs": "融合黄金印记",
+      "en": "Fused Aurum Mark"
+    },
+    "3420177387": {
       "zh-chs": "融合黄金印记",
       "en": "Fused Aurum Mark"
     },
@@ -83258,7 +85850,15 @@
       "zh-chs": "融合黄金头盔",
       "en": "Fused Aurum Helm"
     },
+    "801895599": {
+      "zh-chs": "融合黄金头盔",
+      "en": "Fused Aurum Helm"
+    },
     "3403647252": {
+      "zh-chs": "融合黄金胫甲",
+      "en": "Fused Aurum Greaves"
+    },
+    "3487993338": {
       "zh-chs": "融合黄金胫甲",
       "en": "Fused Aurum Greaves"
     },
@@ -83306,6 +85906,10 @@
       "zh-chs": "火风暴臂铠",
       "en": "Pyrogale Gauntlets"
     },
+    "1624737700": {
+      "zh-chs": "火风暴臂铠",
+      "en": "Pyrogale Gauntlets"
+    },
     "427348780": {
       "zh-chs": "死亡歌者之握",
       "en": "Deathsinger's Grip"
@@ -83330,7 +85934,15 @@
       "zh-chs": "蒙纱贡品手套",
       "en": "Veiled Tithes Gloves"
     },
+    "1811547906": {
+      "zh-chs": "蒙纱贡品手套",
+      "en": "Veiled Tithes Gloves"
+    },
     "260708852": {
+      "zh-chs": "蒙纱贡品法袍",
+      "en": "Veiled Tithes Robes"
+    },
+    "3674854618": {
       "zh-chs": "蒙纱贡品法袍",
       "en": "Veiled Tithes Robes"
     },
@@ -83338,7 +85950,15 @@
       "zh-chs": "蒙纱贡品臂环",
       "en": "Veiled Tithes Bond"
     },
+    "588861781": {
+      "zh-chs": "蒙纱贡品臂环",
+      "en": "Veiled Tithes Bond"
+    },
     "4130822717": {
+      "zh-chs": "蒙纱贡品兜帽",
+      "en": "Veiled Tithes Hood"
+    },
+    "728959305": {
       "zh-chs": "蒙纱贡品兜帽",
       "en": "Veiled Tithes Hood"
     },
@@ -83346,7 +85966,15 @@
       "zh-chs": "蒙纱贡品战靴",
       "en": "Veiled Tithes Boots"
     },
+    "1191320660": {
+      "zh-chs": "蒙纱贡品战靴",
+      "en": "Veiled Tithes Boots"
+    },
     "3719480067": {
+      "zh-chs": "破天者手套",
+      "en": "Skybreaker Gloves"
+    },
+    "3826782839": {
       "zh-chs": "破天者手套",
       "en": "Skybreaker Gloves"
     },
@@ -83354,7 +85982,15 @@
       "zh-chs": "破天者法袍",
       "en": "Skybreaker Robes"
     },
+    "3251175769": {
+      "zh-chs": "破天者法袍",
+      "en": "Skybreaker Robes"
+    },
     "598995392": {
+      "zh-chs": "破天者臂环",
+      "en": "Skybreaker Bond"
+    },
+    "4273167814": {
       "zh-chs": "破天者臂环",
       "en": "Skybreaker Bond"
     },
@@ -83362,7 +85998,15 @@
       "zh-chs": "破天者兜帽",
       "en": "Skybreaker Hood"
     },
+    "1992194968": {
+      "zh-chs": "破天者兜帽",
+      "en": "Skybreaker Hood"
+    },
     "1769846965": {
+      "zh-chs": "破天者战靴",
+      "en": "Skybreaker Boots"
+    },
+    "2485608945": {
       "zh-chs": "破天者战靴",
       "en": "Skybreaker Boots"
     },
@@ -83407,6 +86051,10 @@
       "en": "Ossuary Boots"
     },
     "3234692237": {
+      "zh-chs": "蔷薇束缚",
+      "en": "Briarbinds"
+    },
+    "313407897": {
       "zh-chs": "蔷薇束缚",
       "en": "Briarbinds"
     },
@@ -83806,7 +86454,15 @@
       "zh-chs": "龙卫护臂",
       "en": "Wyrmguard Grips"
     },
+    "2609067512": {
+      "zh-chs": "龙卫护臂",
+      "en": "Wyrmguard Grips"
+    },
     "3013248110": {
+      "zh-chs": "龙卫短袍",
+      "en": "Wyrmguard Tunic"
+    },
+    "2471719196": {
       "zh-chs": "龙卫短袍",
       "en": "Wyrmguard Tunic"
     },
@@ -83814,11 +86470,23 @@
       "zh-chs": "龙卫披风",
       "en": "Wyrmguard Cloak"
     },
+    "3312268203": {
+      "zh-chs": "龙卫披风",
+      "en": "Wyrmguard Cloak"
+    },
     "713622571": {
       "zh-chs": "龙卫面具",
       "en": "Wyrmguard Mask"
     },
+    "2961413487": {
+      "zh-chs": "龙卫面具",
+      "en": "Wyrmguard Mask"
+    },
     "716705876": {
+      "zh-chs": "龙卫腿铠",
+      "en": "Wyrmguard Strides"
+    },
+    "3462865850": {
       "zh-chs": "龙卫腿铠",
       "en": "Wyrmguard Strides"
     },
@@ -83866,7 +86534,15 @@
       "zh-chs": "龙卫臂铠",
       "en": "Wyrmguard Gauntlets"
     },
+    "202255180": {
+      "zh-chs": "龙卫臂铠",
+      "en": "Wyrmguard Gauntlets"
+    },
     "3005056146": {
+      "zh-chs": "龙卫胸铠",
+      "en": "Wyrmguard Chestplate"
+    },
+    "1356312736": {
       "zh-chs": "龙卫胸铠",
       "en": "Wyrmguard Chestplate"
     },
@@ -83874,11 +86550,23 @@
       "zh-chs": "龙卫印记",
       "en": "Wyrmguard Mark"
     },
+    "2659705495": {
+      "zh-chs": "龙卫印记",
+      "en": "Wyrmguard Mark"
+    },
     "469031127": {
       "zh-chs": "龙卫头盔",
       "en": "Wyrmguard Helm"
     },
+    "1531139147": {
+      "zh-chs": "龙卫头盔",
+      "en": "Wyrmguard Helm"
+    },
     "386385208": {
+      "zh-chs": "龙卫胫甲",
+      "en": "Wyrmguard Greaves"
+    },
+    "1915223374": {
       "zh-chs": "龙卫胫甲",
       "en": "Wyrmguard Greaves"
     },
@@ -83926,7 +86614,15 @@
       "zh-chs": "龙卫手套",
       "en": "Wyrmguard Gloves"
     },
+    "1951188483": {
+      "zh-chs": "龙卫手套",
+      "en": "Wyrmguard Gloves"
+    },
     "3400974073": {
+      "zh-chs": "龙卫法袍",
+      "en": "Wyrmguard Robe"
+    },
+    "1483327813": {
       "zh-chs": "龙卫法袍",
       "en": "Wyrmguard Robe"
     },
@@ -83934,11 +86630,23 @@
       "zh-chs": "龙卫臂环",
       "en": "Wyrmguard Bond"
     },
+    "3087879706": {
+      "zh-chs": "龙卫臂环",
+      "en": "Wyrmguard Bond"
+    },
     "4196904014": {
       "zh-chs": "龙卫兜帽",
       "en": "Wyrmguard Hood"
     },
+    "1164834300": {
+      "zh-chs": "龙卫兜帽",
+      "en": "Wyrmguard Hood"
+    },
     "4143357569": {
+      "zh-chs": "龙卫战靴",
+      "en": "Wyrmguard Boots"
+    },
+    "493054013": {
       "zh-chs": "龙卫战靴",
       "en": "Wyrmguard Boots"
     },
@@ -84330,11 +87038,23 @@
       "zh-chs": "虚荣自负",
       "en": "Mataiodoxía"
     },
+    "3598649636": {
+      "zh-chs": "虚荣自负",
+      "en": "Mataiodoxía"
+    },
     "50291571": {
       "zh-chs": "先知之视",
       "en": "Speaker's Sight"
     },
+    "3405211239": {
+      "zh-chs": "先知之视",
+      "en": "Speaker's Sight"
+    },
     "2273643087": {
+      "zh-chs": "唯我主义",
+      "en": "Solipsism"
+    },
+    "3546314515": {
       "zh-chs": "唯我主义",
       "en": "Solipsism"
     },
@@ -84382,7 +87102,15 @@
       "zh-chs": "不羁边缘手套",
       "en": "Untethered Edge Gloves"
     },
+    "1912718977": {
+      "zh-chs": "不羁边缘手套",
+      "en": "Untethered Edge Gloves"
+    },
     "3652732123": {
+      "zh-chs": "不羁边缘法袍",
+      "en": "Untethered Edge Robes"
+    },
+    "1817535839": {
       "zh-chs": "不羁边缘法袍",
       "en": "Untethered Edge Robes"
     },
@@ -84390,7 +87118,15 @@
       "zh-chs": "不羁边缘臂环",
       "en": "Untethered Edge Bond"
     },
+    "2521243264": {
+      "zh-chs": "不羁边缘臂环",
+      "en": "Untethered Edge Bond"
+    },
     "123879244": {
+      "zh-chs": "不羁边缘兜帽",
+      "en": "Untethered Edge Hood"
+    },
+    "1444043170": {
       "zh-chs": "不羁边缘兜帽",
       "en": "Untethered Edge Hood"
     },
@@ -84398,7 +87134,15 @@
       "zh-chs": "不羁边缘战靴",
       "en": "Untethered Edge Boots"
     },
+    "1463684923": {
+      "zh-chs": "不羁边缘战靴",
+      "en": "Untethered Edge Boots"
+    },
     "1183405878": {
+      "zh-chs": "初次飞升手套",
+      "en": "First Ascent Gloves"
+    },
+    "1294158516": {
       "zh-chs": "初次飞升手套",
       "en": "First Ascent Gloves"
     },
@@ -84406,7 +87150,15 @@
       "zh-chs": "初次飞升法袍",
       "en": "First Ascent Robes"
     },
+    "1271294424": {
+      "zh-chs": "初次飞升法袍",
+      "en": "First Ascent Robes"
+    },
     "3791868619": {
+      "zh-chs": "初次飞升臂环",
+      "en": "First Ascent Bond"
+    },
+    "447839375": {
       "zh-chs": "初次飞升臂环",
       "en": "First Ascent Bond"
     },
@@ -84414,7 +87166,15 @@
       "zh-chs": "初次飞升兜帽",
       "en": "First Ascent Hood"
     },
+    "2615541747": {
+      "zh-chs": "初次飞升兜帽",
+      "en": "First Ascent Hood"
+    },
     "2395788176": {
+      "zh-chs": "初次飞升战靴",
+      "en": "First Ascent Boots"
+    },
+    "1696802966": {
       "zh-chs": "初次飞升战靴",
       "en": "First Ascent Boots"
     },
@@ -84486,7 +87246,15 @@
       "zh-chs": "守墙者手套",
       "en": "Wall-Watcher Gloves"
     },
+    "3187046535": {
+      "zh-chs": "守墙者手套",
+      "en": "Wall-Watcher Gloves"
+    },
     "3440927677": {
+      "zh-chs": "守墙者法袍",
+      "en": "Wall-Watcher Robes"
+    },
+    "33903049": {
       "zh-chs": "守墙者法袍",
       "en": "Wall-Watcher Robes"
     },
@@ -84494,7 +87262,15 @@
       "zh-chs": "守墙者臂环",
       "en": "Wall-Watcher Bond"
     },
+    "3864386550": {
+      "zh-chs": "守墙者臂环",
+      "en": "Wall-Watcher Bond"
+    },
     "3281673290": {
+      "zh-chs": "守墙者面罩",
+      "en": "Wall-Watcher Cover"
+    },
+    "3469351144": {
       "zh-chs": "守墙者面罩",
       "en": "Wall-Watcher Cover"
     },
@@ -84502,7 +87278,15 @@
       "zh-chs": "守墙者战靴",
       "en": "Wall-Watcher Boots"
     },
+    "1955453921": {
+      "zh-chs": "守墙者战靴",
+      "en": "Wall-Watcher Boots"
+    },
     "2472090414": {
+      "zh-chs": "血色羽毛手套",
+      "en": "Crimson Plume Gloves"
+    },
+    "3557991772": {
       "zh-chs": "血色羽毛手套",
       "en": "Crimson Plume Gloves"
     },
@@ -84510,7 +87294,15 @@
       "zh-chs": "血色羽毛法袍",
       "en": "Crimson Plume Robes"
     },
+    "3629641744": {
+      "zh-chs": "血色羽毛法袍",
+      "en": "Crimson Plume Robes"
+    },
     "2796252563": {
+      "zh-chs": "血色羽毛臂环",
+      "en": "Crimson Plume Bond"
+    },
+    "2710865799": {
       "zh-chs": "血色羽毛臂环",
       "en": "Crimson Plume Bond"
     },
@@ -84518,7 +87310,15 @@
       "zh-chs": "血色羽毛面罩",
       "en": "Crimson Plume Cover"
     },
+    "2651894107": {
+      "zh-chs": "血色羽毛面罩",
+      "en": "Crimson Plume Cover"
+    },
     "684658728": {
+      "zh-chs": "血色羽毛战靴",
+      "en": "Crimson Plume Boots"
+    },
+    "2492527550": {
       "zh-chs": "血色羽毛战靴",
       "en": "Crimson Plume Boots"
     },
@@ -84526,7 +87326,15 @@
       "zh-chs": "剧毒承诺手套",
       "en": "Poison Promise Gloves"
     },
+    "332625175": {
+      "zh-chs": "剧毒承诺手套",
+      "en": "Poison Promise Gloves"
+    },
     "1952223085": {
+      "zh-chs": "剧毒承诺法袍",
+      "en": "Poison Promise Robes"
+    },
+    "766089081": {
       "zh-chs": "剧毒承诺法袍",
       "en": "Poison Promise Robes"
     },
@@ -84534,7 +87342,15 @@
       "zh-chs": "剧毒承诺臂环",
       "en": "Poison Promise Bond"
     },
+    "324978278": {
+      "zh-chs": "剧毒承诺臂环",
+      "en": "Poison Promise Bond"
+    },
     "53292762": {
+      "zh-chs": "剧毒承诺面罩",
+      "en": "Poison Promise Cover"
+    },
+    "90822968": {
       "zh-chs": "剧毒承诺面罩",
       "en": "Poison Promise Cover"
     },
@@ -84542,7 +87358,15 @@
       "zh-chs": "剧毒承诺战靴",
       "en": "Poison Promise Boots"
     },
+    "605025041": {
+      "zh-chs": "剧毒承诺战靴",
+      "en": "Poison Promise Boots"
+    },
     "3717431477": {
+      "zh-chs": "无知希冀",
+      "en": "Wishful Ignorance"
+    },
+    "2170616305": {
       "zh-chs": "无知希冀",
       "en": "Wishful Ignorance"
     },
@@ -84550,7 +87374,15 @@
       "zh-chs": "危险推力",
       "en": "Hazardous Propulsion"
     },
+    "77153391": {
+      "zh-chs": "危险推力",
+      "en": "Hazardous Propulsion"
+    },
     "266021826": {
+      "zh-chs": "坚忍克己",
+      "en": "Stoicism"
+    },
+    "2362430352": {
       "zh-chs": "坚忍克己",
       "en": "Stoicism"
     },
@@ -84598,7 +87430,15 @@
       "zh-chs": "不羁边缘臂铠",
       "en": "Untethered Edge Gauntlets"
     },
+    "4271865130": {
+      "zh-chs": "不羁边缘臂铠",
+      "en": "Untethered Edge Gauntlets"
+    },
     "1183187516": {
+      "zh-chs": "不羁边缘战甲",
+      "en": "Untethered Edge Plate"
+    },
+    "981104658": {
       "zh-chs": "不羁边缘战甲",
       "en": "Untethered Edge Plate"
     },
@@ -84606,7 +87446,15 @@
       "zh-chs": "不羁边缘印记",
       "en": "Untethered Edge Mark"
     },
+    "3292250861": {
+      "zh-chs": "不羁边缘印记",
+      "en": "Untethered Edge Mark"
+    },
     "2134769653": {
+      "zh-chs": "不羁边缘头盔",
+      "en": "Untethered Edge Helm"
+    },
+    "1758382769": {
       "zh-chs": "不羁边缘头盔",
       "en": "Untethered Edge Helm"
     },
@@ -84614,7 +87462,15 @@
       "zh-chs": "不羁边缘胫甲",
       "en": "Untethered Edge Greaves"
     },
+    "3437392668": {
+      "zh-chs": "不羁边缘胫甲",
+      "en": "Untethered Edge Greaves"
+    },
     "304385651": {
+      "zh-chs": "初次飞升臂铠",
+      "en": "First Ascent Gauntlets"
+    },
+    "3656122215": {
       "zh-chs": "初次飞升臂铠",
       "en": "First Ascent Gauntlets"
     },
@@ -84622,7 +87478,15 @@
       "zh-chs": "初次飞升战甲",
       "en": "First Ascent Plate"
     },
+    "55944745": {
+      "zh-chs": "初次飞升战甲",
+      "en": "First Ascent Plate"
+    },
     "3187320016": {
+      "zh-chs": "初次飞升印记",
+      "en": "First Ascent Mark"
+    },
+    "1079930198": {
       "zh-chs": "初次飞升印记",
       "en": "First Ascent Mark"
     },
@@ -84630,7 +87494,15 @@
       "zh-chs": "初次飞升头盔",
       "en": "First Ascent Helm"
     },
+    "2450060488": {
+      "zh-chs": "初次飞升头盔",
+      "en": "First Ascent Helm"
+    },
     "39339589": {
+      "zh-chs": "初次飞升胫甲",
+      "en": "First Ascent Greaves"
+    },
+    "489274433": {
       "zh-chs": "初次飞升胫甲",
       "en": "First Ascent Greaves"
     },
@@ -84702,7 +87574,15 @@
       "zh-chs": "守墙者臂铠",
       "en": "Wall-watcher Gauntlets"
     },
+    "3486679768": {
+      "zh-chs": "守墙者臂铠",
+      "en": "Wall-watcher Gauntlets"
+    },
     "133666382": {
+      "zh-chs": "守墙者战甲",
+      "en": "Wall-watcher Plate"
+    },
+    "3992290300": {
       "zh-chs": "守墙者战甲",
       "en": "Wall-watcher Plate"
     },
@@ -84710,7 +87590,15 @@
       "zh-chs": "守墙者印记",
       "en": "Wall-watcher Mark"
     },
+    "517186571": {
+      "zh-chs": "守墙者印记",
+      "en": "Wall-watcher Mark"
+    },
     "2738060683": {
+      "zh-chs": "守墙者头盔",
+      "en": "Wall-watcher Helm"
+    },
+    "3392240079": {
       "zh-chs": "守墙者头盔",
       "en": "Wall-watcher Helm"
     },
@@ -84718,7 +87606,15 @@
       "zh-chs": "守墙者胫甲",
       "en": "Wall-watcher Greaves"
     },
+    "2276310682": {
+      "zh-chs": "守墙者胫甲",
+      "en": "Wall-watcher Greaves"
+    },
     "2935526975": {
+      "zh-chs": "血色羽毛臂铠",
+      "en": "Crimson Plume Gauntlets"
+    },
+    "638850307": {
       "zh-chs": "血色羽毛臂铠",
       "en": "Crimson Plume Gauntlets"
     },
@@ -84726,7 +87622,15 @@
       "zh-chs": "血色羽毛战甲",
       "en": "Crimson Plume Plate"
     },
+    "892020293": {
+      "zh-chs": "血色羽毛战甲",
+      "en": "Crimson Plume Plate"
+    },
     "2770768564": {
+      "zh-chs": "血色羽毛印记",
+      "en": "Crimson Plume Mark"
+    },
+    "2496572186": {
       "zh-chs": "血色羽毛印记",
       "en": "Crimson Plume Mark"
     },
@@ -84734,7 +87638,15 @@
       "zh-chs": "血色羽毛头盔",
       "en": "Crimson Plume Helm"
     },
+    "4147463420": {
+      "zh-chs": "血色羽毛头盔",
+      "en": "Crimson Plume Helm"
+    },
     "1856777089": {
+      "zh-chs": "血色羽毛胫甲",
+      "en": "Crimson Plume Greaves"
+    },
+    "3475683133": {
       "zh-chs": "血色羽毛胫甲",
       "en": "Crimson Plume Greaves"
     },
@@ -84742,7 +87654,15 @@
       "zh-chs": "剧毒承诺臂铠",
       "en": "Poison Promise Gauntlets"
     },
+    "3538579376": {
+      "zh-chs": "剧毒承诺臂铠",
+      "en": "Poison Promise Gauntlets"
+    },
     "2348198214": {
+      "zh-chs": "剧毒承诺战甲",
+      "en": "Poison Promise Plate"
+    },
+    "2387444228": {
       "zh-chs": "剧毒承诺战甲",
       "en": "Poison Promise Plate"
     },
@@ -84750,7 +87670,15 @@
       "zh-chs": "剧毒承诺印记",
       "en": "Poison Promise Mark"
     },
+    "3527930483": {
+      "zh-chs": "剧毒承诺印记",
+      "en": "Poison Promise Mark"
+    },
     "2557210451": {
+      "zh-chs": "剧毒承诺头盔",
+      "en": "Poison Promise Helm"
+    },
+    "2721354951": {
       "zh-chs": "剧毒承诺头盔",
       "en": "Poison Promise Helm"
     },
@@ -84758,7 +87686,15 @@
       "zh-chs": "剧毒承诺胫甲",
       "en": "Poison Promise Greaves"
     },
+    "3553875570": {
+      "zh-chs": "剧毒承诺胫甲",
+      "en": "Poison Promise Greaves"
+    },
     "3001449507": {
+      "zh-chs": "力量平衡",
+      "en": "Balance of Power"
+    },
+    "1477422359": {
       "zh-chs": "力量平衡",
       "en": "Balance of Power"
     },
@@ -84766,7 +87702,15 @@
       "zh-chs": "天赋信念",
       "en": "Gifted Conviction"
     },
+    "2248212155": {
+      "zh-chs": "天赋信念",
+      "en": "Gifted Conviction"
+    },
     "2809120022": {
+      "zh-chs": "相对主义",
+      "en": "Relativism"
+    },
+    "102374420": {
       "zh-chs": "相对主义",
       "en": "Relativism"
     },
@@ -84814,7 +87758,15 @@
       "zh-chs": "不羁边缘护臂",
       "en": "Untethered Edge Grips"
     },
+    "316819918": {
+      "zh-chs": "不羁边缘护臂",
+      "en": "Untethered Edge Grips"
+    },
     "1958630864": {
+      "zh-chs": "不羁边缘胸甲",
+      "en": "Untethered Edge Vest"
+    },
+    "2792769622": {
       "zh-chs": "不羁边缘胸甲",
       "en": "Untethered Edge Vest"
     },
@@ -84822,7 +87774,15 @@
       "zh-chs": "不羁边缘披肩",
       "en": "Untethered Edge Cape"
     },
+    "1739332121": {
+      "zh-chs": "不羁边缘披肩",
+      "en": "Untethered Edge Cape"
+    },
     "3001229473": {
+      "zh-chs": "不羁边缘面具",
+      "en": "Untethered Edge Mask"
+    },
+    "4073332573": {
       "zh-chs": "不羁边缘面具",
       "en": "Untethered Edge Mask"
     },
@@ -84830,7 +87790,15 @@
       "zh-chs": "不羁边缘腿铠",
       "en": "Untethered Edge Strides"
     },
+    "2899862144": {
+      "zh-chs": "不羁边缘腿铠",
+      "en": "Untethered Edge Strides"
+    },
     "2252757719": {
+      "zh-chs": "初次飞升护臂",
+      "en": "First Ascent Grips"
+    },
+    "1258973771": {
       "zh-chs": "初次飞升护臂",
       "en": "First Ascent Grips"
     },
@@ -84838,7 +87806,15 @@
       "zh-chs": "初次飞升胸甲",
       "en": "First Ascent Vest"
     },
+    "2069829085": {
+      "zh-chs": "初次飞升胸甲",
+      "en": "First Ascent Vest"
+    },
     "1922402428": {
+      "zh-chs": "初次飞升披风",
+      "en": "First Ascent Cloak"
+    },
+    "2607072210": {
       "zh-chs": "初次飞升披风",
       "en": "First Ascent Cloak"
     },
@@ -84846,7 +87822,15 @@
       "zh-chs": "初次飞升胄盔",
       "en": "First Ascent Casque"
     },
+    "2609207620": {
+      "zh-chs": "初次飞升胄盔",
+      "en": "First Ascent Casque"
+    },
     "4061292537": {
+      "zh-chs": "初次飞升腿铠",
+      "en": "First Ascent Strides"
+    },
+    "3446623301": {
       "zh-chs": "初次飞升腿铠",
       "en": "First Ascent Strides"
     },
@@ -84918,7 +87902,15 @@
       "zh-chs": "守墙者袖甲",
       "en": "Wall-watcher Sleeves"
     },
+    "3562567620": {
+      "zh-chs": "守墙者袖甲",
+      "en": "Wall-watcher Sleeves"
+    },
     "2870974250": {
+      "zh-chs": "守墙者胸甲",
+      "en": "Wall-watcher Vest"
+    },
+    "819773640": {
       "zh-chs": "守墙者胸甲",
       "en": "Wall-watcher Vest"
     },
@@ -84926,7 +87918,15 @@
       "zh-chs": "守墙者披风",
       "en": "Wall-watcher Cloak"
     },
+    "1166254911": {
+      "zh-chs": "守墙者披风",
+      "en": "Wall-watcher Cloak"
+    },
     "1740966079": {
+      "zh-chs": "守墙者风帽",
+      "en": "Wall-watcher Cowl"
+    },
+    "487137411": {
       "zh-chs": "守墙者风帽",
       "en": "Wall-watcher Cowl"
     },
@@ -84934,7 +87934,15 @@
       "zh-chs": "守墙者腿铠",
       "en": "Wall-watcher Strides"
     },
+    "2057542406": {
+      "zh-chs": "守墙者腿铠",
+      "en": "Wall-watcher Strides"
+    },
     "12440395": {
+      "zh-chs": "血色羽毛护手",
+      "en": "Crimson Plume Grasps"
+    },
+    "4130251279": {
       "zh-chs": "血色羽毛护手",
       "en": "Crimson Plume Grasps"
     },
@@ -84942,7 +87950,15 @@
       "zh-chs": "血色羽毛胸甲",
       "en": "Crimson Plume Vest"
     },
+    "2843072129": {
+      "zh-chs": "血色羽毛胸甲",
+      "en": "Crimson Plume Vest"
+    },
     "1788903768": {
+      "zh-chs": "血色羽毛披风",
+      "en": "Crimson Plume Cloak"
+    },
+    "1087404526": {
       "zh-chs": "血色羽毛披风",
       "en": "Crimson Plume Cloak"
     },
@@ -84950,7 +87966,15 @@
       "zh-chs": "血色羽毛风帽",
       "en": "Crimson Plume Cowl"
     },
+    "2091225008": {
+      "zh-chs": "血色羽毛风帽",
+      "en": "Crimson Plume Cowl"
+    },
     "1528655453": {
+      "zh-chs": "血色羽毛腿铠",
+      "en": "Crimson Plume Strides"
+    },
+    "789415529": {
       "zh-chs": "血色羽毛腿铠",
       "en": "Crimson Plume Strides"
     },
@@ -84958,7 +87982,15 @@
       "zh-chs": "剧毒承诺袖甲",
       "en": "Poison Promise Sleeves"
     },
+    "2262455308": {
+      "zh-chs": "剧毒承诺袖甲",
+      "en": "Poison Promise Sleeves"
+    },
     "3775606738": {
+      "zh-chs": "剧毒承诺胸甲",
+      "en": "Poison Promise Vest"
+    },
+    "3484903008": {
       "zh-chs": "剧毒承诺胸甲",
       "en": "Poison Promise Vest"
     },
@@ -84966,11 +87998,23 @@
       "zh-chs": "剧毒承诺披风",
       "en": "Poison Promise Cloak"
     },
+    "3299723351": {
+      "zh-chs": "剧毒承诺披风",
+      "en": "Poison Promise Cloak"
+    },
     "3273631255": {
       "zh-chs": "剧毒承诺面具",
       "en": "Poison Promise Mask"
     },
+    "2849111819": {
+      "zh-chs": "剧毒承诺面具",
+      "en": "Poison Promise Mask"
+    },
     "2766527864": {
+      "zh-chs": "剧毒承诺腿铠",
+      "en": "Poison Promise Strides"
+    },
+    "380543246": {
       "zh-chs": "剧毒承诺腿铠",
       "en": "Poison Promise Strides"
     },
@@ -86118,7 +89162,15 @@
       "zh-chs": "钢铁意图护手",
       "en": "Iron Intent Grasps"
     },
+    "1734076444": {
+      "zh-chs": "钢铁意图护手",
+      "en": "Iron Intent Grasps"
+    },
     "1567525250": {
+      "zh-chs": "钢铁意图胸铠",
+      "en": "Iron Intent Cuirass"
+    },
+    "2349487312": {
       "zh-chs": "钢铁意图胸铠",
       "en": "Iron Intent Cuirass"
     },
@@ -86126,7 +89178,15 @@
       "zh-chs": "钢铁意图披风",
       "en": "Iron Intent Cloak"
     },
+    "66527815": {
+      "zh-chs": "钢铁意图披风",
+      "en": "Iron Intent Cloak"
+    },
     "144007143": {
+      "zh-chs": "钢铁意图面具",
+      "en": "Iron Intent Mask"
+    },
+    "85648155": {
       "zh-chs": "钢铁意图面具",
       "en": "Iron Intent Mask"
     },
@@ -86134,7 +89194,15 @@
       "zh-chs": "钢铁意图腿铠",
       "en": "Iron Intent Strides"
     },
+    "2111030142": {
+      "zh-chs": "钢铁意图腿铠",
+      "en": "Iron Intent Strides"
+    },
     "3464581845": {
+      "zh-chs": "阴影潜行者护臂",
+      "en": "Shadestalker Grips"
+    },
+    "2857953169": {
       "zh-chs": "阴影潜行者护臂",
       "en": "Shadestalker Grips"
     },
@@ -86142,7 +89210,15 @@
       "zh-chs": "阴影潜行者胸甲",
       "en": "Shadestalker Vest"
     },
+    "3316370575": {
+      "zh-chs": "阴影潜行者胸甲",
+      "en": "Shadestalker Vest"
+    },
     "4131241442": {
+      "zh-chs": "阴影潜行者披肩",
+      "en": "Shadestalker Cape"
+    },
+    "3241935408": {
       "zh-chs": "阴影潜行者披肩",
       "en": "Shadestalker Cape"
     },
@@ -86150,11 +89226,23 @@
       "zh-chs": "阴影潜行者面具",
       "en": "Shadestalker Mask"
     },
+    "237419442": {
+      "zh-chs": "阴影潜行者面具",
+      "en": "Shadestalker Mask"
+    },
     "745736759": {
       "zh-chs": "阴影潜行者腿铠",
       "en": "Shadestalker Strides"
     },
+    "1235230891": {
+      "zh-chs": "阴影潜行者腿铠",
+      "en": "Shadestalker Strides"
+    },
     "322173891": {
+      "zh-chs": "忠诚面具",
+      "en": "Mask of Fealty"
+    },
+    "3894487223": {
       "zh-chs": "忠诚面具",
       "en": "Mask of Fealty"
     },
@@ -86202,7 +89290,15 @@
       "zh-chs": "钢铁意图臂铠",
       "en": "Iron Intent Gauntlets"
     },
+    "3359876034": {
+      "zh-chs": "钢铁意图臂铠",
+      "en": "Iron Intent Gauntlets"
+    },
     "2651216180": {
+      "zh-chs": "钢铁意图战甲",
+      "en": "Iron Intent Plate"
+    },
+    "1294553754": {
       "zh-chs": "钢铁意图战甲",
       "en": "Iron Intent Plate"
     },
@@ -86210,7 +89306,15 @@
       "zh-chs": "钢铁意图印记",
       "en": "Iron Intent Mark"
     },
+    "3125381141": {
+      "zh-chs": "钢铁意图印记",
+      "en": "Iron Intent Mark"
+    },
     "546003581": {
+      "zh-chs": "钢铁意图头盔",
+      "en": "Iron Intent Helm"
+    },
+    "2277184009": {
       "zh-chs": "钢铁意图头盔",
       "en": "Iron Intent Helm"
     },
@@ -86218,7 +89322,15 @@
       "zh-chs": "钢铁意图胫甲",
       "en": "Iron Intent Greaves"
     },
+    "4181859860": {
+      "zh-chs": "钢铁意图胫甲",
+      "en": "Iron Intent Greaves"
+    },
     "1121856799": {
+      "zh-chs": "阴影潜行者臂铠",
+      "en": "Shadestalker Gauntlets"
+    },
+    "280239843": {
       "zh-chs": "阴影潜行者臂铠",
       "en": "Shadestalker Gauntlets"
     },
@@ -86226,7 +89338,15 @@
       "zh-chs": "阴影潜行者战甲",
       "en": "Shadestalker Plate"
     },
+    "1437919909": {
+      "zh-chs": "阴影潜行者战甲",
+      "en": "Shadestalker Plate"
+    },
     "1427680276": {
+      "zh-chs": "阴影潜行者印记",
+      "en": "Shadestalker Mark"
+    },
+    "3021786874": {
       "zh-chs": "阴影潜行者印记",
       "en": "Shadestalker Mark"
     },
@@ -86234,11 +89354,23 @@
       "zh-chs": "阴影潜行者头盔",
       "en": "Shadestalker Helm"
     },
+    "666124508": {
+      "zh-chs": "阴影潜行者头盔",
+      "en": "Shadestalker Helm"
+    },
     "43003873": {
       "zh-chs": "阴影潜行者胫甲",
       "en": "Shadestalker Greaves"
     },
+    "4289208349": {
+      "zh-chs": "阴影潜行者胫甲",
+      "en": "Shadestalker Greaves"
+    },
     "1188437342": {
+      "zh-chs": "爆炸波行者",
+      "en": "Blastwave Striders"
+    },
+    "156844620": {
       "zh-chs": "爆炸波行者",
       "en": "Blastwave Striders"
     },
@@ -86286,7 +89418,15 @@
       "zh-chs": "钢铁意图手套",
       "en": "Iron Intent Gloves"
     },
+    "3946759767": {
+      "zh-chs": "钢铁意图手套",
+      "en": "Iron Intent Gloves"
+    },
     "2576944173": {
+      "zh-chs": "钢铁意图法袍",
+      "en": "Iron Intent Robes"
+    },
+    "1981520313": {
       "zh-chs": "钢铁意图法袍",
       "en": "Iron Intent Robes"
     },
@@ -86294,7 +89434,15 @@
       "zh-chs": "钢铁意图臂环",
       "en": "Iron Intent Bond"
     },
+    "176225958": {
+      "zh-chs": "钢铁意图臂环",
+      "en": "Iron Intent Bond"
+    },
     "2117889178": {
+      "zh-chs": "钢铁意图面罩",
+      "en": "Iron Intent Cover"
+    },
+    "898459512": {
       "zh-chs": "钢铁意图面罩",
       "en": "Iron Intent Cover"
     },
@@ -86302,7 +89450,15 @@
       "zh-chs": "钢铁意图战靴",
       "en": "Iron Intent Boots"
     },
+    "2854976081": {
+      "zh-chs": "钢铁意图战靴",
+      "en": "Iron Intent Boots"
+    },
     "1754155306": {
+      "zh-chs": "阴影潜行者手套",
+      "en": "Shadestalker Gloves"
+    },
+    "46196424": {
       "zh-chs": "阴影潜行者手套",
       "en": "Shadestalker Gloves"
     },
@@ -86310,7 +89466,15 @@
       "zh-chs": "阴影潜行者法袍",
       "en": "Shadestalker Robes"
     },
+    "2586935372": {
+      "zh-chs": "阴影潜行者法袍",
+      "en": "Shadestalker Robes"
+    },
     "1493134439": {
+      "zh-chs": "阴影潜行者臂环",
+      "en": "Shadestalker Bond"
+    },
+    "4125756571": {
       "zh-chs": "阴影潜行者臂环",
       "en": "Shadestalker Bond"
     },
@@ -86318,11 +89482,23 @@
       "zh-chs": "阴影潜行者兜帽",
       "en": "Shadestalker Hood"
     },
+    "2117674751": {
+      "zh-chs": "阴影潜行者兜帽",
+      "en": "Shadestalker Hood"
+    },
     "410486468": {
       "zh-chs": "阴影潜行者战靴",
       "en": "Shadestalker Boots"
     },
+    "4270767274": {
+      "zh-chs": "阴影潜行者战靴",
+      "en": "Shadestalker Boots"
+    },
     "4060793397": {
+      "zh-chs": "霜袍服装",
+      "en": "Rime-coat Raiment"
+    },
+    "4055368305": {
       "zh-chs": "霜袍服装",
       "en": "Rime-coat Raiment"
     },
@@ -86902,6 +90078,10 @@
       "zh-chs": "恶德姊妹",
       "en": "Wicked Sister"
     },
+    "1298135794": {
+      "zh-chs": "征服",
+      "en": "Subjugation"
+    },
     "878237828": {
       "zh-chs": "志愿容器",
       "en": "Willing Vessel"
@@ -87082,7 +90262,15 @@
       "zh-chs": "猫眼护手",
       "en": "Cat-Eye Grasps"
     },
+    "3223924017": {
+      "zh-chs": "猫眼护手",
+      "en": "Cat-Eye Grasps"
+    },
     "2641704939": {
+      "zh-chs": "猫眼胸甲",
+      "en": "Cat-Eye Vest"
+    },
+    "40290223": {
       "zh-chs": "猫眼胸甲",
       "en": "Cat-Eye Vest"
     },
@@ -87090,13 +90278,65 @@
       "zh-chs": "猫眼披风",
       "en": "Cat-Eye Cloak"
     },
+    "3114052816": {
+      "zh-chs": "猫眼披风",
+      "en": "Cat-Eye Cloak"
+    },
     "1435559164": {
+      "zh-chs": "猫眼面具",
+      "en": "Cat-Eye Mask"
+    },
+    "4155923794": {
       "zh-chs": "猫眼面具",
       "en": "Cat-Eye Mask"
     },
     "113167959": {
       "zh-chs": "猫眼腿铠",
       "en": "Cat-Eye Strides"
+    },
+    "3960914123": {
+      "zh-chs": "猫眼腿铠",
+      "en": "Cat-Eye Strides"
+    },
+    "431596278": {
+      "zh-chs": "剥露者的护手",
+      "en": "Grasps of the Flain"
+    },
+    "4052335546": {
+      "zh-chs": "剥露者的鳞甲",
+      "en": "Scales of the Flain"
+    },
+    "3276331403": {
+      "zh-chs": "躯壳的披风",
+      "en": "Husk's Cloak"
+    },
+    "2146870895": {
+      "zh-chs": "剥露者的面具",
+      "en": "Mask of the Flain"
+    },
+    "1643875408": {
+      "zh-chs": "剥露者的钩子",
+      "en": "Hooks of the Flain"
+    },
+    "2112020760": {
+      "zh-chs": "剥露者的护手",
+      "en": "Grasps of the Flain"
+    },
+    "2578940720": {
+      "zh-chs": "剥露者的鳞甲",
+      "en": "Scales of the Flain"
+    },
+    "1930656621": {
+      "zh-chs": "躯壳的披风",
+      "en": "Husk's Cloak"
+    },
+    "1274101249": {
+      "zh-chs": "剥露者的面具",
+      "en": "Mask of the Flain"
+    },
+    "571745874": {
+      "zh-chs": "剥露者的钩子",
+      "en": "Hooks of the Flain"
     },
     "3131849739": {
       "zh-chs": "竞赛护肩",
@@ -87126,7 +90366,15 @@
       "zh-chs": "豺心臂铠",
       "en": "Jackal-Heart Gauntlets"
     },
+    "2810404581": {
+      "zh-chs": "豺心臂铠",
+      "en": "Jackal-Heart Gauntlets"
+    },
     "1054377087": {
+      "zh-chs": "豺心战甲",
+      "en": "Jackal-Heart Plate"
+    },
+    "3989100739": {
       "zh-chs": "豺心战甲",
       "en": "Jackal-Heart Plate"
     },
@@ -87134,13 +90382,65 @@
       "zh-chs": "豺心印记",
       "en": "Jackal-Heart Mark"
     },
+    "2047507132": {
+      "zh-chs": "豺心印记",
+      "en": "Jackal-Heart Mark"
+    },
     "511773064": {
+      "zh-chs": "豺心头盔",
+      "en": "Jackal-Heart Helm"
+    },
+    "2381507358": {
       "zh-chs": "豺心头盔",
       "en": "Jackal-Heart Helm"
     },
     "2751189771": {
       "zh-chs": "豺心胫甲",
       "en": "Jackal-Heart Greaves"
+    },
+    "3920299599": {
+      "zh-chs": "豺心胫甲",
+      "en": "Jackal-Heart Greaves"
+    },
+    "945703242": {
+      "zh-chs": "剥露者的护臂",
+      "en": "Grips of the Flain"
+    },
+    "380371582": {
+      "zh-chs": "剥露者的甲壳",
+      "en": "Carapace of the Flain"
+    },
+    "4004965895": {
+      "zh-chs": "侍从的印记",
+      "en": "Attendant's Mark"
+    },
+    "3781388955": {
+      "zh-chs": "剥露者的颅骨",
+      "en": "Skull of the Flain"
+    },
+    "3897001828": {
+      "zh-chs": "剥露者的爪子",
+      "en": "Claws of the Flain"
+    },
+    "3238482084": {
+      "zh-chs": "剥露者的护臂",
+      "en": "Grips of the Flain"
+    },
+    "608948636": {
+      "zh-chs": "剥露者的甲壳",
+      "en": "Carapace of the Flain"
+    },
+    "2319342865": {
+      "zh-chs": "侍从的印记",
+      "en": "Attendant's Mark"
+    },
+    "267671509": {
+      "zh-chs": "剥露者的颅骨",
+      "en": "Skull of the Flain"
+    },
+    "874160718": {
+      "zh-chs": "剥露者的爪子",
+      "en": "Claws of the Flain"
     },
     "3161483583": {
       "zh-chs": "竞赛印记",
@@ -87170,7 +90470,15 @@
       "zh-chs": "鹰翼手套",
       "en": "Falcon-Wing Gloves"
     },
+    "2267066698": {
+      "zh-chs": "鹰翼手套",
+      "en": "Falcon-Wing Gloves"
+    },
     "792171868": {
+      "zh-chs": "鹰翼法袍",
+      "en": "Falcon-Wing Robes"
+    },
+    "1069478322": {
       "zh-chs": "鹰翼法袍",
       "en": "Falcon-Wing Robes"
     },
@@ -87178,7 +90486,15 @@
       "zh-chs": "鹰翼臂环",
       "en": "Falcon-Wing Bond"
     },
+    "2016440717": {
+      "zh-chs": "鹰翼臂环",
+      "en": "Falcon-Wing Bond"
+    },
     "1479465109": {
+      "zh-chs": "鹰翼兜帽",
+      "en": "Falcon-Wing Cover"
+    },
+    "2134085073": {
       "zh-chs": "鹰翼兜帽",
       "en": "Falcon-Wing Cover"
     },
@@ -87186,9 +90502,69 @@
       "zh-chs": "鹰翼战靴",
       "en": "Falcon-Wing Boots"
     },
+    "218214716": {
+      "zh-chs": "鹰翼战靴",
+      "en": "Falcon-Wing Boots"
+    },
+    "115752785": {
+      "zh-chs": "剥露者的延伸",
+      "en": "Reach of the Flain"
+    },
+    "3300886791": {
+      "zh-chs": "剥露者的装饰",
+      "en": "Adornment of the Flain"
+    },
+    "187348246": {
+      "zh-chs": "编织者的臂环",
+      "en": "Weaver's Bond"
+    },
+    "2549679488": {
+      "zh-chs": "剥露者的脸庞",
+      "en": "Visage of the Flain"
+    },
+    "4241869859": {
+      "zh-chs": "剥露者的利爪",
+      "en": "Talons of the Flain"
+    },
+    "2965319081": {
+      "zh-chs": "剥露者的延伸",
+      "en": "Reach of the Flain"
+    },
+    "2299285295": {
+      "zh-chs": "剥露者的装饰",
+      "en": "Adornment of the Flain"
+    },
+    "4012478142": {
+      "zh-chs": "编织者的臂环",
+      "en": "Weaver's Bond"
+    },
+    "2501618648": {
+      "zh-chs": "剥露者的脸庞",
+      "en": "Visage of the Flain"
+    },
+    "2791329915": {
+      "zh-chs": "剥露者的利爪",
+      "en": "Talons of the Flain"
+    },
     "1555733772": {
       "zh-chs": "竞赛臂环",
       "en": "Bond of Contests"
+    },
+    "3360937899": {
+      "zh-chs": "无声",
+      "en": "Unvoiced"
+    },
+    "1303313141": {
+      "zh-chs": "无誓",
+      "en": "Unsworn"
+    },
+    "2485881870": {
+      "zh-chs": "无爱",
+      "en": "Unloved"
+    },
+    "2226158470": {
+      "zh-chs": "无视",
+      "en": "Unworthy"
     },
     "3218364298": {
       "zh-chs": "莱德瑞克斯穿甲剑",
@@ -87553,6 +90929,14 @@
     "331231237": {
       "zh-chs": "终局螺旋钻",
       "en": "Finality's Auger"
+    },
+    "1481594633": {
+      "zh-chs": "墓园双星",
+      "en": "Barrow-Dyad"
+    },
+    "1388605795": {
+      "zh-chs": "墓园双星",
+      "en": "Barrow-Dyad"
     },
     "3725585710": {
       "zh-chs": "北极星",
@@ -94066,6 +97450,66 @@
       "zh-chs": "萨鲁克·乌尔·奥米的头",
       "en": "Head of Sarûk ur-Omni"
     },
+    "2363333292": {
+      "zh-chs": "二元飞升",
+      "en": "Dyadic Ascension"
+    },
+    "2665771655": {
+      "zh-chs": "二元飞升",
+      "en": "Dyadic Ascension"
+    },
+    "2564958878": {
+      "zh-chs": "二元飞升",
+      "en": "Dyadic Ascension"
+    },
+    "450243409": {
+      "zh-chs": "二元飞升",
+      "en": "Dyadic Ascension"
+    },
+    "2496862696": {
+      "zh-chs": "二元飞升",
+      "en": "Dyadic Ascension"
+    },
+    "114985251": {
+      "zh-chs": "二元飞升",
+      "en": "Dyadic Ascension"
+    },
+    "551056218": {
+      "zh-chs": "二元飞升",
+      "en": "Dyadic Ascension"
+    },
+    "1911402647": {
+      "zh-chs": "针尖之路",
+      "en": "A Needle's Path"
+    },
+    "2044193326": {
+      "zh-chs": "战锤之路",
+      "en": "A Hammer's Path"
+    },
+    "1943380517": {
+      "zh-chs": "战锤之路",
+      "en": "A Hammer's Path"
+    },
+    "2786380593": {
+      "zh-chs": "百倍之路",
+      "en": "A Hundredfold Path"
+    },
+    "120679056": {
+      "zh-chs": "丝绸之路",
+      "en": "A Silken Path"
+    },
+    "105322825": {
+      "zh-chs": "二元完美",
+      "en": "Dyadic Perfection"
+    },
+    "2195516418": {
+      "zh-chs": "沉重骨质脊柱",
+      "en": "Heavy Osseous Spine"
+    },
+    "1777184540": {
+      "zh-chs": "扭曲骨质脊柱",
+      "en": "Warped Osseous Spine"
+    },
     "3534793004": {
       "zh-chs": "渴求圣典：引物",
       "en": "Tome of Want: A Primer"
@@ -96973,6 +100417,50 @@
     "4205764604": {
       "zh-chs": "本影头盔",
       "en": "Umbral Helmet"
+    },
+    "3078568019": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "130703567": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "83808423": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "261410846": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "3765398854": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "788576066": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "2437268361": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "3832860594": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "2526287581": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "2095884141": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
+    },
+    "2405856252": {
+      "zh-chs": "溺水迷宫",
+      "en": "The Drowning Labyrinth"
     },
     "627172891": {
       "zh-chs": "护甲合成介绍",
