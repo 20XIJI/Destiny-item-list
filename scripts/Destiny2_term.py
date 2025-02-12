@@ -92,12 +92,18 @@ def extract_combined_activities(activity_define_list, lang_list):
     return combined_activity_list
 
 def transform_and_sort_data(combined_item_list, combined_activity_list):
-    """Transform data, add variations, and sort by English term length."""
+    """Transform data, add variations, and sort by English term length, including local data from myself.json."""
     print("转换和排序数据...")
-    # 合并两个字典
+
+    # 加载本地文件数据
+    with open('myself.json', 'r', encoding='utf-8') as file:
+        local_data = json.load(file)
+
+    # 合并所有字典
     transformed_data = combined_item_list.copy()
     transformed_data.update(combined_activity_list)
-
+    transformed_data.update(local_data)
+    
     # 创建一个新字典来保存增强后的数据
     augmented_data = transformed_data.copy()
 
