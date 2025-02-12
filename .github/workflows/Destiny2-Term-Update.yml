@@ -18,7 +18,7 @@ jobs:
       env:
         BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
       run: |
-        python scripts\Destiny2_term.py
+        python scripts/Destiny2_term.py
 
     - name: Commit changes
       id: commit

@@ -6,8 +6,7 @@ import hashlib
 from datetime import datetime, UTC
 
 # 环境变量和常量
-# BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
-BUNGIE_API_KEY = 'f68ce399583243a98c564e953efdc604'
+BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
 MANIFEST_URL = 'https://www.bungie.net/Platform/Destiny2/Manifest/'
 LANG_LIST = ['zh-chs', 'en']
 ITEM_CATEGORY_FILTER = [1, 20, 39, 40, 41, 42, 43, 59, 1112488720, 2088636411]
