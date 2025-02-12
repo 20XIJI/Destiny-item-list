@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "231142.25.01.27.1930-6-bnet.58430",
-    "timestamp": "2025-02-12T14:54:10.103377+00:00",
+    "timestamp": "2025-02-12T17:39:46.751255+00:00",
     "item_count": 12718,
-    "data_hash": "3ac46fcf941cc214f5a0ca4ba761c5fd60e9190aa43e0fe413e7228752aaeec8",
+    "data_hash": "0273acb188fa24138e689172127829678be4312700142530e2685ccff5db2dc6",
     "source": "Bungie Destiny 2 Manifest",
     "script_name": "Destiny2_term.py"
   },
@@ -5166,7 +5166,7 @@
     "Linear Fusion Rifle": "线性融合步枪",
     "Linear Fusion Rifles": "线性融合步枪",
     "Heavy Grenade Launchers": "重型榴弹发射器",
-    "Special Grenade Launchers": "特种榴弹发射器",
+    "Special Grenade Launchers": "特殊榴弹发射器",
     "Thick of It": "置身其中",
     "Old God’s Rite": "古神仪式",
     "Engraving: King’s Vestige": "雕刻：邪神残余",
