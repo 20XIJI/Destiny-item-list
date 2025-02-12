@@ -1,4 +1,4 @@
-name: Update Item Data
+name: Destiny2 Term Update
 
 on:
   schedule:
@@ -18,7 +18,7 @@ jobs:
       env:
         BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
       run: |
-        python scripts/fetch_items.py
+        python scripts\Destiny2_term.py
 
     - name: Commit changes
       id: commit
@@ -27,6 +27,6 @@ jobs:
         git config --global user.email "actions@github.com"
         
         # 检测文件是否有变化
-        git diff --quiet || (git add item-list-8-2-0.json && \
-        git commit -m "Auto-update item data [skip ci]" && \
+        git diff --quiet || (git add Destiny2_term.json && \
+        git commit -m "Auto-update Destiny2-Term data [skip ci]" && \
         git push origin HEAD:${{ github.ref }})
