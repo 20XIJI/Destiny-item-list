@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "231429.25.02.08.2000-3-bnet.58473",
-    "timestamp": "2025-02-24T17:39:30.219239+00:00",
-    "item_count": 12718,
-    "data_hash": "0273acb188fa24138e689172127829678be4312700142530e2685ccff5db2dc6",
+    "version": "231697.25.02.19.2000-2-bnet.58583",
+    "timestamp": "2025-02-25T17:41:55.069894+00:00",
+    "item_count": 12719,
+    "data_hash": "795466a09a3188014a9bb1e9f9e5e92380d2952c8e0d8e6b3ad012913eaecdee",
     "source": "Bungie Destiny 2 Manifest",
     "script_name": "Destiny2_term.py"
   },
@@ -4910,6 +4910,7 @@
     "Major Fieldwork IX": "主要外勤工作IX",
     "Major Fieldwork X": "主要外勤工作X",
     "The Nether: Advanced": "幽冥: 高级",
+    "Exotic mission \"Derealize\"": "异域任务“去现实化”",
     "Expert Haunted Sector": "专家闹鬼区域",
     "Expert: Midtown: Onslaught": "专家：市中心: 猛攻",
     "Expert: Mothyards: Onslaught": "专家：飞蛾庭院: 猛攻",
