@@ -4,9 +4,6 @@ import os
 import time
 import hashlib
 from datetime import datetime, UTC
-from dotenv import load_dotenv
-# 加载 .env 文件中的环境变量
-load_dotenv()
 
 # 环境变量和常量
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
@@ -14,7 +11,7 @@ MANIFEST_URL = 'https://www.bungie.net/Platform/Destiny2/Manifest/'
 LANG_LIST = ['zh-chs', 'en']
 ITEM_CATEGORY_FILTER = [1, 20, 39, 40, 41, 42, 43, 59, 1112488720, 2088636411]
 ITEM_CATEGORY_FILTER_DEL = [44, 1742617626]
-OUTPUT_FILE_NAME = 'MISC/Destiny2_term_test.json'
+OUTPUT_FILE_NAME = 'Destiny2_term.json'
 METADATA_FILE_NAME = 'metadata_test.json'
 
 def get_manifest_version():
