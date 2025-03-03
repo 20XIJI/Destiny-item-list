@@ -4,9 +4,6 @@ import os
 import time
 import hashlib
 from datetime import datetime, UTC
-from dotenv import load_dotenv
-# 加载 .env 文件中的环境变量
-load_dotenv()
 
 # 环境变量和常量
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
