@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "231142.25.01.27.1930-6-bnet.58430",
-    "timestamp": "2025-02-12T02:49:16.432838+00:00",
-    "item_count": 25314,
-    "data_hash": "b5b0510a717d3691d00eb3572632c2b4f3571ba2e1cbccd1563a52c69e76beb1"
+    "version": "231697.25.02.19.2000-2-bnet.58583",
+    "timestamp": "2025-03-02T17:38:11.928380+00:00",
+    "item_count": 25330,
+    "data_hash": "02fccf408b8744eda7c0eb01b85ad35e6353e5915880afedf87f45f4e45c2544"
   },
   "data": {
     "2899766705": {
@@ -97450,6 +97450,66 @@
       "zh-chs": "萨鲁克·乌尔·奥米的头",
       "en": "Head of Sarûk ur-Omni"
     },
+    "4266607016": {
+      "zh-chs": "傀儡之路",
+      "en": "The Taken Path"
+    },
+    "1884729571": {
+      "zh-chs": "傀儡之路",
+      "en": "The Taken Path"
+    },
+    "4233890389": {
+      "zh-chs": "傀儡之路",
+      "en": "The Taken Path"
+    },
+    "4133077612": {
+      "zh-chs": "傀儡之路",
+      "en": "The Taken Path"
+    },
+    "140548679": {
+      "zh-chs": "傀儡之路",
+      "en": "The Taken Path"
+    },
+    "3996885120": {
+      "zh-chs": "傀儡之路",
+      "en": "The Taken Path"
+    },
+    "2420215309": {
+      "zh-chs": "耐力诅咒",
+      "en": "Curse of Endurance"
+    },
+    "2336327278": {
+      "zh-chs": "耐力诅咒",
+      "en": "Curse of Endurance"
+    },
+    "1984144342": {
+      "zh-chs": "耐力诅咒",
+      "en": "Curse of Endurance"
+    },
+    "2584587272": {
+      "zh-chs": "紧迫诅咒",
+      "en": "Curse of Urgency"
+    },
+    "2668475431": {
+      "zh-chs": "紧迫诅咒",
+      "en": "Curse of Urgency"
+    },
+    "202709827": {
+      "zh-chs": "紧迫诅咒",
+      "en": "Curse of Urgency"
+    },
+    "581641427": {
+      "zh-chs": "复仇诅咒",
+      "en": "Curse of Revenge"
+    },
+    "631974316": {
+      "zh-chs": "复仇诅咒",
+      "en": "Curse of Revenge"
+    },
+    "2963518872": {
+      "zh-chs": "复仇诅咒",
+      "en": "Curse of Revenge"
+    },
     "2363333292": {
       "zh-chs": "二元飞升",
       "en": "Dyadic Ascension"
@@ -97495,6 +97555,10 @@
       "en": "A Hundredfold Path"
     },
     "120679056": {
+      "zh-chs": "丝绸之路",
+      "en": "A Silken Path"
+    },
+    "2570652683": {
       "zh-chs": "丝绸之路",
       "en": "A Silken Path"
     },
