@@ -4,6 +4,9 @@ import os
 import time
 import hashlib
 from datetime import datetime, UTC
+from dotenv import load_dotenv
+# 加载 .env 文件中的环境变量
+load_dotenv()
 
 # 环境变量和常量
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
@@ -11,8 +14,8 @@ MANIFEST_URL = 'https://www.bungie.net/Platform/Destiny2/Manifest/'
 LANG_LIST = ['zh-chs', 'en']
 ITEM_CATEGORY_FILTER = [1, 20, 39, 40, 41, 42, 43, 59, 1112488720, 2088636411]
 ITEM_CATEGORY_FILTER_DEL = [44, 1742617626]
-OUTPUT_FILE_NAME = 'Destiny2_term.json'
-METADATA_FILE_NAME = 'metadata.json' # 新增元数据文件名
+OUTPUT_FILE_NAME = 'MISC/Destiny2_term_test.json'
+METADATA_FILE_NAME = 'metadata_test.json'
 
 def get_manifest_version():
     """获取当前Manifest版本"""
@@ -22,106 +25,132 @@ def get_manifest_version():
     return response.json()['Response']['version']
 
 def fetch_manifest_data():
-    """Fetch Destiny 2 Manifest data."""
+    """获取Destiny 2 Manifest数据"""
     print("获取Manifest数据...")
     headers = {'X-API-Key': BUNGIE_API_KEY}
     response = requests.get(MANIFEST_URL, headers=headers)
-    response.raise_for_status() # 抛出HTTP错误，方便工作流中捕获
+    response.raise_for_status()
     manifest = response.json()
     print("Manifest数据获取成功")
     return manifest
 
-def fetch_item_data(manifest, lang_list, item_filter, item_filter_del):
-    """Fetch item definitions from Destiny 2 manifest."""
-    item_define_list = {}
-    for lang in lang_list:
-        item_define_path = manifest['Response']['jsonWorldComponentContentPaths'][lang]['DestinyInventoryItemLiteDefinition']
-        print(f"为语言 {lang} 获取物品数据...")
-        item_define_resp = requests.get(f'https://www.bungie.net{item_define_path}', headers={'X-API-Key': BUNGIE_API_KEY})
-        item_define_resp.raise_for_status()
-        item_define = item_define_resp.json()
-        item_define_list[lang] = item_define
-        print(f"{lang} 物品数据获取成功")
-        time.sleep(3) # 保持请求间隔，避免API限制
-    return item_define_list
+def fetch_and_extract_data(manifest, definition_types, lang_list, item_filter=None, item_filter_del=None):
+    """
+    获取并提取Destiny 2清单中的定义数据。
+    
+    参数:
+        manifest: Manifest数据
+        definition_types: 要获取的定义类型列表
+        lang_list: 语言代码列表
+        item_filter: 要包含的类别哈希列表（适用于物品）
+        item_filter_del: 要排除的类别哈希列表（适用于物品）
+        
+    返回:
+        英文术语到中文术语的映射字典列表
+    """
+    all_data = []
+    
+    for definition_type in definition_types:
+        print(f"处理 {definition_type}...")
+        
+        # 获取所有语言的定义数据
+        definitions_by_lang = {}
+        for lang in lang_list:
+            if definition_type not in manifest['Response']['jsonWorldComponentContentPaths'][lang]:
+                print(f"警告: 语言 {lang} 中未找到 {definition_type}")
+                continue
+                
+            path = manifest['Response']['jsonWorldComponentContentPaths'][lang][definition_type]
+            url = f'https://www.bungie.net{path}'
+            
+            print(f"为语言 {lang} 获取 {definition_type} 数据...")
+            response = requests.get(url, headers={'X-API-Key': BUNGIE_API_KEY})
+            response.raise_for_status()
+            data = response.json()
+            definitions_by_lang[lang] = data
+            print(f"{lang} {definition_type} 数据获取成功")
+            
+            # 添加延迟以避免API限制
+            time.sleep(1)
+        
+        # 提取数据
+        combined_data = {}
+        if definition_type == "DestinyInventoryItemLiteDefinition" and item_filter:
+            # 使用类别过滤器处理物品
+            for key in definitions_by_lang[lang_list[0]]:
+                item = definitions_by_lang[lang_list[0]][key]
+                
+                # 应用物品过滤器
+                if (item.get('itemCategoryHashes') and
+                        any(hash in item_filter for hash in item.get('itemCategoryHashes')) and
+                        not any(hash in item_filter_del for hash in item.get('itemCategoryHashes', [])) and
+                        item.get('displayProperties', {}).get('name') and
+                        item['displayProperties']['name'].strip()):
+                    
+                    en_name = definitions_by_lang['en'][key]['displayProperties']['name']
+                    zh_name = definitions_by_lang['zh-chs'][key]['displayProperties']['name']
+                    
+                    if en_name.strip() and zh_name.strip():
+                        combined_data[en_name] = zh_name
+        else:
+            # 处理其他定义类型（如活动）
+            for key in definitions_by_lang[lang_list[0]]:
+                if (key in definitions_by_lang['en'] and key in definitions_by_lang['zh-chs'] and
+                        definitions_by_lang['en'][key].get('displayProperties', {}).get('name') and
+                        definitions_by_lang['zh-chs'][key].get('displayProperties', {}).get('name')):
+                    
+                    en_name = definitions_by_lang['en'][key]['displayProperties']['name']
+                    zh_name = definitions_by_lang['zh-chs'][key]['displayProperties']['name']
+                    
+                    if en_name.strip() and zh_name.strip():
+                        combined_data[en_name] = zh_name
+        
+        print(f"从 {definition_type} 提取了 {len(combined_data)} 个条目")
+        all_data.append(combined_data)
+    
+    return all_data
 
-def extract_combined_items(item_define_list, lang_list, item_filter, item_filter_del):
-    """Extract items and map names in multiple languages."""
-    combined_item_list = {}
-    print("提取合并物品数据...")
-    for key in item_define_list[lang_list[0]]:
-        item = item_define_list[lang_list[0]][key]
-        if (item.get('itemCategoryHashes') and
-                any(hash in item_filter for hash in item.get('itemCategoryHashes')) and
-                not any(hash in item_filter_del for hash in item.get('itemCategoryHashes')) and
-                item.get('displayProperties', {}).get('name') and
-                item['displayProperties']['name'].strip()):
-
-            en_name = item_define_list['en'][key]['displayProperties']['name']
-            zh_name = item_define_list['zh-chs'][key]['displayProperties']['name']
-            combined_item_list[en_name] = zh_name
-    print("物品数据提取合并完成")
-    return combined_item_list
-
-def fetch_activity_data(manifest, lang_list):
-    """Fetch activity definitions."""
-    activity_define_list = {}
-    for lang in lang_list:
-        item_define_path = manifest['Response']['jsonWorldComponentContentPaths'][lang]['DestinyActivityDefinition'] #  保持和第一个脚本一致，使用 DestinyActivityDefinition
-        print(f"为语言 {lang} 获取活动数据...")
-        item_define_resp = requests.get(f'https://www.bungie.net{item_define_path}', headers={'X-API-Key': BUNGIE_API_KEY})
-        item_define_resp.raise_for_status()
-        activity_define = item_define_resp.json()
-        activity_define_list[lang] = activity_define
-        print(f"{lang} 活动数据获取成功")
-        time.sleep(1) # 保持请求间隔
-    return activity_define_list
-
-def extract_combined_activities(activity_define_list, lang_list):
-    """提取活动并映射多语言名称。"""
-    combined_activity_list = {}
-    print("提取合并活动数据...")
-    base_lang = lang_list[0]
-    for key in activity_define_list[base_lang]:
-        en_name = activity_define_list['en'][key]['displayProperties']['name']
-        zh_name = activity_define_list['zh-chs'][key]['displayProperties']['name']
-
-        if en_name.strip() and zh_name.strip():
-            combined_activity_list[en_name] = zh_name
-    print("活动数据提取合并完成")
-    return combined_activity_list
-
-def transform_and_sort_data(combined_item_list, combined_activity_list):
-    """Transform data, add variations, and sort by English term length, including local data from myself.json."""
+def transform_and_sort_data(data_list):
+    """转换数据，添加变体，并按英文术语长度排序"""
     print("转换和排序数据...")
 
-    # 加载本地文件数据
-    with open('myself.json', 'r', encoding='utf-8') as file:
-        local_data = json.load(file)
+    # 加载本地数据
+    try:
+        with open('myself.json', 'r', encoding='utf-8') as file:
+            local_data = json.load(file)
+    except FileNotFoundError:
+        print("警告: 未找到'myself.json'，将继续处理而不使用本地数据")
+        local_data = {}
+    except json.JSONDecodeError:
+        print("警告: 'myself.json'包含无效的JSON，将继续处理而不使用本地数据")
+        local_data = {}
 
     # 合并所有字典
-    transformed_data = combined_item_list.copy()
-    transformed_data.update(combined_activity_list)
-    transformed_data.update(local_data)
+    combined_data = {}
+    for data_dict in data_list:
+        combined_data.update(data_dict)
     
-    # 创建一个新字典来保存增强后的数据
-    augmented_data = transformed_data.copy()
+    # 添加本地数据
+    combined_data.update(local_data)
+    
+    # 创建一个新字典来存储增强数据
+    augmented_data = combined_data.copy()
 
     # 添加变体
-    for en, zh_chs in transformed_data.items():
+    for en, zh_chs in combined_data.items():
         # 添加弯引号版本
         if "'" in en:
             curved_en = en.replace("'", "’")
             augmented_data[curved_en] = zh_chs
 
-        # 添加删除 "The" 前缀的版本
+        # 添加删除"The"前缀的版本
         if en.startswith("The "):
             without_the = en[4:]
             augmented_data[without_the] = zh_chs
 
     # 按英文术语长度排序
     sorted_data = dict(sorted(augmented_data.items(), key=lambda item: len(item[0].split()), reverse=True))
-    print(f"一共梳理了 {len(sorted_data)} 个条目")
+    print(f"一共处理了 {len(sorted_data)} 个条目")
     print("数据转换和排序完成")
     return sorted_data
 
@@ -130,23 +159,15 @@ def generate_data_hash(data):
     return hashlib.sha256(json.dumps(data, sort_keys=True, ensure_ascii=False).encode('utf-8')).hexdigest()
 
 def save_merged_json(metadata, data, output_file):
-    """Save merged JSON data to file with metadata."""
+    """保存合并后的JSON数据到文件"""
     print(f"保存合并后的JSON数据到文件: {output_file}...")
     output = {
         "metadata": metadata,
         "data": data
     }
     with open(output_file, 'w', encoding='utf-8') as file:
-        json.dump(output, file, ensure_ascii=False, indent=2) # 使用 indent=2 更紧凑，类似第二个脚本
+        json.dump(output, file, ensure_ascii=False, indent=2)
     print(f"数据已保存到 {output_file}")
-
-def save_metadata_json(metadata, metadata_file):
-    """Save metadata JSON to a separate file."""
-    print(f"保存元数据到文件: {metadata_file}...")
-    with open(metadata_file, 'w', encoding='utf-8') as file:
-        json.dump(metadata, file, ensure_ascii=False, indent=2)
-    print(f"元数据已保存到 {metadata_file}")
-
 
 def main():
     start_time = datetime.now(UTC)
@@ -162,16 +183,24 @@ def main():
     # 获取Manifest数据
     manifest = fetch_manifest_data()
 
-    # 获取物品数据
-    item_define_list = fetch_item_data(manifest, LANG_LIST, ITEM_CATEGORY_FILTER, ITEM_CATEGORY_FILTER_DEL)
-    combined_item_list = extract_combined_items(item_define_list, LANG_LIST, ITEM_CATEGORY_FILTER, ITEM_CATEGORY_FILTER_DEL)
-
-    # 获取活动数据
-    activity_define_list = fetch_activity_data(manifest, LANG_LIST)
-    combined_activity_list = extract_combined_activities(activity_define_list, LANG_LIST)
-
+    # 定义要处理的定义类型列表
+    definition_types = [
+        "DestinyInventoryItemLiteDefinition",
+        "DestinyActivityDefinition",
+        "DestinySandboxPerkDefinition",
+    ]
+    
+    # 获取并提取所有定义类型的数据
+    data_list = fetch_and_extract_data(
+        manifest,
+        definition_types,
+        LANG_LIST,
+        ITEM_CATEGORY_FILTER,
+        ITEM_CATEGORY_FILTER_DEL
+    )
+    
     # 转换和排序数据
-    transformed_data = transform_and_sort_data(combined_item_list, combined_activity_list)
+    transformed_data = transform_and_sort_data(data_list)
 
     # 生成数据哈希
     data_hash = generate_data_hash(transformed_data)
@@ -183,14 +212,11 @@ def main():
         "item_count": len(transformed_data),
         "data_hash": data_hash,
         "source": "Bungie Destiny 2 Manifest",
-        "script_name": os.path.basename(__file__) # 记录脚本名称
+        "definition_types": definition_types
     }
 
-    # 保存合并后的JSON数据 (包含元数据)
+    # 保存合并后的JSON数据（包含元数据）
     save_merged_json(metadata, transformed_data, OUTPUT_FILE_NAME)
-
-    # 保存元数据到单独的文件 (可选，如果需要分离元数据)
-    # save_metadata_json(metadata, METADATA_FILE_NAME) #  保存元数据到单独的文件
 
     end_time = datetime.now(UTC)
     duration = end_time - start_time
@@ -198,3 +224,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
