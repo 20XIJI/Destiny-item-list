@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "231697.25.02.19.2000-2-bnet.58583",
-    "timestamp": "2025-03-11T17:40:55.431145+00:00",
-    "item_count": 25330,
-    "data_hash": "02fccf408b8744eda7c0eb01b85ad35e6353e5915880afedf87f45f4e45c2544"
+    "version": "231916.25.03.01.2325-1-bnet.58746",
+    "timestamp": "2025-03-12T17:40:33.283676+00:00",
+    "item_count": 25509,
+    "data_hash": "04dba2da3c978e296b850f1f2d1f1568f6a157cbdd635be381669d4b2a20a0a1"
   },
   "data": {
     "2899766705": {
@@ -7306,18 +7306,6 @@
       "zh-chs": "守护者游戏勋章兑换码",
       "en": "Guardian Games Medallion Code"
     },
-    "4103258015": {
-      "zh-chs": "喧嚣",
-      "en": "Hullabaloo"
-    },
-    "4158464227": {
-      "zh-chs": "幽灵骏马",
-      "en": "Taraxippos"
-    },
-    "3659710187": {
-      "zh-chs": "力拔头筹",
-      "en": "The Title"
-    },
     "470416933": {
       "zh-chs": "活动信息",
       "en": "Event Information"
@@ -7631,6 +7619,10 @@
       "en": "Catalyst Quest Boost Omega"
     },
     "976718519": {
+      "zh-chs": "异域武器催化奖励",
+      "en": "Exotic Weapon Catalyst Reward"
+    },
+    "3855193985": {
       "zh-chs": "异域武器催化奖励",
       "en": "Exotic Weapon Catalyst Reward"
     },
@@ -12298,6 +12290,174 @@
       "zh-chs": "层数提升：深渊使者",
       "en": "Stack Increase: Herald of the Deep"
     },
+    "3748833035": {
+      "zh-chs": "梯队符文",
+      "en": "Echelon Rune"
+    },
+    "372290646": {
+      "zh-chs": "梯队符文",
+      "en": "Echelon Rune"
+    },
+    "4148946332": {
+      "zh-chs": "梯队符文",
+      "en": "Echelon Rune"
+    },
+    "735234546": {
+      "zh-chs": "军备符文",
+      "en": "Armament Rune"
+    },
+    "372290645": {
+      "zh-chs": "军备符文",
+      "en": "Armament Rune"
+    },
+    "3646477691": {
+      "zh-chs": "军备符文",
+      "en": "Armament Rune"
+    },
+    "2527933261": {
+      "zh-chs": "集聚符文",
+      "en": "Convergent Rune"
+    },
+    "372290644": {
+      "zh-chs": "集聚符文",
+      "en": "Convergent Rune"
+    },
+    "1765845990": {
+      "zh-chs": "集聚符文",
+      "en": "Convergent Rune"
+    },
+    "1612011420": {
+      "zh-chs": "印记符文",
+      "en": "Sigil Rune"
+    },
+    "372290643": {
+      "zh-chs": "印记符文",
+      "en": "Sigil Rune"
+    },
+    "226993885": {
+      "zh-chs": "印记符文",
+      "en": "Sigil Rune"
+    },
+    "1464026583": {
+      "zh-chs": "酬劳符文",
+      "en": "Remunerate Rune"
+    },
+    "372290642": {
+      "zh-chs": "酬劳符文",
+      "en": "Remunerate Rune"
+    },
+    "68868760": {
+      "zh-chs": "酬劳符文",
+      "en": "Remunerate Rune"
+    },
+    "423129886": {
+      "zh-chs": "元气符文",
+      "en": "Orgone Rune"
+    },
+    "372290641": {
+      "zh-chs": "元气符文",
+      "en": "Orgone Rune"
+    },
+    "3841078455": {
+      "zh-chs": "元气符文",
+      "en": "Orgone Rune"
+    },
+    "372290640": {
+      "zh-chs": "适配符文",
+      "en": "Adaptive Rune"
+    },
+    "2797885785": {
+      "zh-chs": "适配符文",
+      "en": "Adaptive Rune"
+    },
+    "848775538": {
+      "zh-chs": "适配符文",
+      "en": "Adaptive Rune"
+    },
+    "4048196616": {
+      "zh-chs": "实现符文",
+      "en": "Effectuate Rune"
+    },
+    "372290655": {
+      "zh-chs": "实现符文",
+      "en": "Effectuate Rune"
+    },
+    "3981921497": {
+      "zh-chs": "实现符文",
+      "en": "Effectuate Rune"
+    },
+    "3510388227": {
+      "zh-chs": "加速符文",
+      "en": "Accelerant Rune"
+    },
+    "372290654": {
+      "zh-chs": "加速符文",
+      "en": "Accelerant Rune"
+    },
+    "3113446900": {
+      "zh-chs": "加速符文",
+      "en": "Accelerant Rune"
+    },
+    "691339933": {
+      "zh-chs": "金刚符文",
+      "en": "Adamantine Rune"
+    },
+    "355513060": {
+      "zh-chs": "金刚符文",
+      "en": "Adamantine Rune"
+    },
+    "3509244726": {
+      "zh-chs": "金刚符文",
+      "en": "Adamantine Rune"
+    },
+    "2334639585": {
+      "zh-chs": "傀儡护罩",
+      "en": "Taken Ward"
+    },
+    "2334639586": {
+      "zh-chs": "傀儡护罩",
+      "en": "Taken Ward"
+    },
+    "2384972376": {
+      "zh-chs": "邪魔族护罩",
+      "en": "Hive Ward"
+    },
+    "2384972379": {
+      "zh-chs": "邪魔族护罩",
+      "en": "Hive Ward"
+    },
+    "2368194759": {
+      "zh-chs": "恐惧护罩",
+      "en": "Dread Ward"
+    },
+    "2368194756": {
+      "zh-chs": "恐惧护罩",
+      "en": "Dread Ward"
+    },
+    "2418527550": {
+      "zh-chs": "傀儡激涌",
+      "en": "Taken Surge"
+    },
+    "2418527549": {
+      "zh-chs": "傀儡激涌",
+      "en": "Taken Surge"
+    },
+    "2401749933": {
+      "zh-chs": "邪魔族激涌",
+      "en": "Hive Surge"
+    },
+    "2401749934": {
+      "zh-chs": "邪魔族激涌",
+      "en": "Hive Surge"
+    },
+    "2452082916": {
+      "zh-chs": "恐惧激涌",
+      "en": "Dread Surge"
+    },
+    "2452082919": {
+      "zh-chs": "恐惧激涌",
+      "en": "Dread Surge"
+    },
     "3441641472": {
       "zh-chs": "坚定意志",
       "en": "Steel Your Nerves"
@@ -12306,7 +12466,27 @@
       "zh-chs": "不屈意志",
       "en": "Unbreakable Will"
     },
+    "3441641474": {
+      "zh-chs": "顿悟时刻",
+      "en": "Moment of Clarity"
+    },
+    "1558305667": {
+      "zh-chs": "狂热力量",
+      "en": "Ardent Force"
+    },
+    "1558305664": {
+      "zh-chs": "不朽之饥",
+      "en": "Undying Hunger"
+    },
+    "1558305665": {
+      "zh-chs": "奢靡盛宴",
+      "en": "Sumptuous Repast"
+    },
     "3138956643": {
+      "zh-chs": "仪式效能",
+      "en": "Ritual Potency"
+    },
+    "3138956640": {
       "zh-chs": "仪式效能",
       "en": "Ritual Potency"
     },
@@ -12314,9 +12494,37 @@
       "zh-chs": "驱散腐化",
       "en": "Dispelled Corruption"
     },
+    "4180666191": {
+      "zh-chs": "聚合腐化",
+      "en": "Coalesced Corruption"
+    },
     "864937559": {
       "zh-chs": "意外潜能",
       "en": "Unforeseen Potential"
+    },
+    "1674370164": {
+      "zh-chs": "碎志者碎片：勇士",
+      "en": "Willbreaker Shard: Champions"
+    },
+    "3192661745": {
+      "zh-chs": "碎志者碎片：沃罗克",
+      "en": "Willbreaker Shard: Vorok"
+    },
+    "371475526": {
+      "zh-chs": "碎志者碎片：幽冥",
+      "en": "Willbreaker Shard: Nether"
+    },
+    "1025760434": {
+      "zh-chs": "碎志者碎片：预言",
+      "en": "Willbreaker Shard: Prophecy"
+    },
+    "3237640528": {
+      "zh-chs": "碎志者碎片：国度",
+      "en": "Willbreaker Shard: Realms"
+    },
+    "758913342": {
+      "zh-chs": "碎志者碎片：烈日",
+      "en": "Willbreaker Shard: Sol"
     },
     "4197359085": {
       "zh-chs": "决心之力",
@@ -12342,6 +12550,10 @@
       "zh-chs": "贪食蠕虫子嗣",
       "en": "Ravenous Wormspawn"
     },
+    "303896988": {
+      "zh-chs": "进贡蠕虫子嗣",
+      "en": "Tithing Wormspawn"
+    },
     "3912505557": {
       "zh-chs": "转移香精",
       "en": "Metastasized Essentia"
@@ -12359,12 +12571,24 @@
       "en": "Taken Osseous Fragment"
     },
     "3212065485": {
-      "zh-chs": "雕刻：邪神残余",
-      "en": "Engraving: King's Vestige"
+      "zh-chs": "雕刻：不稳定神枪手",
+      "en": "Engraving: Volatile Marksman"
     },
     "3231433786": {
-      "zh-chs": "雕刻：邪神残余",
-      "en": "Engraving: King's Vestige"
+      "zh-chs": "雕刻：不稳定神枪手",
+      "en": "Engraving: Volatile Marksman"
+    },
+    "2811217120": {
+      "zh-chs": "雕刻：瓦解能量球",
+      "en": "Engraving: Unravelling Orbs"
+    },
+    "3212065486": {
+      "zh-chs": "雕刻：瓦解能量球",
+      "en": "Engraving: Unravelling Orbs"
+    },
+    "276897651": {
+      "zh-chs": "雕刻：瓦解能量球",
+      "en": "Engraving: Unravelling Orbs"
     },
     "819060970": {
       "zh-chs": "雕刻：电介质",
@@ -12377,6 +12601,42 @@
     "292230141": {
       "zh-chs": "雕刻：电介质",
       "en": "Engraving: Dielectric"
+    },
+    "1427273183": {
+      "zh-chs": "雕刻：元素虹吸",
+      "en": "Engraving: Elemental Siphon"
+    },
+    "3262398215": {
+      "zh-chs": "雕刻：元素虹吸",
+      "en": "Engraving: Elemental Siphon"
+    },
+    "2051262496": {
+      "zh-chs": "雕刻：元素虹吸",
+      "en": "Engraving: Elemental Siphon"
+    },
+    "1753725731": {
+      "zh-chs": "雕刻：邪恶收割",
+      "en": "Engraving: Maligned Harvest"
+    },
+    "3245620659": {
+      "zh-chs": "雕刻：邪恶收割",
+      "en": "Engraving: Maligned Harvest"
+    },
+    "2981958460": {
+      "zh-chs": "雕刻：邪恶收割",
+      "en": "Engraving: Maligned Harvest"
+    },
+    "2503723918": {
+      "zh-chs": "雕刻：扭曲虫群",
+      "en": "Engraving: Twisted Horde"
+    },
+    "3245620656": {
+      "zh-chs": "雕刻：扭曲虫群",
+      "en": "Engraving: Twisted Horde"
+    },
+    "1315076857": {
+      "zh-chs": "雕刻：扭曲虫群",
+      "en": "Engraving: Twisted Horde"
     },
     "458642113": {
       "zh-chs": "傀儡经文",
@@ -12814,6 +13074,10 @@
       "zh-chs": "势不可挡的偃月",
       "en": "Unstoppable Glaive"
     },
+    "2297703044": {
+      "zh-chs": "过载追踪步枪",
+      "en": "Overload Trace Rifles"
+    },
     "521275126": {
       "zh-chs": "超频上膛",
       "en": "Overclock and Load"
@@ -12833,6 +13097,10 @@
     "521275122": {
       "zh-chs": "瓦解能量球",
       "en": "Unraveling Orbs"
+    },
+    "521275121": {
+      "zh-chs": "光束医师",
+      "en": "Beam Medic"
     },
     "3585856469": {
       "zh-chs": "死守防线",
@@ -12854,6 +13122,10 @@
       "zh-chs": "光子耀斑",
       "en": "Photonic Flare"
     },
+    "3585856466": {
+      "zh-chs": "元素虹吸",
+      "en": "Elemental Siphon"
+    },
     "2596646296": {
       "zh-chs": "恐怖终结技",
       "en": "Dreadful Finisher"
@@ -12874,6 +13146,10 @@
       "zh-chs": "静铃无响",
       "en": "No Bell"
     },
+    "2596646303": {
+      "zh-chs": "严酷折射",
+      "en": "Harsh Refraction"
+    },
     "1319563991": {
       "zh-chs": "粒子重建",
       "en": "Particle Reconstruction"
@@ -12893,6 +13169,10 @@
     "1319563987": {
       "zh-chs": "虚空助焊",
       "en": "Void Flux"
+    },
+    "1319563984": {
+      "zh-chs": "极限突破",
+      "en": "Limit Break"
     },
     "3125852681": {
       "zh-chs": "恩慈入场券",
@@ -56038,6 +56318,10 @@
       "zh-chs": "守护者游戏活动卡片升级",
       "en": "Guardian Games Event Card Upgrade"
     },
+    "302433922": {
+      "zh-chs": "光明与黑暗",
+      "en": "Light and Darkness"
+    },
     "576914489": {
       "zh-chs": "卡戎的通行费",
       "en": "Charon's Toll"
@@ -56515,24 +56799,24 @@
       "en": "Navigator's Crown"
     },
     "3932962120": {
-      "zh-chs": "阿波罗的荣耀护臂",
-      "en": "Glory of Apollo Grips"
+      "zh-chs": "阿提米斯的荣耀护臂",
+      "en": "Glory of Artemis Grips"
     },
     "2158247744": {
-      "zh-chs": "阿波罗的荣耀胸甲",
-      "en": "Glory of Apollo Vest"
+      "zh-chs": "阿提米斯的荣耀胸甲",
+      "en": "Glory of Artemis Vest"
     },
     "1085403133": {
-      "zh-chs": "阿波罗的荣耀披风",
-      "en": "Glory of Apollo Cloak"
+      "zh-chs": "阿提米斯的荣耀披风",
+      "en": "Glory of Artemis Cloak"
     },
     "1021443313": {
-      "zh-chs": "阿波罗的荣耀胄盔",
-      "en": "Glory of Apollo Casque"
+      "zh-chs": "阿提米斯的荣耀胄盔",
+      "en": "Glory of Artemis Casque"
     },
     "314979874": {
-      "zh-chs": "阿波罗的荣耀腿铠",
-      "en": "Glory of Apollo Strides"
+      "zh-chs": "阿提米斯的荣耀腿铠",
+      "en": "Glory of Artemis Strides"
     },
     "2496009430": {
       "zh-chs": "隐秘游侠护臂",
@@ -56555,24 +56839,24 @@
       "en": "Covert Ranger Boots"
     },
     "1175114637": {
-      "zh-chs": "冰冻圈护手",
-      "en": "Cryosphere Grasps"
+      "zh-chs": "雨淞潜行者护手",
+      "en": "Verglas Stalker Grasps"
     },
     "3698722645": {
-      "zh-chs": "冰冻圈胸甲",
-      "en": "Cryosphere Vest"
+      "zh-chs": "雨淞潜行者胸甲",
+      "en": "Verglas Stalker Vest"
     },
     "189162152": {
-      "zh-chs": "冰冻圈披风",
-      "en": "Cryosphere Cloak"
+      "zh-chs": "雨淞潜行者披风",
+      "en": "Verglas Stalker Cloak"
     },
     "2712582684": {
-      "zh-chs": "冰冻圈面具",
-      "en": "Cryosphere Mask"
+      "zh-chs": "雨淞潜行者面具",
+      "en": "Verglas Stalker Mask"
     },
     "1820846903": {
-      "zh-chs": "冰冻圈腿铠",
-      "en": "Cryosphere Strides"
+      "zh-chs": "雨淞潜行者腿铠",
+      "en": "Verglas Stalker Strides"
     },
     "189162155": {
       "zh-chs": "草蜻蛉",
@@ -56627,24 +56911,24 @@
       "en": "Navigator's Crown"
     },
     "400623726": {
-      "zh-chs": "阿瑞斯的殊荣臂铠",
-      "en": "Honor of Ares Gauntlets"
+      "zh-chs": "赫拉克勒斯的殊荣臂铠",
+      "en": "Honor of Hercules Gauntlets"
     },
     "455112322": {
-      "zh-chs": "阿瑞斯的殊荣战甲",
-      "en": "Honor of Ares Plate"
+      "zh-chs": "赫拉克勒斯的殊荣战甲",
+      "en": "Honor of Hercules Plate"
     },
     "3974075603": {
-      "zh-chs": "阿瑞斯的殊荣印记",
-      "en": "Honor of Ares Mark"
+      "zh-chs": "赫拉克勒斯的殊荣印记",
+      "en": "Honor of Hercules Mark"
     },
     "2453921511": {
-      "zh-chs": "阿瑞斯的殊荣头盔",
-      "en": "Honor of Ares Helm"
+      "zh-chs": "赫拉克勒斯的殊荣头盔",
+      "en": "Honor of Hercules Helm"
     },
     "2483701864": {
-      "zh-chs": "阿瑞斯的殊荣胫甲",
-      "en": "Honor of Ares Greaves"
+      "zh-chs": "赫拉克勒斯的殊荣胫甲",
+      "en": "Honor of Hercules Greaves"
     },
     "59499292": {
       "zh-chs": "震颤执行者臂铠",
@@ -56667,24 +56951,24 @@
       "en": "Shock Enforcer Greaves"
     },
     "1499175527": {
-      "zh-chs": "冰冻圈臂铠",
-      "en": "Cryosphere Gauntlets"
+      "zh-chs": "碎裂冰山臂铠",
+      "en": "Cracked Iceberg Gauntlets"
     },
     "3153265419": {
-      "zh-chs": "冰冻圈战甲",
-      "en": "Cryosphere Plate"
+      "zh-chs": "碎裂冰山战甲",
+      "en": "Cracked Iceberg Plate"
     },
     "3790083098": {
-      "zh-chs": "冰冻圈印记",
-      "en": "Cryosphere Mark"
+      "zh-chs": "碎裂冰山印记",
+      "en": "Cracked Iceberg Mark"
     },
     "1140953886": {
-      "zh-chs": "冰冻圈头盔",
-      "en": "Cryosphere Helm"
+      "zh-chs": "碎裂冰山头盔",
+      "en": "Cracked Iceberg Helm"
     },
     "1058307937": {
-      "zh-chs": "冰冻圈胫甲",
-      "en": "Cryosphere Greaves"
+      "zh-chs": "碎裂冰山胫甲",
+      "en": "Cracked Iceberg Greaves"
     },
     "1140953885": {
       "zh-chs": "烈日风暴",
@@ -56739,24 +57023,24 @@
       "en": "Navigator's Crown"
     },
     "178757083": {
-      "zh-chs": "雅典娜的恩惠手套",
-      "en": "Favor of Athena Gloves"
+      "zh-chs": "宙斯的恩惠手套",
+      "en": "Favor of Zeus Gloves"
     },
     "716099381": {
-      "zh-chs": "雅典娜的恩惠法袍",
-      "en": "Favor of Athena Robes"
+      "zh-chs": "宙斯的恩惠法袍",
+      "en": "Favor of Zeus Robes"
     },
     "3708661256": {
-      "zh-chs": "雅典娜的恩惠臂环",
-      "en": "Favor of Athena Bond"
+      "zh-chs": "宙斯的恩惠臂环",
+      "en": "Favor of Zeus Bond"
     },
     "4048947954": {
-      "zh-chs": "雅典娜的恩惠兜帽",
-      "en": "Favor of Athena Hood"
+      "zh-chs": "宙斯的恩惠兜帽",
+      "en": "Favor of Zeus Hood"
     },
     "2923764557": {
-      "zh-chs": "雅典娜的恩惠战靴",
-      "en": "Favor of Athena Boots"
+      "zh-chs": "宙斯的恩惠战靴",
+      "en": "Favor of Zeus Boots"
     },
     "254337751": {
       "zh-chs": "皇家保护者手套",
@@ -56895,8 +57179,8 @@
       "en": "Petrified"
     },
     "2268509068": {
-      "zh-chs": "反重力鞋",
-      "en": "Anti-Gravity Shoes"
+      "zh-chs": "月鞋",
+      "en": "Lunar Shoes"
     },
     "3541145072": {
       "zh-chs": "库存管理",
@@ -56930,10 +57214,6 @@
       "zh-chs": "盆景",
       "en": "Bonsai"
     },
-    "2363985761": {
-      "zh-chs": "捏指关节",
-      "en": "Cracking Knuckles"
-    },
     "1136956487": {
       "zh-chs": "修剪整齐",
       "en": "Manicured"
@@ -56949,10 +57229,6 @@
     "261232972": {
       "zh-chs": "失望",
       "en": "Disappointment"
-    },
-    "2865550327": {
-      "zh-chs": "地面坐姿",
-      "en": "Ground Sit"
     },
     "1601510957": {
       "zh-chs": "远程培训",
@@ -57087,12 +57363,12 @@
       "en": "Event Horizon Skimmer Set"
     },
     "2816945469": {
-      "zh-chs": "冰冻圈套装",
-      "en": "Cryosphere Set"
+      "zh-chs": "雨淞潜行者套装",
+      "en": "Verglas Stalker Set"
     },
     "4122066043": {
-      "zh-chs": "冰冻圈套装",
-      "en": "Cryosphere Set"
+      "zh-chs": "碎裂冰山套装",
+      "en": "Cracked Iceberg Set"
     },
     "411162046": {
       "zh-chs": "冰冻圈套装",
@@ -57143,20 +57419,20 @@
       "en": "Guardian Games Card Upgrade"
     },
     "4076805093": {
-      "zh-chs": "全新守护者游戏配件",
-      "en": "New Guardian Games Accessories"
+      "zh-chs": "游戏荣耀套装",
+      "en": "Glory of the Games Set"
     },
     "375350352": {
-      "zh-chs": "阿波罗的荣耀套装",
-      "en": "Glory of Apollo Set"
+      "zh-chs": "阿提米斯的荣耀套装",
+      "en": "Glory of Artemis Set"
     },
     "2172704850": {
-      "zh-chs": "阿瑞斯的殊荣套装",
-      "en": "Honor of Ares Set"
+      "zh-chs": "赫拉克勒斯的殊荣套装",
+      "en": "Honor of Hercules Set"
     },
     "2010939955": {
-      "zh-chs": "雅典娜的恩惠套装",
-      "en": "Favor of Athena Set"
+      "zh-chs": "宙斯的恩惠套装",
+      "en": "Favor of Zeus Set"
     },
     "2145815824": {
       "zh-chs": "星际战争动作表情组合包",
@@ -57201,6 +57477,10 @@
     "2936830709": {
       "zh-chs": "狂热崇拜",
       "en": "Ardent Adoration"
+    },
+    "1912260805": {
+      "zh-chs": "胜利之翼",
+      "en": "Winged Victory"
     },
     "2141889281": {
       "zh-chs": "活动入场券",
@@ -90238,6 +90518,10 @@
       "zh-chs": "最终抹除",
       "en": "Last Erasure"
     },
+    "1611948522": {
+      "zh-chs": "本影梯队",
+      "en": "Umbral Echelon"
+    },
     "1640013310": {
       "zh-chs": "变节者利刃护臂",
       "en": "Apostate's Blade Grips"
@@ -90686,6 +90970,10 @@
       "zh-chs": "普莱蒂斯的复仇（失时）",
       "en": "Praedyth's Revenge (Timelost)"
     },
+    "2903168058": {
+      "zh-chs": "分裂",
+      "en": "Division"
+    },
     "3734001727": {
       "zh-chs": "分裂（专家）",
       "en": "Division (Adept)"
@@ -90697,6 +90985,10 @@
     "2501377328": {
       "zh-chs": "分裂（专家）",
       "en": "Division (Adept)"
+    },
+    "2291392465": {
+      "zh-chs": "记忆犹新",
+      "en": "Anamnesis"
     },
     "1536325168": {
       "zh-chs": "记忆犹新（专家）",
@@ -90726,6 +91018,10 @@
       "zh-chs": "金刚磐石（专家）",
       "en": "Adamantite (Adept)"
     },
+    "3234363830": {
+      "zh-chs": "镜之意象",
+      "en": "Mirror Imago"
+    },
     "302039451": {
       "zh-chs": "镜之意象（专家）",
       "en": "Mirror Imago (Adept)"
@@ -90738,6 +91034,10 @@
       "zh-chs": "镜之意象（专家）",
       "en": "Mirror Imago (Adept)"
     },
+    "3228630258": {
+      "zh-chs": "后见之明",
+      "en": "Afterlight"
+    },
     "3953163559": {
       "zh-chs": "后见之明（专家）",
       "en": "Afterlight (Adept)"
@@ -90749,6 +91049,10 @@
     "861521336": {
       "zh-chs": "后见之明（专家）",
       "en": "Afterlight (Adept)"
+    },
+    "3269398063": {
+      "zh-chs": "拒绝召唤",
+      "en": "Refusal of the Call"
     },
     "25228802": {
       "zh-chs": "拒绝召唤（专家）",
@@ -90914,7 +91218,15 @@
       "zh-chs": "力拔头筹",
       "en": "The Title"
     },
+    "2262043425": {
+      "zh-chs": "力拔头筹",
+      "en": "The Title"
+    },
     "2595813005": {
+      "zh-chs": "幽灵骏马",
+      "en": "Taraxippos"
+    },
+    "754513817": {
       "zh-chs": "幽灵骏马",
       "en": "Taraxippos"
     },
@@ -90922,7 +91234,15 @@
       "zh-chs": "喧嚣",
       "en": "Hullabaloo"
     },
+    "1328786973": {
+      "zh-chs": "喧嚣",
+      "en": "Hullabaloo"
+    },
     "2029899814": {
+      "zh-chs": "雷电",
+      "en": "Keraunios"
+    },
+    "1836235748": {
       "zh-chs": "雷电",
       "en": "Keraunios"
     },
@@ -90982,6 +91302,10 @@
       "zh-chs": "注视焦点",
       "en": "Cynosure"
     },
+    "1853501084": {
+      "zh-chs": "全息芯片提取器",
+      "en": "Holochip Extractor"
+    },
     "3166516139": {
       "zh-chs": "狂热崇拜",
       "en": "Ardent Adoration"
@@ -90989,6 +91313,206 @@
     "3916428099": {
       "zh-chs": "全息芯片提取器",
       "en": "Holochip Extractor"
+    },
+    "2410541927": {
+      "zh-chs": "胜利之翼",
+      "en": "Winged Victory"
+    },
+    "2934305134": {
+      "zh-chs": "滑溜运气",
+      "en": "Greasy Luck"
+    },
+    "3210739171": {
+      "zh-chs": "滑溜运气",
+      "en": "Greasy Luck"
+    },
+    "2059741649": {
+      "zh-chs": "新太平洋碑文",
+      "en": "New Pacific Epitaph"
+    },
+    "233402416": {
+      "zh-chs": "新太平洋碑文",
+      "en": "New Pacific Epitaph"
+    },
+    "291447487": {
+      "zh-chs": "冰冷安慰",
+      "en": "Cold Comfort"
+    },
+    "1817605554": {
+      "zh-chs": "冰冷安慰",
+      "en": "Cold Comfort"
+    },
+    "4228149269": {
+      "zh-chs": "无人幸存",
+      "en": "No Survivors"
+    },
+    "189194532": {
+      "zh-chs": "无人幸存",
+      "en": "No Survivors"
+    },
+    "1685406703": {
+      "zh-chs": "滑溜运气",
+      "en": "Greasy Luck"
+    },
+    "1050582210": {
+      "zh-chs": "滑溜运气",
+      "en": "Greasy Luck"
+    },
+    "492673102": {
+      "zh-chs": "新太平洋碑文",
+      "en": "New Pacific Epitaph"
+    },
+    "3185151619": {
+      "zh-chs": "新太平洋碑文",
+      "en": "New Pacific Epitaph"
+    },
+    "2760833884": {
+      "zh-chs": "冰冷安慰",
+      "en": "Cold Comfort"
+    },
+    "2126543269": {
+      "zh-chs": "冰冷安慰",
+      "en": "Cold Comfort"
+    },
+    "4193602194": {
+      "zh-chs": "无人幸存",
+      "en": "No Survivors"
+    },
+    "1157220231": {
+      "zh-chs": "无人幸存",
+      "en": "No Survivors"
+    },
+    "3164166855": {
+      "zh-chs": "审判",
+      "en": "Judgment"
+    },
+    "2907694858": {
+      "zh-chs": "审判",
+      "en": "Judgment"
+    },
+    "3340037896": {
+      "zh-chs": "无情",
+      "en": "Relentless"
+    },
+    "94414241": {
+      "zh-chs": "无情",
+      "en": "Relentless"
+    },
+    "2946572750": {
+      "zh-chs": "猝死",
+      "en": "A Sudden Death"
+    },
+    "3535064067": {
+      "zh-chs": "猝死",
+      "en": "A Sudden Death"
+    },
+    "3146195546": {
+      "zh-chs": "检察官",
+      "en": "Prosecutor"
+    },
+    "599883935": {
+      "zh-chs": "检察官",
+      "en": "Prosecutor"
+    },
+    "1635931988": {
+      "zh-chs": "审判",
+      "en": "Judgment"
+    },
+    "2909639533": {
+      "zh-chs": "审判",
+      "en": "Judgment"
+    },
+    "4193661297": {
+      "zh-chs": "无情",
+      "en": "Relentless"
+    },
+    "684264976": {
+      "zh-chs": "无情",
+      "en": "Relentless"
+    },
+    "1962751375": {
+      "zh-chs": "猝死",
+      "en": "A Sudden Death"
+    },
+    "2557589026": {
+      "zh-chs": "猝死",
+      "en": "A Sudden Death"
+    },
+    "280985435": {
+      "zh-chs": "检察官",
+      "en": "Prosecutor"
+    },
+    "3912734222": {
+      "zh-chs": "检察官",
+      "en": "Prosecutor"
+    },
+    "1206729100": {
+      "zh-chs": "狂野飞禽",
+      "en": "Wilderflight"
+    },
+    "559523765": {
+      "zh-chs": "狂野飞禽",
+      "en": "Wilderflight"
+    },
+    "3984556130": {
+      "zh-chs": "终点视界",
+      "en": "Terminus Horizon"
+    },
+    "2210806903": {
+      "zh-chs": "终点视界",
+      "en": "Terminus Horizon"
+    },
+    "4249949938": {
+      "zh-chs": "长臂",
+      "en": "Long Arm"
+    },
+    "4239378215": {
+      "zh-chs": "长臂",
+      "en": "Long Arm"
+    },
+    "2575844666": {
+      "zh-chs": "阈限守夜",
+      "en": "Liminal Vigil"
+    },
+    "1905934655": {
+      "zh-chs": "阈限守夜",
+      "en": "Liminal Vigil"
+    },
+    "2982006965": {
+      "zh-chs": "狂野飞禽",
+      "en": "Wilderflight"
+    },
+    "2477408004": {
+      "zh-chs": "狂野飞禽",
+      "en": "Wilderflight"
+    },
+    "2730671571": {
+      "zh-chs": "终点视界",
+      "en": "Terminus Horizon"
+    },
+    "4267192886": {
+      "zh-chs": "终点视界",
+      "en": "Terminus Horizon"
+    },
+    "14929251": {
+      "zh-chs": "长臂",
+      "en": "Long Arm"
+    },
+    "3692140710": {
+      "zh-chs": "长臂",
+      "en": "Long Arm"
+    },
+    "1460079227": {
+      "zh-chs": "阈限守夜",
+      "en": "Liminal Vigil"
+    },
+    "3421639790": {
+      "zh-chs": "阈限守夜",
+      "en": "Liminal Vigil"
+    },
+    "59871045": {
+      "zh-chs": "重力井",
+      "en": "Gravity Well"
     },
     "29505215": {
       "zh-chs": "随机特性",
@@ -91249,6 +91773,14 @@
     "3063212171": {
       "zh-chs": "穿越风暴",
       "en": "Through the Storm"
+    },
+    "3079989877": {
+      "zh-chs": "旋律响起",
+      "en": "Drop the Needle"
+    },
+    "3079989876": {
+      "zh-chs": "目的地：天仓五",
+      "en": "Destination: Tau Ceti"
     },
     "3959701438": {
       "zh-chs": "破碎信使",
@@ -91938,45 +92470,37 @@
       "zh-chs": "打雪仗",
       "en": "Snowball Fight"
     },
-    "3697349532": {
-      "zh-chs": "主武器鉴赏家",
-      "en": "Primary Connoisseur"
+    "218035183": {
+      "zh-chs": "守护者游戏：电弧风暴",
+      "en": "Guardian Games: Arcstorm"
     },
-    "3697349533": {
-      "zh-chs": "特殊武器行刑者",
-      "en": "Special Executioner"
+    "218035182": {
+      "zh-chs": "守护者游戏：衔尾蛇",
+      "en": "Guardian Games: Ouroboros"
     },
-    "3697349534": {
-      "zh-chs": "重武器强者",
-      "en": "Heavy Performer"
+    "218035181": {
+      "zh-chs": "守护者游戏：混沌理论",
+      "en": "Guardian Games: Chaos Theory"
     },
-    "3697349535": {
-      "zh-chs": "疯狂炸弹客",
-      "en": "Mad Bomber"
+    "218035180": {
+      "zh-chs": "守护者游戏：冻结分形",
+      "en": "Guardian Games: Frozen Fractals"
     },
-    "3697349528": {
-      "zh-chs": "赤手空拳",
-      "en": "Hand to Fist"
-    },
-    "3697349530": {
-      "zh-chs": "当之无愧",
-      "en": "Far and Away"
-    },
-    "3697349531": {
-      "zh-chs": "超能力量",
-      "en": "Super Strength"
+    "218035179": {
+      "zh-chs": "守护者游戏：织影者",
+      "en": "Guardian Games: Shadow-Weaver"
     },
     "2525215824": {
       "zh-chs": "守护者游戏：近程",
       "en": "Guardian Games: Close Range"
     },
     "2525215825": {
-      "zh-chs": "守护者游戏：中程",
-      "en": "Guardian Games: Mid-Range"
+      "zh-chs": "守护者游戏：点射步枪",
+      "en": "Guardian Games: Burst Rifles"
     },
     "2525215826": {
-      "zh-chs": "守护者游戏：远程",
-      "en": "Guardian Games: Long Range"
+      "zh-chs": "守护者游戏：精准步枪",
+      "en": "Guardian Games: Precision Rifles"
     },
     "2525215827": {
       "zh-chs": "守护者游戏：爆炸武器",
@@ -91989,6 +92513,18 @@
     "2525215829": {
       "zh-chs": "守护者游戏：刀刃武器",
       "en": "Guardian Games: Bladed Weaponry"
+    },
+    "2525215831": {
+      "zh-chs": "守护者游戏：快速抽取",
+      "en": "Guardian Games: Quick Draw"
+    },
+    "2525215832": {
+      "zh-chs": "守护者游戏：重型武器",
+      "en": "Guardian Games: Heavy Weaponry"
+    },
+    "2525215833": {
+      "zh-chs": "守护者游戏：压制火力",
+      "en": "Guardian Games: Suppressive Fire"
     },
     "3338230649": {
       "zh-chs": "青铜狂怒",
@@ -92035,16 +92571,16 @@
       "en": "Fly the Flag"
     },
     "1667537297": {
-      "zh-chs": "仪式",
-      "en": "Ceremonials"
+      "zh-chs": "热身",
+      "en": "Warm-Ups"
     },
     "721992583": {
       "zh-chs": "象征",
       "en": "Represent"
     },
     "721992582": {
-      "zh-chs": "赛点",
-      "en": "Match Point"
+      "zh-chs": "白银冲浪",
+      "en": "Silver Surfing"
     },
     "2315674194": {
       "zh-chs": "尽显本色",
@@ -92063,12 +92599,12 @@
       "en": "Galvanic Contender"
     },
     "569680511": {
-      "zh-chs": "本影竞争者",
-      "en": "Umbral Contender"
+      "zh-chs": "电流竞争者",
+      "en": "Electric Contender"
     },
     "193645205": {
-      "zh-chs": "灼热竞争者",
-      "en": "Searing Contender"
+      "zh-chs": "充能竞争者",
+      "en": "Charged Contender"
     },
     "193645204": {
       "zh-chs": "雷霆竞争者",
@@ -92079,8 +92615,8 @@
       "en": "Big-Play Contender"
     },
     "3535121110": {
-      "zh-chs": "火热缚丝",
-      "en": "Fiery Strands"
+      "zh-chs": "活力竞争者",
+      "en": "Vibrant Contender"
     },
     "3535121111": {
       "zh-chs": "充能竞争者",
@@ -97414,6 +97950,82 @@
       "zh-chs": "恢复焚天者数据",
       "en": "Recovered Skyburner Data"
     },
+    "1360935547": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "1512081213": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3307433509": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3273878234": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3324358159": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3155449168": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3189004467": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3256261977": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3306741897": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "1310455499": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "1144106428": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3392454437": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "3358899162": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "506783031": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "2637290349": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "2351776604": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "2385331879": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "2250963795": {
+      "zh-chs": "章节2：深渊仪式",
+      "en": "Act II: Rites of the Deep"
+    },
+    "2714450065": {
+      "zh-chs": "已剥落的阿卡的血肉",
+      "en": "Peeled Flesh of Akka"
+    },
     "4042197035": {
       "zh-chs": "任务档案：斩邪除魔，光能歌者的肢体",
       "en": "Mission Dossier: Hive Hacking, Lightsinger's Limb"
@@ -97449,6 +98061,102 @@
     "586890646": {
       "zh-chs": "萨鲁克·乌尔·奥米的头",
       "en": "Head of Sarûk ur-Omni"
+    },
+    "4034307075": {
+      "zh-chs": "碎裂意志：永恒哨兵沃罗克",
+      "en": "Shattered Will: Vorok, Sentinel Eternal"
+    },
+    "2121217224": {
+      "zh-chs": "碎裂意志：永恒哨兵沃罗克",
+      "en": "Shattered Will: Vorok, Sentinel Eternal"
+    },
+    "2222030129": {
+      "zh-chs": "碎裂意志：永恒哨兵沃罗克",
+      "en": "Shattered Will: Vorok, Sentinel Eternal"
+    },
+    "2532295065": {
+      "zh-chs": "沃罗克的大砍刀",
+      "en": "Vorok's Cleaver"
+    },
+    "816506524": {
+      "zh-chs": "碎志者：无畏战舰",
+      "en": "Willbreaker: Dreadnaught"
+    },
+    "3266480247": {
+      "zh-chs": "碎志者：无畏战舰",
+      "en": "Willbreaker: Dreadnaught"
+    },
+    "1018132110": {
+      "zh-chs": "碎志者：无畏战舰",
+      "en": "Willbreaker: Dreadnaught"
+    },
+    "2897103616": {
+      "zh-chs": "已取回碎志者碎片",
+      "en": "Willbreaker Shards retrieved"
+    },
+    "2897103617": {
+      "zh-chs": "已取回碎志者碎片",
+      "en": "Willbreaker Shards retrieved"
+    },
+    "2897103618": {
+      "zh-chs": "已取回碎志者碎片",
+      "en": "Willbreaker Shards retrieved"
+    },
+    "2897103619": {
+      "zh-chs": "已取回碎志者碎片",
+      "en": "Willbreaker Shards retrieved"
+    },
+    "2897103620": {
+      "zh-chs": "已取回碎志者碎片",
+      "en": "Willbreaker Shards retrieved"
+    },
+    "2897103621": {
+      "zh-chs": "已取回碎志者碎片",
+      "en": "Willbreaker Shards retrieved"
+    },
+    "2897103622": {
+      "zh-chs": "已取回碎志者碎片",
+      "en": "Willbreaker Shards retrieved"
+    },
+    "387676842": {
+      "zh-chs": "碎裂残片：一个实体显现了",
+      "en": "Shattered Shards: An Entity Manifested"
+    },
+    "2434296097": {
+      "zh-chs": "碎裂残片：一个实体显现了",
+      "en": "Shattered Shards: An Entity Manifested"
+    },
+    "2653361164": {
+      "zh-chs": "碎裂残片：迷失预言",
+      "en": "Shattered Shards: Lost in Prophecy"
+    },
+    "808367591": {
+      "zh-chs": "碎裂残片：迷失预言",
+      "en": "Shattered Shards: Lost in Prophecy"
+    },
+    "458966626": {
+      "zh-chs": "碎裂残片：内在力量",
+      "en": "Shattered Shards: Innermost Power"
+    },
+    "358153849": {
+      "zh-chs": "碎裂残片：内在力量",
+      "en": "Shattered Shards: Innermost Power"
+    },
+    "2454914971": {
+      "zh-chs": "令状：野心之路",
+      "en": "Writ: Path of Ambition"
+    },
+    "2152476576": {
+      "zh-chs": "令状：野心之路",
+      "en": "Writ: Path of Ambition"
+    },
+    "2236364639": {
+      "zh-chs": "令状：野心之路",
+      "en": "Writ: Path of Ambition"
+    },
+    "2253289385": {
+      "zh-chs": "令状：野心之路",
+      "en": "Writ: Path of Ambition"
     },
     "4266607016": {
       "zh-chs": "傀儡之路",
@@ -97542,6 +98250,10 @@
       "zh-chs": "针尖之路",
       "en": "A Needle's Path"
     },
+    "3756396348": {
+      "zh-chs": "针尖之路",
+      "en": "A Needle's Path"
+    },
     "2044193326": {
       "zh-chs": "战锤之路",
       "en": "A Hammer's Path"
@@ -97565,6 +98277,10 @@
     "105322825": {
       "zh-chs": "二元完美",
       "en": "Dyadic Perfection"
+    },
+    "392858833": {
+      "zh-chs": "锋利骨质脊柱",
+      "en": "Sharp Osseous Spine"
     },
     "2195516418": {
       "zh-chs": "沉重骨质脊柱",
