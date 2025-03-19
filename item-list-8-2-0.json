@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "231916.25.03.01.2325-1-bnet.58746",
-    "timestamp": "2025-03-18T17:40:27.749782+00:00",
+    "version": "232176.25.03.12.2000-2-bnet.58852",
+    "timestamp": "2025-03-19T17:40:46.913249+00:00",
     "item_count": 25509,
-    "data_hash": "04dba2da3c978e296b850f1f2d1f1568f6a157cbdd635be381669d4b2a20a0a1"
+    "data_hash": "a288148ea1a3b693aa3fcc25c32444409e9a4b952525e08ca640eaaddd05e3c6"
   },
   "data": {
     "2899766705": {
@@ -57479,8 +57479,8 @@
       "en": "Ardent Adoration"
     },
     "1912260805": {
-      "zh-chs": "胜利之翼",
-      "en": "Winged Victory"
+      "zh-chs": "振翅高飞",
+      "en": "Taking Flight"
     },
     "2141889281": {
       "zh-chs": "活动入场券",
@@ -91315,8 +91315,8 @@
       "en": "Holochip Extractor"
     },
     "2410541927": {
-      "zh-chs": "胜利之翼",
-      "en": "Winged Victory"
+      "zh-chs": "振翅高飞",
+      "en": "Taking Flight"
     },
     "2934305134": {
       "zh-chs": "滑溜运气",
