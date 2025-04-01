@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "232350.25.03.19.2000-2-bnet.58923",
-    "timestamp": "2025-03-30T17:39:19.664316+00:00",
-    "item_count": 25509,
-    "data_hash": "a288148ea1a3b693aa3fcc25c32444409e9a4b952525e08ca640eaaddd05e3c6"
+    "version": "232518.25.03.26.2001-2-bnet.59004",
+    "timestamp": "2025-04-01T17:41:19.971898+00:00",
+    "item_count": 25564,
+    "data_hash": "376e4abe9a3e500fc224aed6cf5d6a8973b8d37e07a7d749642f3c793909460d"
   },
   "data": {
     "2899766705": {
@@ -12470,6 +12470,10 @@
       "zh-chs": "顿悟时刻",
       "en": "Moment of Clarity"
     },
+    "3441641477": {
+      "zh-chs": "力量碎片",
+      "en": "Shards of Power"
+    },
     "1558305667": {
       "zh-chs": "狂热力量",
       "en": "Ardent Force"
@@ -12482,11 +12486,19 @@
       "zh-chs": "奢靡盛宴",
       "en": "Sumptuous Repast"
     },
+    "1558305670": {
+      "zh-chs": "盈溢之欲",
+      "en": "Overflowing Desire"
+    },
     "3138956643": {
       "zh-chs": "仪式效能",
       "en": "Ritual Potency"
     },
     "3138956640": {
+      "zh-chs": "仪式效能",
+      "en": "Ritual Potency"
+    },
+    "3138956641": {
       "zh-chs": "仪式效能",
       "en": "Ritual Potency"
     },
@@ -12525,6 +12537,14 @@
     "758913342": {
       "zh-chs": "碎志者碎片：烈日",
       "en": "Willbreaker Shard: Sol"
+    },
+    "2420670065": {
+      "zh-chs": "希乌阿拉斯符文",
+      "en": "Rune of Xivu Arath"
+    },
+    "3481968141": {
+      "zh-chs": "已获取萨瓦图恩的符文",
+      "en": "Savathûn's runes acquired"
     },
     "4197359085": {
       "zh-chs": "决心之力",
@@ -12637,6 +12657,30 @@
     "1315076857": {
       "zh-chs": "雕刻：扭曲虫群",
       "en": "Engraving: Twisted Horde"
+    },
+    "3522714284": {
+      "zh-chs": "雕刻：战争祭司之力",
+      "en": "Engraving: Warpriest's Might"
+    },
+    "3161732498": {
+      "zh-chs": "雕刻：战争祭司之力",
+      "en": "Engraving: Warpriest's Might"
+    },
+    "2362049303": {
+      "zh-chs": "雕刻：战争祭司之力",
+      "en": "Engraving: Warpriest's Might"
+    },
+    "3770462349": {
+      "zh-chs": "雕刻：崩解",
+      "en": "Engraving: To Shreds"
+    },
+    "3161732497": {
+      "zh-chs": "雕刻：崩解",
+      "en": "Engraving: To Shreds"
+    },
+    "1362729566": {
+      "zh-chs": "雕刻：崩解",
+      "en": "Engraving: To Shreds"
     },
     "458642113": {
       "zh-chs": "傀儡经文",
@@ -13078,6 +13122,10 @@
       "zh-chs": "过载追踪步枪",
       "en": "Overload Trace Rifles"
     },
+    "2297703045": {
+      "zh-chs": "势不可挡火箭发射器",
+      "en": "Unstoppable Rocket Launcher"
+    },
     "521275126": {
       "zh-chs": "超频上膛",
       "en": "Overclock and Load"
@@ -13101,6 +13149,10 @@
     "521275121": {
       "zh-chs": "光束医师",
       "en": "Beam Medic"
+    },
+    "521275120": {
+      "zh-chs": "邪恶编织",
+      "en": "Vile Weave"
     },
     "3585856469": {
       "zh-chs": "死守防线",
@@ -13126,6 +13178,10 @@
       "zh-chs": "元素虹吸",
       "en": "Elemental Siphon"
     },
+    "3585856467": {
+      "zh-chs": "永恒毁灭",
+      "en": "Perpetual Destruction"
+    },
     "2596646296": {
       "zh-chs": "恐怖终结技",
       "en": "Dreadful Finisher"
@@ -13150,6 +13206,10 @@
       "zh-chs": "严酷折射",
       "en": "Harsh Refraction"
     },
+    "2596646302": {
+      "zh-chs": "弹中藏金",
+      "en": "Gold from Lead"
+    },
     "1319563991": {
       "zh-chs": "粒子重建",
       "en": "Particle Reconstruction"
@@ -13173,6 +13233,10 @@
     "1319563984": {
       "zh-chs": "极限突破",
       "en": "Limit Break"
+    },
+    "1319563985": {
+      "zh-chs": "崩解",
+      "en": "To Shreds"
     },
     "3125852681": {
       "zh-chs": "恩慈入场券",
@@ -98026,6 +98090,66 @@
       "zh-chs": "已剥落的阿卡的血肉",
       "en": "Peeled Flesh of Akka"
     },
+    "3145526592": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "1300533051": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "1350865908": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "1199720242": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "1166164969": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "1418270478": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "3314435711": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "3213622902": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "3415248488": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "3448803659": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "3953954169": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "4054766946": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "4155579755": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "4256392532": {
+      "zh-chs": "章节3：交叉利刃",
+      "en": "Act III: Crossed Blades"
+    },
+    "1381976379": {
+      "zh-chs": "碎志者剑柄",
+      "en": "Hilt of Willbreaker"
+    },
     "4042197035": {
       "zh-chs": "任务档案：斩邪除魔，光能歌者的肢体",
       "en": "Mission Dossier: Hive Hacking, Lightsinger's Limb"
@@ -98158,6 +98282,90 @@
       "zh-chs": "令状：野心之路",
       "en": "Writ: Path of Ambition"
     },
+    "2124637548": {
+      "zh-chs": "任务档案：女巫智谋",
+      "en": "Mission Dossier: Witch's Gambit"
+    },
+    "2326263134": {
+      "zh-chs": "任务档案：女巫智谋",
+      "en": "Mission Dossier: Witch's Gambit"
+    },
+    "689673451": {
+      "zh-chs": "任务档案：姐妹争执",
+      "en": "Mission Dossier: Sibling Squabbles"
+    },
+    "2534667120": {
+      "zh-chs": "任务档案：姐妹争执",
+      "en": "Mission Dossier: Sibling Squabbles"
+    },
+    "488047865": {
+      "zh-chs": "任务档案：姐妹争执",
+      "en": "Mission Dossier: Sibling Squabbles"
+    },
+    "3176486828": {
+      "zh-chs": "嵌入的希乌阿拉斯符文",
+      "en": "Embedded Xivu Arath Rune"
+    },
+    "3176486829": {
+      "zh-chs": "嵌入的希乌阿拉斯符文",
+      "en": "Embedded Xivu Arath Rune"
+    },
+    "3176486830": {
+      "zh-chs": "嵌入的希乌阿拉斯符文",
+      "en": "Embedded Xivu Arath Rune"
+    },
+    "3176486831": {
+      "zh-chs": "嵌入的希乌阿拉斯符文",
+      "en": "Embedded Xivu Arath Rune"
+    },
+    "2752507334": {
+      "zh-chs": "任务档案：利刃守则",
+      "en": "Mission Dossier: Blade Logic"
+    },
+    "940230388": {
+      "zh-chs": "任务档案：利刃守则",
+      "en": "Mission Dossier: Blade Logic"
+    },
+    "422224083": {
+      "zh-chs": "令状：虚无后嗣",
+      "en": "Writ: Heir of Nothing"
+    },
+    "2904914305": {
+      "zh-chs": "令状：虚无后嗣",
+      "en": "Writ: Heir of Nothing"
+    },
+    "4277823029": {
+      "zh-chs": "令状：嗜血利刃",
+      "en": "Writ: Bloodied Blades"
+    },
+    "2332016551": {
+      "zh-chs": "令状：嗜血利刃",
+      "en": "Writ: Bloodied Blades"
+    },
+    "114990616": {
+      "zh-chs": "令状：误导的复仇",
+      "en": "Writ: Misguided Vengeance"
+    },
+    "2028080467": {
+      "zh-chs": "令状：误导的复仇",
+      "en": "Writ: Misguided Vengeance"
+    },
+    "316616202": {
+      "zh-chs": "令状：误导的复仇",
+      "en": "Writ: Misguided Vengeance"
+    },
+    "564231811": {
+      "zh-chs": "印刻的萨瓦图恩符文",
+      "en": "Imprinted Savathûn Rune"
+    },
+    "564231810": {
+      "zh-chs": "印刻的萨瓦图恩符文",
+      "en": "Imprinted Savathûn Rune"
+    },
+    "564231809": {
+      "zh-chs": "印刻的萨瓦图恩符文",
+      "en": "Imprinted Savathûn Rune"
+    },
     "4266607016": {
       "zh-chs": "傀儡之路",
       "en": "The Taken Path"
@@ -98266,6 +98474,10 @@
       "zh-chs": "百倍之路",
       "en": "A Hundredfold Path"
     },
+    "2887193402": {
+      "zh-chs": "百倍之路",
+      "en": "A Hundredfold Path"
+    },
     "120679056": {
       "zh-chs": "丝绸之路",
       "en": "A Silken Path"
@@ -98273,6 +98485,10 @@
     "2570652683": {
       "zh-chs": "丝绸之路",
       "en": "A Silken Path"
+    },
+    "2353670962": {
+      "zh-chs": "二元完美",
+      "en": "Dyadic Perfection"
     },
     "105322825": {
       "zh-chs": "二元完美",
@@ -98285,6 +98501,10 @@
     "2195516418": {
       "zh-chs": "沉重骨质脊柱",
       "en": "Heavy Osseous Spine"
+    },
+    "2082533315": {
+      "zh-chs": "震颤骨质脊柱",
+      "en": "Trembling Osseous Spine"
     },
     "1777184540": {
       "zh-chs": "扭曲骨质脊柱",
