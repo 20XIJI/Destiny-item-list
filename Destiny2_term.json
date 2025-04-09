@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "232518.25.03.26.2001-2-bnet.59004",
-    "timestamp": "2025-04-07T17:40:57.462973+00:00",
-    "item_count": 13866,
-    "data_hash": "63a76f739a31a7a814f1731cd0d68b9ecf8069f6fdd0de407e89dc41dedb517e",
+    "version": "232730.25.04.02.2001-2-bnet.59085",
+    "timestamp": "2025-04-09T17:42:21.816949+00:00",
+    "item_count": 13867,
+    "data_hash": "791bf782814654ccb25d2fd49944926c7d83ab487af341e70a7078b74947bfec",
     "source": "Bungie Destiny 2 Manifest",
     "definition_types": [
       "DestinyInventoryItemLiteDefinition",
@@ -1000,6 +1000,8 @@
     "Widow's Court: Onslaught: Salvation": "寡妇城: 猛攻：救赎",
     "Eventide Ruins: Onslaught: Salvation": "薄暮废墟: 猛攻：救赎",
     "Kell's Grave: Onslaught: Salvation": "凯尔墓穴: 猛攻：救赎",
+    "Tomb of Elders: Matchmade": "长老之墓: 匹配",
+    "Tomb of Elders: Private": "长老之墓: 私人",
     "Contest of Elders: Matchmade": "长老竞赛: 匹配",
     "Contest of Elders: Private": "长老竞赛: 私人",
     "Kell's Fall: Reflection (Expert)": "凯尔之陨：反射（专家）",
@@ -5059,7 +5061,6 @@
     "Encore: Overture (Expert)": "安可：序曲（专家）",
     "Encore: Concerto (Expert)": "安可：协奏曲（专家）",
     "Encore: Coda (Expert)": "安可：终曲（专家）",
-    "Tomb of Elders": "长老之墓",
     "Kell's Vengeance: Master": "凯尔的复仇: 大师",
     "Kell's Fall: Reflection": "凯尔之陨：反射",
     "Kell's Fall: Distortion": "凯尔之陨：扭曲",
