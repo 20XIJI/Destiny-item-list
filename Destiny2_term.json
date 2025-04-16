@@ -1,9 +1,9 @@
 {
   "metadata": {
     "version": "232730.25.04.02.2001-2-bnet.59085",
-    "timestamp": "2025-04-15T17:42:05.271581+00:00",
-    "item_count": 13867,
-    "data_hash": "791bf782814654ccb25d2fd49944926c7d83ab487af341e70a7078b74947bfec",
+    "timestamp": "2025-04-16T17:42:04.583582+00:00",
+    "item_count": 13868,
+    "data_hash": "4a5d1a161b1e5fc64a625832bed793469791f746333758006ae2c6b8b851c300",
     "source": "Bungie Destiny 2 Manifest",
     "definition_types": [
       "DestinyInventoryItemLiteDefinition",
@@ -13724,6 +13724,7 @@
     "Discipline": "纪律",
     "Power": "能量",
     "Recovery": "恢复",
+    "Restoration": "恢复",
     "Handicap": "阻碍",
     "Velocity": "弹头速度",
     "Mobility": "敏捷",
