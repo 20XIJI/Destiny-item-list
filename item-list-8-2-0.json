@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "233040.25.04.12.2000-3-bnet.59314",
-    "timestamp": "2025-05-05T17:41:25.858120+00:00",
-    "item_count": 25564,
-    "data_hash": "376e4abe9a3e500fc224aed6cf5d6a8973b8d37e07a7d749642f3c793909460d"
+    "version": "233448.25.04.26.1930-2-bnet.59695",
+    "timestamp": "2025-05-06T17:41:42.959639+00:00",
+    "item_count": 25756,
+    "data_hash": "1b76a055c4f50dd8e29a13eb9e265d4d694c6595ac774df5665d4db05cb46e62"
   },
   "data": {
     "2899766705": {
@@ -7322,6 +7322,38 @@
       "zh-chs": "至日已升级的活动卡片",
       "en": "Solstice Upgraded Event Card"
     },
+    "486078259": {
+      "zh-chs": "购买赛季等级",
+      "en": "Buy Season Rank"
+    },
+    "1206784959": {
+      "zh-chs": "活动经验值+",
+      "en": "Event XP+"
+    },
+    "1801979339": {
+      "zh-chs": "活动经验值+++",
+      "en": "Event XP+++"
+    },
+    "187236078": {
+      "zh-chs": "异域密码",
+      "en": "Exotic Cipher"
+    },
+    "3357190043": {
+      "zh-chs": "上维合金",
+      "en": "Ascendant Alloy"
+    },
+    "3143884706": {
+      "zh-chs": "上维碎片",
+      "en": "Ascendant Shard"
+    },
+    "1218397402": {
+      "zh-chs": "增强棱镜",
+      "en": "Enhancement Prism"
+    },
+    "3166206206": {
+      "zh-chs": "强化核心",
+      "en": "Enhancement Core"
+    },
     "3948074758": {
       "zh-chs": "传统：遗落之族",
       "en": "Legacy: Forsaken"
@@ -11958,6 +11990,54 @@
       "zh-chs": "古神仪式",
       "en": "Old God's Rite"
     },
+    "603002141": {
+      "zh-chs": "兵卒",
+      "en": "Pawn"
+    },
+    "1926204740": {
+      "zh-chs": "主教",
+      "en": "Bishop"
+    },
+    "4153772092": {
+      "zh-chs": "战车",
+      "en": "Rook"
+    },
+    "1909810000": {
+      "zh-chs": "骑士",
+      "en": "Knight"
+    },
+    "1569755407": {
+      "zh-chs": "王后",
+      "en": "Queen"
+    },
+    "3975686271": {
+      "zh-chs": "转换",
+      "en": "Conversion"
+    },
+    "1891475285": {
+      "zh-chs": "删除",
+      "en": "Deletion"
+    },
+    "1324470302": {
+      "zh-chs": "异常圣物",
+      "en": "Anomalous Relic"
+    },
+    "1564653893": {
+      "zh-chs": "异常圣物",
+      "en": "Anomalous Relic"
+    },
+    "2826349972": {
+      "zh-chs": "异常圣物",
+      "en": "Anomalous Relic"
+    },
+    "3780247011": {
+      "zh-chs": "异常圣物",
+      "en": "Anomalous Relic"
+    },
+    "1008721210": {
+      "zh-chs": "异常圣物",
+      "en": "Anomalous Relic"
+    },
     "3666100616": {
       "zh-chs": "超因果弹药带",
       "en": "Paracausal Bandolier"
@@ -12073,6 +12153,18 @@
     "2995418945": {
       "zh-chs": "光球收集者",
       "en": "Orb Collector"
+    },
+    "3616619315": {
+      "zh-chs": "深渊苍穹聚合",
+      "en": "Coalescence of Deep Sky"
+    },
+    "3616619314": {
+      "zh-chs": "忧愁聚合",
+      "en": "Coalescence of Sorrow"
+    },
+    "3616619313": {
+      "zh-chs": "[利刃]聚合",
+      "en": "Coalescence of the [Knife]"
     },
     "2059725893": {
       "zh-chs": "“篇章：异端”信息",
@@ -56335,8 +56427,8 @@
       "en": "New Accessory Bundles"
     },
     "4032196824": {
-      "zh-chs": "“篇章：异端”章节3护甲皮肤",
-      "en": "Episode: Heresy Act III Armor Ornaments"
+      "zh-chs": "失落英灵日皮肤",
+      "en": "Lost Festival of the Lost Ornaments"
     },
     "4032196825": {
       "zh-chs": "“篇章：异端”章节2护甲皮肤",
@@ -56358,6 +56450,10 @@
       "zh-chs": "篇章：异端",
       "en": "Episode: Heresy"
     },
+    "579411647": {
+      "zh-chs": "命运2：预言之年终级版",
+      "en": "Destiny 2: Year of Prophecy Ultimate Edition"
+    },
     "430808053": {
       "zh-chs": "火力战队愚人动作表情",
       "en": "Fireteam Fool Emotes"
@@ -56365,6 +56461,10 @@
     "4142835633": {
       "zh-chs": "闪回：天选赛季",
       "en": "Flashback: Season of the Chosen"
+    },
+    "278605307": {
+      "zh-chs": "隐秘货物套装",
+      "en": "Clandestine Cargo Set"
     },
     "3151108612": {
       "zh-chs": "篇章：异端",
@@ -56409,6 +56509,10 @@
     "1515866705": {
       "zh-chs": "夺旗先锋",
       "en": "Flagbearer"
+    },
+    "4019038402": {
+      "zh-chs": "狮鹫",
+      "en": "Gryphon"
     },
     "4068113907": {
       "zh-chs": "生态摩托",
@@ -56458,6 +56562,10 @@
       "zh-chs": "反重力飞行摩托",
       "en": "Repulsorlift Jumpspeeder"
     },
+    "3105350133": {
+      "zh-chs": "新月渗透者",
+      "en": "Crescent Infiltrator"
+    },
     "1620403517": {
       "zh-chs": "加冕",
       "en": "Coronation"
@@ -56473,6 +56581,10 @@
     "16887713": {
       "zh-chs": "科技保护机壳",
       "en": "Technoprotection Shell"
+    },
+    "1820763748": {
+      "zh-chs": "各向异性机壳",
+      "en": "Anisotropic Shell"
     },
     "3361254701": {
       "zh-chs": "标记机壳",
@@ -56518,6 +56630,10 @@
       "zh-chs": "DS-2机壳",
       "en": "DS-2 Shell"
     },
+    "183861275": {
+      "zh-chs": "炼狱机壳",
+      "en": "Inferno Shell"
+    },
     "2569943136": {
       "zh-chs": "尖叫之眼",
       "en": "Scream-Eyed"
@@ -56525,6 +56641,10 @@
     "3449261808": {
       "zh-chs": "神圣桅船",
       "en": "Sacred Barque"
+    },
+    "4140447297": {
+      "zh-chs": "嶙峋之刃",
+      "en": "Deinterlace"
     },
     "1257250409": {
       "zh-chs": "第七帆",
@@ -56570,6 +56690,10 @@
       "zh-chs": "高级原型跃迁飞船",
       "en": "Advanced Prototype Jumpship"
     },
+    "3063003415": {
+      "zh-chs": "寂静宿怨",
+      "en": "Silent Vendetta"
+    },
     "818149482": {
       "zh-chs": "终局螺旋钻催化",
       "en": "Finality's Auger Catalyst"
@@ -56577,6 +56701,10 @@
     "2018366981": {
       "zh-chs": "北极星催化",
       "en": "Lodestar Catalyst"
+    },
+    "2861049498": {
+      "zh-chs": "彼岸新域催化",
+      "en": "New Land Beyond Catalyst"
     },
     "4204405035": {
       "zh-chs": "高强度型弹药储备改装",
@@ -56597,6 +56725,10 @@
     "626115084": {
       "zh-chs": "毁灭铭刻锻炉",
       "en": "Ruinscribe's Forge"
+    },
+    "218281600": {
+      "zh-chs": "大师",
+      "en": "The Master"
     },
     "4127881474": {
       "zh-chs": "恐慌反应",
@@ -56826,6 +56958,10 @@
       "zh-chs": "心的誓言",
       "en": "Heart's Pledge"
     },
+    "316107607": {
+      "zh-chs": "心的纯净",
+      "en": "Heart's Purity"
+    },
     "2955063537": {
       "zh-chs": "战火",
       "en": "Warfire"
@@ -56950,6 +57086,26 @@
       "zh-chs": "诡异召唤师腿铠",
       "en": "Uncanny Conjurer Strides"
     },
+    "2009343294": {
+      "zh-chs": "半机械复仇神护臂",
+      "en": "Cyborg Nemesis Grips"
+    },
+    "1442173688": {
+      "zh-chs": "半机械复仇神胸甲",
+      "en": "Cyborg Nemesis Vest"
+    },
+    "3180900277": {
+      "zh-chs": "半机械复仇神披风",
+      "en": "Cyborg Nemesis Cloak"
+    },
+    "984139855": {
+      "zh-chs": "半机械复仇神胄盔",
+      "en": "Cyborg Nemesis Casque"
+    },
+    "930593408": {
+      "zh-chs": "半机械复仇神腿铠",
+      "en": "Cyborg Nemesis Strides"
+    },
     "607214589": {
       "zh-chs": "领航者之服臂铠",
       "en": "Navigator's Raiment Gauntlets"
@@ -57062,6 +57218,26 @@
       "zh-chs": "神秘法师胫甲",
       "en": "Cryptic Magus Greaves"
     },
+    "3213766144": {
+      "zh-chs": "黑曜石耐用钢臂铠",
+      "en": "Obsidian Durasteel Gauntlets"
+    },
+    "667141846": {
+      "zh-chs": "黑曜石耐用钢战甲",
+      "en": "Obsidian Durasteel Plate"
+    },
+    "2795461287": {
+      "zh-chs": "黑曜石耐用钢印记",
+      "en": "Obsidian Durasteel Mark"
+    },
+    "3415982513": {
+      "zh-chs": "黑曜石耐用钢头盔",
+      "en": "Obsidian Durasteel Helm"
+    },
+    "413644402": {
+      "zh-chs": "黑曜石耐用钢胫甲",
+      "en": "Obsidian Durasteel Greaves"
+    },
     "819296852": {
       "zh-chs": "领航者之服手套",
       "en": "Navigator's Raiment Gloves"
@@ -57173,6 +57349,26 @@
     "3235180200": {
       "zh-chs": "奇异咒术战靴",
       "en": "Eerie Thaumaturge Boots"
+    },
+    "1106749879": {
+      "zh-chs": "狂暴劫匪后裔裹手",
+      "en": "Marauder Progeny Wraps"
+    },
+    "1168334715": {
+      "zh-chs": "狂暴劫匪后裔法袍",
+      "en": "Marauder Progeny Robe"
+    },
+    "816788042": {
+      "zh-chs": "狂暴劫匪后裔臂环",
+      "en": "Marauder Progeny Bond"
+    },
+    "3288161838": {
+      "zh-chs": "狂暴劫匪后裔兜帽",
+      "en": "Marauder Progeny Hood"
+    },
+    "2319132177": {
+      "zh-chs": "狂暴劫匪后裔战靴",
+      "en": "Marauder Progeny Boots"
     },
     "427144613": {
       "zh-chs": "将杀",
@@ -57306,6 +57502,10 @@
       "zh-chs": "宿命决斗",
       "en": "Fated Duel"
     },
+    "3250524138": {
+      "zh-chs": "本影混战",
+      "en": "Umbral Rumble"
+    },
     "1731419283": {
       "zh-chs": "船匠华服",
       "en": "Shipwright's Finery"
@@ -57329,6 +57529,26 @@
     "1059396450": {
       "zh-chs": "坚定之柱",
       "en": "Steadfast Column"
+    },
+    "1059396451": {
+      "zh-chs": "真我",
+      "en": "True Self"
+    },
+    "1059396448": {
+      "zh-chs": "第十缪斯",
+      "en": "Tenth Muse"
+    },
+    "1059396449": {
+      "zh-chs": "无边无际",
+      "en": "Boundless"
+    },
+    "1059396454": {
+      "zh-chs": "不可分割",
+      "en": "Indivisible"
+    },
+    "4182403848": {
+      "zh-chs": "棱镜阔域",
+      "en": "Prismatic Expanse"
     },
     "2896897122": {
       "zh-chs": "胜利之姿",
@@ -57357,18 +57577,6 @@
     "1087971715": {
       "zh-chs": "陶瓷合金",
       "en": "Ceramic Alloy"
-    },
-    "1087971712": {
-      "zh-chs": "授权",
-      "en": "Mandate"
-    },
-    "1087971713": {
-      "zh-chs": "木犀",
-      "en": "Oleaceae"
-    },
-    "1087971726": {
-      "zh-chs": "一抹生动",
-      "en": "Dash of Brio"
     },
     "2039338164": {
       "zh-chs": "先锋效忠",
@@ -57447,8 +57655,8 @@
       "en": "Hot Rod Set"
     },
     "903302938": {
-      "zh-chs": "黑冰组合包",
-      "en": "Black Ice Pack"
+      "zh-chs": "“篇章：异端”章节2护甲皮肤",
+      "en": "Episode: Heresy Act II Armor Ornaments"
     },
     "2070985113": {
       "zh-chs": "复兴发明家套装",
@@ -57546,6 +57754,26 @@
       "zh-chs": "振翅高飞",
       "en": "Taking Flight"
     },
+    "2822420121": {
+      "zh-chs": "骄傲着色器包",
+      "en": "Pride Shaders Pack"
+    },
+    "939226694": {
+      "zh-chs": "隐秘货物套装",
+      "en": "Clandestine Cargo Set"
+    },
+    "777473377": {
+      "zh-chs": "半机械复仇神套装",
+      "en": "Cyborg Nemesis Set"
+    },
+    "3622573279": {
+      "zh-chs": "黑曜石耐用钢套装",
+      "en": "Obsidian Durasteel Set"
+    },
+    "3828673156": {
+      "zh-chs": "狂暴劫匪后裔套装",
+      "en": "Marauder Progeny Set"
+    },
     "2141889281": {
       "zh-chs": "活动入场券",
       "en": "Event Ticket"
@@ -57553,6 +57781,54 @@
     "1031903795": {
       "zh-chs": "玖的珍品",
       "en": "Curio of the Nine"
+    },
+    "1179571663": {
+      "zh-chs": "战斗控制",
+      "en": "COMBAT CONTROLS"
+    },
+    "2123560086": {
+      "zh-chs": "额外悬赏",
+      "en": "Additional Bounties"
+    },
+    "2412474869": {
+      "zh-chs": "星象仪",
+      "en": "Astrograph"
+    },
+    "2456277757": {
+      "zh-chs": "刷新芯片",
+      "en": "Reroll Chip"
+    },
+    "3759922793": {
+      "zh-chs": "3个刷新芯片",
+      "en": "3 Reroll Chips"
+    },
+    "412313744": {
+      "zh-chs": "活动代币",
+      "en": "Event Token"
+    },
+    "2512446424": {
+      "zh-chs": "九元流形",
+      "en": "Nonary Manifold"
+    },
+    "3598944128": {
+      "zh-chs": "预言",
+      "en": "Foretold"
+    },
+    "3598944129": {
+      "zh-chs": "先知者",
+      "en": "Seer"
+    },
+    "3598944130": {
+      "zh-chs": "灵能者",
+      "en": "Esper"
+    },
+    "3598944131": {
+      "zh-chs": "校准",
+      "en": "Calibrated"
+    },
+    "3598944132": {
+      "zh-chs": "不朽",
+      "en": "Immortality"
     },
     "2367713531": {
       "zh-chs": "女王箔酊",
@@ -58078,6 +58354,18 @@
       "zh-chs": "终焉之形地牢钥匙",
       "en": "The Final Shape Dungeon Key"
     },
+    "117774540": {
+      "zh-chs": "命运2：预言之年终级版",
+      "en": "Destiny 2: Year of Prophecy Ultimate Edition"
+    },
+    "1437560966": {
+      "zh-chs": "命运2：预言之年",
+      "en": "Destiny 2: Year of Prophecy"
+    },
+    "1131767961": {
+      "zh-chs": "命运2：宿命边缘",
+      "en": "Destiny 2: The Edge of Fate"
+    },
     "3398617970": {
       "zh-chs": "内容当前不可用",
       "en": "Content Currently Unavailable"
@@ -58091,6 +58379,10 @@
       "en": "Synthweave Templates"
     },
     "2642369485": {
+      "zh-chs": "光尘",
+      "en": "Bright Dust"
+    },
+    "4152364891": {
       "zh-chs": "光尘",
       "en": "Bright Dust"
     },
@@ -85599,7 +85891,7 @@
       "en": "New Pacific Epitaph"
     },
     "839786290": {
-      "zh-chs": "冰冷安慰",
+      "zh-chs": "无效安慰",
       "en": "Cold Comfort"
     },
     "3262192268": {
@@ -90518,6 +90810,10 @@
       "zh-chs": "电弧校准",
       "en": "Arc Alignment"
     },
+    "1579100415": {
+      "zh-chs": "正中靶心枪套",
+      "en": "Bullseye Bolster"
+    },
     "2223032959": {
       "zh-chs": "毁灭铭刻信标",
       "en": "Ruinscribe's Beacon"
@@ -90541,6 +90837,10 @@
     "785441979": {
       "zh-chs": "支援框架",
       "en": "Support Frame"
+    },
+    "935202422": {
+      "zh-chs": "地平线瞄具",
+      "en": "Horizon Ironsights"
     },
     "3992231369": {
       "zh-chs": "深不可测",
@@ -90582,9 +90882,21 @@
       "zh-chs": "最终抹除",
       "en": "Last Erasure"
     },
+    "1611948520": {
+      "zh-chs": "神秘学",
+      "en": "Enigmatology"
+    },
+    "1611948521": {
+      "zh-chs": "爆炸拆卸",
+      "en": "Explosive Disassembly"
+    },
     "1611948522": {
       "zh-chs": "本影梯队",
       "en": "Umbral Echelon"
+    },
+    "1611948523": {
+      "zh-chs": "铭刻事迹",
+      "en": "Engraved Deeds"
     },
     "1640013310": {
       "zh-chs": "变节者利刃护臂",
@@ -91326,6 +91638,10 @@
       "zh-chs": "北极星",
       "en": "Lodestar"
     },
+    "2581676735": {
+      "zh-chs": "彼岸新域",
+      "en": "New Land Beyond"
+    },
     "751880654": {
       "zh-chs": "狂怒化身V",
       "en": "Qua Furor V"
@@ -91338,7 +91654,15 @@
       "zh-chs": "克鲁瑞斯FR4",
       "en": "Cruoris FR4"
     },
+    "917820210": {
+      "zh-chs": "克鲁瑞斯FR4",
+      "en": "Cruoris FR4"
+    },
     "32287609": {
+      "zh-chs": "形象工程Mk. 55",
+      "en": "Boondoggle Mk. 55"
+    },
+    "3029570245": {
       "zh-chs": "形象工程Mk. 55",
       "en": "Boondoggle Mk. 55"
     },
@@ -91387,196 +91711,256 @@
       "en": "Greasy Luck"
     },
     "3210739171": {
-      "zh-chs": "滑溜运气",
-      "en": "Greasy Luck"
+      "zh-chs": "滑溜运气（专家）",
+      "en": "Greasy Luck (Adept)"
     },
     "2059741649": {
       "zh-chs": "新太平洋碑文",
       "en": "New Pacific Epitaph"
     },
     "233402416": {
-      "zh-chs": "新太平洋碑文",
-      "en": "New Pacific Epitaph"
+      "zh-chs": "新太平洋碑文（专家）",
+      "en": "New Pacific Epitaph (Adept)"
     },
     "291447487": {
-      "zh-chs": "冰冷安慰",
+      "zh-chs": "无效安慰",
       "en": "Cold Comfort"
     },
     "1817605554": {
-      "zh-chs": "冰冷安慰",
-      "en": "Cold Comfort"
+      "zh-chs": "无效安慰（专家）",
+      "en": "Cold Comfort (Adept)"
     },
     "4228149269": {
       "zh-chs": "无人幸存",
       "en": "No Survivors"
     },
     "189194532": {
-      "zh-chs": "无人幸存",
-      "en": "No Survivors"
+      "zh-chs": "无人幸存（专家）",
+      "en": "No Survivors (Adept)"
     },
     "1685406703": {
       "zh-chs": "滑溜运气",
       "en": "Greasy Luck"
     },
     "1050582210": {
-      "zh-chs": "滑溜运气",
-      "en": "Greasy Luck"
+      "zh-chs": "滑溜运气（专家）",
+      "en": "Greasy Luck (Adept)"
     },
     "492673102": {
       "zh-chs": "新太平洋碑文",
       "en": "New Pacific Epitaph"
     },
     "3185151619": {
-      "zh-chs": "新太平洋碑文",
-      "en": "New Pacific Epitaph"
+      "zh-chs": "新太平洋碑文（专家）",
+      "en": "New Pacific Epitaph (Adept)"
     },
     "2760833884": {
-      "zh-chs": "冰冷安慰",
+      "zh-chs": "无效安慰",
       "en": "Cold Comfort"
     },
     "2126543269": {
-      "zh-chs": "冰冷安慰",
-      "en": "Cold Comfort"
+      "zh-chs": "无效安慰（专家）",
+      "en": "Cold Comfort (Adept)"
     },
     "4193602194": {
       "zh-chs": "无人幸存",
       "en": "No Survivors"
     },
     "1157220231": {
-      "zh-chs": "无人幸存",
-      "en": "No Survivors"
+      "zh-chs": "无人幸存（专家）",
+      "en": "No Survivors (Adept)"
     },
-    "3164166855": {
+    "2226572694": {
       "zh-chs": "审判",
       "en": "Judgment"
     },
-    "2907694858": {
+    "1987644603": {
+      "zh-chs": "审判（专家）",
+      "en": "Judgement (Adept)"
+    },
+    "3733988413": {
+      "zh-chs": "无情",
+      "en": "Relentless"
+    },
+    "1827058652": {
+      "zh-chs": "无情（专家）",
+      "en": "Relentless (Adept)"
+    },
+    "1976481399": {
+      "zh-chs": "猝死",
+      "en": "A Sudden Death"
+    },
+    "1626437786": {
+      "zh-chs": "猝死（专家）",
+      "en": "A Sudden Death (Adept)"
+    },
+    "880829467": {
+      "zh-chs": "检察官",
+      "en": "Prosecutor"
+    },
+    "4025177550": {
+      "zh-chs": "检察官（专家）",
+      "en": "Prosecutor (Adept)"
+    },
+    "1773934241": {
       "zh-chs": "审判",
       "en": "Judgment"
     },
-    "3340037896": {
+    "3329218848": {
+      "zh-chs": "审判（专家）",
+      "en": "Judgement (Adept)"
+    },
+    "3681280908": {
       "zh-chs": "无情",
       "en": "Relentless"
     },
-    "94414241": {
-      "zh-chs": "无情",
-      "en": "Relentless"
+    "1066598837": {
+      "zh-chs": "无情（专家）",
+      "en": "Relentless (Adept)"
     },
-    "2946572750": {
+    "1904170910": {
       "zh-chs": "猝死",
       "en": "A Sudden Death"
     },
-    "3535064067": {
-      "zh-chs": "猝死",
-      "en": "A Sudden Death"
+    "2764074355": {
+      "zh-chs": "猝死（专家）",
+      "en": "A Sudden Death (Adept)"
     },
-    "3146195546": {
+    "2129814338": {
       "zh-chs": "检察官",
       "en": "Prosecutor"
     },
-    "599883935": {
-      "zh-chs": "检察官",
-      "en": "Prosecutor"
-    },
-    "1635931988": {
-      "zh-chs": "审判",
-      "en": "Judgment"
-    },
-    "2909639533": {
-      "zh-chs": "审判",
-      "en": "Judgment"
-    },
-    "4193661297": {
-      "zh-chs": "无情",
-      "en": "Relentless"
-    },
-    "684264976": {
-      "zh-chs": "无情",
-      "en": "Relentless"
-    },
-    "1962751375": {
-      "zh-chs": "猝死",
-      "en": "A Sudden Death"
-    },
-    "2557589026": {
-      "zh-chs": "猝死",
-      "en": "A Sudden Death"
-    },
-    "280985435": {
-      "zh-chs": "检察官",
-      "en": "Prosecutor"
-    },
-    "3912734222": {
-      "zh-chs": "检察官",
-      "en": "Prosecutor"
+    "749483159": {
+      "zh-chs": "检察官（专家）",
+      "en": "Prosecutor (Adept)"
     },
     "1206729100": {
       "zh-chs": "狂野飞禽",
       "en": "Wilderflight"
     },
     "559523765": {
-      "zh-chs": "狂野飞禽",
-      "en": "Wilderflight"
+      "zh-chs": "狂野飞禽（专家）",
+      "en": "Wilderflight (Adept)"
     },
     "3984556130": {
       "zh-chs": "终点视界",
       "en": "Terminus Horizon"
     },
     "2210806903": {
-      "zh-chs": "终点视界",
-      "en": "Terminus Horizon"
+      "zh-chs": "终点视界（专家）",
+      "en": "Terminus Horizon (Adept)"
     },
     "4249949938": {
       "zh-chs": "长臂",
       "en": "Long Arm"
     },
     "4239378215": {
-      "zh-chs": "长臂",
-      "en": "Long Arm"
+      "zh-chs": "长臂（专家）",
+      "en": "Long Arm (Adept)"
     },
     "2575844666": {
       "zh-chs": "阈限守夜",
       "en": "Liminal Vigil"
     },
     "1905934655": {
-      "zh-chs": "阈限守夜",
-      "en": "Liminal Vigil"
+      "zh-chs": "阈限守夜（专家）",
+      "en": "Liminal Vigil (Adept)"
     },
     "2982006965": {
       "zh-chs": "狂野飞禽",
       "en": "Wilderflight"
     },
     "2477408004": {
-      "zh-chs": "狂野飞禽",
-      "en": "Wilderflight"
+      "zh-chs": "狂野飞禽（专家）",
+      "en": "Wilderflight (Adept)"
     },
     "2730671571": {
       "zh-chs": "终点视界",
       "en": "Terminus Horizon"
     },
     "4267192886": {
-      "zh-chs": "终点视界",
-      "en": "Terminus Horizon"
+      "zh-chs": "终点视界（专家）",
+      "en": "Terminus Horizon (Adept)"
     },
     "14929251": {
       "zh-chs": "长臂",
       "en": "Long Arm"
     },
     "3692140710": {
-      "zh-chs": "长臂",
-      "en": "Long Arm"
+      "zh-chs": "长臂（专家）",
+      "en": "Long Arm (Adept)"
     },
     "1460079227": {
       "zh-chs": "阈限守夜",
       "en": "Liminal Vigil"
     },
     "3421639790": {
-      "zh-chs": "阈限守夜",
-      "en": "Liminal Vigil"
+      "zh-chs": "阈限守夜（专家）",
+      "en": "Liminal Vigil (Adept)"
     },
     "59871045": {
       "zh-chs": "重力井",
       "en": "Gravity Well"
+    },
+    "1063872199": {
+      "zh-chs": "预言",
+      "en": "Foretold"
+    },
+    "1063872198": {
+      "zh-chs": "先知者",
+      "en": "Seer"
+    },
+    "1063872197": {
+      "zh-chs": "灵能者",
+      "en": "Esper"
+    },
+    "1063872196": {
+      "zh-chs": "校准",
+      "en": "Calibrated"
+    },
+    "1063872195": {
+      "zh-chs": "不朽",
+      "en": "Immortality"
+    },
+    "51129316": {
+      "zh-chs": "审判官",
+      "en": "The Inquisitor"
+    },
+    "2330860573": {
+      "zh-chs": "审判官（专家）",
+      "en": "The Inquisitor (Adept)"
+    },
+    "892237481": {
+      "zh-chs": "审判官（专家）",
+      "en": "The Inquisitor (Adept)"
+    },
+    "2175841482": {
+      "zh-chs": "审判官",
+      "en": "The Inquisitor"
+    },
+    "2639921391": {
+      "zh-chs": "回归自然",
+      "en": "Nature Reclaimed"
+    },
+    "878104499": {
+      "zh-chs": "回归自然",
+      "en": "Nature Reclaimed"
+    },
+    "233635202": {
+      "zh-chs": "残酷怜悯",
+      "en": "Cruel Mercy"
+    },
+    "2347178967": {
+      "zh-chs": "残酷怜悯（专家）",
+      "en": "Cruel Mercy (Adept)"
+    },
+    "3189110091": {
+      "zh-chs": "残酷怜悯（专家）",
+      "en": "Cruel Mercy (Adept)"
+    },
+    "3828502736": {
+      "zh-chs": "残酷怜悯",
+      "en": "Cruel Mercy"
     },
     "29505215": {
       "zh-chs": "随机特性",
@@ -91845,6 +92229,62 @@
     "3079989876": {
       "zh-chs": "目的地：天仓五",
       "en": "Destination: Tau Ceti"
+    },
+    "3079989879": {
+      "zh-chs": "疾行者",
+      "en": "Runner"
+    },
+    "3079989878": {
+      "zh-chs": "死生有命",
+      "en": "Mors Certa"
+    },
+    "3079989873": {
+      "zh-chs": "超越光速",
+      "en": "Faster Than Light"
+    },
+    "3079989872": {
+      "zh-chs": "辉耀",
+      "en": "Refulgent"
+    },
+    "3079989875": {
+      "zh-chs": "辉耀炽热",
+      "en": "Incandescent"
+    },
+    "3079989874": {
+      "zh-chs": "杰出人物",
+      "en": "Luminary"
+    },
+    "3079989885": {
+      "zh-chs": "占星术",
+      "en": "Astromancy"
+    },
+    "3079989884": {
+      "zh-chs": "玖冠",
+      "en": "Nine-Crowned"
+    },
+    "3029657020": {
+      "zh-chs": "疯狗",
+      "en": "Mad Dog"
+    },
+    "3029657021": {
+      "zh-chs": "神明款待",
+      "en": "Theoxenia"
+    },
+    "3029657022": {
+      "zh-chs": "观察者效应",
+      "en": "Observer Effect"
+    },
+    "3029657023": {
+      "zh-chs": "多色折射",
+      "en": "Polychromatic Refraction"
+    },
+    "3029657016": {
+      "zh-chs": "像素完美",
+      "en": "Pixel Perfect"
+    },
+    "3029657017": {
+      "zh-chs": "摄影师",
+      "en": "Cinematographer"
     },
     "3959701438": {
       "zh-chs": "破碎信使",
@@ -94834,6 +95274,154 @@
       "zh-chs": "赛季杀手",
       "en": "Seasoned Slayer"
     },
+    "2281677846": {
+      "zh-chs": "雷霆仪式",
+      "en": "Thundering Ritual"
+    },
+    "2281677847": {
+      "zh-chs": "引力仪式",
+      "en": "Gravitational Ritual"
+    },
+    "2281677844": {
+      "zh-chs": "编织仪式",
+      "en": "Woven Ritual"
+    },
+    "2281677845": {
+      "zh-chs": "穿透仪式",
+      "en": "Piercing Ritual"
+    },
+    "2281677842": {
+      "zh-chs": "利刃仪式",
+      "en": "Blade Ritual"
+    },
+    "2281677843": {
+      "zh-chs": "裂解仪式",
+      "en": "Disintegrating Ritual"
+    },
+    "2281677840": {
+      "zh-chs": "日光仪式",
+      "en": "Sunbeam Ritual"
+    },
+    "2281677841": {
+      "zh-chs": "咆哮仪式",
+      "en": "Roaring Ritual"
+    },
+    "2281677854": {
+      "zh-chs": "驱动仪式",
+      "en": "Impelled Ritual"
+    },
+    "2281677855": {
+      "zh-chs": "混乱仪式",
+      "en": "Chaotic Ritual"
+    },
+    "779046917": {
+      "zh-chs": "打击仪式",
+      "en": "Striking Ritual"
+    },
+    "779046916": {
+      "zh-chs": "超因果仪式",
+      "en": "Paracausal Ritual"
+    },
+    "779046919": {
+      "zh-chs": "精准仪式",
+      "en": "Precise Ritual"
+    },
+    "779046918": {
+      "zh-chs": "最终仪式",
+      "en": "Final Ritual"
+    },
+    "2256243540": {
+      "zh-chs": "疲惫贡品",
+      "en": "Exhausted Offering"
+    },
+    "2256243541": {
+      "zh-chs": "弓手贡品",
+      "en": "Archer's Offering"
+    },
+    "2256243542": {
+      "zh-chs": "炮手贡品",
+      "en": "Cannoneer's Offering"
+    },
+    "2256243543": {
+      "zh-chs": "断奏贡品",
+      "en": "Staccato Offering"
+    },
+    "2256243536": {
+      "zh-chs": "斥候贡品",
+      "en": "Scout's Offering"
+    },
+    "2256243537": {
+      "zh-chs": "后备贡品",
+      "en": "Backup Offering"
+    },
+    "2256243538": {
+      "zh-chs": "枪手贡品",
+      "en": "Gunner's Offering"
+    },
+    "2256243539": {
+      "zh-chs": "融合贡品",
+      "en": "Fused Offering"
+    },
+    "2256243548": {
+      "zh-chs": "碎裂贡品",
+      "en": "Shattered Offering"
+    },
+    "2256243549": {
+      "zh-chs": "高爆贡品",
+      "en": "Brisant Offering"
+    },
+    "159143679": {
+      "zh-chs": "沉稳贡品",
+      "en": "Leaden Offering"
+    },
+    "159143678": {
+      "zh-chs": "持续贡品",
+      "en": "Sustained Offering"
+    },
+    "159143677": {
+      "zh-chs": "爆炸贡品",
+      "en": "Explosive Offering"
+    },
+    "159143676": {
+      "zh-chs": "分散贡品",
+      "en": "Scattered Offering"
+    },
+    "159143675": {
+      "zh-chs": "精准贡品",
+      "en": "Precise Offering"
+    },
+    "159143674": {
+      "zh-chs": "决斗贡品",
+      "en": "Duelist's Offering"
+    },
+    "159143673": {
+      "zh-chs": "精炼贡品",
+      "en": "Refined Offering"
+    },
+    "159143672": {
+      "zh-chs": "尖锐贡品",
+      "en": "Keen-Edged Offering"
+    },
+    "159143671": {
+      "zh-chs": "抛射贡品",
+      "en": "Flung Offering"
+    },
+    "159143670": {
+      "zh-chs": "凯旋贡品",
+      "en": "Triumphant Offering"
+    },
+    "175921234": {
+      "zh-chs": "深渊除虫",
+      "en": "Deep Pest Control"
+    },
+    "175921235": {
+      "zh-chs": "预言默化",
+      "en": "Prophecy Silencing"
+    },
+    "175921232": {
+      "zh-chs": "尖塔拆卸",
+      "en": "Spire Disassembly"
+    },
     "4247773596": {
       "zh-chs": "突击步枪校准",
       "en": "Auto Rifle Calibration"
@@ -95841,6 +96429,42 @@
     "856575490": {
       "zh-chs": "争夺霸权",
       "en": "Vying for Supremacy"
+    },
+    "1713489046": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "3166738331": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "3065925522": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "1220931853": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "1120119044": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "3033208927": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "784860886": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "3234834609": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
+    },
+    "3134021704": {
+      "zh-chs": "爆破之路",
+      "en": "Path of Demolition"
     },
     "505143283": {
       "zh-chs": "守护者的诞生",
@@ -102253,6 +102877,150 @@
     "1339164299": {
       "zh-chs": "昔日之焰",
       "en": "An Old Flame"
+    },
+    "1355902397": {
+      "zh-chs": "优雅军械库：猝死",
+      "en": "Elegant Arsenal: A Sudden Death"
+    },
+    "1305569508": {
+      "zh-chs": "优雅军械库：猝死",
+      "en": "Elegant Arsenal: A Sudden Death"
+    },
+    "3904154826": {
+      "zh-chs": "优雅军械库：审判",
+      "en": "Elegant Arsenal: Judgment"
+    },
+    "3887377239": {
+      "zh-chs": "优雅军械库：审判",
+      "en": "Elegant Arsenal: Judgment"
+    },
+    "1992720443": {
+      "zh-chs": "优雅军械库：检察官",
+      "en": "Elegant Arsenal: Prosecutor"
+    },
+    "2009498030": {
+      "zh-chs": "优雅军械库：检察官",
+      "en": "Elegant Arsenal: Prosecutor"
+    },
+    "2388730442": {
+      "zh-chs": "首次幻象",
+      "en": "First Vision"
+    },
+    "2371952855": {
+      "zh-chs": "首次幻象",
+      "en": "First Vision"
+    },
+    "2355175268": {
+      "zh-chs": "首次幻象",
+      "en": "First Vision"
+    },
+    "3765827579": {
+      "zh-chs": "优雅军械库：长臂",
+      "en": "Elegant Arsenal: Long Arm"
+    },
+    "3782605166": {
+      "zh-chs": "优雅军械库：长臂",
+      "en": "Elegant Arsenal: Long Arm"
+    },
+    "1413456324": {
+      "zh-chs": "优雅军械库：阈限守夜",
+      "en": "Elegant Arsenal: Liminal Vigil"
+    },
+    "1463789213": {
+      "zh-chs": "优雅军械库：阈限守夜",
+      "en": "Elegant Arsenal: Liminal Vigil"
+    },
+    "1686695037": {
+      "zh-chs": "优雅军械库：终点视界",
+      "en": "Elegant Arsenal: Terminus Horizon"
+    },
+    "1636362148": {
+      "zh-chs": "优雅军械库：终点视界",
+      "en": "Elegant Arsenal: Terminus Horizon"
+    },
+    "3191384744": {
+      "zh-chs": "首次执勤",
+      "en": "First Watch"
+    },
+    "3241717601": {
+      "zh-chs": "首次执勤",
+      "en": "First Watch"
+    },
+    "3224939918": {
+      "zh-chs": "首次执勤",
+      "en": "First Watch"
+    },
+    "197729086": {
+      "zh-chs": "优雅军械库：无效安慰",
+      "en": "Elegant Arsenal: Cold Comfort"
+    },
+    "180951371": {
+      "zh-chs": "优雅军械库：无效安慰",
+      "en": "Elegant Arsenal: Cold Comfort"
+    },
+    "3491774545": {
+      "zh-chs": "优雅军械库：滑溜运气",
+      "en": "Elegant Arsenal: Greasy Luck"
+    },
+    "3441441688": {
+      "zh-chs": "优雅军械库：滑溜运气",
+      "en": "Elegant Arsenal: Greasy Luck"
+    },
+    "2151859784": {
+      "zh-chs": "优雅军械库：新太平洋碑文",
+      "en": "Elegant Arsenal: New Pacific Epitaph"
+    },
+    "2202192641": {
+      "zh-chs": "优雅军械库：新太平洋碑文",
+      "en": "Elegant Arsenal: New Pacific Epitaph"
+    },
+    "21648295": {
+      "zh-chs": "首次驱魔",
+      "en": "First Exorcism"
+    },
+    "38425882": {
+      "zh-chs": "首次驱魔",
+      "en": "First Exorcism"
+    },
+    "55203469": {
+      "zh-chs": "首次驱魔",
+      "en": "First Exorcism"
+    },
+    "1347704145": {
+      "zh-chs": "奥秘",
+      "en": "Mystikos"
+    },
+    "1297371288": {
+      "zh-chs": "奥秘",
+      "en": "Mystikos"
+    },
+    "3277263174": {
+      "zh-chs": "仪式启蒙",
+      "en": "Ritual Initiation"
+    },
+    "3260485587": {
+      "zh-chs": "仪式启蒙",
+      "en": "Ritual Initiation"
+    },
+    "3705359970": {
+      "zh-chs": "跨越限度",
+      "en": "Crossing the Threshold"
+    },
+    "3688582287": {
+      "zh-chs": "跨越限度",
+      "en": "Crossing the Threshold"
+    },
+    "1637648744": {
+      "zh-chs": "仪式启蒙",
+      "en": "Ritual Initiation"
+    },
+    "4245786702": {
+      "zh-chs": "跨越限度",
+      "en": "Crossing the Threshold"
+    },
+    "2071956247": {
+      "zh-chs": "奥秘",
+      "en": "Mystikos"
     },
     "2125848607": {
       "zh-chs": "异星学",
