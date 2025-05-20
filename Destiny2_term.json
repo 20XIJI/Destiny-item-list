@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "233826.25.05.07.2000-2-bnet.59776",
-    "timestamp": "2025-05-19T17:42:53.816927+00:00",
+    "version": "234033.25.05.16.0943-2-bnet.59885",
+    "timestamp": "2025-05-20T17:43:11.573888+00:00",
     "item_count": 13935,
-    "data_hash": "a11fdaced49bf4097a28304803b89dd4391524f97d3a5ca8fabc60985245eb65",
+    "data_hash": "053d1a0bc0e9fce634d670ec1ecb138c7c5342c69eb2deeec51dceeb7e774ffe",
     "source": "Bungie Destiny 2 Manifest",
     "definition_types": [
       "DestinyInventoryItemLiteDefinition",
@@ -11138,7 +11138,7 @@
     "Finality's Auger": "终局螺旋钻",
     "Cruoris FR4": "克鲁瑞斯FR4",
     "Joxer's Longsword": "乔科斯的长剑",
-    "Judgement (Adept)": "审判（专家）",
+    "Judgment (Adept)": "审判（专家）",
     "Relentless (Adept)": "无情（专家）",
     "Prosecutor (Adept)": "检察官（专家）",
     "Wilderflight (Adept)": "狂野飞禽（专家）",
