@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "233826.25.05.07.2000-2-bnet.59776",
-    "timestamp": "2025-05-19T17:42:18.796389+00:00",
+    "version": "234033.25.05.16.0943-2-bnet.59885",
+    "timestamp": "2025-05-20T17:42:30.131156+00:00",
     "item_count": 25756,
-    "data_hash": "1b76a055c4f50dd8e29a13eb9e265d4d694c6595ac774df5665d4db05cb46e62"
+    "data_hash": "3777f7bf27f9c1899bcddd58a9d43257b31633c3a7df8ddc235e9c85361e33fd"
   },
   "data": {
     "2899766705": {
@@ -91776,7 +91776,7 @@
     },
     "1987644603": {
       "zh-chs": "审判（专家）",
-      "en": "Judgement (Adept)"
+      "en": "Judgment (Adept)"
     },
     "3733988413": {
       "zh-chs": "无情",
@@ -91808,7 +91808,7 @@
     },
     "3329218848": {
       "zh-chs": "审判（专家）",
-      "en": "Judgement (Adept)"
+      "en": "Judgment (Adept)"
     },
     "3681280908": {
       "zh-chs": "无情",
