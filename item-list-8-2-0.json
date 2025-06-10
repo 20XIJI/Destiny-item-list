@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "234273.25.05.26.2000-2-bnet.60082",
-    "timestamp": "2025-06-09T17:41:19.121311+00:00",
-    "item_count": 25756,
-    "data_hash": "3777f7bf27f9c1899bcddd58a9d43257b31633c3a7df8ddc235e9c85361e33fd"
+    "version": "234502.25.06.04.2000-2-bnet.60164",
+    "timestamp": "2025-06-10T17:43:32.468452+00:00",
+    "item_count": 25758,
+    "data_hash": "647b149a5541471af30bcee10c08f44ecb97f1bd46dbf0bbf00aa1d7670874a9"
   },
   "data": {
     "2899766705": {
@@ -57773,6 +57773,14 @@
     "3828673156": {
       "zh-chs": "狂暴劫匪后裔套装",
       "en": "Marauder Progeny Set"
+    },
+    "390579843": {
+      "zh-chs": "九元记忆水晶",
+      "en": "Nonary Engram"
+    },
+    "2405343266": {
+      "zh-chs": "九元记忆水晶",
+      "en": "Nonary Engram"
     },
     "2141889281": {
       "zh-chs": "活动入场券",
