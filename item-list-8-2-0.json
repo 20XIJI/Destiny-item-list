@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "235077.25.06.28.1930-2-bnet.60807",
-    "timestamp": "2025-07-21T17:48:03.717273+00:00",
-    "item_count": 25932,
-    "data_hash": "5dd5364330230e8e27c3001a136725cce54b799c11a0a4b460182b9198aa7cda"
+    "version": "235527.25.07.17.1930-2-bnet.60940",
+    "timestamp": "2025-07-22T17:47:28.104285+00:00",
+    "item_count": 26116,
+    "data_hash": "40aee111da9e07dd13027dbd6ceb115c95697db322284107d6bf229a500b9993"
   },
   "data": {
     "2899766705": {
@@ -5381,6 +5381,22 @@
     "2798633009": {
       "zh-chs": "崩崖",
       "en": "Precipial"
+    },
+    "2886758619": {
+      "zh-chs": "+1壮举插槽",
+      "en": "+1 Feat Slot"
+    },
+    "3155313404": {
+      "zh-chs": "永恒沙漠装备阶级升级：+1",
+      "en": "The Desert Perpetual Gear Tier Upgrade: +1"
+    },
+    "3329390250": {
+      "zh-chs": "提高回旋喝彩的初始掉落率。",
+      "en": "Increases initial chance for Whirling Ovation to drop."
+    },
+    "2399537961": {
+      "zh-chs": "大幅提高回旋喝彩的初始掉落率。",
+      "en": "Greatly increases the initial chance for Whirling Ovation to drop."
     },
     "2665884848": {
       "zh-chs": "屏障密码碎片",
@@ -46199,7 +46215,7 @@
       "en": "Spark of Instinct"
     },
     "4180586737": {
-      "zh-chs": "仁慈余烬",
+      "zh-chs": "慈悲余烬",
       "en": "Ember of Mercy"
     },
     "4180586736": {
@@ -56950,6 +56966,10 @@
       "zh-chs": "像素视野",
       "en": "Pixelsight"
     },
+    "4199529752": {
+      "zh-chs": "回旋喝彩催化",
+      "en": "Whirling Ovation Catalyst"
+    },
     "364132014": {
       "zh-chs": "三度迭代催化",
       "en": "Third Iteration Catalyst"
@@ -57014,6 +57034,10 @@
       "zh-chs": "磁力尖刺",
       "en": "Mag Spike"
     },
+    "2972633230": {
+      "zh-chs": "星旋",
+      "en": "Starspin"
+    },
     "1490977947": {
       "zh-chs": "非时序影中星辰",
       "en": "Achronal Stars in Shadow"
@@ -57065,6 +57089,30 @@
     "833451310": {
       "zh-chs": "非时序完美逆行",
       "en": "Achronal Mint Retrograde"
+    },
+    "674221294": {
+      "zh-chs": "非时序隐晦沙漏",
+      "en": "Achronal Opaque Hourglass"
+    },
+    "1363766424": {
+      "zh-chs": "非时序闰蚀",
+      "en": "Achronal Intercalary"
+    },
+    "1923810369": {
+      "zh-chs": "非时序超前",
+      "en": "Achronal Antedate"
+    },
+    "2747482039": {
+      "zh-chs": "非时序有限未知",
+      "en": "Achronal Finite Maybe"
+    },
+    "1432385252": {
+      "zh-chs": "非时序转瞬长矛",
+      "en": "Achronal Lance Ephemeral"
+    },
+    "3664563691": {
+      "zh-chs": "非时序何时何地",
+      "en": "Achronal The When and Where"
     },
     "4221951840": {
       "zh-chs": "非时序亚哈焦痕",
@@ -57302,6 +57350,14 @@
       "zh-chs": "零重力雀跃",
       "en": "Zero-G Gambol"
     },
+    "3220576445": {
+      "zh-chs": "中音华彩",
+      "en": "Mediant Flourish"
+    },
+    "3220576444": {
+      "zh-chs": "使节华服",
+      "en": "Envoy's Togs"
+    },
     "1350289998": {
       "zh-chs": "翠藻绿荧",
       "en": "Chlorophyta"
@@ -57374,6 +57430,10 @@
       "zh-chs": "引物",
       "en": "Primer"
     },
+    "4071479148": {
+      "zh-chs": "独唱者机壳",
+      "en": "Soloist Shell"
+    },
     "3826574991": {
       "zh-chs": "初次接触机壳",
       "en": "First Contact Shell"
@@ -57421,6 +57481,10 @@
     "2098788836": {
       "zh-chs": "烧烤大师机壳",
       "en": "Grillmaster Shell"
+    },
+    "239552690": {
+      "zh-chs": "浮膜掠面",
+      "en": "Skimmed Surface"
     },
     "1493833481": {
       "zh-chs": "分歧点",
@@ -57517,6 +57581,478 @@
     "3557577228": {
       "zh-chs": "飞行王牌",
       "en": "Flying Ace"
+    },
+    "1714871740": {
+      "zh-chs": "隐晦沙漏",
+      "en": "Opaque Hourglass"
+    },
+    "3494725958": {
+      "zh-chs": "闰蚀",
+      "en": "Intercalary"
+    },
+    "2197494591": {
+      "zh-chs": "超前",
+      "en": "Antedate"
+    },
+    "473739197": {
+      "zh-chs": "有限未知",
+      "en": "Finite Maybe"
+    },
+    "3069701338": {
+      "zh-chs": "转瞬长矛",
+      "en": "Lance Ephemeral"
+    },
+    "2046367841": {
+      "zh-chs": "何时何地",
+      "en": "The When and Where"
+    },
+    "1541782531": {
+      "zh-chs": "隐晦沙漏",
+      "en": "Opaque Hourglass"
+    },
+    "483128217": {
+      "zh-chs": "闰蚀",
+      "en": "Intercalary"
+    },
+    "1209406064": {
+      "zh-chs": "超前",
+      "en": "Antedate"
+    },
+    "2855249522": {
+      "zh-chs": "有限未知",
+      "en": "Finite Maybe"
+    },
+    "2354435045": {
+      "zh-chs": "转瞬长矛",
+      "en": "Lance Ephemeral"
+    },
+    "1084098030": {
+      "zh-chs": "何时何地",
+      "en": "The When and Where"
+    },
+    "2907139058": {
+      "zh-chs": "隐晦沙漏",
+      "en": "Opaque Hourglass"
+    },
+    "4047435996": {
+      "zh-chs": "闰蚀",
+      "en": "Intercalary"
+    },
+    "2473036553": {
+      "zh-chs": "超前",
+      "en": "Antedate"
+    },
+    "207061199": {
+      "zh-chs": "有限未知",
+      "en": "Finite Maybe"
+    },
+    "801230488": {
+      "zh-chs": "转瞬长矛",
+      "en": "Lance Ephemeral"
+    },
+    "2483248283": {
+      "zh-chs": "何时何地",
+      "en": "The When and Where"
+    },
+    "1421398619": {
+      "zh-chs": "隐晦沙漏",
+      "en": "Opaque Hourglass"
+    },
+    "2165596909": {
+      "zh-chs": "闰蚀",
+      "en": "Intercalary"
+    },
+    "3735875016": {
+      "zh-chs": "超前",
+      "en": "Antedate"
+    },
+    "1857722334": {
+      "zh-chs": "有限未知",
+      "en": "Finite Maybe"
+    },
+    "2675354897": {
+      "zh-chs": "转瞬长矛",
+      "en": "Lance Ephemeral"
+    },
+    "357496642": {
+      "zh-chs": "何时何地",
+      "en": "The When and Where"
+    },
+    "1166883930": {
+      "zh-chs": "集体心灵袖甲",
+      "en": "Collective Psyche Sleeves"
+    },
+    "739528549": {
+      "zh-chs": "集体心灵袖甲",
+      "en": "Collective Psyche Sleeves"
+    },
+    "1925019160": {
+      "zh-chs": "集体心灵袖甲",
+      "en": "Collective Psyche Sleeves"
+    },
+    "1060448401": {
+      "zh-chs": "集体心灵袖甲",
+      "en": "Collective Psyche Sleeves"
+    },
+    "2524605102": {
+      "zh-chs": "集体心灵胸铠",
+      "en": "Collective Psyche Cuirass"
+    },
+    "3868628961": {
+      "zh-chs": "集体心灵胸铠",
+      "en": "Collective Psyche Cuirass"
+    },
+    "920675796": {
+      "zh-chs": "集体心灵胸铠",
+      "en": "Collective Psyche Cuirass"
+    },
+    "2167890517": {
+      "zh-chs": "集体心灵胸铠",
+      "en": "Collective Psyche Cuirass"
+    },
+    "2844626795": {
+      "zh-chs": "集体心灵胄盔",
+      "en": "Collective Psyche Casque"
+    },
+    "899555156": {
+      "zh-chs": "集体心灵胄盔",
+      "en": "Collective Psyche Casque"
+    },
+    "2488273117": {
+      "zh-chs": "集体心灵胄盔",
+      "en": "Collective Psyche Casque"
+    },
+    "1563656260": {
+      "zh-chs": "集体心灵胄盔",
+      "en": "Collective Psyche Casque"
+    },
+    "2423355796": {
+      "zh-chs": "集体心灵腿铠",
+      "en": "Collective Psyche Strides"
+    },
+    "100528251": {
+      "zh-chs": "集体心灵腿铠",
+      "en": "Collective Psyche Strides"
+    },
+    "3254011002": {
+      "zh-chs": "集体心灵腿铠",
+      "en": "Collective Psyche Strides"
+    },
+    "3201620243": {
+      "zh-chs": "集体心灵腿铠",
+      "en": "Collective Psyche Strides"
+    },
+    "2842699639": {
+      "zh-chs": "集体心灵披风",
+      "en": "Collective Psyche Cloak"
+    },
+    "1491692168": {
+      "zh-chs": "集体心灵披风",
+      "en": "Collective Psyche Cloak"
+    },
+    "1853149937": {
+      "zh-chs": "集体心灵披风",
+      "en": "Collective Psyche Cloak"
+    },
+    "423598240": {
+      "zh-chs": "集体心灵披风",
+      "en": "Collective Psyche Cloak"
+    },
+    "2447830600": {
+      "zh-chs": "集体心灵臂铠",
+      "en": "Collective Psyche Gauntlets"
+    },
+    "3107108519": {
+      "zh-chs": "集体心灵臂铠",
+      "en": "Collective Psyche Gauntlets"
+    },
+    "2710872982": {
+      "zh-chs": "集体心灵臂铠",
+      "en": "Collective Psyche Gauntlets"
+    },
+    "794256631": {
+      "zh-chs": "集体心灵臂铠",
+      "en": "Collective Psyche Gauntlets"
+    },
+    "650699328": {
+      "zh-chs": "集体心灵战甲",
+      "en": "Collective Psyche Plate"
+    },
+    "2334725887": {
+      "zh-chs": "集体心灵战甲",
+      "en": "Collective Psyche Plate"
+    },
+    "2327741086": {
+      "zh-chs": "集体心灵战甲",
+      "en": "Collective Psyche Plate"
+    },
+    "2790654703": {
+      "zh-chs": "集体心灵战甲",
+      "en": "Collective Psyche Plate"
+    },
+    "3831279089": {
+      "zh-chs": "集体心灵头盔",
+      "en": "Collective Psyche Helm"
+    },
+    "329855166": {
+      "zh-chs": "集体心灵头盔",
+      "en": "Collective Psyche Helm"
+    },
+    "2141704715": {
+      "zh-chs": "集体心灵头盔",
+      "en": "Collective Psyche Helm"
+    },
+    "2132441618": {
+      "zh-chs": "集体心灵头盔",
+      "en": "Collective Psyche Helm"
+    },
+    "3124815650": {
+      "zh-chs": "集体心灵胫甲",
+      "en": "Collective Psyche Greaves"
+    },
+    "3467778765": {
+      "zh-chs": "集体心灵胫甲",
+      "en": "Collective Psyche Greaves"
+    },
+    "3272707184": {
+      "zh-chs": "集体心灵胫甲",
+      "en": "Collective Psyche Greaves"
+    },
+    "4105960025": {
+      "zh-chs": "集体心灵胫甲",
+      "en": "Collective Psyche Greaves"
+    },
+    "3872822013": {
+      "zh-chs": "集体心灵印记",
+      "en": "Collective Psyche Mark"
+    },
+    "471989682": {
+      "zh-chs": "集体心灵印记",
+      "en": "Collective Psyche Mark"
+    },
+    "2240668943": {
+      "zh-chs": "集体心灵印记",
+      "en": "Collective Psyche Mark"
+    },
+    "3451659806": {
+      "zh-chs": "集体心灵印记",
+      "en": "Collective Psyche Mark"
+    },
+    "2227121717": {
+      "zh-chs": "集体心灵手套",
+      "en": "Collective Psyche Gloves"
+    },
+    "1089056298": {
+      "zh-chs": "集体心灵手套",
+      "en": "Collective Psyche Gloves"
+    },
+    "1902764663": {
+      "zh-chs": "集体心灵手套",
+      "en": "Collective Psyche Gloves"
+    },
+    "2891184182": {
+      "zh-chs": "集体心灵手套",
+      "en": "Collective Psyche Gloves"
+    },
+    "462410155": {
+      "zh-chs": "集体心灵法袍",
+      "en": "Collective Psyche Robes"
+    },
+    "1869287316": {
+      "zh-chs": "集体心灵法袍",
+      "en": "Collective Psyche Robes"
+    },
+    "434741789": {
+      "zh-chs": "集体心灵法袍",
+      "en": "Collective Psyche Robes"
+    },
+    "2108827780": {
+      "zh-chs": "集体心灵法袍",
+      "en": "Collective Psyche Robes"
+    },
+    "872347580": {
+      "zh-chs": "集体心灵面罩",
+      "en": "Collective Psyche Cover"
+    },
+    "3780830723": {
+      "zh-chs": "集体心灵面罩",
+      "en": "Collective Psyche Cover"
+    },
+    "2488903154": {
+      "zh-chs": "集体心灵面罩",
+      "en": "Collective Psyche Cover"
+    },
+    "3660446811": {
+      "zh-chs": "集体心灵面罩",
+      "en": "Collective Psyche Cover"
+    },
+    "3803243799": {
+      "zh-chs": "集体心灵战靴",
+      "en": "Collective Psyche Boots"
+    },
+    "3261035688": {
+      "zh-chs": "集体心灵战靴",
+      "en": "Collective Psyche Boots"
+    },
+    "2589335313": {
+      "zh-chs": "集体心灵战靴",
+      "en": "Collective Psyche Boots"
+    },
+    "3359833024": {
+      "zh-chs": "集体心灵战靴",
+      "en": "Collective Psyche Boots"
+    },
+    "3114093634": {
+      "zh-chs": "集体心灵臂环",
+      "en": "Collective Psyche Bond"
+    },
+    "751083501": {
+      "zh-chs": "集体心灵臂环",
+      "en": "Collective Psyche Bond"
+    },
+    "911985296": {
+      "zh-chs": "集体心灵臂环",
+      "en": "Collective Psyche Bond"
+    },
+    "1389264761": {
+      "zh-chs": "集体心灵臂环",
+      "en": "Collective Psyche Bond"
+    },
+    "522354377": {
+      "zh-chs": "阶级信息",
+      "en": "Tiering Information"
+    },
+    "1946672441": {
+      "zh-chs": "阶级信息",
+      "en": "Tiering Information"
+    },
+    "2967123102": {
+      "zh-chs": "阶级信息",
+      "en": "Tiering Information"
+    },
+    "2274626651": {
+      "zh-chs": "阶级信息",
+      "en": "Tiering Information"
+    },
+    "1170528456": {
+      "zh-chs": "阶级信息",
+      "en": "Tiering Information"
+    },
+    "3349740693": {
+      "zh-chs": "阶级信息",
+      "en": "Tiering Information"
+    },
+    "731956298": {
+      "zh-chs": "成就装备阶级加成未启用",
+      "en": "Triumph Gear Tier Boost Inactive"
+    },
+    "3307434914": {
+      "zh-chs": "成就装备阶级加成未启用",
+      "en": "Triumph Gear Tier Boost Inactive"
+    },
+    "3309467308": {
+      "zh-chs": "成就装备阶级加成启用",
+      "en": "Triumph Gear Tier Boost Active"
+    },
+    "3869714340": {
+      "zh-chs": "成就装备阶级加成启用",
+      "en": "Triumph Gear Tier Boost Active"
+    },
+    "2123466625": {
+      "zh-chs": "完全通关加成已锁定",
+      "en": "Full Clear Boost Locked"
+    },
+    "401363854": {
+      "zh-chs": "完全通关加成未启用",
+      "en": "Full Clear Boost Inactive"
+    },
+    "3970318345": {
+      "zh-chs": "完全通关加成已锁定",
+      "en": "Full Clear Boost Locked"
+    },
+    "2458963014": {
+      "zh-chs": "完全通关加成未启用",
+      "en": "Full Clear Boost Inactive"
+    },
+    "1807773040": {
+      "zh-chs": "完全通关加成启用",
+      "en": "Full Clear Boost Active"
+    },
+    "929306472": {
+      "zh-chs": "完全通关加成启用",
+      "en": "Full Clear Boost Active"
+    },
+    "798768624": {
+      "zh-chs": "壮举通关加成已锁定",
+      "en": "Feat Clear Boost Locked"
+    },
+    "732561337": {
+      "zh-chs": "3+壮举通关加成未启用",
+      "en": "3+ Feat Clear Boost Inactive"
+    },
+    "1709174136": {
+      "zh-chs": "壮举通关加成已锁定",
+      "en": "Feat Clear Boost Locked"
+    },
+    "1039744465": {
+      "zh-chs": "3+壮举通关加成未启用",
+      "en": "3+ Feat Clear Boost Inactive"
+    },
+    "2932418573": {
+      "zh-chs": "3+壮举通关加成启用",
+      "en": "3+ Feat Clear Boost Active"
+    },
+    "953219525": {
+      "zh-chs": "3+壮举通关加成启用",
+      "en": "3+ Feat Clear Boost Active"
+    },
+    "3101265515": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "1825199184": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "1094834729": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "793264094": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "3163420911": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "1625548548": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "999462547": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "636016536": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "1956410929": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "3790402246": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "1404785687": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
+    },
+    "3313175340": {
+      "zh-chs": "升级几率",
+      "en": "Tier Upgrade Chance"
     },
     "1399867989": {
       "zh-chs": "溯回",
@@ -69149,6 +69685,10 @@
     "1663874069": {
       "zh-chs": "开普勒装备",
       "en": "Kepler Gear"
+    },
+    "4230232494": {
+      "zh-chs": "永恒沙漠装备",
+      "en": "The Desert Perpetual Gear"
     },
     "3723287574": {
       "zh-chs": "开普勒装备",
@@ -92578,6 +93118,14 @@
       "zh-chs": "详尽研究",
       "en": "Exhaustive Research"
     },
+    "2597494435": {
+      "zh-chs": "参考框架",
+      "en": "Frame of Reference"
+    },
+    "943022827": {
+      "zh-chs": "参考框架",
+      "en": "Frame of Reference"
+    },
     "3911709647": {
       "zh-chs": "坚韧",
       "en": "Tenacity"
@@ -92830,6 +93378,54 @@
       "zh-chs": "强化稳定性",
       "en": "Enhanced Stability"
     },
+    "1553681400": {
+      "zh-chs": "隐晦沙漏",
+      "en": "Opaque Hourglass"
+    },
+    "202997902": {
+      "zh-chs": "隐晦沙漏",
+      "en": "Opaque Hourglass"
+    },
+    "2725426834": {
+      "zh-chs": "闰蚀",
+      "en": "Intercalary"
+    },
+    "3972224672": {
+      "zh-chs": "闰蚀",
+      "en": "Intercalary"
+    },
+    "1435808083": {
+      "zh-chs": "超前",
+      "en": "Antedate"
+    },
+    "3637209799": {
+      "zh-chs": "超前",
+      "en": "Antedate"
+    },
+    "3241217409": {
+      "zh-chs": "有限未知",
+      "en": "Finite Maybe"
+    },
+    "4062113085": {
+      "zh-chs": "有限未知",
+      "en": "Finite Maybe"
+    },
+    "688593230": {
+      "zh-chs": "转瞬长矛",
+      "en": "Lance Ephemeral"
+    },
+    "4114998524": {
+      "zh-chs": "转瞬长矛",
+      "en": "Lance Ephemeral"
+    },
+    "1090936013": {
+      "zh-chs": "何时何地",
+      "en": "The When and Where"
+    },
+    "3785614169": {
+      "zh-chs": "何时何地",
+      "en": "The When and Where"
+    },
     "702001725": {
       "zh-chs": "金耀禁能者",
       "en": "Auric Disabler"
@@ -93009,6 +93605,10 @@
     "2973900274": {
       "zh-chs": "三度迭代",
       "en": "Third Iteration"
+    },
+    "1202007252": {
+      "zh-chs": "回旋喝彩",
+      "en": "Whirling Ovation"
     },
     "648595258": {
       "zh-chs": "引力子尖刺",
@@ -93209,6 +93809,14 @@
     "3969198262": {
       "zh-chs": "机工诡诈臂袖",
       "en": "Mechaneer's Tricksleeves"
+    },
+    "368733543": {
+      "zh-chs": "雷电通流",
+      "en": "Raiden Flux"
+    },
+    "3139852187": {
+      "zh-chs": "雷电通流",
+      "en": "Raiden Flux"
     },
     "368733541": {
       "zh-chs": "巨龙之影",
@@ -93657,6 +94265,46 @@
     "1597743755": {
       "zh-chs": "最后纪律腿铠",
       "en": "Last Discipline Strides"
+    },
+    "2565439347": {
+      "zh-chs": "集体心灵袖甲",
+      "en": "Collective Psyche Sleeves"
+    },
+    "2418121319": {
+      "zh-chs": "集体心灵袖甲",
+      "en": "Collective Psyche Sleeves"
+    },
+    "2396904861": {
+      "zh-chs": "集体心灵胸铠",
+      "en": "Collective Psyche Cuirass"
+    },
+    "3652757289": {
+      "zh-chs": "集体心灵胸铠",
+      "en": "Collective Psyche Cuirass"
+    },
+    "3858892752": {
+      "zh-chs": "集体心灵披风",
+      "en": "Collective Psyche Cloak"
+    },
+    "381775446": {
+      "zh-chs": "集体心灵披风",
+      "en": "Collective Psyche Cloak"
+    },
+    "2559878186": {
+      "zh-chs": "集体心灵胄盔",
+      "en": "Collective Psyche Casque"
+    },
+    "1212059592": {
+      "zh-chs": "集体心灵胄盔",
+      "en": "Collective Psyche Casque"
+    },
+    "2300393285": {
+      "zh-chs": "集体心灵腿铠",
+      "en": "Collective Psyche Strides"
+    },
+    "3546240833": {
+      "zh-chs": "集体心灵腿铠",
+      "en": "Collective Psyche Strides"
     },
     "81786728": {
       "zh-chs": "武士道护臂",
@@ -94298,6 +94946,46 @@
       "zh-chs": "最后纪律胫甲",
       "en": "Last Discipline Greaves"
     },
+    "1004271921": {
+      "zh-chs": "集体心灵臂铠",
+      "en": "Collective Psyche Gauntlets"
+    },
+    "1685983085": {
+      "zh-chs": "集体心灵臂铠",
+      "en": "Collective Psyche Gauntlets"
+    },
+    "3415771751": {
+      "zh-chs": "集体心灵战甲",
+      "en": "Collective Psyche Plate"
+    },
+    "2361382555": {
+      "zh-chs": "集体心灵战甲",
+      "en": "Collective Psyche Plate"
+    },
+    "4131269494": {
+      "zh-chs": "集体心灵印记",
+      "en": "Collective Psyche Mark"
+    },
+    "3909550964": {
+      "zh-chs": "集体心灵印记",
+      "en": "Collective Psyche Mark"
+    },
+    "3396725088": {
+      "zh-chs": "集体心灵头盔",
+      "en": "Collective Psyche Helm"
+    },
+    "1926075494": {
+      "zh-chs": "集体心灵头盔",
+      "en": "Collective Psyche Helm"
+    },
+    "835524739": {
+      "zh-chs": "集体心灵胫甲",
+      "en": "Collective Psyche Greaves"
+    },
+    "3264716535": {
+      "zh-chs": "集体心灵胫甲",
+      "en": "Collective Psyche Greaves"
+    },
     "2195895938": {
       "zh-chs": "武士道臂铠",
       "en": "Bushido Gauntlets"
@@ -94938,6 +95626,46 @@
       "zh-chs": "最后纪律战靴",
       "en": "Last Discipline Boots"
     },
+    "285521900": {
+      "zh-chs": "集体心灵手套",
+      "en": "Collective Psyche Gloves"
+    },
+    "2741145538": {
+      "zh-chs": "集体心灵手套",
+      "en": "Collective Psyche Gloves"
+    },
+    "1880646964": {
+      "zh-chs": "集体心灵法袍",
+      "en": "Collective Psyche Robes"
+    },
+    "1054267034": {
+      "zh-chs": "集体心灵法袍",
+      "en": "Collective Psyche Robes"
+    },
+    "3090407945": {
+      "zh-chs": "集体心灵臂环",
+      "en": "Collective Psyche Bond"
+    },
+    "2885094421": {
+      "zh-chs": "集体心灵臂环",
+      "en": "Collective Psyche Bond"
+    },
+    "1822989949": {
+      "zh-chs": "集体心灵面罩",
+      "en": "Collective Psyche Cover"
+    },
+    "1658453513": {
+      "zh-chs": "集体心灵面罩",
+      "en": "Collective Psyche Cover"
+    },
+    "931254038": {
+      "zh-chs": "集体心灵战靴",
+      "en": "Collective Psyche Boots"
+    },
+    "3563129364": {
+      "zh-chs": "集体心灵战靴",
+      "en": "Collective Psyche Boots"
+    },
     "970712027": {
       "zh-chs": "武士道手套",
       "en": "Bushido Gloves"
@@ -95105,6 +95833,14 @@
     "4178714189": {
       "zh-chs": "使者飘荡",
       "en": "Emissary Waft"
+    },
+    "4178714190": {
+      "zh-chs": "第三未知",
+      "en": "Third Unknown"
+    },
+    "4178714191": {
+      "zh-chs": "时间线刃",
+      "en": "Timeline's Blade"
     },
     "4178714186": {
       "zh-chs": "外部观察者",
