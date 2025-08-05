@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "235683.25.07.23.2000-5-bnet.61079",
-    "timestamp": "2025-08-04T17:49:43.367306+00:00",
-    "item_count": 26118,
-    "data_hash": "2f1c92f6d7c3acf0095201d931bfe6ef960dbc2492b35c1849dfa57a409ffcca"
+    "version": "235831.25.07.30.2000-2-bnet.61172",
+    "timestamp": "2025-08-05T17:47:36.137238+00:00",
+    "item_count": 26124,
+    "data_hash": "ff112bc650b1253e0da1617b1fcd0b83fb74a142f7df52e9d2d1008a5f9fd0b2"
   },
   "data": {
     "2899766705": {
@@ -102617,6 +102617,30 @@
     "2684755243": {
       "zh-chs": "天际线",
       "en": "Skylines"
+    },
+    "2499607616": {
+      "zh-chs": "地图与领土",
+      "en": "Map and Territory"
+    },
+    "4162305076": {
+      "zh-chs": "地图与领土",
+      "en": "Map and Territory"
+    },
+    "2259155960": {
+      "zh-chs": "地图与领土",
+      "en": "Map and Territory"
+    },
+    "803088062": {
+      "zh-chs": "地图与领土",
+      "en": "Map and Territory"
+    },
+    "3100679920": {
+      "zh-chs": "地图与领土",
+      "en": "Map and Territory"
+    },
+    "4142710206": {
+      "zh-chs": "地图与领土",
+      "en": "Map and Territory"
     },
     "2722243586": {
       "zh-chs": "探索开普勒：闻名",
