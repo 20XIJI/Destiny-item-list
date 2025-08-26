@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "236192.25.08.13.2000-2-bnet.61421",
-    "timestamp": "2025-08-25T17:41:13.686066+00:00",
-    "item_count": 26124,
-    "data_hash": "ff112bc650b1253e0da1617b1fcd0b83fb74a142f7df52e9d2d1008a5f9fd0b2"
+    "version": "236360.25.08.20.2000-2-bnet.61533",
+    "timestamp": "2025-08-26T17:41:39.510096+00:00",
+    "item_count": 26125,
+    "data_hash": "28aa8e4ceaefa58e8cc6fa936016b2b8ce49f7085c821833f7e3969c9802c3a8"
   },
   "data": {
     "2899766705": {
@@ -95905,6 +95905,10 @@
     "1554459526": {
       "zh-chs": "加州爱心",
       "en": "California Love"
+    },
+    "1554459527": {
+      "zh-chs": "右舷前进",
+      "en": "Starboard Forward"
     },
     "2790542799": {
       "zh-chs": "冲出气闸",
