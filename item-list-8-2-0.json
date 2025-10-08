@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "236941.25.09.18.2000-1-bnet.61941",
-    "timestamp": "2025-10-07T17:40:41.330595+00:00",
-    "item_count": 26074,
-    "data_hash": "1d32084df12f77e4168698ca76cb1f281d41330a63822b019d6f46f7144a4881"
+    "version": "237300.25.09.29.1930-2-bnet.62190",
+    "timestamp": "2025-10-08T17:41:02.978054+00:00",
+    "item_count": 26105,
+    "data_hash": "8f714139718e58447a93da68037b862a3f6433952ee5beb013f04f7968885f8a"
   },
   "data": {
     "2899766705": {
@@ -6218,127 +6218,211 @@
       "zh-chs": "尾声",
       "en": "Epilogue"
     },
-    "3083415826": {
+    "399418777": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "399418778": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "399418779": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "399418780": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "399418781": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "1098573268": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "810024793": {
       "zh-chs": "活动信息",
       "en": "Event Information"
     },
-    "577263030": {
+    "530399817": {
       "zh-chs": "糖果",
       "en": "Candy"
     },
-    "2144864388": {
+    "3377110417": {
       "zh-chs": "鬼灵书页",
       "en": "Spectral Page"
     },
-    "4070155602": {
+    "116838027": {
       "zh-chs": "证明书页",
       "en": "Manifested Page"
     },
-    "858412138": {
+    "2063744629": {
       "zh-chs": "布瑞科技狼人",
       "en": "BrayTech Werewolf"
     },
-    "303711796": {
+    "1608003561": {
       "zh-chs": "寰宇",
       "en": "Acosmic"
     },
-    "1702724944": {
+    "373307731": {
       "zh-chs": "恐怖故事",
       "en": "Horror Story"
     },
-    "3522144647": {
+    "2862929472": {
       "zh-chs": "机械死神",
       "en": "Mechabre"
     },
-    "2682876126": {
+    "568956803": {
       "zh-chs": "侏罗纪绿",
       "en": "Jurassic Green"
     },
-    "1048611860": {
+    "1403799587": {
       "zh-chs": "奥术之拥",
       "en": "Arcane Embrace"
     },
-    "364853621": {
+    "3598420482": {
       "zh-chs": "英灵纪念物",
       "en": "Lost Memento"
     },
-    "2461797977": {
+    "3717583858": {
       "zh-chs": "被没收的福利包",
       "en": "Confiscated Grab Bag"
     },
-    "1685246445": {
-      "zh-chs": "额外悬赏",
-      "en": "Additional Bounties"
+    "2714829162": {
+      "zh-chs": "糖果吞食者",
+      "en": "Candy Devourer"
     },
-    "2700550667": {
+    "3171744994": {
+      "zh-chs": "甜蜜护盾",
+      "en": "Sweet Shielding"
+    },
+    "3197242178": {
+      "zh-chs": "甜蜜护盾",
+      "en": "Sweet Shielding"
+    },
+    "2077124942": {
+      "zh-chs": "糖分过量",
+      "en": "Sugar Crash"
+    },
+    "2190178894": {
+      "zh-chs": "糖分过量",
+      "en": "Sugar Crash"
+    },
+    "3659532666": {
+      "zh-chs": "糖果吞食者",
+      "en": "Candy Devourer"
+    },
+    "1906549393": {
+      "zh-chs": "闹鬼面具",
+      "en": "Haunted Mask"
+    },
+    "2567978449": {
+      "zh-chs": "真菌面具",
+      "en": "Fungal Mask"
+    },
+    "2288100780": {
+      "zh-chs": "奥琳面具",
+      "en": "Orin Mask"
+    },
+    "2753887215": {
+      "zh-chs": "洛迪面具",
+      "en": "Lodi Mask"
+    },
+    "2779700938": {
+      "zh-chs": "欧里克斯面具",
+      "en": "Oryx Mask"
+    },
+    "1118642141": {
+      "zh-chs": "狰狞面具",
+      "en": "Grim Mask"
+    },
+    "1636916040": {
+      "zh-chs": "智能失效保险面具",
+      "en": "Failsafe Mask"
+    },
+    "2113943556": {
       "zh-chs": "Bungie奖励兑换码",
       "en": "Bungie Reward Code"
     },
-    "212159224": {
+    "1035129135": {
       "zh-chs": "证明书页",
       "en": "Manifested Page"
     },
-    "3303627008": {
+    "2798788243": {
       "zh-chs": "相对主义",
       "en": "Relativism"
     },
-    "579493980": {
+    "4149997829": {
       "zh-chs": "坚忍克己",
       "en": "Stoicism"
     },
-    "3848551101": {
+    "246396400": {
       "zh-chs": "唯我主义",
       "en": "Solipsism"
     },
-    "3018673173": {
+    "915477244": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "915477245": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "915477242": {
+      "zh-chs": "奇异武器记忆水晶",
+      "en": "Eerie Weapon Engram"
+    },
+    "2777868042": {
       "zh-chs": "布瑞科技狼人（随机特性）",
       "en": "BrayTech Werewolf (Random Roll)"
     },
-    "2032170279": {
+    "3790856148": {
       "zh-chs": "史诗神秘福利包",
       "en": "Epic Mystery Grab Bag"
     },
-    "1566558387": {
+    "4205213276": {
       "zh-chs": "神秘福利包",
       "en": "Mystery Grab Bag"
     },
-    "3157964220": {
+    "350414343": {
       "zh-chs": "空模组插槽",
       "en": "Empty Mod Socket"
     },
-    "2174169162": {
+    "4260972671": {
       "zh-chs": "更高目标",
       "en": "Higher Purpose"
     },
-    "2174169163": {
+    "4260972670": {
       "zh-chs": "吸血鬼之触",
       "en": "Vampiric Touch"
     },
-    "2174169160": {
+    "4260972669": {
       "zh-chs": "积极刺客",
       "en": "Energetic Assassin"
     },
-    "3966062865": {
+    "1632244010": {
       "zh-chs": "奇异记忆水晶",
       "en": "Eerie Engram"
     },
-    "1313574524": {
+    "3754981349": {
       "zh-chs": "奇异记忆水晶",
       "en": "Eerie Engram"
     },
-    "999604449": {
+    "2835311748": {
       "zh-chs": "奇异异域护臂记忆水晶",
       "en": "Eerie Exotic Arms Engram"
     },
-    "1951353102": {
+    "2157816303": {
       "zh-chs": "奇异异域头盔记忆水晶",
       "en": "Eerie Exotic Head Engram"
     },
-    "2988547631": {
+    "2653153500": {
       "zh-chs": "奇异异域胸甲记忆水晶",
       "en": "Eerie Exotic Chest Engram"
     },
-    "1083773319": {
+    "4099163570": {
       "zh-chs": "奇异异域腿甲记忆水晶",
       "en": "Eerie Exotic Legs Engram"
     },
@@ -7591,8 +7675,8 @@
       "en": "Loadouts +4"
     },
     "972768361": {
-      "zh-chs": "配置+3",
-      "en": "Loadouts +3"
+      "zh-chs": "配置+2",
+      "en": "Loadouts +2"
     },
     "4017807189": {
       "zh-chs": "已解锁火力战队搜索器",
@@ -55710,6 +55794,50 @@
       "zh-chs": "空模组插槽",
       "en": "Empty Mod Socket"
     },
+    "3983347216": {
+      "zh-chs": "同调沉没",
+      "en": "Attune to Submersion"
+    },
+    "3983347217": {
+      "zh-chs": "同调浪漫之死",
+      "en": "Attune to Romantic Death"
+    },
+    "3983347218": {
+      "zh-chs": "同调折叠根源",
+      "en": "Attune to Folded Root"
+    },
+    "3983347219": {
+      "zh-chs": "同调翎尾鲉",
+      "en": "Attune to Ribbontail"
+    },
+    "3983347220": {
+      "zh-chs": "同调毒鲉",
+      "en": "Attune to Synanceia"
+    },
+    "3983347221": {
+      "zh-chs": "同调巴西游走蛛",
+      "en": "Attune to Phoneutria Fera"
+    },
+    "3983347222": {
+      "zh-chs": "同调龙䲢",
+      "en": "Attune to Trachinus"
+    },
+    "1214706366": {
+      "zh-chs": "武装召唤武器记忆水晶",
+      "en": "Call to Arms Weapon Engram"
+    },
+    "1214706367": {
+      "zh-chs": "武装召唤武器记忆水晶",
+      "en": "Call to Arms Weapon Engram"
+    },
+    "1214706360": {
+      "zh-chs": "武装召唤武器记忆水晶",
+      "en": "Call to Arms Weapon Engram"
+    },
+    "4048294886": {
+      "zh-chs": "信息",
+      "en": "Information"
+    },
     "1304325697": {
       "zh-chs": "赛季加成强力装备",
       "en": "Seasonal Bonus Powerful Gear"
@@ -57522,6 +57650,10 @@
       "zh-chs": "活动代币",
       "en": "Event Token"
     },
+    "2769147947": {
+      "zh-chs": "活动代币",
+      "en": "Event Token"
+    },
     "1294378947": {
       "zh-chs": "活动代币",
       "en": "Event Token"
@@ -57906,26 +58038,6 @@
       "zh-chs": "蒙纱阴魂腿铠",
       "en": "Veiled Haunting Strides"
     },
-    "1088003008": {
-      "zh-chs": "古韵尊威护手",
-      "en": "Ancient Majesty Grasps"
-    },
-    "1582463880": {
-      "zh-chs": "古韵尊威胸铠",
-      "en": "Ancient Majesty Cuirass"
-    },
-    "3284561381": {
-      "zh-chs": "古韵尊威披风",
-      "en": "Ancient Majesty Cloak"
-    },
-    "3679474761": {
-      "zh-chs": "古韵尊威面具",
-      "en": "Ancient Majesty Mask"
-    },
-    "4077910010": {
-      "zh-chs": "古韵尊威腿铠",
-      "en": "Ancient Majesty Strides"
-    },
     "1088003009": {
       "zh-chs": "傀儡之刃袖甲",
       "en": "Taken Knife Sleeves"
@@ -58022,26 +58134,6 @@
       "zh-chs": "假面帽匠胫甲",
       "en": "Masked Milliner's Greaves"
     },
-    "3335316330": {
-      "zh-chs": "古韵尊威臂铠",
-      "en": "Ancient Majesty Gauntlets"
-    },
-    "1858642590": {
-      "zh-chs": "古韵尊威战甲",
-      "en": "Ancient Majesty Plate"
-    },
-    "1188269735": {
-      "zh-chs": "古韵尊威印记",
-      "en": "Ancient Majesty Mark"
-    },
-    "1834458043": {
-      "zh-chs": "古韵尊威头盔",
-      "en": "Ancient Majesty Helm"
-    },
-    "2374528260": {
-      "zh-chs": "古韵尊威胫甲",
-      "en": "Ancient Majesty Greaves"
-    },
     "3335316331": {
       "zh-chs": "傀儡之刃臂铠",
       "en": "Taken Knife Gauntlets"
@@ -58137,26 +58229,6 @@
     "280903308": {
       "zh-chs": "正装暗影战靴",
       "en": "Formal Shadow Boots"
-    },
-    "715074199": {
-      "zh-chs": "古韵尊威手套",
-      "en": "Ancient Majesty Gloves"
-    },
-    "1361869537": {
-      "zh-chs": "古韵尊威法袍",
-      "en": "Ancient Majesty Robes"
-    },
-    "2568935228": {
-      "zh-chs": "古韵尊威臂环",
-      "en": "Ancient Majesty Bond"
-    },
-    "1318336710": {
-      "zh-chs": "古韵尊威面罩",
-      "en": "Ancient Majesty Cover"
-    },
-    "2099254713": {
-      "zh-chs": "古韵尊威战靴",
-      "en": "Ancient Majesty Boots"
     },
     "715074198": {
       "zh-chs": "傀儡之刃手套",
@@ -58279,8 +58351,8 @@
       "en": "Costume: \nWayward Psyche"
     },
     "3834187337": {
-      "zh-chs": "服装：\n铁铍",
-      "en": "Costume: \nIron Beryllium"
+      "zh-chs": "服装：\n铁甲",
+      "en": "Costume: \nIron Panoply"
     },
     "3206549834": {
       "zh-chs": "斯凯拉的凝视",
@@ -58291,8 +58363,8 @@
       "en": "Chromium-24"
     },
     "99466772": {
-      "zh-chs": "反叛者首领",
-      "en": "Renegade Leader"
+      "zh-chs": "自知",
+      "en": "Autognosis"
     },
     "2749722041": {
       "zh-chs": "反叛者首领",
@@ -58351,8 +58423,8 @@
       "en": "Plushosaurus"
     },
     "4282413899": {
-      "zh-chs": "幽魂之夜滑翔板",
-      "en": "Ghastly Night Skimmer"
+      "zh-chs": "幽魂之夜",
+      "en": "Ghastly Night"
     },
     "993333541": {
       "zh-chs": "利刃升涌",
@@ -58409,6 +58481,10 @@
     "3840948453": {
       "zh-chs": "暮光明亮",
       "en": "Duskbright"
+    },
+    "3717501117": {
+      "zh-chs": "钢铁军政官",
+      "en": "Iron Valus"
     },
     "1797416766": {
       "zh-chs": "挚爱礼物",
@@ -58706,18 +58782,6 @@
       "zh-chs": "上维之流滑翔板包",
       "en": "Ascendant Flow Skimmer Pack"
     },
-    "367903301": {
-      "zh-chs": "古韵尊威猎人套装",
-      "en": "Ancient Majesty Hunter Set"
-    },
-    "864329417": {
-      "zh-chs": "古韵尊威泰坦套装",
-      "en": "Ancient Majesty Titan Set"
-    },
-    "922551048": {
-      "zh-chs": "古韵尊威术士套装",
-      "en": "Ancient Majesty Warlock Set"
-    },
     "367903300": {
       "zh-chs": "傀儡之刃猎人套装",
       "en": "Taken Knife Hunter Set"
@@ -58819,16 +58883,16 @@
       "en": "SUBROUTINE: ~RECURSION"
     },
     "3772179443": {
-      "zh-chs": "复苏丑闻II",
-      "en": "Resurgence Scandal II"
+      "zh-chs": "复苏指令II",
+      "en": "Resurgence Directive II"
     },
     "3772179442": {
-      "zh-chs": "复苏丑闻III",
-      "en": "Resurgence Scandal III"
+      "zh-chs": "复苏指令III",
+      "en": "Resurgence Directive III"
     },
     "3772179445": {
-      "zh-chs": "复苏丑闻IV",
-      "en": "Resurgence Scandal IV"
+      "zh-chs": "复苏指令IV",
+      "en": "Resurgence Directive IV"
     },
     "3228954311": {
       "zh-chs": "英灵日护甲套装",
@@ -58878,10 +58942,6 @@
       "zh-chs": "轨道外架包",
       "en": "Orbital Outrigger Pack"
     },
-    "1466086284": {
-      "zh-chs": "古韵尊威护甲套装",
-      "en": "Ancient Majesty Armor Sets"
-    },
     "1466086285": {
       "zh-chs": "傀儡之刃护甲套装",
       "en": "Taken Knife Armor Sets"
@@ -58921,6 +58981,10 @@
     "2098642575": {
       "zh-chs": "10通票等级组合包",
       "en": "10 Pass Ranks Pack"
+    },
+    "2442777035": {
+      "zh-chs": "活动代币",
+      "en": "Event Token"
     },
     "2367713531": {
       "zh-chs": "女王箔酊",
@@ -59610,13 +59674,105 @@
       "zh-chs": "专家",
       "en": "Specialist"
     },
+    "2462335932": {
+      "zh-chs": "假面舞者风帽",
+      "en": "Masquerader's Cowl"
+    },
+    "2390807586": {
+      "zh-chs": "假面舞者头盔",
+      "en": "Masquerader's Helm"
+    },
+    "4095816113": {
+      "zh-chs": "假面舞者兜帽",
+      "en": "Masquerader's Hood"
+    },
+    "3382736601": {
+      "zh-chs": "沉没",
+      "en": "Submersion"
+    },
+    "642940197": {
+      "zh-chs": "沉没",
+      "en": "Submersion"
+    },
+    "4264096644": {
+      "zh-chs": "浪漫之死",
+      "en": "Romantic Death"
+    },
+    "219353066": {
+      "zh-chs": "浪漫之死",
+      "en": "Romantic Death"
+    },
+    "2996325132": {
+      "zh-chs": "折叠根源",
+      "en": "Folded Root"
+    },
+    "3617472994": {
+      "zh-chs": "折叠根源",
+      "en": "Folded Root"
+    },
+    "2869916738": {
+      "zh-chs": "巴西游走蛛",
+      "en": "Phoneutria Fera"
+    },
+    "3067253008": {
+      "zh-chs": "巴西游走蛛",
+      "en": "Phoneutria Fera"
+    },
+    "2253321583": {
+      "zh-chs": "龙䲢",
+      "en": "Trachinus"
+    },
+    "1712320819": {
+      "zh-chs": "龙䲢",
+      "en": "Trachinus"
+    },
+    "820994400": {
+      "zh-chs": "毒鲉",
+      "en": "Synanceia"
+    },
+    "927710310": {
+      "zh-chs": "毒鲉",
+      "en": "Synanceia"
+    },
+    "4242153505": {
+      "zh-chs": "翎尾鲉",
+      "en": "Ribbontail"
+    },
+    "3754785245": {
+      "zh-chs": "翎尾鲉",
+      "en": "Ribbontail"
+    },
     "4062073334": {
       "zh-chs": "友谊恩惠",
       "en": "Boon of Friendship"
     },
-    "2289674162": {
+    "1693176651": {
       "zh-chs": "奇异武器记忆水晶",
       "en": "Eerie Weapons Engram"
+    },
+    "3291371395": {
+      "zh-chs": "噤声低语",
+      "en": "Hushed Whisper"
+    },
+    "1042420727": {
+      "zh-chs": "噤声低语",
+      "en": "Hushed Whisper"
+    },
+    "3312324260": {
+      "zh-chs": "枪灼",
+      "en": "Gunburn"
+    },
+    "2657823754": {
+      "zh-chs": "枪灼",
+      "en": "Gunburn"
+    },
+    "1659137741": {
+      "zh-chs": "奥术之拥",
+      "en": "Arcane Embrace"
+    },
+    "1078536537": {
+      "zh-chs": "奥术之拥",
+      "en": "Arcane Embrace"
     },
     "3936471813": {
       "zh-chs": "重金属记忆水晶",
@@ -59697,10 +59853,6 @@
     "1625215187": {
       "zh-chs": "翎尾鲉",
       "en": "Ribbontail"
-    },
-    "3973201757": {
-      "zh-chs": "扭曲武器周记忆水晶",
-      "en": "Distorted Arms Week Engram"
     },
     "1721059169": {
       "zh-chs": "龙䲢",
@@ -94842,6 +94994,10 @@
       "zh-chs": "沉没",
       "en": "Submersion"
     },
+    "4046936706": {
+      "zh-chs": "沉没",
+      "en": "Submersion"
+    },
     "1917334929": {
       "zh-chs": "有限冲击器",
       "en": "Finite Impactor"
@@ -94867,6 +95023,10 @@
       "en": "Romantic Death"
     },
     "2979965246": {
+      "zh-chs": "浪漫之死",
+      "en": "Romantic Death"
+    },
+    "3083211308": {
       "zh-chs": "浪漫之死",
       "en": "Romantic Death"
     },
@@ -94898,6 +95058,10 @@
       "zh-chs": "折叠根源",
       "en": "Folded Root"
     },
+    "2985364466": {
+      "zh-chs": "折叠根源",
+      "en": "Folded Root"
+    },
     "3184457501": {
       "zh-chs": "折叠根源",
       "en": "Folded Root"
@@ -94910,7 +95074,15 @@
       "zh-chs": "噤声低语",
       "en": "Hushed Whisper"
     },
+    "1131177620": {
+      "zh-chs": "噤声低语",
+      "en": "Hushed Whisper"
+    },
     "3431536253": {
+      "zh-chs": "枪灼",
+      "en": "Gunburn"
+    },
+    "1032136201": {
       "zh-chs": "枪灼",
       "en": "Gunburn"
     },
@@ -94918,7 +95090,15 @@
       "zh-chs": "奥术之拥",
       "en": "Arcane Embrace"
     },
+    "3117902614": {
+      "zh-chs": "奥术之拥",
+      "en": "Arcane Embrace"
+    },
     "3574168117": {
+      "zh-chs": "噤声低语",
+      "en": "Hushed Whisper"
+    },
+    "2808451697": {
       "zh-chs": "噤声低语",
       "en": "Hushed Whisper"
     },
@@ -94926,7 +95106,15 @@
       "zh-chs": "枪灼",
       "en": "Gunburn"
     },
+    "1952523260": {
+      "zh-chs": "枪灼",
+      "en": "Gunburn"
+    },
     "1813474267": {
+      "zh-chs": "奥术之拥",
+      "en": "Arcane Embrace"
+    },
+    "3766145631": {
       "zh-chs": "奥术之拥",
       "en": "Arcane Embrace"
     },
@@ -95063,44 +95251,44 @@
       "en": "Wayward Psyche Strides"
     },
     "1800556337": {
-      "zh-chs": "铁铍护手",
-      "en": "Iron Beryllium Grasps"
+      "zh-chs": "铁甲护手",
+      "en": "Iron Panoply Grasps"
     },
     "1313554797": {
-      "zh-chs": "铁铍护手",
-      "en": "Iron Beryllium Grasps"
+      "zh-chs": "铁甲护手",
+      "en": "Iron Panoply Grasps"
     },
     "2195844199": {
-      "zh-chs": "铁铍胸甲",
-      "en": "Iron Beryllium Vest"
+      "zh-chs": "铁甲胸甲",
+      "en": "Iron Panoply Vest"
     },
     "2596637851": {
-      "zh-chs": "铁铍胸甲",
-      "en": "Iron Beryllium Vest"
+      "zh-chs": "铁甲胸甲",
+      "en": "Iron Panoply Vest"
     },
     "2911341942": {
-      "zh-chs": "铁铍披风",
-      "en": "Iron Beryllium Cloak"
+      "zh-chs": "铁甲披风",
+      "en": "Iron Panoply Cloak"
     },
     "4144806260": {
-      "zh-chs": "铁铍披风",
-      "en": "Iron Beryllium Cloak"
+      "zh-chs": "铁甲披风",
+      "en": "Iron Panoply Cloak"
     },
     "4193009504": {
-      "zh-chs": "铁铍面具",
-      "en": "Iron Beryllium Mask"
+      "zh-chs": "铁甲面具",
+      "en": "Iron Panoply Mask"
     },
     "1553647206": {
-      "zh-chs": "铁铍面具",
-      "en": "Iron Beryllium Mask"
+      "zh-chs": "铁甲面具",
+      "en": "Iron Panoply Mask"
     },
     "1631809155": {
-      "zh-chs": "铁铍腿铠",
-      "en": "Iron Beryllium Strides"
+      "zh-chs": "铁甲腿铠",
+      "en": "Iron Panoply Strides"
     },
     "2892288247": {
-      "zh-chs": "铁铍腿铠",
-      "en": "Iron Beryllium Strides"
+      "zh-chs": "铁甲腿铠",
+      "en": "Iron Panoply Strides"
     },
     "589006711": {
       "zh-chs": "空降灭火臂铠",
@@ -95223,44 +95411,44 @@
       "en": "Wayward Psyche Greaves"
     },
     "3578811197": {
-      "zh-chs": "铁铍臂铠",
-      "en": "Iron Beryllium Gauntlets"
+      "zh-chs": "铁甲臂铠",
+      "en": "Iron Panoply Gauntlets"
     },
     "3017735241": {
-      "zh-chs": "铁铍臂铠",
-      "en": "Iron Beryllium Gauntlets"
+      "zh-chs": "铁甲臂铠",
+      "en": "Iron Panoply Gauntlets"
     },
     "4126332611": {
-      "zh-chs": "铁铍战甲",
-      "en": "Iron Beryllium Plate"
+      "zh-chs": "铁甲战甲",
+      "en": "Iron Panoply Plate"
     },
     "2334937527": {
-      "zh-chs": "铁铍战甲",
-      "en": "Iron Beryllium Plate"
+      "zh-chs": "铁甲战甲",
+      "en": "Iron Panoply Plate"
     },
     "3408036410": {
-      "zh-chs": "铁铍印记",
-      "en": "Iron Beryllium Mark"
+      "zh-chs": "铁甲印记",
+      "en": "Iron Panoply Mark"
     },
     "2356386712": {
-      "zh-chs": "铁铍印记",
-      "en": "Iron Beryllium Mark"
+      "zh-chs": "铁甲印记",
+      "en": "Iron Panoply Mark"
     },
     "3631616612": {
-      "zh-chs": "铁铍头盔",
-      "en": "Iron Beryllium Helm"
+      "zh-chs": "铁甲头盔",
+      "en": "Iron Panoply Helm"
     },
     "719502410": {
-      "zh-chs": "铁铍头盔",
-      "en": "Iron Beryllium Helm"
+      "zh-chs": "铁甲头盔",
+      "en": "Iron Panoply Helm"
     },
     "1649469535": {
-      "zh-chs": "铁铍胫甲",
-      "en": "Iron Beryllium Greaves"
+      "zh-chs": "铁甲胫甲",
+      "en": "Iron Panoply Greaves"
     },
     "3149890467": {
-      "zh-chs": "铁铍胫甲",
-      "en": "Iron Beryllium Greaves"
+      "zh-chs": "铁甲胫甲",
+      "en": "Iron Panoply Greaves"
     },
     "986078848": {
       "zh-chs": "空降灭火手套",
@@ -95383,60 +95571,60 @@
       "en": "Wayward Psyche Boots"
     },
     "717101494": {
-      "zh-chs": "铁铍手套",
-      "en": "Iron Beryllium Gloves"
+      "zh-chs": "铁甲手套",
+      "en": "Iron Panoply Gloves"
     },
     "3415721524": {
-      "zh-chs": "铁铍手套",
-      "en": "Iron Beryllium Gloves"
+      "zh-chs": "铁甲手套",
+      "en": "Iron Panoply Gloves"
     },
     "3053825914": {
-      "zh-chs": "铁铍礼服",
-      "en": "Iron Beryllium Vestment"
+      "zh-chs": "铁甲礼服",
+      "en": "Iron Panoply Vestment"
     },
     "3710178392": {
-      "zh-chs": "铁铍礼服",
-      "en": "Iron Beryllium Vestment"
+      "zh-chs": "铁甲礼服",
+      "en": "Iron Panoply Vestment"
     },
     "2702279243": {
-      "zh-chs": "铁铍臂环",
-      "en": "Iron Beryllium Bond"
+      "zh-chs": "铁甲臂环",
+      "en": "Iron Panoply Bond"
     },
     "2886723343": {
-      "zh-chs": "铁铍臂环",
-      "en": "Iron Beryllium Bond"
+      "zh-chs": "铁甲臂环",
+      "en": "Iron Panoply Bond"
     },
     "2898513455": {
-      "zh-chs": "铁铍兜帽",
-      "en": "Iron Beryllium Hood"
+      "zh-chs": "铁甲兜帽",
+      "en": "Iron Panoply Hood"
     },
     "442137459": {
-      "zh-chs": "铁铍兜帽",
-      "en": "Iron Beryllium Hood"
+      "zh-chs": "铁甲兜帽",
+      "en": "Iron Panoply Hood"
     },
     "1929483792": {
-      "zh-chs": "铁铍战靴",
-      "en": "Iron Beryllium Boots"
+      "zh-chs": "铁甲战靴",
+      "en": "Iron Panoply Boots"
     },
     "3818365974": {
-      "zh-chs": "铁铍战靴",
-      "en": "Iron Beryllium Boots"
+      "zh-chs": "铁甲战靴",
+      "en": "Iron Panoply Boots"
     },
     "1303792749": {
       "zh-chs": "复苏指令",
       "en": "Resurgence Directive"
     },
     "2493618393": {
-      "zh-chs": "复苏丑闻II",
-      "en": "Resurgence Scandal II"
+      "zh-chs": "复苏指令II",
+      "en": "Resurgence Directive II"
     },
     "2493618392": {
-      "zh-chs": "复苏丑闻III",
-      "en": "Resurgence Scandal III"
+      "zh-chs": "复苏指令III",
+      "en": "Resurgence Directive III"
     },
     "2493618399": {
-      "zh-chs": "复苏丑闻IV",
-      "en": "Resurgence Scandal IV"
+      "zh-chs": "复苏指令IV",
+      "en": "Resurgence Directive IV"
     },
     "2575933030": {
       "zh-chs": "裂解弹药",
@@ -96010,6 +96198,18 @@
       "zh-chs": "残伤隐痛",
       "en": "Broken and Bruised"
     },
+    "181783021": {
+      "zh-chs": "野性之心",
+      "en": "Feral Heart"
+    },
+    "181783020": {
+      "zh-chs": "崇高哀嚎",
+      "en": "Lofty Wail"
+    },
+    "181783023": {
+      "zh-chs": "黄金时代",
+      "en": "Golden Age"
+    },
     "3959701438": {
       "zh-chs": "破碎信使",
       "en": "Broken Courier"
@@ -96118,15 +96318,15 @@
       "zh-chs": "职业大师",
       "en": "Master Class"
     },
-    "2548089153": {
+    "2996870196": {
       "zh-chs": "甜品和光明",
       "en": "Sweetness and Light"
     },
-    "1158816709": {
+    "3968129300": {
       "zh-chs": "收集糖果",
       "en": "Collect Candy"
     },
-    "1158816708": {
+    "3968129301": {
       "zh-chs": "只是甜点",
       "en": "Just Desserts"
     },
@@ -96149,118 +96349,6 @@
     "1226655643": {
       "zh-chs": "欢迎来到血色浪漫",
       "en": "Welcome to Crimson Days"
-    },
-    "3208454344": {
-      "zh-chs": "神话猎人",
-      "en": "Myth Hunter"
-    },
-    "3208454345": {
-      "zh-chs": "狂怒面具",
-      "en": "Mask of Fury"
-    },
-    "3208454346": {
-      "zh-chs": "女巫之道",
-      "en": "Witch Way to Go"
-    },
-    "3208454347": {
-      "zh-chs": "彩饰礼花",
-      "en": "Piñata Popper"
-    },
-    "3208454348": {
-      "zh-chs": "精英鬼灵猎人",
-      "en": "Elite Ghost Hunter"
-    },
-    "3208454349": {
-      "zh-chs": "蒙面先锋",
-      "en": "Masked Striker"
-    },
-    "3208454350": {
-      "zh-chs": "连环召唤师",
-      "en": "Serial Summoner"
-    },
-    "3208454351": {
-      "zh-chs": "蒙面匹配",
-      "en": "Masked Matching"
-    },
-    "3208454336": {
-      "zh-chs": "魅影终结",
-      "en": "Phantasmal Finisher"
-    },
-    "3208454337": {
-      "zh-chs": "蒙面抢劫犯",
-      "en": "Masked Bank Robber"
-    },
-    "3594165339": {
-      "zh-chs": "头头对碰",
-      "en": "Head Banging"
-    },
-    "3594165338": {
-      "zh-chs": "真正鬼灵故事",
-      "en": "Real Ghost Stories"
-    },
-    "3355695130": {
-      "zh-chs": "动手动脚",
-      "en": "Get Physical"
-    },
-    "3355695131": {
-      "zh-chs": "敌意能量",
-      "en": "Hostile Energy"
-    },
-    "3355695128": {
-      "zh-chs": "鬼灵威能",
-      "en": "Phantom Power"
-    },
-    "3355695129": {
-      "zh-chs": "电弧幽灵狩猎",
-      "en": "Arc Apparition Hunting"
-    },
-    "3355695134": {
-      "zh-chs": "烈日幽灵狩猎",
-      "en": "Solar Spirit Hunting"
-    },
-    "3355695135": {
-      "zh-chs": "缺乏生命",
-      "en": "Devoid of Life"
-    },
-    "3355695132": {
-      "zh-chs": "冰影幽灵狩猎",
-      "en": "Stasis Spirit Hunting"
-    },
-    "3355695133": {
-      "zh-chs": "鬼灵机会",
-      "en": "Chance of a Ghost"
-    },
-    "3355695122": {
-      "zh-chs": "爆炸驱魔",
-      "en": "Explosive Exorcism"
-    },
-    "3355695123": {
-      "zh-chs": "鬼灵拳手",
-      "en": "Phantom Puncher"
-    },
-    "4178391729": {
-      "zh-chs": "精准幻影猎人",
-      "en": "Precision Phantom Hunter"
-    },
-    "4178391728": {
-      "zh-chs": "葬礼破坏者",
-      "en": "Funeral Crasher"
-    },
-    "4178391731": {
-      "zh-chs": "活着",
-      "en": "Staying Pre-deceased"
-    },
-    "4178391730": {
-      "zh-chs": "缚丝幽灵狩猎",
-      "en": "Strand Spirit Hunting"
-    },
-    "2407162490": {
-      "zh-chs": "超常研究",
-      "en": "Paranormal Research"
-    },
-    "2407162491": {
-      "zh-chs": "谁是那个戴面具的守护者？",
-      "en": "Who Was That Masked Guardian?"
     },
     "3167111225": {
       "zh-chs": "邪魔族处理者",
@@ -99010,43 +99098,39 @@
       "zh-chs": "明亮至日",
       "en": "A Glowing Solstice"
     },
-    "198708051": {
+    "3632269822": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "2694932301": {
+    "3604605344": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "2694932300": {
+    "3604605345": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "990256916": {
+    "3604605346": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "2694932303": {
+    "3604605347": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "2694932297": {
+    "3604605348": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "2694932296": {
+    "3604605349": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "2694932299": {
+    "3604605350": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
-    "2694932298": {
-      "zh-chs": "经典雕刻",
-      "en": "Classic Carving"
-    },
-    "2694932293": {
+    "3604605351": {
       "zh-chs": "经典雕刻",
       "en": "Classic Carving"
     },
@@ -104293,6 +104377,46 @@
     "1339164299": {
       "zh-chs": "昔日之焰",
       "en": "An Old Flame"
+    },
+    "262952568": {
+      "zh-chs": "军备协议",
+      "en": "Armament Protocol"
+    },
+    "384320542": {
+      "zh-chs": "军备协议",
+      "en": "Armament Protocol"
+    },
+    "283507733": {
+      "zh-chs": "军备协议",
+      "en": "Armament Protocol"
+    },
+    "182694956": {
+      "zh-chs": "军备协议",
+      "en": "Armament Protocol"
+    },
+    "2229314211": {
+      "zh-chs": "军备协议",
+      "en": "Armament Protocol"
+    },
+    "2665385178": {
+      "zh-chs": "军备协议",
+      "en": "Armament Protocol"
+    },
+    "2158533271": {
+      "zh-chs": "最后的欢呼",
+      "en": "The Last Hurrah"
+    },
+    "2604394056": {
+      "zh-chs": "最后的欢呼",
+      "en": "The Last Hurrah"
+    },
+    "222516611": {
+      "zh-chs": "最后的欢呼",
+      "en": "The Last Hurrah"
+    },
+    "2806019770": {
+      "zh-chs": "最后的欢呼",
+      "en": "The Last Hurrah"
     },
     "2125848607": {
       "zh-chs": "异星学",
