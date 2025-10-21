@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "237579.25.10.07.2000-1-bnet.62313",
-    "timestamp": "2025-10-20T17:41:24.384892+00:00",
-    "item_count": 26105,
-    "data_hash": "8f714139718e58447a93da68037b862a3f6433952ee5beb013f04f7968885f8a"
+    "version": "237875.25.10.15.2000-1-bnet.62398",
+    "timestamp": "2025-10-21T17:41:57.586886+00:00",
+    "item_count": 26106,
+    "data_hash": "751d1c90a757c882ea6908bf14df07bdcf79c24b7382498b9fd5afe85e871068"
   },
   "data": {
     "2899766705": {
@@ -6425,6 +6425,10 @@
     "4099163570": {
       "zh-chs": "奇异异域腿甲记忆水晶",
       "en": "Eerie Exotic Legs Engram"
+    },
+    "1077454211": {
+      "zh-chs": "英灵日加成掉落",
+      "en": "Festival of the Lost Bonus Drop"
     },
     "3653362887": {
       "zh-chs": "精华",
