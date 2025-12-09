@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "239055.25.11.18.1646-4-bnet.62950",
-    "timestamp": "2025-12-08T17:44:29.950276+00:00",
-    "item_count": 26232,
-    "data_hash": "8d460ce37a064b8ee461fee3300b25372c6a351a2684aec83fb9f8740a1abe03"
+    "version": "239564.25.12.03.1951-2-bnet.63057",
+    "timestamp": "2025-12-09T17:45:22.206880+00:00",
+    "item_count": 26210,
+    "data_hash": "4746b7cb5088deaaa9b5a5e7edc76f40d57c5d5c4685cb2140285104d3e8c75b"
   },
   "data": {
     "2899766705": {
@@ -6974,10 +6974,6 @@
       "zh-chs": "花生酱爪印",
       "en": "Peanut Butter Paw Prints"
     },
-    "3980931273": {
-      "zh-chs": "团结礼物交换",
-      "en": "Unity Gift Exchange"
-    },
     "3980931274": {
       "zh-chs": "锋利礼物交换",
       "en": "Edgy Gift Exchange"
@@ -7021,6 +7017,14 @@
     "257592545": {
       "zh-chs": "礼物不断",
       "en": "Gift That Keeps on Giving"
+    },
+    "389583837": {
+      "zh-chs": "精萃",
+      "en": "Quintessence"
+    },
+    "4008136730": {
+      "zh-chs": "佳节精神",
+      "en": "Season's Spirit"
     },
     "2046938351": {
       "zh-chs": "花纸包裹交换券",
@@ -7266,7 +7270,7 @@
       "zh-chs": "曙光节武器记忆水晶",
       "en": "Dawning Weapon Engram"
     },
-    "942538255": {
+    "2438392050": {
       "zh-chs": "扭曲曙光节记忆水晶",
       "en": "Distorted Dawning Engram"
     },
@@ -7497,6 +7501,14 @@
     "3295244343": {
       "zh-chs": "微光",
       "en": "Glimmer"
+    },
+    "2936925427": {
+      "zh-chs": "奥菲欧王",
+      "en": "King Orfeo"
+    },
+    "3622337803": {
+      "zh-chs": "苍鹭",
+      "en": "The Heron"
     },
     "3060739771": {
       "zh-chs": "重金属记忆水晶",
@@ -57155,8 +57167,8 @@
       "en": "Axe-cuse Me!"
     },
     "3209936914": {
-      "zh-chs": "永生之炉",
-      "en": "Hearth of Mortality"
+      "zh-chs": "极地脉冲",
+      "en": "Polar Pulse"
     },
     "608837179": {
       "zh-chs": "北极光赐福",
@@ -57169,10 +57181,6 @@
     "1103868909": {
       "zh-chs": "最后的黎明",
       "en": "Final Dawn"
-    },
-    "4209095485": {
-      "zh-chs": "完成悬赏",
-      "en": "Fulfilled Bounty"
     },
     "1472257896": {
       "zh-chs": "银河护甲",
@@ -57227,8 +57235,8 @@
       "en": "Lawless Rewards Pass"
     },
     "1059795885": {
-      "zh-chs": "刷新前夜",
-      "en": "'Twas the Night Before Refresh"
+      "zh-chs": "传说刷新",
+      "en": "A Legendary Refresh"
     },
     "3087779374": {
       "zh-chs": "丙午年",
@@ -96542,182 +96550,6 @@
       "zh-chs": "欢迎来到血色浪漫",
       "en": "Welcome to Crimson Days"
     },
-    "193627921": {
-      "zh-chs": "邪魔族处理者",
-      "en": "Hive Handler"
-    },
-    "193627920": {
-      "zh-chs": "堕落者列队",
-      "en": "Fall in Line"
-    },
-    "193627923": {
-      "zh-chs": "嗤魅杀手",
-      "en": "Scorn Slayer"
-    },
-    "193627922": {
-      "zh-chs": "日常清理卡巴尔",
-      "en": "Cabal in a Day's Work"
-    },
-    "193627925": {
-      "zh-chs": "Vex进行时",
-      "en": "Vexing"
-    },
-    "193627924": {
-      "zh-chs": "干掉他们",
-      "en": "Take 'Em Out"
-    },
-    "193627927": {
-      "zh-chs": "帅到刺目",
-      "en": "Lookin' Sharp"
-    },
-    "193627926": {
-      "zh-chs": "节日火焰",
-      "en": "Festive Fire"
-    },
-    "193627929": {
-      "zh-chs": "令人高兴的精准",
-      "en": "Joyful Precision"
-    },
-    "193627928": {
-      "zh-chs": "节日之触",
-      "en": "Festive Touch"
-    },
-    "991075840": {
-      "zh-chs": "灯光秀",
-      "en": "Light Show"
-    },
-    "991075841": {
-      "zh-chs": "光芒万丈",
-      "en": "Light It Up"
-    },
-    "991075842": {
-      "zh-chs": "曙光之星",
-      "en": "Dawning Star"
-    },
-    "991075843": {
-      "zh-chs": "曙光烈焰",
-      "en": "Dawning Blaze"
-    },
-    "991075844": {
-      "zh-chs": "曙光电火花",
-      "en": "Dawning Spark"
-    },
-    "991075845": {
-      "zh-chs": "盛大收官",
-      "en": "Big Finish"
-    },
-    "991075846": {
-      "zh-chs": "节日武装",
-      "en": "Festively Armed"
-    },
-    "991075847": {
-      "zh-chs": "光能指引",
-      "en": "Guiding Light"
-    },
-    "991075848": {
-      "zh-chs": "让他们排好队",
-      "en": "Line Them Up"
-    },
-    "991075849": {
-      "zh-chs": "超能节日",
-      "en": "Super Festive"
-    },
-    "1041408729": {
-      "zh-chs": "暗影曙光",
-      "en": "Dawning Darkness"
-    },
-    "3126562176": {
-      "zh-chs": "礼物：绅士脆饼",
-      "en": "Gift: Gentleman's Shortbread"
-    },
-    "2536114278": {
-      "zh-chs": "礼物：埃里克斯尼鸟食",
-      "en": "Gift: Eliksni Birdseed"
-    },
-    "3212821825": {
-      "zh-chs": "礼物：加拉尔涂鸦饼干",
-      "en": "Gift: Gjallardoodles"
-    },
-    "1443434453": {
-      "zh-chs": "礼物：香草利刃",
-      "en": "Gift: Vanilla Blades"
-    },
-    "3009842888": {
-      "zh-chs": "礼物：旅行者甜甜球",
-      "en": "Gift: Traveler Donut Holes"
-    },
-    "2181154356": {
-      "zh-chs": "礼物：无尽森林蛋糕",
-      "en": "Gift: Infinite Forest Cake"
-    },
-    "2622795443": {
-      "zh-chs": "礼物：遥测木薯",
-      "en": "Gift: Telemetry Tapioca"
-    },
-    "716645500": {
-      "zh-chs": "礼物：厄运饼干",
-      "en": "Gift: Ill-Fortune Cookies"
-    },
-    "9207768": {
-      "zh-chs": "礼物：淡紫丝带曲奇",
-      "en": "Gift: Lavender Ribbon Cookies"
-    },
-    "234213160": {
-      "zh-chs": "礼物：交叉火力馒头",
-      "en": "Gift: Hot Crossfire Buns"
-    },
-    "404318013": {
-      "zh-chs": "礼物：上维燕麦葡萄干曲奇",
-      "en": "Gift: Ascendant Oatmeal Raisin Cookies"
-    },
-    "25937408": {
-      "zh-chs": "礼物：奇怪饼干",
-      "en": "Gift: Strange Cookies"
-    },
-    "275648511": {
-      "zh-chs": "礼物：黑巧克力萤光",
-      "en": "Gift: Dark Chocolate Motes"
-    },
-    "3395615705": {
-      "zh-chs": "礼物：乙太冷点",
-      "en": "Gift: Etheric Coldsnaps"
-    },
-    "614414297": {
-      "zh-chs": "礼物：蓝莓面包",
-      "en": "Gift: Blueberry Crumblers"
-    },
-    "723012945": {
-      "zh-chs": "礼物：光尘雪球",
-      "en": "Gift: Bright-Dusted Snowballs"
-    },
-    "2522461418": {
-      "zh-chs": "礼物：经典黄油曲奇",
-      "en": "Gift: Classic Butter Cookies"
-    },
-    "196155189": {
-      "zh-chs": "礼物：星芽薄片",
-      "en": "Gift: Starwort Thins"
-    },
-    "4188237421": {
-      "zh-chs": "礼物：光明嘎嘣脆",
-      "en": "Gift: Lucent Crunch"
-    },
-    "1676035200": {
-      "zh-chs": "礼物：内欧姆派",
-      "en": "Gift: Neomun-Pies"
-    },
-    "3483010237": {
-      "zh-chs": "甜美礼物",
-      "en": "Sweet Gifts"
-    },
-    "3483010236": {
-      "zh-chs": "给予的精神",
-      "en": "The Spirit of Giving"
-    },
-    "3483010239": {
-      "zh-chs": "打雪仗",
-      "en": "Snowball Fight"
-    },
     "569680509": {
       "zh-chs": "灿烂竞争者",
       "en": "Irradiant Contender"
@@ -99606,66 +99438,6 @@
       "zh-chs": "爆破之路",
       "en": "Path of Demolition"
     },
-    "147982863": {
-      "zh-chs": "原型调整：弹匣",
-      "en": "Prototype Tuning: Magazine"
-    },
-    "2529860404": {
-      "zh-chs": "原型调整：弹匣",
-      "en": "Prototype Tuning: Magazine"
-    },
-    "331817097": {
-      "zh-chs": "原型调整：特性",
-      "en": "Prototype Tuning: Traits"
-    },
-    "2580165234": {
-      "zh-chs": "原型调整：特性",
-      "en": "Prototype Tuning: Traits"
-    },
-    "3525512822": {
-      "zh-chs": "初始校准",
-      "en": "Initial Calibration"
-    },
-    "1814048557": {
-      "zh-chs": "初始校准",
-      "en": "Initial Calibration"
-    },
-    "1713235748": {
-      "zh-chs": "初始校准",
-      "en": "Initial Calibration"
-    },
-    "1612422971": {
-      "zh-chs": "初始校准",
-      "en": "Initial Calibration"
-    },
-    "1511610162": {
-      "zh-chs": "初始校准",
-      "en": "Initial Calibration"
-    },
-    "3558229321": {
-      "zh-chs": "初始校准",
-      "en": "Initial Calibration"
-    },
-    "3457416512": {
-      "zh-chs": "初始校准",
-      "en": "Initial Calibration"
-    },
-    "1699837192": {
-      "zh-chs": "余震",
-      "en": "Aftershock"
-    },
-    "3612927043": {
-      "zh-chs": "余震",
-      "en": "Aftershock"
-    },
-    "1712089441": {
-      "zh-chs": "非法扳机",
-      "en": "Illegal Trigger"
-    },
-    "3960437482": {
-      "zh-chs": "非法扳机",
-      "en": "Illegal Trigger"
-    },
     "420228109": {
       "zh-chs": "原型调整：特性",
       "en": "Prototype Tuning: Traits"
@@ -99803,6 +99575,146 @@
       "en": "Renegades"
     },
     "1977154942": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "79128439": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "3251897874": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "2511455360": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "147770170": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "3059646118": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "2895157787": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "835470872": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "2409461856": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "569525355": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "2413560493": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "899827891": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "379231335": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "1191757389": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "2939522140": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "4165581488": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "4042952778": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "3772247894": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "4020213435": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "3759875973": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "2934098530": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "1870409966": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "11802488": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "2749992263": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "1571625797": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "1645825346": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "294959246": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "449054855": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "3545115873": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "4124705617": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "1798121616": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "1220351492": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "3606357111": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "872142865": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "478539714": {
+      "zh-chs": "反叛",
+      "en": "Renegades"
+    },
+    "3657956817": {
       "zh-chs": "反叛",
       "en": "Renegades"
     },
