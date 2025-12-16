@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "239564.25.12.03.1951-2-bnet.63057",
-    "timestamp": "2025-12-15T17:48:11.076879+00:00",
-    "item_count": 26210,
-    "data_hash": "4746b7cb5088deaaa9b5a5e7edc76f40d57c5d5c4685cb2140285104d3e8c75b"
+    "version": "239845.25.12.11.1930-2-bnet.63145",
+    "timestamp": "2025-12-16T17:48:32.956058+00:00",
+    "item_count": 26321,
+    "data_hash": "5a36d4b85eaa276a8291e02f1235ac8a63bf5b53c9a262836d6f908c25a2b756"
   },
   "data": {
     "2899766705": {
@@ -4278,6 +4278,118 @@
       "zh-chs": "提升“玻璃拱顶”专家武器特性的几率。",
       "en": "Increases chance for Vault of Glass Adept weapon trait."
     },
+    "2016954284": {
+      "zh-chs": "提高传家宝的初始掉落率。",
+      "en": "Increases initial chance for Heirloom to drop."
+    },
+    "217401501": {
+      "zh-chs": "+1壮举插槽",
+      "en": "+1 Feat Slot"
+    },
+    "3910803790": {
+      "zh-chs": "平衡装备阶级升级：+1",
+      "en": "Equilibrium Gear Tier Upgrade: +1"
+    },
+    "4012925655": {
+      "zh-chs": "关闭同调",
+      "en": "Deactivate Attunement"
+    },
+    "472097479": {
+      "zh-chs": "同调狂热理想",
+      "en": "Attune to Zealous Ideal"
+    },
+    "3315591419": {
+      "zh-chs": "同调高阶暴君",
+      "en": "Attune to High Tyrant"
+    },
+    "1575477794": {
+      "zh-chs": "同调伏打阴影",
+      "en": "Attune to Voltaic Shade"
+    },
+    "1430884559": {
+      "zh-chs": "同调阴谋淬砺",
+      "en": "Attune to Conspiracy Honed"
+    },
+    "2302930562": {
+      "zh-chs": "同调痛苦结局",
+      "en": "Attune to Bitter End"
+    },
+    "2815656452": {
+      "zh-chs": "同调阴沉利爪",
+      "en": "Attune to Sullen Claw"
+    },
+    "585035624": {
+      "zh-chs": "传家宝催化同调",
+      "en": "Heirloom Catalyst Attunement"
+    },
+    "2548378957": {
+      "zh-chs": "同调圣贤保护者风帽",
+      "en": "Attune to Sage Protector Cowl"
+    },
+    "321492838": {
+      "zh-chs": "同调圣贤保护者胸甲",
+      "en": "Attune to Sage Protector Vest"
+    },
+    "2119773450": {
+      "zh-chs": "同调圣贤保护者护臂",
+      "en": "Attune to Sage Protector Grips"
+    },
+    "1546578280": {
+      "zh-chs": "同调圣贤保护者腿铠",
+      "en": "Attune to Sage Protector Strides"
+    },
+    "1623319057": {
+      "zh-chs": "同调圣贤保护者披风",
+      "en": "Attune to Sage Protector Cloak"
+    },
+    "3034134223": {
+      "zh-chs": "同调圣贤保护者头盔",
+      "en": "Attune to Sage Protector Helm"
+    },
+    "3509543484": {
+      "zh-chs": "同调圣贤保护者战甲",
+      "en": "Attune to Sage Protector Plate"
+    },
+    "3670156388": {
+      "zh-chs": "同调圣贤保护者臂铠",
+      "en": "Attune to Sage Protector Gauntlets"
+    },
+    "638937490": {
+      "zh-chs": "同调圣贤保护者胫甲",
+      "en": "Attune to Sage Protector Greaves"
+    },
+    "207767123": {
+      "zh-chs": "同调圣贤保护者印记",
+      "en": "Attune to Sage Protector Mark"
+    },
+    "1693272328": {
+      "zh-chs": "同调圣贤保护者面罩",
+      "en": "Attune to Sage Protector Cover"
+    },
+    "1449788917": {
+      "zh-chs": "同调圣贤保护者法袍",
+      "en": "Attune to Sage Protector Robes"
+    },
+    "1057250419": {
+      "zh-chs": "同调圣贤保护者手套",
+      "en": "Attune to Sage Protector Gloves"
+    },
+    "3239739737": {
+      "zh-chs": "同调圣贤保护者战靴",
+      "en": "Attune to Sage Protector Boots"
+    },
+    "2442979626": {
+      "zh-chs": "同调圣贤保护者臂环",
+      "en": "Attune to Sage Protector Bond"
+    },
+    "3855736572": {
+      "zh-chs": "失窃圣物",
+      "en": "Stolen Relic"
+    },
+    "2104950297": {
+      "zh-chs": "整合圣物",
+      "en": "Integrated Relic"
+    },
     "3053023275": {
       "zh-chs": "额外悬赏",
       "en": "Additional Bounties"
@@ -7185,6 +7297,18 @@
     "2059428880": {
       "zh-chs": "曙光节武器记忆水晶",
       "en": "Dawning Weapon Engram"
+    },
+    "2524308947": {
+      "zh-chs": "永冬之针",
+      "en": "Fimbulwinter Stitch"
+    },
+    "2524996169": {
+      "zh-chs": "永久冻土",
+      "en": "Permafrost"
+    },
+    "3898373019": {
+      "zh-chs": "疾风跃升",
+      "en": "Mistral Lift"
     },
     "187034864": {
       "zh-chs": "强化欢呼",
@@ -56126,6 +56250,10 @@
       "zh-chs": "移动阵列",
       "en": "Mobile Array"
     },
+    "4104431769": {
+      "zh-chs": "荒漠漫游者",
+      "en": "Arid Rambler"
+    },
     "74323264": {
       "zh-chs": "碎形之狱",
       "en": "Prison of Crumbled Forms"
@@ -56242,6 +56370,10 @@
       "zh-chs": "远见机壳",
       "en": "Visionary Shell"
     },
+    "2043430167": {
+      "zh-chs": "静态数据机壳",
+      "en": "Static Data Shell"
+    },
     "839324154": {
       "zh-chs": "僧侣机壳",
       "en": "Hieratic Shell"
@@ -56265,6 +56397,14 @@
     "3524372837": {
       "zh-chs": "铁旗",
       "en": "Iron Bananer"
+    },
+    "809980656": {
+      "zh-chs": "帝国巡礼",
+      "en": "Imperium Parade"
+    },
+    "809980657": {
+      "zh-chs": "英勇帷幕",
+      "en": "Praxic Drape"
     },
     "3923596507": {
       "zh-chs": "斑驳干涉",
@@ -56366,6 +56506,10 @@
       "zh-chs": "暗物质水晶：红",
       "en": "Dark Matter Crystal: Red"
     },
+    "1773007623": {
+      "zh-chs": "暗物质水晶：橙",
+      "en": "Dark Matter Crystal: Orange"
+    },
     "1773007620": {
       "zh-chs": "暗物质水晶：绿",
       "en": "Dark Matter Crystal: Green"
@@ -56389,6 +56533,10 @@
     "1773007617": {
       "zh-chs": "暗物质水晶：傀儡军团",
       "en": "Dark Matter Crystal: Taken"
+    },
+    "1773007630": {
+      "zh-chs": "暗物质水晶：黄",
+      "en": "Dark Matter Crystal: Yellow"
     },
     "3017226694": {
       "zh-chs": "防御形态",
@@ -56566,6 +56714,30 @@
       "zh-chs": "恶名奇特魅力",
       "en": "Infamous Peculiar Charm"
     },
+    "2595549308": {
+      "zh-chs": "恶名狂热理想",
+      "en": "Infamous Zealous Ideal"
+    },
+    "3592166239": {
+      "zh-chs": "恶名痛苦结局",
+      "en": "Infamous Bitter End"
+    },
+    "3374147238": {
+      "zh-chs": "恶名高阶暴君",
+      "en": "Infamous High Tyrant"
+    },
+    "745090965": {
+      "zh-chs": "恶名伏打阴影",
+      "en": "Infamous Voltaic Shade"
+    },
+    "286484944": {
+      "zh-chs": "恶名阴谋淬砺",
+      "en": "Infamous Conspiracy Honed"
+    },
+    "950594839": {
+      "zh-chs": "恶名阴沉利爪",
+      "en": "Infamous Sullen Claw"
+    },
     "16849962": {
       "zh-chs": "恶名无礼言论",
       "en": "Infamous Uncivil Discourse"
@@ -56697,6 +56869,10 @@
     "230568669": {
       "zh-chs": "恶名行动项目",
       "en": "Infamous Action Item"
+    },
+    "1040380121": {
+      "zh-chs": "传家宝催化",
+      "en": "Heirloom Catalyst"
     },
     "232908218": {
       "zh-chs": "鲁扎库之役催化",
@@ -57166,6 +57342,34 @@
       "zh-chs": "对斧起！",
       "en": "Axe-cuse Me!"
     },
+    "2211136626": {
+      "zh-chs": "阶级信息",
+      "en": "Tiering Information"
+    },
+    "3395470211": {
+      "zh-chs": "+1阶升级几率",
+      "en": "Tier + 1 Upgrade Chance"
+    },
+    "1761995400": {
+      "zh-chs": "+1阶升级几率",
+      "en": "Tier + 1 Upgrade Chance"
+    },
+    "657298337": {
+      "zh-chs": "+1阶升级几率",
+      "en": "Tier + 1 Upgrade Chance"
+    },
+    "228808694": {
+      "zh-chs": "+1阶升级几率",
+      "en": "Tier + 1 Upgrade Chance"
+    },
+    "3938123271": {
+      "zh-chs": "+1阶升级几率",
+      "en": "Tier + 1 Upgrade Chance"
+    },
+    "1232358428": {
+      "zh-chs": "+1阶升级几率",
+      "en": "Tier + 1 Upgrade Chance"
+    },
     "3209936914": {
       "zh-chs": "极地脉冲",
       "en": "Polar Pulse"
@@ -57325,6 +57529,10 @@
     "150960094": {
       "zh-chs": "深海组合包",
       "en": "Deep Sea Pack"
+    },
+    "2022851842": {
+      "zh-chs": "光明与黑暗传奇地牢钥匙包",
+      "en": "Light and Dark Saga Dungeon Key Pack"
     },
     "637444868": {
       "zh-chs": "海蓝助手包",
@@ -94342,6 +94550,10 @@
       "zh-chs": "磷光飞升",
       "en": "Phosphor Ascent"
     },
+    "1685137410": {
+      "zh-chs": "传家宝",
+      "en": "Heirloom"
+    },
     "4284533075": {
       "zh-chs": "鲁扎库之役",
       "en": "Service of Luzaku"
@@ -94349,6 +94561,54 @@
     "3049715579": {
       "zh-chs": "英勇利刃",
       "en": "Praxic Blade"
+    },
+    "1863583117": {
+      "zh-chs": "狂热理想",
+      "en": "Zealous Ideal"
+    },
+    "2300796057": {
+      "zh-chs": "狂热理想",
+      "en": "Zealous Ideal"
+    },
+    "2873508409": {
+      "zh-chs": "高阶暴君",
+      "en": "High Tyrant"
+    },
+    "1723581957": {
+      "zh-chs": "高阶暴君",
+      "en": "High Tyrant"
+    },
+    "71057630": {
+      "zh-chs": "伏打阴影",
+      "en": "Voltaic Shade"
+    },
+    "3591907532": {
+      "zh-chs": "伏打阴影",
+      "en": "Voltaic Shade"
+    },
+    "4062069077": {
+      "zh-chs": "阴谋淬砺",
+      "en": "Conspiracy Honed"
+    },
+    "454444817": {
+      "zh-chs": "阴谋淬砺",
+      "en": "Conspiracy Honed"
+    },
+    "954563454": {
+      "zh-chs": "痛苦结局",
+      "en": "Bitter End"
+    },
+    "3288937708": {
+      "zh-chs": "痛苦结局",
+      "en": "Bitter End"
+    },
+    "1085743380": {
+      "zh-chs": "阴沉利爪",
+      "en": "Sullen Claw"
+    },
+    "2774013434": {
+      "zh-chs": "阴沉利爪",
+      "en": "Sullen Claw"
     },
     "1419158093": {
       "zh-chs": "M-17“快嘴”",
@@ -95102,6 +95362,14 @@
       "zh-chs": "超充弹匣",
       "en": "Supercharged Magazine"
     },
+    "1164078247": {
+      "zh-chs": "帝国效忠",
+      "en": "Imperial Allegiance"
+    },
+    "2957461671": {
+      "zh-chs": "帝国效忠",
+      "en": "Imperial Allegiance"
+    },
     "1309453587": {
       "zh-chs": "风冷核心",
       "en": "Air-Cooled Core"
@@ -95213,6 +95481,46 @@
     "394314874": {
       "zh-chs": "狂野圣歌腿铠",
       "en": "Wild Anthem Strides"
+    },
+    "2354448750": {
+      "zh-chs": "圣贤保护者护臂",
+      "en": "Sage Protector Grips"
+    },
+    "2923587612": {
+      "zh-chs": "圣贤保护者护臂",
+      "en": "Sage Protector Grips"
+    },
+    "1867581826": {
+      "zh-chs": "圣贤保护者胸甲",
+      "en": "Sage Protector Vest"
+    },
+    "686150864": {
+      "zh-chs": "圣贤保护者胸甲",
+      "en": "Sage Protector Vest"
+    },
+    "1091577811": {
+      "zh-chs": "圣贤保护者披风",
+      "en": "Sage Protector Cloak"
+    },
+    "2698158663": {
+      "zh-chs": "圣贤保护者披风",
+      "en": "Sage Protector Cloak"
+    },
+    "112779239": {
+      "zh-chs": "圣贤保护者风帽",
+      "en": "Sage Protector Cowl"
+    },
+    "1275159323": {
+      "zh-chs": "圣贤保护者风帽",
+      "en": "Sage Protector Cowl"
+    },
+    "142559592": {
+      "zh-chs": "圣贤保护者腿铠",
+      "en": "Sage Protector Strides"
+    },
+    "3300541310": {
+      "zh-chs": "圣贤保护者腿铠",
+      "en": "Sage Protector Strides"
     },
     "2697887125": {
       "zh-chs": "剑圣护臂",
@@ -95462,6 +95770,46 @@
       "zh-chs": "狂野圣歌胫甲",
       "en": "Wild Anthem Greaves"
     },
+    "919358834": {
+      "zh-chs": "圣贤保护者臂铠",
+      "en": "Sage Protector Gauntlets"
+    },
+    "337886720": {
+      "zh-chs": "圣贤保护者臂铠",
+      "en": "Sage Protector Gauntlets"
+    },
+    "279565494": {
+      "zh-chs": "圣贤保护者战甲",
+      "en": "Sage Protector Plate"
+    },
+    "4251488052": {
+      "zh-chs": "圣贤保护者战甲",
+      "en": "Sage Protector Plate"
+    },
+    "3945736543": {
+      "zh-chs": "圣贤保护者印记",
+      "en": "Sage Protector Mark"
+    },
+    "2723122851": {
+      "zh-chs": "圣贤保护者印记",
+      "en": "Sage Protector Mark"
+    },
+    "4118260899": {
+      "zh-chs": "圣贤保护者头盔",
+      "en": "Sage Protector Helm"
+    },
+    "4035076759": {
+      "zh-chs": "圣贤保护者头盔",
+      "en": "Sage Protector Helm"
+    },
+    "1320597132": {
+      "zh-chs": "圣贤保护者胫甲",
+      "en": "Sage Protector Greaves"
+    },
+    "1857175650": {
+      "zh-chs": "圣贤保护者胫甲",
+      "en": "Sage Protector Greaves"
+    },
     "2347181257": {
       "zh-chs": "剑圣臂铠",
       "en": "Swordmaster's Gauntlets"
@@ -95710,6 +96058,46 @@
       "zh-chs": "狂野圣歌战靴",
       "en": "Wild Anthem Boots"
     },
+    "2249815529": {
+      "zh-chs": "圣贤保护者手套",
+      "en": "Sage Protector Gloves"
+    },
+    "3766301941": {
+      "zh-chs": "圣贤保护者手套",
+      "en": "Sage Protector Gloves"
+    },
+    "640369263": {
+      "zh-chs": "圣贤保护者法袍",
+      "en": "Sage Protector Robes"
+    },
+    "1936818227": {
+      "zh-chs": "圣贤保护者法袍",
+      "en": "Sage Protector Robes"
+    },
+    "1887527934": {
+      "zh-chs": "圣贤保护者臂环",
+      "en": "Sage Protector Bond"
+    },
+    "4115124844": {
+      "zh-chs": "圣贤保护者臂环",
+      "en": "Sage Protector Bond"
+    },
+    "1786011928": {
+      "zh-chs": "圣贤保护者面罩",
+      "en": "Sage Protector Cover"
+    },
+    "1607929902": {
+      "zh-chs": "圣贤保护者面罩",
+      "en": "Sage Protector Cover"
+    },
+    "2541757371": {
+      "zh-chs": "圣贤保护者战靴",
+      "en": "Sage Protector Boots"
+    },
+    "2203799999": {
+      "zh-chs": "圣贤保护者战靴",
+      "en": "Sage Protector Boots"
+    },
     "4172973116": {
       "zh-chs": "剑圣手套",
       "en": "Swordmaster's Gloves"
@@ -95886,6 +96274,14 @@
       "zh-chs": "塔尔西斯异调",
       "en": "Tharsis Offbeat"
     },
+    "2680217523": {
+      "zh-chs": "帝国之敌",
+      "en": "Imperium's Adversary"
+    },
+    "2680217522": {
+      "zh-chs": "德瑞捷的降临",
+      "en": "Dredgen's Descent"
+    },
     "2680217525": {
       "zh-chs": "德弗里姆的恩惠",
       "en": "Devrim's Favor"
@@ -95909,6 +96305,10 @@
     "2680217528": {
       "zh-chs": "永攀高天",
       "en": "Ever Higher"
+    },
+    "748692000": {
+      "zh-chs": "独来独往",
+      "en": "Stand Alone"
     },
     "748692001": {
       "zh-chs": "高塔手册",
@@ -104669,6 +105069,50 @@
     "4007771652": {
       "zh-chs": "改进爆发III",
       "en": "Outbreak Refined III"
+    },
+    "576600994": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "3363318562": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "2931101575": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "2074473131": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "197553903": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "891167861": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "3811800277": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "2457004046": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "4016971928": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "1516029819": {
+      "zh-chs": "中间之道",
+      "en": "The Way Between"
+    },
+    "2889591781": {
+      "zh-chs": "整合圣物",
+      "en": "Integrated Relic"
     },
     "3669113309": {
       "zh-chs": "重武器最管用",
