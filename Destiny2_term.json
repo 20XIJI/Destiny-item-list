@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "241336.26.01.28.2000-3-bnet.63664",
-    "timestamp": "2026-02-09T18:10:50.770061+00:00",
-    "item_count": 15801,
-    "data_hash": "a990c76f993bc369fc3ae2b65579a333662d4ee98cddbdae9d0ede2b61e3dc9d",
+    "version": "241649.26.02.04.2000-2-bnet.63786",
+    "timestamp": "2026-02-12T18:30:40.025139+00:00",
+    "item_count": 15803,
+    "data_hash": "9974b5c1952a8cfd5998dad259f29dc73720e0965cbcd54ba60ad3a7f9970043",
     "source": "Bungie Destiny 2 Manifest",
     "definition_types": [
       "DestinyInventoryItemLiteDefinition",
@@ -3891,6 +3891,7 @@
     "Forceful Blade III": "强力利刃III",
     "Golden Age Hilt": "黄金时代柄",
     "Royal Guard Hilt": "皇家卫士柄",
+    "Modern MIDA Multi-Tool": "现代米达多功能",
     "Infamous Athanor IV": "恶名熔炉IV",
     "Infamous Peculiar Charm": "恶名奇特魅力",
     "Infamous Zealous Ideal": "恶名狂热理想",
@@ -11021,6 +11022,7 @@
     "Deco Curve": "流线饰韵",
     "Ceramic Gloss": "陶瓷光釉",
     "Old Agate": "古旧玛瑙",
+    "Silkworm Weave": "蚕丝织锦",
     "Mjölnir's Strike": "雷神之锤击",
     "Labyrinth Lurker": "迷宫潜伏者",
     "Galatea Enduring": "伽拉忒亚不灭",
