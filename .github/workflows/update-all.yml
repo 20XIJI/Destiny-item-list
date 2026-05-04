@@ -1,0 +1,41 @@
+name: Update All Data
+
+on:
+  schedule:
+    - cron: '30 17 * * *' # 每天UTC时间17点30分运行，对应中国时间凌晨1点30分
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: pip install -r scripts/requirements.txt
+
+    - name: Update item data
+      env:
+        BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
+      run: python scripts/fetch_items.py
+
+    - name: Update term data
+      env:
+        BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
+      run: python scripts/Destiny2_term.py
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git diff --quiet || (git add item-list-8-2-0.json Destiny2_term.json && \
+        git commit -m "Auto-update item & term data [skip ci]" && \
+        git push origin HEAD:${{ github.ref }})
