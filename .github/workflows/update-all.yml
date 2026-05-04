@@ -15,27 +15,22 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.12'
 
     - name: Install dependencies
       run: pip install -r scripts/requirements.txt
 
-    - name: Update item data
+    - name: Fetch manifest and build data
       env:
         BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
-      run: python scripts/fetch_items.py
-
-    - name: Update term data
-      env:
-        BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
-      run: python scripts/Destiny2_term.py
+      run: python scripts/fetch_manifest.py
 
     - name: Commit changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git diff --quiet || (git add item-list.json Destiny2_term.json && \
-        git commit -m "Auto-update item & term data [skip ci]" && \
-        git push origin HEAD:${{ github.ref }})
+        git add term-map.json items-full.json custom_terms.json
+        git rm -f --ignore-no-match item-list.json Destiny2_term.json
+        git diff --cached --quiet || (git commit -m "Auto-update item & term data [skip ci]" && git push origin HEAD:${{ github.ref }})
