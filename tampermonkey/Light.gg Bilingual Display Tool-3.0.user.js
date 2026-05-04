@@ -399,6 +399,7 @@
             } catch (error) {
                 console.error('更新失败:', error);
                 cachedItemList = JSON.parse(GM_getValue(CACHE_KEY) || '{}');
+                createNotification('数据更新失败，已使用缓存数据', 'warning');
             }
         } else {
             cachedItemList = JSON.parse(GM_getValue(CACHE_KEY) || '{}');
