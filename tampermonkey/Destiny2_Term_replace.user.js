@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name         Destiny2_Term_replace
 // @namespace    your-namespace
-// @version      3.0
-// @description  替换网页中出现的命运2术语
+// @version      5.0
+// @description  替换网页中出现的命运2术语 - 支持三语言切换 (EN/简中/繁中)
 // @match        *://*/*
+// @exclude      *://*.light.gg/*
+// @exclude      *://light.gg/*
 // @grant        GM_addStyle
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -20,30 +22,39 @@
     'use strict';
 
     /* === 全局配置 === */
-    const CACHE_DAYS = 1;            // 词库缓存天数
-    const HISTORY_LIMIT = 20;        // 撤销记录上限
-    const DIALOG_POS_KEY = 'dialogPos'; // 面板位置存储键
-    const USER_TERMS_KEY = 'userDefinedTerms'; // 自定义术语存储键
+    const CACHE_DAYS = 1;
+    const HISTORY_LIMIT = 20;
+    const USER_TERMS_KEY = 'userDefinedTerms';
     const ITEMS_PER_PAGE_KEY = 'itemsPerPageSetting';
+    const LANG_SOURCE_KEY = 'langSource';
+    const LANG_TARGET_KEY = 'langTarget';
+    const PAUSED_KEY = 'd2tr_paused';
+    const WELCOME_KEY = 'hasShownWelcome_v5_panel';
+    const PANEL_OPEN_KEY = 'd2tr_panel_open';
+
+    const LANGUAGES = {
+        'en': 'English',
+        'zh-chs': '简体中文',
+        'zh-cht': '繁體中文'
+    };
 
     const ITEM_LIST_URL = 'https://20xiji.github.io/Destiny-item-list/term-map.json';
+
+    /* === 状态变量 === */
     let replacementHistory = [];
     let termMap = new Map();
-    let userTerms = {}; // 持久化的自定义术语
+    let userTerms = {};
     let currentMode = 1;
-    let dialogVisible = false;
-    let dialogXOffset = 0;
-    let dialogYOffset = 0;
-    let isDragging = false;
-    let posObjs = [];
-    let hintDialogVisible = false; // 新增提示对话框显示状态
-
+    let langSource = GM_getValue(LANG_SOURCE_KEY, 'en');
+    let langTarget = GM_getValue(LANG_TARGET_KEY, 'zh-chs');
+    let isPaused = GM_getValue(PAUSED_KEY, false);
+    let panelOpen = false;
     let currentPage = 1;
-    let itemsPerPage = GM_getValue(ITEMS_PER_PAGE_KEY, 5);
+    let itemsPerPage = GM_getValue(ITEMS_PER_PAGE_KEY, 20);
     let searchTerm = '';
-
-    // 性能优化：跳过已处理节点、节流
     let processedNodes = new WeakSet();
+    let dataStatus = 'loading'; // loading | ready | error
+
     function throttle(func, limit) {
         let inThrottle;
         return function(...args) {
@@ -56,690 +67,959 @@
     }
 
     /* === 变体生成 === */
-    function addVariants(map, en, zh) {
-        map.set(en, zh);
-        // 弯引号变体
-        if (en.includes("'")) {
-            map.set(en.replace(/'/g, '’'), zh);
+    function addVariants(map, source, target) {
+        map.set(source, target);
+        if (langSource === 'en' && source.includes("'")) {
+            map.set(source.replace(/'/g, '’'), target);
         }
-        // 去掉 "The " 前缀
-        if (en.startsWith('The ')) {
-            map.set(en.slice(4), zh);
+        if (langSource === 'en' && source.startsWith('The ')) {
+            map.set(source.slice(4), target);
         }
     }
 
-    /* === 从 term-map.json 构建 lookup map === */
-    function buildTermMapFromData(termMapData) {
+    function buildTermMapFromData(termMapData, sourceLang, targetLang) {
         const map = new Map();
         const buckets = termMapData.data || termMapData;
-
         for (const bucketName of Object.keys(buckets)) {
             const bucket = buckets[bucketName];
             for (const hashKey of Object.keys(bucket)) {
                 const entry = bucket[hashKey];
-                if (entry.en && entry['zh-chs']) {
-                    addVariants(map, entry.en, entry['zh-chs']);
+                const sourceText = entry[sourceLang];
+                const targetText = entry[targetLang];
+                if (sourceText && targetText && sourceText !== targetText) {
+                    addVariants(map, sourceText, targetText);
                 }
             }
         }
-
         return map;
     }
 
+    /* === 样式 === */
     GM_addStyle(`
         :root {
-            --bg-color:#1f1f1f;
-            --accent-color:#4caf50;
-            --accent-color-light:#66bb6a;
-            --btn-bg:#333;
-            --text-color:#fff;
-            --text-muted:#888;
+            --destiny-bg: #0a0e14;
+            --destiny-panel: #1a1f2e;
+            --destiny-accent: #f0b232;
+            --destiny-tech: #00d4ff;
+            --destiny-success: #4caf50;
+            --destiny-danger: #e74c3c;
+            --destiny-text: #ffffff;
+            --destiny-text-muted: #a0a8b8;
+            --destiny-border: rgba(255, 255, 255, 0.1);
+            --destiny-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --destiny-radius: 12px;
+            --destiny-radius-sm: 8px;
         }
-        @keyframes gm-fadein {from{opacity:0;transform:translateY(-8px);}to{opacity:1;}}
-        #textReplacerDialog{background:var(--bg-color);color:var(--text-color);animation:gm-fadein .25s ease-out;}
-        .mode-btn{background:var(--btn-bg);color:var(--text-muted);} .mode-btn:hover{background:#444;color:var(--text-color);} .mode-btn.active{background:var(--accent-color);color:var(--text-color);}
-        #actionButtons button{background:var(--accent-color);} #actionButtons button:hover{background:var(--accent-color-light);}
-        #btnClearCache{background:#f44336!important;} #btnClearCache:hover{background:#e53935!important;}
-        #textReplacerDialog {
+
+        @keyframes d2tr-fadein {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes d2tr-fadeout {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(10px); }
+        }
+        @keyframes d2tr-pulse {
+            0%, 100% { box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 0 0 rgba(240, 178, 50, 0.5); }
+            50% { box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 0 10px rgba(240, 178, 50, 0); }
+        }
+
+        /* 悬浮按钮 */
+        .d2tr-fab {
             position: fixed;
-            top: 20px;
+            bottom: 20px;
             right: 20px;
-            background: #1a1a1a;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-            z-index: 9999;
-            width: 260px;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            display: none;
-            overflow: visible;
-        }
-        #textReplacerDialog.dragging {
-            cursor: grabbing;
-        }
-        #dialogHeader {
-            cursor: grab;
-            margin-bottom: 10px;
-        }
-        #modeButtons {
-            display: grid;
-            gap: 8px;
-            margin: 12px 0;
-        }
-        .mode-btn {
-            padding: 8px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
             border: none;
-            border-radius: 4px;
-            background: #333;
-            color: #888;
+            background: linear-gradient(135deg, var(--destiny-accent), #e6a020);
+            color: var(--destiny-bg);
+            font-size: 14px;
+            font-weight: 800;
             cursor: pointer;
-            transition: all 0.2s;
-        }
-        .mode-btn.active {
-            background: #4CAF50;
-            color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        #actionButtons {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
             display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 12px;
+            align-items: center;
+            justify-content: center;
+            z-index: 9998;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            user-select: none;
         }
-        #actionButtons button {
-            flex: 1;
-            padding: 8px;
-            border: none;
-            border-radius: 4px;
-            background: #4CAF50;
-            color: white;
-            cursor: pointer;
-            min-width: 80px;
+        .d2tr-fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(240, 178, 50, 0.4);
         }
-        #actionButtons button:disabled {
-            background: #666;
-            cursor: not-allowed;
+        .d2tr-fab.paused {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--destiny-text-muted);
         }
-        #termCount {
-            font-size: 12px;
-            color: #888;
-            margin-left: 8px;
+        .d2tr-fab.paused:hover {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
-        #btnClearCache {
-            background: #f44336 !important;
+        .d2tr-fab.pulse {
+            animation: d2tr-pulse 1.5s ease-in-out 4;
         }
-        .dialogButton {
+
+        /* 状态指示灯 */
+        .d2tr-status-dot {
             position: absolute;
-            top: 8px;
+            top: -2px;
+            right: -2px;
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background-color: #ff6058;
-            border: 1px solid #e0443e;
+            border: 2px solid var(--destiny-panel);
+            transition: background 0.3s ease;
+        }
+        .d2tr-status-dot.loading { background: var(--destiny-accent); }
+        .d2tr-status-dot.ready { background: var(--destiny-success); }
+        .d2tr-status-dot.error { background: var(--destiny-danger); }
+
+        /* 面板 */
+        .d2tr-panel {
+            position: fixed;
+            bottom: 76px;
+            right: 20px;
+            width: 300px;
+            background: var(--destiny-panel);
+            border-radius: var(--destiny-radius);
+            box-shadow: var(--destiny-shadow);
+            border: 1px solid var(--destiny-border);
+            z-index: 9999;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--destiny-text);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            display: none;
+        }
+        .d2tr-panel.open {
+            display: block;
+            animation: d2tr-fadein 0.25s ease-out;
+        }
+        .d2tr-panel.closing {
+            animation: d2tr-fadeout 0.2s ease-in forwards;
+        }
+
+        /* 面板头部 */
+        .d2tr-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--destiny-border);
+            cursor: grab;
+        }
+        .d2tr-header:active { cursor: grabbing; }
+        .d2tr-header-title {
+            font-weight: 600;
+            font-size: 14px;
+            background: linear-gradient(135deg, var(--destiny-accent), var(--destiny-tech));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .d2tr-header-meta {
+            font-size: 11px;
+            color: var(--destiny-tech);
+            padding: 2px 8px;
+            background: rgba(0, 212, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        /* 分组 */
+        .d2tr-section {
+            border-bottom: 1px solid var(--destiny-border);
+        }
+        .d2tr-section:last-child { border-bottom: none; }
+        .d2tr-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            user-select: none;
+        }
+        .d2tr-section-header:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .d2tr-section-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--destiny-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .d2tr-section-arrow {
+            font-size: 10px;
+            color: var(--destiny-text-muted);
+            transition: transform 0.2s ease;
+        }
+        .d2tr-section.open .d2tr-section-arrow {
+            transform: rotate(180deg);
+        }
+        .d2tr-section-body {
+            padding: 0 16px 12px;
+            display: none;
+        }
+        .d2tr-section.open .d2tr-section-body {
+            display: block;
+        }
+
+        /* 语言选择器 */
+        .d2tr-lang-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .d2tr-lang-row label {
+            font-size: 11px;
+            color: var(--destiny-text-muted);
+            white-space: nowrap;
+            min-width: 24px;
+        }
+        .d2tr-lang-row select {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.3);
+            color: var(--destiny-text);
+            border: 1px solid var(--destiny-border);
+            border-radius: 6px;
+            padding: 6px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: border-color 0.2s ease;
+        }
+        .d2tr-lang-row select:focus {
+            outline: none;
+            border-color: var(--destiny-accent);
+        }
+        .d2tr-swap-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--destiny-border);
+            color: var(--destiny-accent);
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 1px 0 rgba(0,0,0,.1);
+            font-size: 13px;
+            transition: all 0.2s ease;
             padding: 0;
-            z-index: 10000;
+            flex-shrink: 0;
         }
-        .dialogButton:hover {
-            background-color: #f0413a;
-            border-color: #d02828;
-        }
-        .dialogButton::before {
-            content: '';
-            display: block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #fff;
-            transform: scale(0.5);
-            opacity: 0;
-            transition: opacity 0.2s ease, transform 0.2s ease;
-        }
-        .dialogButton:hover::before {
-            opacity: 1;
-            transform: scale(1);
-        }
-        #dialogCloseButton {
-            right: 8px;
-        }
-        #dialogHintButton {
-            right: 30px;
-            background-color: #ffc107;
-            border-color: #e0a300;
-        }
-        #dialogHintButton:hover {
-            background-color: #f0b200;
-            border-color: #d09500;
-        }
-        #dialogHintButton:hover::before {
-            background-color: #333;
-        }
-        #hintDialog {
-            position: fixed;
-            top: 60px;
-            right: 20px;
-            background: #333;
-            color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-            z-index: 10001;
-            width: 300px;
-            font-size: 14px;
-            line-height: 1.6;
-            display: none;
-        }
-        #hintDialog p {
-            margin-bottom: 10px;
-        }
-        #hintDialog p:last-child {
-            margin-bottom: 0;
-        }
-        /* Toast 提示样式 */
-        .gm-toast {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            padding: 10px 16px;
-            border-radius: 4px;
-            font-size: 14px;
-            z-index: 10002;
-            opacity: 0;
-            transition: opacity .3s ease;
-            pointer-events: none;
+        .d2tr-swap-btn:hover {
+            background: rgba(240, 178, 50, 0.2);
+            transform: rotate(180deg);
         }
 
-        /* 批量添加术语面板（嵌入主对话框） */
-        #addTermPanel {
-            margin-top: 12px;
-            display: none;
+        /* 模式按钮 */
+        .d2tr-mode-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
         }
-        #addTermPanel textarea {
+        .d2tr-mode-btn {
+            padding: 8px 4px;
+            border: 1px solid var(--destiny-border);
+            border-radius: var(--destiny-radius-sm);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--destiny-text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 11px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .d2tr-mode-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--destiny-text);
+            border-color: var(--destiny-accent);
+        }
+        .d2tr-mode-btn.active {
+            background: linear-gradient(135deg, var(--destiny-accent), #e6a020);
+            color: var(--destiny-bg);
+            border-color: var(--destiny-accent);
+            font-weight: 600;
+        }
+
+        /* 操作按钮 */
+        .d2tr-action-row {
+            display: flex;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .d2tr-action-btn {
+            flex: 1;
+            padding: 8px 6px;
+            border: none;
+            border-radius: var(--destiny-radius-sm);
+            background: linear-gradient(135deg, var(--destiny-accent), #e6a020);
+            color: var(--destiny-bg);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 11px;
+            transition: all 0.2s ease;
+        }
+        .d2tr-action-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(240, 178, 50, 0.3);
+        }
+        .d2tr-action-btn:disabled {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--destiny-text-muted);
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .d2tr-action-btn.danger {
+            background: linear-gradient(135deg, var(--destiny-danger), #c0392b);
+        }
+        .d2tr-action-btn.danger:hover {
+            box-shadow: 0 3px 8px rgba(231, 76, 60, 0.3);
+        }
+
+        /* 术语管理 */
+        .d2tr-term-search {
             width: 100%;
-            height: 100px;
-            background: #222;
-            color: #fff;
-            border: 1px solid #555;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--destiny-border);
+            color: var(--destiny-text);
+            border-radius: var(--destiny-radius-sm);
+            padding: 7px 10px;
+            font-size: 12px;
+            box-sizing: border-box;
+            transition: border-color 0.2s ease;
+            margin-bottom: 8px;
+        }
+        .d2tr-term-search:focus {
+            outline: none;
+            border-color: var(--destiny-accent);
+        }
+        .d2tr-term-list {
+            max-height: 160px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--destiny-border);
+            border-radius: var(--destiny-radius-sm);
+            padding: 4px;
+        }
+        .d2tr-term-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 8px;
+            margin: 2px 0;
+            background: rgba(255, 255, 255, 0.02);
             border-radius: 4px;
-            padding: 6px;
+            transition: background 0.15s ease;
+        }
+        .d2tr-term-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .d2tr-term-text {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 11px;
+        }
+        .d2tr-term-del {
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: var(--destiny-text-muted);
+            cursor: pointer;
+            font-size: 13px;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s ease;
+            padding: 0;
+        }
+        .d2tr-term-del:hover {
+            border-color: var(--destiny-danger);
+            color: var(--destiny-danger);
+            background: rgba(231, 76, 60, 0.1);
+        }
+        .d2tr-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--destiny-text-muted);
+        }
+        .d2tr-pagination button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--destiny-border);
+            color: var(--destiny-text-muted);
+            border-radius: 4px;
+            padding: 4px 10px;
+            cursor: pointer;
+            font-size: 11px;
+            transition: all 0.15s ease;
+        }
+        .d2tr-pagination button:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--destiny-text);
+        }
+        .d2tr-pagination button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        /* 批量添加面板 */
+        .d2tr-batch-area {
+            width: 100%;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.3);
+            color: var(--destiny-text);
+            border: 1px solid var(--destiny-border);
+            border-radius: var(--destiny-radius-sm);
+            padding: 8px;
             resize: vertical;
             box-sizing: border-box;
-            font-family: monospace;
-        }
-        #addTermPanel .panel-actions {
-            text-align: right;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 11px;
+            transition: border-color 0.2s ease;
             margin-top: 6px;
         }
-        #addTermPanel .panel-actions button {
-            margin-left: 8px;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        .d2tr-batch-area:focus {
+            outline: none;
+            border-color: var(--destiny-accent);
         }
-        #btnSaveTerms {background:#4CAF50;color:#fff;}
-        #btnCancelAdd {background:#666;color:#fff;}
+        .d2tr-batch-actions {
+            display: flex;
+            gap: 6px;
+            justify-content: flex-end;
+            margin-top: 6px;
+        }
+        .d2tr-batch-actions button {
+            padding: 6px 14px;
+            border: none;
+            border-radius: var(--destiny-radius-sm);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 11px;
+            transition: all 0.15s ease;
+        }
+        .d2tr-btn-save {
+            background: linear-gradient(135deg, var(--destiny-success), #45a049);
+            color: white;
+        }
+        .d2tr-btn-save:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(76, 175, 80, 0.3);
+        }
+        .d2tr-btn-cancel {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--destiny-text-muted);
+        }
+        .d2tr-btn-cancel:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--destiny-text);
+        }
+
+        /* 高级操作行 */
+        .d2tr-adv-row {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .d2tr-adv-btn {
+            flex: 1;
+            min-width: 60px;
+            padding: 7px 6px;
+            border: none;
+            border-radius: var(--destiny-radius-sm);
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--destiny-text-muted);
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 500;
+            transition: all 0.15s ease;
+            text-align: center;
+        }
+        .d2tr-adv-btn:hover {
+            background: rgba(255, 255, 255, 0.14);
+            color: var(--destiny-text);
+        }
+        .d2tr-adv-btn.danger-text {
+            color: var(--destiny-danger);
+        }
+        .d2tr-adv-btn.danger-text:hover {
+            background: rgba(231, 76, 60, 0.15);
+        }
+
+        /* Toast */
+        .d2tr-toast {
+            position: fixed;
+            bottom: 76px;
+            right: 80px;
+            background: var(--destiny-panel);
+            color: var(--destiny-text);
+            padding: 10px 16px;
+            border-radius: var(--destiny-radius-sm);
+            font-size: 13px;
+            z-index: 10002;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            box-shadow: var(--destiny-shadow);
+            border: 1px solid var(--destiny-border);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            max-width: 280px;
+        }
+        .d2tr-toast.show { opacity: 1; }
+        .d2tr-toast.success { border-left: 3px solid var(--destiny-success); }
+        .d2tr-toast.error { border-left: 3px solid var(--destiny-danger); }
     `);
 
-    const dialog = document.createElement('div');
-    dialog.id = 'textReplacerDialog';
-
-    /* ===== 读取并应用历史面板位置 ===== */
-    const savedPos = GM_getValue(DIALOG_POS_KEY);
-    if (savedPos && typeof savedPos.x === 'number' && typeof savedPos.y === 'number') {
-        dialog.style.left = `${savedPos.x}px`;
-        dialog.style.top  = `${savedPos.y}px`;
+    /* === Toast 提示 === */
+    function showToast(message, success = true) {
+        const toast = document.createElement('div');
+        toast.className = `d2tr-toast ${success ? 'success' : 'error'}`;
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        requestAnimationFrame(() => toast.classList.add('show'));
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 300);
+        }, 2500);
     }
 
-    const dialogHeader = document.createElement('div');
-    dialogHeader.id = 'dialogHeader';
-    dialogHeader.style.margin = '0 0 10px 0';
-    dialogHeader.style.fontSize = '16px';
-    dialogHeader.textContent = '文本替换工具 ';
-    dialog.appendChild(dialogHeader);
+    /* === 创建悬浮按钮 === */
+    const fab = document.createElement('button');
+    fab.className = 'd2tr-fab' + (isPaused ? ' paused' : '');
+    fab.innerHTML = 'D2';
+    fab.title = '命运2术语替换';
 
-    const termCountSpan = document.createElement('span');
-    termCountSpan.id = 'termCount';
-    termCountSpan.textContent = '（加载中...）';
-    dialogHeader.appendChild(termCountSpan);
+    const statusDot = document.createElement('div');
+    statusDot.className = 'd2tr-status-dot loading';
+    fab.appendChild(statusDot);
 
-    const modeButtonsDiv = document.createElement('div');
-    modeButtonsDiv.id = 'modeButtons';
+    document.body.appendChild(fab);
 
-    const modeButton1 = document.createElement('button');
-    modeButton1.className = 'mode-btn';
-    modeButton1.dataset.mode = '1';
-    modeButton1.textContent = '中文模式';
-    modeButton1.title = '将英文术语替换为纯中文';
-    modeButtonsDiv.appendChild(modeButton1);
+    /* === 创建面板 === */
+    const panel = document.createElement('div');
+    panel.className = 'd2tr-panel';
 
-    const modeButton2 = document.createElement('button');
-    modeButton2.className = 'mode-btn';
-    modeButton2.dataset.mode = '2';
-    modeButton2.textContent = '英文|中文';
-    modeButton2.title = '替换为 "英文 | 中文" 组合';
-    modeButtonsDiv.appendChild(modeButton2);
+    // 头部
+    const header = document.createElement('div');
+    header.className = 'd2tr-header';
+    header.innerHTML = '<span class="d2tr-header-title">命运2术语替换</span><span class="d2tr-header-meta" id="d2trTermCount">加载中...</span>';
+    panel.appendChild(header);
 
-    const modeButton3 = document.createElement('button');
-    modeButton3.className = 'mode-btn';
-    modeButton3.dataset.mode = '3';
-    modeButton3.textContent = '中文(英文)';
-    modeButton3.title = '替换为 "中文(英文)" 组合';
-    modeButtonsDiv.appendChild(modeButton3);
+    /* --- Section: 语言设置 --- */
+    function createLangSection() {
+        const section = document.createElement('div');
+        section.className = 'd2tr-section open';
 
+        const secHeader = document.createElement('div');
+        secHeader.className = 'd2tr-section-header';
+        secHeader.innerHTML = '<span class="d2tr-section-title">语言设置</span><span class="d2tr-section-arrow">▼</span>';
+        secHeader.addEventListener('click', () => section.classList.toggle('open'));
+        section.appendChild(secHeader);
 
-    const actionButtonsDiv = document.createElement('div');
-    actionButtonsDiv.id = 'actionButtons';
+        const body = document.createElement('div');
+        body.className = 'd2tr-section-body';
 
-    const btnApplyAll = document.createElement('button');
-    btnApplyAll.id = 'btnApplyAll';
-    btnApplyAll.textContent = '应用规则';
-    actionButtonsDiv.appendChild(btnApplyAll);
+        // 源语言行
+        const srcRow = document.createElement('div');
+        srcRow.className = 'd2tr-lang-row';
+        const srcLabel = document.createElement('label');
+        srcLabel.textContent = '从';
+        const srcSelect = document.createElement('select');
+        srcSelect.id = 'd2trLangSource';
+        for (const [code, name] of Object.entries(LANGUAGES)) {
+            const opt = document.createElement('option');
+            opt.value = code;
+            opt.textContent = name;
+            if (code === langSource) opt.selected = true;
+            srcSelect.appendChild(opt);
+        }
+        srcRow.appendChild(srcLabel);
+        srcRow.appendChild(srcSelect);
+        body.appendChild(srcRow);
 
-    const btnUndo = document.createElement('button');
-    btnUndo.id = 'btnUndo';
-    btnUndo.textContent = '撤销';
-    btnUndo.disabled = true;
-    actionButtonsDiv.appendChild(btnUndo);
+        // 目标语言行 + 交换按钮
+        const tgtRow = document.createElement('div');
+        tgtRow.className = 'd2tr-lang-row';
+        const tgtLabel = document.createElement('label');
+        tgtLabel.textContent = '到';
+        const swapBtn = document.createElement('button');
+        swapBtn.className = 'd2tr-swap-btn';
+        swapBtn.innerHTML = '⇄';
+        swapBtn.title = '交换源语言和目标语言';
+        const tgtSelect = document.createElement('select');
+        tgtSelect.id = 'd2trLangTarget';
+        for (const [code, name] of Object.entries(LANGUAGES)) {
+            const opt = document.createElement('option');
+            opt.value = code;
+            opt.textContent = name;
+            if (code === langTarget) opt.selected = true;
+            tgtSelect.appendChild(opt);
+        }
+        tgtRow.appendChild(tgtLabel);
+        tgtRow.appendChild(swapBtn);
+        tgtRow.appendChild(tgtSelect);
+        body.appendChild(tgtRow);
 
-    const btnClearCache = document.createElement('button');
-    btnClearCache.id = 'btnClearCache';
-    btnClearCache.textContent = '清除缓存';
-    actionButtonsDiv.appendChild(btnClearCache);
+        // 事件
+        srcSelect.addEventListener('change', async () => {
+            langSource = srcSelect.value;
+            GM_setValue(LANG_SOURCE_KEY, langSource);
+            await reloadTermMap();
+            updateModeButtonsText();
+            showToast(`源语言已切换为 ${LANGUAGES[langSource]}`);
+        });
+        tgtSelect.addEventListener('change', async () => {
+            langTarget = tgtSelect.value;
+            GM_setValue(LANG_TARGET_KEY, langTarget);
+            await reloadTermMap();
+            updateModeButtonsText();
+            showToast(`目标语言已切换为 ${LANGUAGES[langTarget]}`);
+        });
+        swapBtn.addEventListener('click', async () => {
+            const tmp = srcSelect.value;
+            srcSelect.value = tgtSelect.value;
+            tgtSelect.value = tmp;
+            langSource = srcSelect.value;
+            langTarget = tgtSelect.value;
+            GM_setValue(LANG_SOURCE_KEY, langSource);
+            GM_setValue(LANG_TARGET_KEY, langTarget);
+            await reloadTermMap();
+            updateModeButtonsText();
+            showToast('已交换源语言和目标语言');
+        });
 
-    /* === 自定义术语相关按钮 === */
-    const btnAddTerm = document.createElement('button');
-    btnAddTerm.id = 'btnAddTerm';
-    btnAddTerm.textContent = '添加术语';
-    actionButtonsDiv.appendChild(btnAddTerm);
-
-    const btnExportTerms = document.createElement('button');
-    btnExportTerms.id = 'btnExportTerms';
-    btnExportTerms.textContent = '导出';
-    actionButtonsDiv.appendChild(btnExportTerms);
-
-    const btnImportTerms = document.createElement('button');
-    btnImportTerms.id = 'btnImportTerms';
-    btnImportTerms.textContent = '导入';
-    actionButtonsDiv.appendChild(btnImportTerms);
-
-    /* === 新增：管理自定义术语按钮 === */
-    const btnManageTerms = document.createElement('button');
-    btnManageTerms.id = 'btnManageTerms';
-    btnManageTerms.textContent = '管理术语';
-    actionButtonsDiv.appendChild(btnManageTerms);
-
-    const closeButton = document.createElement('button');
-    closeButton.id = 'dialogCloseButton';
-    closeButton.className = 'dialogButton';
-    closeButton.addEventListener('click', toggleDialog);
-    dialog.appendChild(closeButton);
-
-    // 新增提示按钮
-    const hintButton = document.createElement('button');
-    hintButton.id = 'dialogHintButton';
-    hintButton.className = 'dialogButton';
-    hintButton.addEventListener('click', toggleHintDialog);
-    dialog.appendChild(hintButton);
-
-    // 创建提示对话框
-    const hintDialog = document.createElement('div');
-    hintDialog.id = 'hintDialog';
-    hintDialog.innerHTML = `
-        <h3 style="margin:0 0 8px 0;">使用小贴士</h3>
-        <ul style="padding-left:20px;line-height:1.7">
-          <li><b>启动模式：</b>按 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>K</kbd> 或 点击右上角按钮 或 鼠标右键菜单可随时打开/关闭面板</li>
-          <li><b>批量添加：</b>点「添加术语」后粘贴多行 <code>英文=中文</code> 或 <code>英文 中文</code> 映射即可导入</li>
-          <li><b>撤销：</b>点击"撤销"按钮可回退最近 20 次替换操作</li>
-          <li><b>自定义词库：</b>使用「导出 / 导入」按钮可备份和恢复自定义术语</li>
-          <li><b>缓存：</b>如词库异常，可点"清除缓存"重新下载最新数据</li>
-          <li><b>拖拽面板：</b>按住标题栏拖动可移动面板，位置会自动保存</li>
-          <li><b>多层网页：</b>在 iframe 层内单击空白处后按快捷键，只替换当前层</li>
-        </ul>
-    `;
-    document.body.appendChild(hintDialog);
-
-    /* === 批量添加术语面板（在主面板内部） === */
-    const addTermPanel = document.createElement('div');
-    addTermPanel.id = 'addTermPanel';
-    addTermPanel.innerHTML = `
-        <p style="font-size:12px;color:#bbb;margin:0 0 6px;line-height:1.4;">
-            <b>批量添加说明：</b>每行一条，英文与中文之间可使用 <code>=</code> 或 <code>|</code> 分隔。<br>
-            例如：<br>
-            <code>Gjallarhorn=加拉尔号角</code><br>
-            <code>Gjallarhorn|加拉尔号角</code>
-        </p>
-        <textarea id="batchTermInput" placeholder="在此粘贴或输入多行术语映射..."></textarea>
-        <div class="panel-actions">
-            <button id="btnSaveTerms">保存</button>
-            <button id="btnCancelAdd">取消</button>
-        </div>`;
-    dialog.appendChild(modeButtonsDiv);
-    dialog.appendChild(actionButtonsDiv);
-    dialog.appendChild(addTermPanel);
-
-    /* === 新增：管理自定义术语面板 === */
-    const manageTermPanel = document.createElement('div');
-    manageTermPanel.id = 'manageTermPanel';
-    manageTermPanel.style.display = 'none';
-    manageTermPanel.innerHTML = `
-        <h4 style="margin:0 0 6px 0;">我的自定义术语</h4>
-        <div style="margin-bottom:6px;display:flex;align-items:center;gap:4px;font-size:12px;flex-wrap:nowrap;">
-            <input id="termSearchInput" type="text" placeholder="搜索..." style="flex:1 1 auto;min-width:0;background:#111;border:1px solid #555;border-radius:4px;padding:4px 6px;color:#fff;" />
-            <label style="white-space:nowrap;">每页
-                <input id="itemsPerPageInput" type="number" min="1" max="100" value="20" style="width:40px;margin:0 4px;background:#111;border:1px solid #555;border-radius:4px;padding:2px 4px;color:#fff;" />
-                条
-            </label>
-        </div>
-        <div id="termsList" style="max-height:160px;overflow:auto;border:1px solid #555;padding:6px;border-radius:4px;background:#222;"></div>
-        <div id="paginationControls" style="margin-top:6px;text-align:center;font-size:12px;"></div>
-        <div class="panel-actions" style="text-align:right;margin-top:6px;">
-            <button id="btnCloseManage" style="background:#666;color:#fff;border:none;border-radius:4px;padding:6px 12px;cursor:pointer;">关闭</button>
-        </div>`;
-    dialog.appendChild(manageTermPanel);
-
-    const batchInput = addTermPanel.querySelector('#batchTermInput');
-    const btnSaveTerms = addTermPanel.querySelector('#btnSaveTerms');
-    const btnCancelAdd = addTermPanel.querySelector('#btnCancelAdd');
-
-    document.body.appendChild(dialog);
-
-    const elements = {
-        modeButtons: dialog.querySelectorAll('.mode-btn'),
-        btnApplyAll: dialog.querySelector('#btnApplyAll'),
-        btnUndo: dialog.querySelector('#btnUndo'),
-        btnClearCache: dialog.querySelector('#btnClearCache'),
-        btnAddTerm: dialog.querySelector('#btnAddTerm'),
-        btnExportTerms: dialog.querySelector('#btnExportTerms'),
-        btnImportTerms: dialog.querySelector('#btnImportTerms'),
-        termCount: dialog.querySelector('#termCount'),
-        btnManageTerms: dialog.querySelector('#btnManageTerms')
-    };
-
-    elements.modeButtons.forEach(btn => btn.addEventListener('click', handleModeChange));
-    elements.btnApplyAll.addEventListener('click', applyAllRules);
-    elements.btnUndo.addEventListener('click', undoReplace);
-    elements.btnClearCache.addEventListener('click', clearCache);
-
-    /* === 自定义术语按钮事件 === */
-    let addPanelVisible = false;
-    function toggleAddTermPanel(show = !addPanelVisible) {
-        addPanelVisible = show;
-        addTermPanel.style.display = show ? 'block' : 'none';
-        if (show) batchInput.focus();
+        section.appendChild(body);
+        return section;
     }
 
-    elements.btnAddTerm.addEventListener('click', () => toggleAddTermPanel(true));
+    /* --- Section: 替换模式 --- */
+    function createModeSection() {
+        const section = document.createElement('div');
+        section.className = 'd2tr-section open';
 
-    btnCancelAdd.addEventListener('click', () => toggleAddTermPanel(false));
+        const secHeader = document.createElement('div');
+        secHeader.className = 'd2tr-section-header';
+        secHeader.innerHTML = '<span class="d2tr-section-title">替换模式</span><span class="d2tr-section-arrow">▼</span>';
+        secHeader.addEventListener('click', () => section.classList.toggle('open'));
+        section.appendChild(secHeader);
 
-    btnSaveTerms.addEventListener('click', () => {
-        const raw = batchInput.value;
-        if (!raw) { showToast('❌ 内容为空', false); return; }
-        const lines = raw.split(/\n+/);
-        let added = 0;
-        for (const line of lines) {
-            const trimmed = line.trim();
-            if (!trimmed) continue;
-            const match = trimmed.match(/^(.+?)[=|]+(.+)$/);
-            if (match) {
-                const en = match[1].trim();
-                const cn = match[2].trim();
-                if (en && cn) {
-                    userTerms[en] = cn;
-                    addVariants(termMap, en, cn);
-                    added++;
+        const body = document.createElement('div');
+        body.className = 'd2tr-section-body';
+
+        const modeRow = document.createElement('div');
+        modeRow.className = 'd2tr-mode-row';
+        const modes = [1, 2, 3].map(m => {
+            const btn = document.createElement('button');
+            btn.className = 'd2tr-mode-btn' + (m === currentMode ? ' active' : '');
+            btn.dataset.mode = m;
+            btn.addEventListener('click', () => {
+                currentMode = m;
+                modeRow.querySelectorAll('.d2tr-mode-btn').forEach(b => b.classList.toggle('active', parseInt(b.dataset.mode) === m));
+            });
+            modeRow.appendChild(btn);
+            return btn;
+        });
+        body.appendChild(modeRow);
+
+        // 操作按钮
+        const actionRow = document.createElement('div');
+        actionRow.className = 'd2tr-action-row';
+
+        const btnApply = document.createElement('button');
+        btnApply.className = 'd2tr-action-btn';
+        btnApply.textContent = '应用规则';
+        btnApply.addEventListener('click', applyAllRules);
+
+        const btnUndo = document.createElement('button');
+        btnUndo.className = 'd2tr-action-btn';
+        btnUndo.id = 'd2trBtnUndo';
+        btnUndo.textContent = '撤销';
+        btnUndo.disabled = true;
+        btnUndo.addEventListener('click', undoReplace);
+
+        const btnClear = document.createElement('button');
+        btnClear.className = 'd2tr-action-btn danger';
+        btnClear.textContent = '更新数据';
+        btnClear.addEventListener('click', clearCache);
+
+        actionRow.appendChild(btnApply);
+        actionRow.appendChild(btnUndo);
+        actionRow.appendChild(btnClear);
+        body.appendChild(actionRow);
+
+        section.appendChild(body);
+
+        // 暴露模式按钮引用供外部更新文本
+        section._modeButtons = modes;
+        return section;
+    }
+
+    /* --- Section: 自定义术语 --- */
+    function createTermSection() {
+        const section = document.createElement('div');
+        section.className = 'd2tr-section';
+
+        const secHeader = document.createElement('div');
+        secHeader.className = 'd2tr-section-header';
+        secHeader.innerHTML = '<span class="d2tr-section-title">自定义术语</span><span class="d2tr-section-arrow">▼</span>';
+        secHeader.addEventListener('click', () => section.classList.toggle('open'));
+        section.appendChild(secHeader);
+
+        const body = document.createElement('div');
+        body.className = 'd2tr-section-body';
+
+        // 按钮行
+        const btnRow = document.createElement('div');
+        btnRow.style.cssText = 'display:flex;gap:6px;margin-bottom:8px;';
+        const btnAdd = document.createElement('button');
+        btnAdd.className = 'd2tr-adv-btn';
+        btnAdd.textContent = '添加';
+        const btnManage = document.createElement('button');
+        btnManage.className = 'd2tr-adv-btn';
+        btnManage.textContent = '管理';
+        const btnExport = document.createElement('button');
+        btnExport.className = 'd2tr-adv-btn';
+        btnExport.textContent = '导出';
+        const btnImport = document.createElement('button');
+        btnImport.className = 'd2tr-adv-btn';
+        btnImport.textContent = '导入';
+        btnRow.appendChild(btnAdd);
+        btnRow.appendChild(btnManage);
+        btnRow.appendChild(btnExport);
+        btnRow.appendChild(btnImport);
+        body.appendChild(btnRow);
+
+        // 批量添加面板
+        const batchPanel = document.createElement('div');
+        batchPanel.style.display = 'none';
+        batchPanel.innerHTML = `
+            <p style="font-size:11px;color:var(--destiny-text-muted);margin:0 0 6px;line-height:1.4;">
+                每行一条，使用 <code style="background:rgba(0,212,255,0.1);padding:1px 4px;border-radius:3px;color:var(--destiny-tech);font-size:11px;">=</code> 或
+                <code style="background:rgba(0,212,255,0.1);padding:1px 4px;border-radius:3px;color:var(--destiny-tech);font-size:11px;">|</code> 分隔
+            </p>`;
+        const batchArea = document.createElement('textarea');
+        batchArea.className = 'd2tr-batch-area';
+        batchArea.placeholder = '在此粘贴术语映射...';
+        batchPanel.appendChild(batchArea);
+        const batchActions = document.createElement('div');
+        batchActions.className = 'd2tr-batch-actions';
+        const btnSave = document.createElement('button');
+        btnSave.className = 'd2tr-btn-save';
+        btnSave.textContent = '保存';
+        const btnCancel = document.createElement('button');
+        btnCancel.className = 'd2tr-btn-cancel';
+        btnCancel.textContent = '取消';
+        batchActions.appendChild(btnSave);
+        batchActions.appendChild(btnCancel);
+        batchPanel.appendChild(batchActions);
+        body.appendChild(batchPanel);
+
+        // 管理面板
+        const managePanel = document.createElement('div');
+        managePanel.style.display = 'none';
+        const searchInput = document.createElement('input');
+        searchInput.className = 'd2tr-term-search';
+        searchInput.placeholder = '搜索术语...';
+        managePanel.appendChild(searchInput);
+        const termList = document.createElement('div');
+        termList.className = 'd2tr-term-list';
+        managePanel.appendChild(termList);
+        const pagination = document.createElement('div');
+        pagination.className = 'd2tr-pagination';
+        managePanel.appendChild(pagination);
+        const manageClose = document.createElement('div');
+        manageClose.style.cssText = 'text-align:right;margin-top:8px;';
+        const btnCloseManage = document.createElement('button');
+        btnCloseManage.className = 'd2tr-btn-cancel';
+        btnCloseManage.textContent = '关闭';
+        manageClose.appendChild(btnCloseManage);
+        managePanel.appendChild(manageClose);
+        body.appendChild(managePanel);
+
+        // 事件
+        let batchVisible = false;
+        let manageVisible = false;
+
+        btnAdd.addEventListener('click', () => {
+            batchVisible = !batchVisible;
+            batchPanel.style.display = batchVisible ? 'block' : 'none';
+            if (batchVisible) {
+                manageVisible = false;
+                managePanel.style.display = 'none';
+                batchArea.focus();
+            }
+        });
+        btnCancel.addEventListener('click', () => {
+            batchVisible = false;
+            batchPanel.style.display = 'none';
+        });
+        btnSave.addEventListener('click', () => {
+            const raw = batchArea.value;
+            if (!raw) { showToast('内容为空', false); return; }
+            const lines = raw.split(/\n+/);
+            let added = 0;
+            for (const line of lines) {
+                const trimmed = line.trim();
+                if (!trimmed) continue;
+                const match = trimmed.match(/^(.+?)[=|]+(.+)$/);
+                if (match) {
+                    const en = match[1].trim();
+                    const cn = match[2].trim();
+                    if (en && cn) {
+                        userTerms[en] = cn;
+                        addVariants(termMap, en, cn);
+                        added++;
+                    }
                 }
             }
-        }
-        if (added) {
-            GM_setValue(USER_TERMS_KEY, userTerms);
-            updateTermCount();
-            showToast(`✅ 已添加 ${added} 条自定义术语`);
-            batchInput.value = '';
-            toggleAddTermPanel(false);
-        } else {
-            showToast('❌ 未检测到有效输入', false);
+            if (added) {
+                GM_setValue(USER_TERMS_KEY, userTerms);
+                updateTermCount();
+                showToast(`已添加 ${added} 条自定义术语`);
+                batchArea.value = '';
+                batchVisible = false;
+                batchPanel.style.display = 'none';
+            } else {
+                showToast('未检测到有效输入', false);
+            }
+        });
+
+        btnManage.addEventListener('click', () => {
+            manageVisible = !manageVisible;
+            managePanel.style.display = manageVisible ? 'block' : 'none';
+            if (manageVisible) {
+                batchVisible = false;
+                batchPanel.style.display = 'none';
+                searchInput.value = searchTerm = '';
+                renderUserTermsList(termList, pagination, searchInput);
+            }
+        });
+        btnCloseManage.addEventListener('click', () => {
+            manageVisible = false;
+            managePanel.style.display = 'none';
+        });
+
+        searchInput.addEventListener('input', () => {
+            searchTerm = searchInput.value.trim().toLowerCase();
+            currentPage = 1;
+            renderUserTermsList(termList, pagination, searchInput);
+        });
+
+        btnExport.addEventListener('click', exportUserTerms);
+        btnImport.addEventListener('click', importUserTerms);
+
+        section.appendChild(body);
+        section._termList = termList;
+        section._pagination = pagination;
+        section._searchInput = searchInput;
+        return section;
+    }
+
+
+    /* === 组装面板 === */
+    const langSection = createLangSection();
+    const modeSection = createModeSection();
+    const termSection = createTermSection();
+
+    panel.appendChild(langSection);
+    panel.appendChild(modeSection);
+    panel.appendChild(termSection);
+    document.body.appendChild(panel);
+
+    const modeButtons = modeSection._modeButtons;
+    const termListEl = termSection._termList;
+    const paginationEl = termSection._pagination;
+    const searchInputEl = termSection._searchInput;
+
+    /* === 模式按钮文本更新 === */
+    function updateModeButtonsText() {
+        const srcName = LANGUAGES[langSource];
+        const tgtName = LANGUAGES[langTarget];
+        const shortSrc = srcName.substring(0, 2);
+        const shortTgt = tgtName.substring(0, 2);
+        modeButtons[0].textContent = shortTgt;
+        modeButtons[0].title = `将${srcName}术语替换为纯${tgtName}`;
+        modeButtons[1].textContent = `${shortSrc}|${shortTgt}`;
+        modeButtons[1].title = `替换为 "${srcName} | ${tgtName}" 组合`;
+        modeButtons[2].textContent = `${shortTgt}(${shortSrc})`;
+        modeButtons[2].title = `替换为 "${tgtName}(${srcName})" 组合`;
+    }
+    updateModeButtonsText();
+
+    /* === 面板开关联动 === */
+    function openPanel() {
+        panelOpen = true;
+        panel.classList.remove('closing');
+        panel.classList.add('open');
+        GM_setValue(PANEL_OPEN_KEY, true);
+    }
+
+    function closePanel() {
+        panelOpen = false;
+        panel.classList.add('closing');
+        setTimeout(() => {
+            panel.classList.remove('open', 'closing');
+        }, 200);
+        GM_setValue(PANEL_OPEN_KEY, false);
+    }
+
+    fab.addEventListener('click', () => {
+        if (panelOpen) closePanel();
+        else openPanel();
+    });
+
+    // 点击外部关闭面板
+    document.addEventListener('click', (e) => {
+        if (panelOpen && !panel.contains(e.target) && !fab.contains(e.target)) {
+            closePanel();
         }
     });
 
-    elements.btnExportTerms.addEventListener('click', exportUserTerms);
-    elements.btnImportTerms.addEventListener('click', importUserTerms);
-
-    /* === 新增：管理术语按钮事件 === */
-    let managePanelVisible = false;
-    function toggleManagePanel(show = !managePanelVisible) {
-        managePanelVisible = show;
-        manageTermPanel.style.display = show ? 'block' : 'none';
-        if (show) {
-            manageTermPanel.querySelector('#termSearchInput').value = searchTerm = '';
-            const perInput = manageTermPanel.querySelector('#itemsPerPageInput');
-            perInput.value = itemsPerPage;
-            renderUserTermsList();
-            if (!perInput.dataset.bound) {
-                const searchInput = manageTermPanel.querySelector('#termSearchInput');
-                searchInput.addEventListener('input', () => {
-                    searchTerm = searchInput.value.trim().toLowerCase();
-                    currentPage = 1;
-                    renderUserTermsList();
-                });
-                perInput.addEventListener('change', () => {
-                    const v = parseInt(perInput.value);
-                    if (!v || v < 1) { perInput.value = 1; itemsPerPage = 1; }
-                    else { itemsPerPage = v; }
-                    GM_setValue(ITEMS_PER_PAGE_KEY, itemsPerPage);
-                    currentPage = 1;
-                    renderUserTermsList();
-                });
-                perInput.dataset.bound = '1';
-            }
-        }
-    }
-
-    elements.btnManageTerms.addEventListener('click', () => toggleManagePanel(true));
-    manageTermPanel.querySelector('#btnCloseManage').addEventListener('click', () => toggleManagePanel(false));
-
-    function renderUserTermsList() {
-        const listContainer = manageTermPanel.querySelector('#termsList');
-        const pageControls = manageTermPanel.querySelector('#paginationControls');
-        const allEntries = Object.entries(userTerms);
-        const filtered = allEntries.filter(([en, cn]) => en.toLowerCase().includes(searchTerm) || cn.toLowerCase().includes(searchTerm));
-
-        const totalPages = Math.max(1, Math.ceil(filtered.length / itemsPerPage));
-        if (currentPage > totalPages) currentPage = totalPages;
-
-        const startIdx = (currentPage - 1) * itemsPerPage;
-        const pageEntries = filtered.slice(startIdx, startIdx + itemsPerPage);
-
-        listContainer.innerHTML = '';
-        if (!pageEntries.length) {
-            listContainer.textContent = '（无匹配结果）';
-        } else {
-            for (const [en, cn] of pageEntries) {
-                const row = document.createElement('div');
-                row.style.display = 'flex';
-                row.style.justifyContent = 'space-between';
-                row.style.alignItems = 'center';
-                row.style.margin = '2px 0';
-                const textSpan = document.createElement('span');
-                textSpan.style.fontFamily = 'monospace';
-                textSpan.style.fontSize = '12px';
-                textSpan.textContent = `${en} → ${cn}`;
-                const delBtn = document.createElement('button');
-                delBtn.textContent = '删除';
-                delBtn.style.background = '#f44336';
-                delBtn.style.border = 'none';
-                delBtn.style.borderRadius = '4px';
-                delBtn.style.color = '#fff';
-                delBtn.style.cursor = 'pointer';
-                delBtn.style.fontSize = '12px';
-                delBtn.addEventListener('click', () => {
-                    deleteUserTerm(en);
-                    renderUserTermsList();
-                });
-                row.appendChild(textSpan);
-                row.appendChild(delBtn);
-                listContainer.appendChild(row);
-            }
-        }
-
-        // 渲染分页控件
-        pageControls.innerHTML = '';
-        if (totalPages > 1) {
-            const prevBtn = document.createElement('button');
-            prevBtn.textContent = '上一页';
-            prevBtn.disabled = currentPage === 1;
-            prevBtn.style.marginRight = '8px';
-            prevBtn.addEventListener('click', () => { if (currentPage > 1) { currentPage--; renderUserTermsList(); } });
-
-            const nextBtn = document.createElement('button');
-            nextBtn.textContent = '下一页';
-            nextBtn.disabled = currentPage === totalPages;
-            nextBtn.style.marginLeft = '8px';
-            nextBtn.addEventListener('click', () => { if (currentPage < totalPages) { currentPage++; renderUserTermsList(); } });
-
-            const infoSpan = document.createElement('span');
-            infoSpan.textContent = `第 ${currentPage} / ${totalPages} 页`;
-            pageControls.appendChild(prevBtn);
-            pageControls.appendChild(infoSpan);
-            pageControls.appendChild(nextBtn);
-        }
-    }
-
-    /* === 新增：删除自定义术语 === */
-    function deleteUserTerm(en) {
-        if (!userTerms[en]) return;
-        if (!confirm(`确定删除术语：${en} ？`)) return;
-        delete userTerms[en];
-        GM_setValue(USER_TERMS_KEY, userTerms);
-        termMap.delete(en);
-        updateTermCount();
-        showToast(`✅ 已删除术语：${en}`);
-    }
-
+    /* === 快捷键 === */
     document.addEventListener('keydown', (e) => {
         if (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'k') {
-            toggleDialog();
+            e.preventDefault();
+            if (panelOpen) closePanel();
+            else openPanel();
         }
     });
 
-    GM_registerMenuCommand("打开文本替换工具", toggleDialog);
+    /* === 暂停/恢复 === */
+    function setPaused(paused) {
+        isPaused = paused;
+        GM_setValue(PAUSED_KEY, paused);
+        fab.classList.toggle('paused', paused);
+        if (paused && panelOpen) closePanel();
+    }
 
-    document.addEventListener('click', (e) => {
-        if (e.target.matches('.gm-open-text-replacer')) {
-            toggleDialog();
-        }
+    GM_registerMenuCommand(isPaused ? '▶ 恢复术语替换' : '⏸ 暂停术语替换', () => {
+        setPaused(!isPaused);
+        showToast(isPaused ? '术语替换已暂停' : '术语替换已恢复');
     });
 
-    // Make dialog draggable
-    dialogHeader.addEventListener('mousedown', dragStart);
-    document.addEventListener('mousemove', dragMove);
-    document.addEventListener('mouseup', dragEnd);
-
-    function dragStart(e) {
-        isDragging = true;
-        dialog.classList.add('dragging');
-        dialogXOffset = dialog.offsetLeft - e.clientX;
-        dialogYOffset = dialog.offsetTop - e.clientY;
-    }
-
-    function dragMove(e) {
-        if (!isDragging) return;
-        dialog.style.left = e.clientX + dialogXOffset + 'px';
-        dialog.style.top = e.clientY + dialogYOffset + 'px';
-    }
-
-    function dragEnd() {
-        isDragging = false;
-        dialog.classList.remove('dragging');
-        GM_setValue(DIALOG_POS_KEY, { x: dialog.offsetLeft, y: dialog.offsetTop });
-    }
-
-
-    initTerminology();
-    updateButtonStates();
-
-    function toggleDialog() {
-        dialogVisible = !dialogVisible;
-        dialog.style.display = dialogVisible ? 'block' : 'none';
-        updateButtonStates();
-        if (dialogVisible && hintDialogVisible) {
-            toggleHintDialog();
-        }
-    }
-
-    function toggleHintDialog() {
-        hintDialogVisible = !hintDialogVisible;
-        hintDialog.style.display = hintDialogVisible ? 'block' : 'none';
-        if (hintDialogVisible && dialogVisible === false) {
-            toggleDialog();
-        }
-    }
-
-    async function clearCache() {
-        try {
-            GM_deleteValue('cachedTerms');
-            GM_deleteValue('cacheTime');
-            const freshData = await fetchTerms();
-            termMap = buildTermMapFromData(freshData);
-            GM_setValue('cachedTerms', freshData);
-            GM_setValue('cacheTime', Date.now());
-            updateTermCount();
-            showToast(`✅ 缓存已清除并重新加载成功，已加载 ${termMap.size} 条术语`);
-        } catch (error) {
-            console.error('缓存清除失败:', error);
-            showToast(`❌ 缓存清除失败：${error.message}`, false);
-            termMap.clear();
-            updateTermCount();
-        }
-    }
-
-    async function initTerminology() {
-        const cachedData = GM_getValue('cachedTerms');
-        const cacheTime = GM_getValue('cacheTime', 0);
-
-        try {
-            if (!cachedData || Date.now() - cacheTime > 86400000 * CACHE_DAYS) {
-                const freshData = await fetchTerms();
-                termMap = buildTermMapFromData(freshData);
-                GM_setValue('cachedTerms', freshData);
-                GM_setValue('cacheTime', Date.now());
-            } else {
-                termMap = buildTermMapFromData(cachedData);
-            }
-
-            /* === 合并并加载用户自定义术语 === */
-            userTerms = GM_getValue(USER_TERMS_KEY, {});
-            if (userTerms && typeof userTerms === 'object') {
-                for (const [en, cn] of Object.entries(userTerms)) {
-                    addVariants(termMap, en, cn);
-                }
-            }
-        } catch (error) {
-            console.error('术语表初始化失败:', error);
-            if (cachedData) {
-                termMap = buildTermMapFromData(cachedData);
-                showToast('术语表加载失败，已使用缓存数据', false);
-            } else {
-                showToast('术语表加载失败且无缓存可用', false);
-            }
-        }
-        updateTermCount();
-    }
-
+    /* === 术语计数更新 === */
     function updateTermCount() {
-        elements.termCount.textContent = termMap.size > 0
-            ? `（已加载${termMap.size}条）`
-            : '（未加载数据）';
+        const countEl = document.getElementById('d2trTermCount');
+        if (countEl) {
+            countEl.textContent = termMap.size > 0 ? `${termMap.size} 条术语` : '未加载';
+        }
     }
 
+    /* === 数据加载 === */
     function fetchTerms() {
         return new Promise((resolve, reject) => {
             GM_xmlhttpRequest({
@@ -750,11 +1030,8 @@
                     if (res.status >= 200 && res.status < 300) {
                         try {
                             const data = JSON.parse(res.responseText);
-                            if (data && data.data) {
-                                resolve(data);
-                            } else {
-                                reject(new Error('获取到空数据'));
-                            }
+                            if (data && data.data) resolve(data);
+                            else reject(new Error('获取到空数据'));
                         } catch (e) {
                             reject(new Error('数据解析失败'));
                         }
@@ -762,28 +1039,86 @@
                         reject(new Error(`HTTP ${res.status}`));
                     }
                 },
-                onerror: (err) => {
-                    reject(new Error(`网络错误: ${err}`));
-                },
-                ontimeout: () => {
-                    reject(new Error('请求超时（15秒）'));
-                }
+                onerror: (err) => reject(new Error(`网络错误: ${err}`)),
+                ontimeout: () => reject(new Error('请求超时（15秒）'))
             });
         });
     }
 
-    function handleModeChange(e) {
-        currentMode = parseInt(e.target.dataset.mode);
-        updateButtonStates();
+    async function initTerminology() {
+        const cachedData = GM_getValue('cachedTerms');
+        const cacheTime = GM_getValue('cacheTime', 0);
+        try {
+            if (!cachedData || Date.now() - cacheTime > 86400000 * CACHE_DAYS) {
+                const freshData = await fetchTerms();
+                termMap = buildTermMapFromData(freshData, langSource, langTarget);
+                GM_setValue('cachedTerms', freshData);
+                GM_setValue('cacheTime', Date.now());
+            } else {
+                termMap = buildTermMapFromData(cachedData, langSource, langTarget);
+            }
+            userTerms = GM_getValue(USER_TERMS_KEY, {});
+            if (userTerms && typeof userTerms === 'object') {
+                for (const [source, target] of Object.entries(userTerms)) {
+                    addVariants(termMap, source, target);
+                }
+            }
+            dataStatus = 'ready';
+            statusDot.className = 'd2tr-status-dot ready';
+        } catch (error) {
+            console.error('术语表初始化失败:', error);
+            dataStatus = 'error';
+            statusDot.className = 'd2tr-status-dot error';
+            if (cachedData) {
+                termMap = buildTermMapFromData(cachedData, langSource, langTarget);
+                showToast('术语表加载失败，已使用缓存数据', false);
+            } else {
+                showToast('术语表加载失败且无缓存可用', false);
+            }
+        }
+        updateTermCount();
     }
 
-    function updateButtonStates() {
-        elements.modeButtons.forEach(btn => {
-            btn.classList.toggle('active', parseInt(btn.dataset.mode) === currentMode);
-        });
+    async function reloadTermMap() {
+        const cachedData = GM_getValue('cachedTerms');
+        if (cachedData) {
+            termMap = buildTermMapFromData(cachedData, langSource, langTarget);
+            userTerms = GM_getValue(USER_TERMS_KEY, {});
+            if (userTerms && typeof userTerms === 'object') {
+                for (const [source, target] of Object.entries(userTerms)) {
+                    addVariants(termMap, source, target);
+                }
+            }
+            updateTermCount();
+            processedNodes = new WeakSet();
+        }
     }
 
+    async function clearCache() {
+        try {
+            GM_deleteValue('cachedTerms');
+            GM_deleteValue('cacheTime');
+            const freshData = await fetchTerms();
+            termMap = buildTermMapFromData(freshData, langSource, langTarget);
+            GM_setValue('cachedTerms', freshData);
+            GM_setValue('cacheTime', Date.now());
+            dataStatus = 'ready';
+            statusDot.className = 'd2tr-status-dot ready';
+            updateTermCount();
+            showToast(`缓存已清除，已加载 ${termMap.size} 条术语`);
+        } catch (error) {
+            console.error('缓存清除失败:', error);
+            dataStatus = 'error';
+            statusDot.className = 'd2tr-status-dot error';
+            showToast(`缓存清除失败：${error.message}`, false);
+            termMap.clear();
+            updateTermCount();
+        }
+    }
+
+    /* === 替换逻辑 === */
     function applyAllRules() {
+        if (isPaused) { showToast('术语替换已暂停，请先恢复', false); return; }
         const termRules = Array.from(termMap).map(([en, cn]) => {
             switch (currentMode) {
                 case 1: return [en, cn];
@@ -792,7 +1127,12 @@
                 default: return [en, cn];
             }
         });
-        performReplace(termRules);
+        const count = performReplace(termRules);
+        if (count > 0) {
+            showToast(`已替换 ${count} 个术语`);
+        } else {
+            showToast('未找到可替换的术语');
+        }
     }
 
     function performReplace(rules) {
@@ -801,20 +1141,13 @@
         const snapshot = [];
         const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'CODE', 'PRE', 'TEXTAREA', 'NOSCRIPT']);
 
-        const walker = document.createTreeWalker(
-            document.body,
-            NodeFilter.SHOW_TEXT,
-            null,
-            false
-        );
-
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
         while (walker.nextNode()) {
             const node = walker.currentNode;
             if (processedNodes.has(node)) continue;
             if (SKIP_TAGS.has(node.parentNode && node.parentNode.nodeName)) continue;
             const original = node.nodeValue;
             const replaced = original.replace(regex, (m) => lowerMap.get(m.toLowerCase()) ?? m);
-
             if (replaced !== original) {
                 snapshot.push({ node, text: original });
                 node.nodeValue = replaced;
@@ -824,18 +1157,16 @@
 
         if (snapshot.length) {
             replacementHistory.push(snapshot);
-            if (replacementHistory.length > HISTORY_LIMIT) {
-                replacementHistory.shift();
-            }
-            elements.btnUndo.disabled = false;
+            if (replacementHistory.length > HISTORY_LIMIT) replacementHistory.shift();
+            document.getElementById('d2trBtnUndo').disabled = false;
         }
+        return snapshot.length;
     }
 
     function buildRegex(rules) {
         const sortedKeys = [...new Set(rules.map(([k]) => k))]
             .sort((a, b) => b.length - a.length)
             .map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-
         return new RegExp(`\\b(${sortedKeys.join('|')})\\b`, 'gi');
     }
 
@@ -845,18 +1176,73 @@
             last.forEach(({ node, text }) => {
                 if (node.parentNode) node.nodeValue = text;
             });
-            elements.btnUndo.disabled = !replacementHistory.length;
+            document.getElementById('d2trBtnUndo').disabled = !replacementHistory.length;
+            showToast('已撤销上次替换');
         }
     }
 
-    /* ===== 自定义术语相关 ===== */
-    function addUserTerm(en, cn) {
-        if (!en || !cn) return;
-        userTerms[en] = cn;
+    /* === 自定义术语管理 === */
+    function renderUserTermsList(listContainer, pageControls, searchEl) {
+        const allEntries = Object.entries(userTerms);
+        const filtered = allEntries.filter(([en, cn]) =>
+            en.toLowerCase().includes(searchTerm) || cn.toLowerCase().includes(searchTerm)
+        );
+        const totalPages = Math.max(1, Math.ceil(filtered.length / itemsPerPage));
+        if (currentPage > totalPages) currentPage = totalPages;
+        const startIdx = (currentPage - 1) * itemsPerPage;
+        const pageEntries = filtered.slice(startIdx, startIdx + itemsPerPage);
+
+        listContainer.innerHTML = '';
+        if (!pageEntries.length) {
+            listContainer.innerHTML = '<div style="text-align:center;color:var(--destiny-text-muted);padding:16px;font-size:12px;">无匹配结果</div>';
+        } else {
+            for (const [en, cn] of pageEntries) {
+                const row = document.createElement('div');
+                row.className = 'd2tr-term-item';
+                const textSpan = document.createElement('span');
+                textSpan.className = 'd2tr-term-text';
+                textSpan.innerHTML = `<span style="color:var(--destiny-tech)">${en}</span> <span style="color:var(--destiny-text-muted)">→</span> <span style="color:var(--destiny-accent)">${cn}</span>`;
+                const delBtn = document.createElement('button');
+                delBtn.className = 'd2tr-term-del';
+                delBtn.textContent = '×';
+                delBtn.addEventListener('click', () => {
+                    deleteUserTerm(en);
+                    renderUserTermsList(listContainer, pageControls, searchEl);
+                });
+                row.appendChild(textSpan);
+                row.appendChild(delBtn);
+                listContainer.appendChild(row);
+            }
+        }
+
+        pageControls.innerHTML = '';
+        if (totalPages > 1) {
+            const mkBtn = (txt, dis, fn) => {
+                const b = document.createElement('button');
+                b.textContent = txt;
+                b.disabled = dis;
+                b.addEventListener('click', fn);
+                return b;
+            };
+            pageControls.appendChild(mkBtn('上一页', currentPage === 1, () => {
+                if (currentPage > 1) { currentPage--; renderUserTermsList(listContainer, pageControls, searchEl); }
+            }));
+            const info = document.createElement('span');
+            info.textContent = `${currentPage} / ${totalPages}`;
+            pageControls.appendChild(info);
+            pageControls.appendChild(mkBtn('下一页', currentPage === totalPages, () => {
+                if (currentPage < totalPages) { currentPage++; renderUserTermsList(listContainer, pageControls, searchEl); }
+            }));
+        }
+    }
+
+    function deleteUserTerm(en) {
+        if (!userTerms[en]) return;
+        if (!confirm(`确定删除术语：${en} → ${userTerms[en]}？`)) return;
+        delete userTerms[en];
         GM_setValue(USER_TERMS_KEY, userTerms);
-        addVariants(termMap, en, cn);
-        updateTermCount();
-        showToast(`✅ 已添加术语：${en} → ${cn}`);
+        reloadTermMap();
+        showToast(`已删除术语：${en}`);
     }
 
     function exportUserTerms() {
@@ -867,6 +1253,7 @@
         a.download = 'destiny2_custom_terms.json';
         a.click();
         URL.revokeObjectURL(url);
+        showToast('已导出自定义术语');
     }
 
     function importUserTerms() {
@@ -887,12 +1274,12 @@
                         });
                         GM_setValue(USER_TERMS_KEY, userTerms);
                         updateTermCount();
-                        showToast(`✅ 已导入 ${Object.keys(data).length} 条自定义术语`);
+                        showToast(`已导入 ${Object.keys(data).length} 条自定义术语`);
                     } else {
-                        showToast('❌ JSON 格式不正确', false);
+                        showToast('JSON 格式不正确', false);
                     }
                 } catch (e) {
-                    showToast('❌ 解析失败：' + e.message, false);
+                    showToast('解析失败：' + e.message, false);
                 }
             };
             reader.readAsText(file);
@@ -900,25 +1287,22 @@
         input.click();
     }
 
-    /* ===== Toast 提示 ===== */
-    function showToast(message, success = true) {
-        const toast = document.createElement('div');
-        toast.className = 'gm-toast';
-        toast.textContent = message;
-        toast.style.background = success ? 'rgba(76,175,80,0.9)' : 'rgba(244,67,54,0.9)';
-        document.body.appendChild(toast);
-        void toast.offsetWidth;
-        toast.style.opacity = '1';
-        setTimeout(() => {
-            toast.style.opacity = '0';
-            toast.addEventListener('transitionend', () => toast.remove());
-        }, 3000);
-    }
+    /* === 初始化 === */
+    initTerminology().then(() => {
+        // 首次安装引导
+        if (!GM_getValue(WELCOME_KEY)) {
+            fab.classList.add('pulse');
+            setTimeout(() => {
+                fab.classList.remove('pulse');
+            }, 6000);
+            setTimeout(() => showToast('点击右下角按钮打开 Destiny 2 术语工具'), 500);
+            GM_setValue(WELCOME_KEY, true);
+        }
 
-    /* === 首次使用欢迎提示 === */
-    const WELCOME_KEY = 'hasShownWelcome_v3';
-    if (!GM_getValue(WELCOME_KEY)) {
-        setTimeout(()=>showToast('提示：按 Ctrl+Alt+K 或 点击右上角按钮 或 鼠标右键菜单 打开命运2术语替换面板'),500);
-        GM_setValue(WELCOME_KEY,true);
-    }
+        // 恢复上次面板状态
+        if (GM_getValue(PANEL_OPEN_KEY, false)) {
+            openPanel();
+        }
+    });
+
 })();
