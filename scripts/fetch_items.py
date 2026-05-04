@@ -1,41 +1,31 @@
-import requests
 import json
 import os
-import hashlib
+import requests
 from datetime import datetime, UTC
+
+from utils import validate_api_key, get_manifest, generate_data_hash
 
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
 LANG_LIST = ['zh-chs', 'en']
-MANIFEST_URL = 'https://www.bungie.net/Platform/Destiny2/Manifest/'
 
-def get_manifest_version():
-    """获取当前Manifest版本"""
-    response = requests.get(MANIFEST_URL, headers={'X-API-Key': BUNGIE_API_KEY})
-    response.raise_for_status()
-    return response.json()['Response']['version']
 
-def fetch_item_definitions(lang):
-    """获取指定语言的物品定义"""
-    manifest = requests.get(MANIFEST_URL, headers={'X-API-Key': BUNGIE_API_KEY}).json()
+def fetch_item_definitions(manifest, lang):
     item_path = manifest['Response']['jsonWorldComponentContentPaths'][lang]['DestinyInventoryItemLiteDefinition']
     return requests.get(f'https://www.bungie.net{item_path}', headers={'X-API-Key': BUNGIE_API_KEY}).json()
 
-def generate_item_hash(data):
-    """生成数据哈希用于检测变更"""
-    return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
 
 def main():
-    # 获取当前版本
-    current_version = get_manifest_version()
+    validate_api_key(BUNGIE_API_KEY)
+
+    manifest = get_manifest(BUNGIE_API_KEY)
+    current_version = manifest['Response']['version']
     print(f"Current Manifest Version: {current_version}")
-    
-    # 获取各语言数据
+
     items = {}
     for lang in LANG_LIST:
-        items[lang] = fetch_item_definitions(lang)
+        items[lang] = fetch_item_definitions(manifest, lang)
         print(f"Fetched {len(items[lang])} items for {lang}")
 
-    # 合并数据
     combined = {}
     for item_id in items[LANG_LIST[0]]:
         item = items[LANG_LIST[0]][item_id]
@@ -45,22 +35,21 @@ def main():
                 for lang in LANG_LIST
             }
 
-    # 生成元数据
     metadata = {
         "version": current_version,
         "timestamp": datetime.now(UTC).isoformat(),
         "item_count": len(combined),
-        "data_hash": generate_item_hash(combined)
+        "data_hash": generate_data_hash(combined)
     }
 
-    # 保存文件
     output = {
         "metadata": metadata,
         "data": combined
     }
-    
-    with open('item-list-8-2-0.json', 'w', encoding='utf-8') as f:
+
+    with open('item-list.json', 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
+
 
 if __name__ == "__main__":
     main()

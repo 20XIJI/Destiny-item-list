@@ -2,34 +2,15 @@ import requests
 import json
 import os
 import time
-import hashlib
 from datetime import datetime, UTC
 
-# 环境变量和常量
+from utils import validate_api_key, get_manifest, get_manifest_version, generate_data_hash
+
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
-MANIFEST_URL = 'https://www.bungie.net/Platform/Destiny2/Manifest/'
 LANG_LIST = ['zh-chs', 'en']
 ITEM_CATEGORY_FILTER = [1, 20, 39, 40, 41, 42, 43, 59, 1112488720, 2088636411]
 ITEM_CATEGORY_FILTER_DEL = [44, 1742617626]
 OUTPUT_FILE_NAME = 'Destiny2_term.json'
-METADATA_FILE_NAME = 'metadata_test.json'
-
-def get_manifest_version():
-    """获取当前Manifest版本"""
-    print("获取Manifest版本...")
-    response = requests.get(MANIFEST_URL, headers={'X-API-Key': BUNGIE_API_KEY})
-    response.raise_for_status()
-    return response.json()['Response']['version']
-
-def fetch_manifest_data():
-    """获取Destiny 2 Manifest数据"""
-    print("获取Manifest数据...")
-    headers = {'X-API-Key': BUNGIE_API_KEY}
-    response = requests.get(MANIFEST_URL, headers=headers)
-    response.raise_for_status()
-    manifest = response.json()
-    print("Manifest数据获取成功")
-    return manifest
 
 def fetch_and_extract_data(manifest, definition_types, lang_list, item_filter=None, item_filter_del=None):
     """
@@ -113,13 +94,13 @@ def transform_and_sort_data(data_list):
 
     # 加载本地数据
     try:
-        with open('myself.json', 'r', encoding='utf-8') as file:
+        with open('custom_terms.json', 'r', encoding='utf-8') as file:
             local_data = json.load(file)
     except FileNotFoundError:
-        print("警告: 未找到'myself.json'，将继续处理而不使用本地数据")
+        print("警告: 未找到'custom_terms.json'，将继续处理而不使用本地数据")
         local_data = {}
     except json.JSONDecodeError:
-        print("警告: 'myself.json'包含无效的JSON，将继续处理而不使用本地数据")
+        print("警告: 'custom_terms.json'包含无效的JSON，将继续处理而不使用本地数据")
         local_data = {}
 
     # 合并所有字典
@@ -151,10 +132,6 @@ def transform_and_sort_data(data_list):
     print("数据转换和排序完成")
     return sorted_data
 
-def generate_data_hash(data):
-    """生成数据哈希用于检测变更"""
-    return hashlib.sha256(json.dumps(data, sort_keys=True, ensure_ascii=False).encode('utf-8')).hexdigest()
-
 def save_merged_json(metadata, data, output_file):
     """保存合并后的JSON数据到文件"""
     print(f"保存合并后的JSON数据到文件: {output_file}...")
@@ -169,16 +146,12 @@ def save_merged_json(metadata, data, output_file):
 def main():
     start_time = datetime.now(UTC)
 
-    # 检查API密钥
-    if not BUNGIE_API_KEY:
-        raise EnvironmentError("请设置环境变量 BUNGIE_API_KEY")
+    validate_api_key(BUNGIE_API_KEY)
 
-    # 获取当前Manifest版本
-    current_version = get_manifest_version()
+    current_version = get_manifest_version(BUNGIE_API_KEY)
     print(f"当前 Manifest 版本: {current_version}")
 
-    # 获取Manifest数据
-    manifest = fetch_manifest_data()
+    manifest = get_manifest(BUNGIE_API_KEY)
 
     # 定义要处理的定义类型列表
     definition_types = [
