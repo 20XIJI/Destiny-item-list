@@ -2,7 +2,7 @@ import requests
 import json
 import os
 import time
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 
 from utils import validate_api_key, get_manifest, get_manifest_version, generate_data_hash
 
@@ -144,7 +144,7 @@ def save_merged_json(metadata, data, output_file):
     print(f"数据已保存到 {output_file}")
 
 def main():
-    start_time = datetime.now(UTC)
+    start_time = datetime.now(timezone.utc)
 
     validate_api_key(BUNGIE_API_KEY)
 
@@ -188,7 +188,7 @@ def main():
     # 保存合并后的JSON数据（包含元数据）
     save_merged_json(metadata, transformed_data, OUTPUT_FILE_NAME)
 
-    end_time = datetime.now(UTC)
+    end_time = datetime.now(timezone.utc)
     duration = end_time - start_time
     print(f"数据处理完成! 总耗时: {duration}")
 

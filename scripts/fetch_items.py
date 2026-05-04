@@ -1,7 +1,7 @@
 import json
 import os
 import requests
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 
 from utils import validate_api_key, get_manifest, generate_data_hash
 
@@ -37,7 +37,7 @@ def main():
 
     metadata = {
         "version": current_version,
-        "timestamp": datetime.now(UTC).isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "item_count": len(combined),
         "data_hash": generate_data_hash(combined)
     }
