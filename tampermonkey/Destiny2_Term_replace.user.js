@@ -1136,6 +1136,7 @@
     }
 
     function performReplace(rules) {
+        if (!rules.length) return 0;
         const regex = buildRegex(rules);
         const lowerMap = new Map(rules.map(([k, v]) => [k.toLowerCase(), v]));
         const snapshot = [];
@@ -1151,8 +1152,8 @@
             if (replaced !== original) {
                 snapshot.push({ node, text: original });
                 node.nodeValue = replaced;
+                processedNodes.add(node);
             }
-            processedNodes.add(node);
         }
 
         if (snapshot.length) {
@@ -1174,7 +1175,10 @@
         if (replacementHistory.length) {
             const last = replacementHistory.pop();
             last.forEach(({ node, text }) => {
-                if (node.parentNode) node.nodeValue = text;
+                if (node.parentNode) {
+                    node.nodeValue = text;
+                    processedNodes.delete(node);
+                }
             });
             document.getElementById('d2trBtnUndo').disabled = !replacementHistory.length;
             showToast('已撤销上次替换');

@@ -329,6 +329,7 @@
     let itemLookupMap = new Map();
     let processedElements = new WeakSet();
     let isDataReady = false;
+    const ORIGINAL_TEXT_KEY = 'lggOriginalText';
 
     function throttle(func, limit) {
         let inThrottle;
@@ -371,14 +372,31 @@
         console.log(`[Light.gg 双语工具] 构建查找映射表完成，包含 ${itemLookupMap.size} 个条目`);
     }
 
+    function parseCachedTermMap(cached) {
+        if (!cached) return { data: {} };
+        try {
+            return JSON.parse(cached);
+        } catch (error) {
+            console.warn('[Light.gg 双语工具] 缓存解析失败，已忽略缓存:', error);
+            return { data: {} };
+        }
+    }
+
     function rebuildLookupMap() {
         const cached = GM_getValue(CACHE_KEY);
         if (cached) {
-            const data = JSON.parse(cached);
+            const data = parseCachedTermMap(cached);
             buildLookupMap(data);
             processedElements = new WeakSet();
             optimizedTransformReviewItems();
         }
+    }
+
+    function getOriginalText(element) {
+        if (element.dataset && element.dataset[ORIGINAL_TEXT_KEY]) {
+            return element.dataset[ORIGINAL_TEXT_KEY];
+        }
+        return element.textContent.trim().split(' | ')[0].trim();
     }
 
     async function loadItemList() {
@@ -394,36 +412,44 @@
             } catch (error) {
                 console.error('[Light.gg 双语工具] 更新失败:', error);
                 const cached = GM_getValue(CACHE_KEY);
-                cachedTermMap = cached ? JSON.parse(cached) : { data: {} };
+                cachedTermMap = parseCachedTermMap(cached);
                 createNotification('数据更新失败，已使用缓存数据', 'warning');
             }
         } else {
             const cached = GM_getValue(CACHE_KEY);
-            cachedTermMap = cached ? JSON.parse(cached) : { data: {} };
+            cachedTermMap = parseCachedTermMap(cached);
         }
         buildLookupMap(cachedTermMap);
         isDataReady = true;
         dataStatus = 'ready';
         statusDot.className = 'lgg-status-dot ready';
         console.log(`[Light.gg 双语工具] 数据加载完成，包含 ${itemLookupMap.size / 2} 个术语`);
+        optimizedTransformReviewItems();
         return cachedTermMap;
     }
 
     /* === DOM 处理 === */
     function processElements(elements) {
-        const newElements = Array.from(elements).filter(el => !processedElements.has(el));
+        const newElements = Array.from(elements);
         if (newElements.length === 0) return;
         let processedCount = 0;
         newElements.forEach(element => {
-            const originalText = element.textContent.trim();
+            const originalText = getOriginalText(element);
             const translatedName = itemLookupMap.get(originalText.toLowerCase());
             if (translatedName) {
                 const otherText = translatedName;
                 if (otherText && otherText !== originalText) {
+                    if (element.dataset) element.dataset[ORIGINAL_TEXT_KEY] = originalText;
                     element.textContent = `${originalText} | ${otherText}`;
-                    processedElements.add(element);
-                    processedCount++;
+                    if (!processedElements.has(element)) {
+                        processedElements.add(element);
+                        processedCount++;
+                    }
                 }
+            } else if (element.dataset && element.dataset[ORIGINAL_TEXT_KEY]) {
+                element.textContent = originalText;
+                delete element.dataset[ORIGINAL_TEXT_KEY];
+                processedElements.delete(element);
             }
         });
         if (processedCount > 0) {
@@ -434,11 +460,12 @@
     function optimizedTransformReviewItems() {
         if (isPaused) return;
         const elements = document.querySelectorAll('.item-name h2, .item-name a, .key-perk strong');
-        if (isDataReady && itemLookupMap.size > 0) {
-            processElements(elements);
-        } else {
-            itemListPromise.then(() => processElements(elements));
+        if (isDataReady) {
+            if (itemLookupMap.size > 0) processElements(elements);
+            return;
         }
+        if (typeof itemListPromise === 'undefined') return;
+        itemListPromise.then(() => processElements(elements));
     }
 
     /* === XHR 拦截 === */
@@ -646,9 +673,11 @@
     });
 
     /* === 初始化 === */
-    window.addEventListener('load', () => {
-        originalLang = lggTooltip.lang;
-        if (setTooltipLang) lggTooltip.lang = bilingualLang;
+    function initPageBehavior() {
+        if (typeof lggTooltip !== 'undefined') {
+            originalLang = lggTooltip.lang;
+            if (setTooltipLang) lggTooltip.lang = bilingualLang;
+        }
 
         // 首次安装引导
         if (!GM_getValue(WELCOME_KEY)) {
@@ -666,6 +695,12 @@
         const reviewTab = document.getElementById('review-tab');
         reviewTab?.click();
         optimizedTransformReviewItems();
-    });
+    }
+
+    if (document.readyState === 'loading') {
+        window.addEventListener('load', initPageBehavior);
+    } else {
+        initPageBehavior();
+    }
 
 })();
