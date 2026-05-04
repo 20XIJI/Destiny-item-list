@@ -179,6 +179,14 @@ test('Destiny empty rules do not scan or replace text', () => {
     assert.equal(scanned, false);
 });
 
+test('Destiny script does not use Trusted Types blocked HTML sinks', () => {
+    const source = readScript('tampermonkey/Destiny2_Term_replace.user.js');
+
+    assert.doesNotMatch(source, /\.innerHTML\s*=/);
+    assert.doesNotMatch(source, /\.outerHTML\s*=/);
+    assert.doesNotMatch(source, /\.insertAdjacentHTML\s*\(/);
+});
+
 function createLightElement(text) {
     return {
         textContent: text,

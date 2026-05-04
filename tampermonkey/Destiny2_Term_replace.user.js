@@ -66,6 +66,27 @@
         };
     }
 
+    function clearElement(el) {
+        while (el.firstChild) el.removeChild(el.firstChild);
+    }
+
+    function createSectionHeader(title) {
+        const header = document.createElement('div');
+        header.className = 'd2tr-section-header';
+
+        const titleSpan = document.createElement('span');
+        titleSpan.className = 'd2tr-section-title';
+        titleSpan.textContent = title;
+
+        const arrowSpan = document.createElement('span');
+        arrowSpan.className = 'd2tr-section-arrow';
+        arrowSpan.textContent = '▼';
+
+        header.appendChild(titleSpan);
+        header.appendChild(arrowSpan);
+        return header;
+    }
+
     /* === 变体生成 === */
     function addVariants(map, source, target) {
         map.set(source, target);
@@ -600,7 +621,7 @@
     /* === 创建悬浮按钮 === */
     const fab = document.createElement('button');
     fab.className = 'd2tr-fab' + (isPaused ? ' paused' : '');
-    fab.innerHTML = 'D2';
+    fab.textContent = 'D2';
     fab.title = '命运2术语替换';
 
     const statusDot = document.createElement('div');
@@ -616,7 +637,15 @@
     // 头部
     const header = document.createElement('div');
     header.className = 'd2tr-header';
-    header.innerHTML = '<span class="d2tr-header-title">命运2术语替换</span><span class="d2tr-header-meta" id="d2trTermCount">加载中...</span>';
+    const headerTitle = document.createElement('span');
+    headerTitle.className = 'd2tr-header-title';
+    headerTitle.textContent = '命运2术语替换';
+    const headerMeta = document.createElement('span');
+    headerMeta.className = 'd2tr-header-meta';
+    headerMeta.id = 'd2trTermCount';
+    headerMeta.textContent = '加载中...';
+    header.appendChild(headerTitle);
+    header.appendChild(headerMeta);
     panel.appendChild(header);
 
     /* --- Section: 语言设置 --- */
@@ -624,9 +653,7 @@
         const section = document.createElement('div');
         section.className = 'd2tr-section open';
 
-        const secHeader = document.createElement('div');
-        secHeader.className = 'd2tr-section-header';
-        secHeader.innerHTML = '<span class="d2tr-section-title">语言设置</span><span class="d2tr-section-arrow">▼</span>';
+        const secHeader = createSectionHeader('语言设置');
         secHeader.addEventListener('click', () => section.classList.toggle('open'));
         section.appendChild(secHeader);
 
@@ -658,7 +685,7 @@
         tgtLabel.textContent = '到';
         const swapBtn = document.createElement('button');
         swapBtn.className = 'd2tr-swap-btn';
-        swapBtn.innerHTML = '⇄';
+        swapBtn.textContent = '⇄';
         swapBtn.title = '交换源语言和目标语言';
         const tgtSelect = document.createElement('select');
         tgtSelect.id = 'd2trLangTarget';
@@ -711,9 +738,7 @@
         const section = document.createElement('div');
         section.className = 'd2tr-section open';
 
-        const secHeader = document.createElement('div');
-        secHeader.className = 'd2tr-section-header';
-        secHeader.innerHTML = '<span class="d2tr-section-title">替换模式</span><span class="d2tr-section-arrow">▼</span>';
+        const secHeader = createSectionHeader('替换模式');
         secHeader.addEventListener('click', () => section.classList.toggle('open'));
         section.appendChild(secHeader);
 
@@ -773,9 +798,7 @@
         const section = document.createElement('div');
         section.className = 'd2tr-section';
 
-        const secHeader = document.createElement('div');
-        secHeader.className = 'd2tr-section-header';
-        secHeader.innerHTML = '<span class="d2tr-section-title">自定义术语</span><span class="d2tr-section-arrow">▼</span>';
+        const secHeader = createSectionHeader('自定义术语');
         secHeader.addEventListener('click', () => section.classList.toggle('open'));
         section.appendChild(secHeader);
 
@@ -806,11 +829,20 @@
         // 批量添加面板
         const batchPanel = document.createElement('div');
         batchPanel.style.display = 'none';
-        batchPanel.innerHTML = `
-            <p style="font-size:11px;color:var(--destiny-text-muted);margin:0 0 6px;line-height:1.4;">
-                每行一条，使用 <code style="background:rgba(0,212,255,0.1);padding:1px 4px;border-radius:3px;color:var(--destiny-tech);font-size:11px;">=</code> 或
-                <code style="background:rgba(0,212,255,0.1);padding:1px 4px;border-radius:3px;color:var(--destiny-tech);font-size:11px;">|</code> 分隔
-            </p>`;
+        const batchHint = document.createElement('p');
+        batchHint.style.cssText = 'font-size:11px;color:var(--destiny-text-muted);margin:0 0 6px;line-height:1.4;';
+        batchHint.appendChild(document.createTextNode('每行一条，使用 '));
+        const eqCode = document.createElement('code');
+        eqCode.style.cssText = 'background:rgba(0,212,255,0.1);padding:1px 4px;border-radius:3px;color:var(--destiny-tech);font-size:11px;';
+        eqCode.textContent = '=';
+        batchHint.appendChild(eqCode);
+        batchHint.appendChild(document.createTextNode(' 或 '));
+        const pipeCode = document.createElement('code');
+        pipeCode.style.cssText = 'background:rgba(0,212,255,0.1);padding:1px 4px;border-radius:3px;color:var(--destiny-tech);font-size:11px;';
+        pipeCode.textContent = '|';
+        batchHint.appendChild(pipeCode);
+        batchHint.appendChild(document.createTextNode(' 分隔'));
+        batchPanel.appendChild(batchHint);
         const batchArea = document.createElement('textarea');
         batchArea.className = 'd2tr-batch-area';
         batchArea.placeholder = '在此粘贴术语映射...';
@@ -976,6 +1008,11 @@
         }, 200);
         GM_setValue(PANEL_OPEN_KEY, false);
     }
+
+    GM_registerMenuCommand('打开/关闭术语面板', () => {
+        if (panelOpen) closePanel();
+        else openPanel();
+    });
 
     fab.addEventListener('click', () => {
         if (panelOpen) closePanel();
@@ -1196,16 +1233,30 @@
         const startIdx = (currentPage - 1) * itemsPerPage;
         const pageEntries = filtered.slice(startIdx, startIdx + itemsPerPage);
 
-        listContainer.innerHTML = '';
+        clearElement(listContainer);
         if (!pageEntries.length) {
-            listContainer.innerHTML = '<div style="text-align:center;color:var(--destiny-text-muted);padding:16px;font-size:12px;">无匹配结果</div>';
+            const empty = document.createElement('div');
+            empty.style.cssText = 'text-align:center;color:var(--destiny-text-muted);padding:16px;font-size:12px;';
+            empty.textContent = '无匹配结果';
+            listContainer.appendChild(empty);
         } else {
             for (const [en, cn] of pageEntries) {
                 const row = document.createElement('div');
                 row.className = 'd2tr-term-item';
                 const textSpan = document.createElement('span');
                 textSpan.className = 'd2tr-term-text';
-                textSpan.innerHTML = `<span style="color:var(--destiny-tech)">${en}</span> <span style="color:var(--destiny-text-muted)">→</span> <span style="color:var(--destiny-accent)">${cn}</span>`;
+                const sourceSpan = document.createElement('span');
+                sourceSpan.style.color = 'var(--destiny-tech)';
+                sourceSpan.textContent = en;
+                const arrowSpan = document.createElement('span');
+                arrowSpan.style.color = 'var(--destiny-text-muted)';
+                arrowSpan.textContent = ' → ';
+                const targetSpan = document.createElement('span');
+                targetSpan.style.color = 'var(--destiny-accent)';
+                targetSpan.textContent = cn;
+                textSpan.appendChild(sourceSpan);
+                textSpan.appendChild(arrowSpan);
+                textSpan.appendChild(targetSpan);
                 const delBtn = document.createElement('button');
                 delBtn.className = 'd2tr-term-del';
                 delBtn.textContent = '×';
@@ -1219,7 +1270,7 @@
             }
         }
 
-        pageControls.innerHTML = '';
+        clearElement(pageControls);
         if (totalPages > 1) {
             const mkBtn = (txt, dis, fn) => {
                 const b = document.createElement('button');
