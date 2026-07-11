@@ -5,7 +5,7 @@ import sys
 from datetime import datetime, timezone
 
 from utils import validate_api_key, get_manifest
-from builders import term_map_builder, items_full_builder
+from builders import term_map_builder
 
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
 LANG_LIST = ['en', 'zh-chs', 'zh-cht']
@@ -88,10 +88,6 @@ def main():
     print('\n正在构建 term-map.json...')
     term_map = term_map_builder.build(manifest_data, version)
     save_json(term_map, 'term-map.json')
-
-    print('\n正在构建 items-full.json...')
-    items_full = items_full_builder.build(manifest_data, version)
-    save_json(items_full, 'items-full.json')
 
     duration = datetime.now(timezone.utc) - start_time
     print(f'\n完成! 总耗时: {duration}')

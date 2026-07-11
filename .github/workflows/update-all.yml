@@ -1,9 +1,15 @@
 name: Update All Data
 
 on:
-  schedule:
-    - cron: '30 17 * * *' # 每天UTC时间17点30分运行，对应中国时间凌晨1点30分
+  # 游戏进入长期停更期，自动更新暂时关闭；需要时取消下方注释或手动触发
+  # schedule:
+  #   - cron: '30 17 1,15 * *' # 每月 1 号与 15 号 UTC 17:30（北京 01:30），约每两周一次
   workflow_dispatch:
+
+env:
+  # build_dataset.py 需要的表(改动读表时同步更新，见该脚本头部说明)
+  EN_TABLES: DestinyInventoryItemDefinition,DestinyInventoryBucketDefinition,DestinyItemCategoryDefinition,DestinyDamageTypeDefinition,DestinyActivityTypeDefinition,DestinyActivityModeDefinition,DestinyPlaceDefinition,DestinyDestinationDefinition,DestinyActivityModifierDefinition,DestinyProgressionDefinition,DestinyPresentationNodeDefinition,DestinyFactionDefinition,DestinyCollectibleDefinition,DestinyLoreDefinition,DestinyObjectiveDefinition,DestinyActivityDefinition,DestinyVendorDefinition,DestinyRecordDefinition,DestinySeasonDefinition,DestinyMilestoneDefinition,DestinyGlobalConstantsDefinition
+  ZH_TABLES: DestinyInventoryItemLiteDefinition,DestinyInventoryBucketDefinition,DestinyItemCategoryDefinition,DestinyDamageTypeDefinition,DestinyActivityTypeDefinition,DestinyActivityModeDefinition,DestinyPlaceDefinition,DestinyDestinationDefinition,DestinyActivityModifierDefinition,DestinyProgressionDefinition,DestinyPresentationNodeDefinition,DestinyFactionDefinition,DestinyCollectibleDefinition,DestinyLoreDefinition,DestinyObjectiveDefinition,DestinyActivityDefinition,DestinyVendorDefinition,DestinyRecordDefinition,DestinySeasonDefinition,DestinyMilestoneDefinition
 
 jobs:
   update-data:
@@ -22,15 +28,25 @@ jobs:
     - name: Install dependencies
       run: pip install -r scripts/requirements.txt
 
-    - name: Fetch manifest and build data
+    - name: Build term-map.json
       env:
         BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
       run: python scripts/fetch_manifest.py
+
+    - name: Download manifest tables (en + zh-chs)
+      env:
+        BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
+      run: |
+        MANIFEST_LANG=en     MANIFEST_ONLY="$EN_TABLES" python scripts/download_all_manifest.py
+        MANIFEST_LANG=zh-chs MANIFEST_ONLY="$ZH_TABLES" python scripts/download_all_manifest.py
+
+    - name: Build dataset (items-full + lore + lore-books)
+      run: python scripts/build_dataset.py
 
     - name: Commit changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add term-map.json items-full.json custom_terms.json
+        git add term-map.json items-full.json lore.json lore-books.json custom_terms.json
         git rm -f --ignore-unmatch item-list.json Destiny2_term.json
-        git diff --cached --quiet || (git commit -m "Auto-update item & term data [skip ci]" && git push origin HEAD:${{ github.ref }})
+        git diff --cached --quiet || (git commit -m "Auto-update dataset [skip ci]" && git push origin HEAD:${{ github.ref }})
