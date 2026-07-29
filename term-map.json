@@ -179902,11 +179902,6 @@
       }
     },
     "stats": {
-      "1935470627": {
-        "en": "Power",
-        "zh-chs": "能量",
-        "zh-cht": "力量"
-      },
       "3897883278": {
         "en": "Defense",
         "zh-chs": "防御",
@@ -201237,6 +201232,41 @@
         "en": "Balanced",
         "zh-chs": "平衡热量",
         "zh-cht": "平衡熱能"
+      },
+      "241": {
+        "en": "Trace rifle",
+        "zh-chs": "追踪步枪",
+        "zh-cht": "追蹤步槍"
+      },
+      "242": {
+        "en": "Glaive",
+        "zh-chs": "偃月",
+        "zh-cht": "長戈"
+      },
+      "243": {
+        "en": "Bow",
+        "zh-chs": "弓箭",
+        "zh-cht": "弓箭"
+      },
+      "244": {
+        "en": "Grenade launcher",
+        "zh-chs": "榴弹发射器",
+        "zh-cht": "榴彈發射器"
+      },
+      "245": {
+        "en": "Disruption",
+        "zh-chs": "干扰",
+        "zh-cht": "干扰"
+      },
+      "246": {
+        "en": "breech",
+        "zh-chs": "后膛",
+        "zh-cht": "後填式"
+      },
+      "247": {
+        "en": "drum",
+        "zh-chs": "弹鼓",
+        "zh-cht": "彈鼓"
       }
     }
   }
