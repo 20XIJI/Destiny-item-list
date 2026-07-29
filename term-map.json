@@ -201132,6 +201132,101 @@
       "219": {
         "en": "Kell's Vengeance Rules",
         "zh-chs": "凯尔的复仇规则"
+      },
+      "220": {
+        "en": "Base",
+        "zh-chs": "基础",
+        "zh-cht": "基本"
+      },
+      "221": {
+        "en": "Adaptive",
+        "zh-chs": "适配",
+        "zh-cht": "適應"
+      },
+      "222": {
+        "en": "Aggressive",
+        "zh-chs": "攻击",
+        "zh-cht": "好戰"
+      },
+      "223": {
+        "en": "Rapid-Fire",
+        "zh-chs": "速射",
+        "zh-cht": "疾速開"
+      },
+      "224": {
+        "en": "High-Impact",
+        "zh-chs": "高冲击",
+        "zh-cht": "高傷"
+      },
+      "225": {
+        "en": "Lightweight",
+        "zh-chs": "轻质",
+        "zh-cht": "輕型"
+      },
+      "226": {
+        "en": "Precision",
+        "zh-chs": "精密",
+        "zh-cht": "精確"
+      },
+      "227": {
+        "en": "Pinpoint Slug",
+        "zh-chs": "精确重击",
+        "zh-cht": "精準重彈"
+      },
+      "228": {
+        "en": "Wave",
+        "zh-chs": "波形",
+        "zh-cht": "波數"
+      },
+      "229": {
+        "en": "Vortex",
+        "zh-chs": "涡流",
+        "zh-cht": "漩渦"
+      },
+      "230": {
+        "en": "Caster",
+        "zh-chs": "铸造",
+        "zh-cht": "模具"
+      },
+      "231": {
+        "en": "Legacy PR-55",
+        "zh-chs": "传承PR-5",
+        "zh-cht": "傳統PR-5"
+      },
+      "232": {
+        "en": "Compressed Wave",
+        "zh-chs": "压缩波形",
+        "zh-cht": "壓縮波數"
+      },
+      "233": {
+        "en": "Micro-Missile",
+        "zh-chs": "微型导弹",
+        "zh-cht": "微型导弹"
+      },
+      "234": {
+        "en": "Command",
+        "zh-chs": "指挥",
+        "zh-cht": "指揮"
+      },
+      "235": {
+        "en": "Wave Sword",
+        "zh-chs": "波形刀剑",
+        "zh-cht": "浪劍刀剑"
+      },
+      "236": {
+        "en": "Area Denial",
+        "zh-chs": "区域拒止",
+        "zh-cht": "區域否決"
+      },
+      "237": {
+        "en": "Support",
+        "zh-chs": "支援",
+        "zh-cht": "支援"
+      },
+      "239": {
+        "en": "Weapon Mods:",
+        "zh-chs": "武器模组",
+        "zh-cht": "武器模組"
       }
     }
   }
