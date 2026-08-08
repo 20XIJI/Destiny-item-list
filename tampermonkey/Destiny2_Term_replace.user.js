@@ -31,12 +31,39 @@
     const PAUSED_KEY = 'd2tr_paused';
     const WELCOME_KEY = 'hasShownWelcome_v5_panel';
     const PANEL_OPEN_KEY = 'd2tr_panel_open';
+    const DISABLED_BUCKETS_KEY = 'd2tr_disabled_buckets';
 
     const LANGUAGES = {
         'en': 'English',
         'zh-chs': '简体中文',
         'zh-cht': '繁體中文'
     };
+
+    // term-map.json 的词库分类。装饰品名（Help/Soon/Trust）和短词（Chill/Balance）多是日常英文，
+    // 开着会把整页普通文字也译掉，默认关闭；未列出的新分类一律默认启用。
+    const BUCKET_LABELS = {
+        items: '物品',
+        cosmetics: '装饰品',
+        partials: '短词/碎片',
+        perks: '特性',
+        activities: '活动',
+        activity_types: '活动类型',
+        activity_modes: '活动模式',
+        modifiers: '修改器',
+        destinations: '目的地',
+        stats: '属性',
+        categories: '分类',
+        damage_types: '伤害类型',
+        classes: '职业',
+        records: '成就',
+        npcs: 'NPC',
+        factions: '阵营',
+        milestones: '里程碑',
+        seasons: '赛季',
+        custom: '自定义'
+    };
+
+    const DEFAULT_DISABLED_BUCKETS = ['cosmetics', 'partials'];
 
     const ITEM_LIST_URL = 'https://20xiji.github.io/Destiny-item-list/term-map.json';
 
@@ -54,17 +81,7 @@
     let searchTerm = '';
     let processedNodes = new WeakSet();
     let dataStatus = 'loading'; // loading | ready | error
-
-    function throttle(func, limit) {
-        let inThrottle;
-        return function(...args) {
-            if (!inThrottle) {
-                func.apply(this, args);
-                inThrottle = true;
-                setTimeout(() => inThrottle = false, limit);
-            }
-        };
-    }
+    let disabledBuckets = new Set(GM_getValue(DISABLED_BUCKETS_KEY, DEFAULT_DISABLED_BUCKETS));
 
     function clearElement(el) {
         while (el.firstChild) el.removeChild(el.firstChild);
@@ -93,7 +110,9 @@
         if (langSource === 'en' && source.includes("'")) {
             map.set(source.replace(/'/g, '’'), target);
         }
-        if (langSource === 'en' && source.startsWith('The ')) {
+        // 去掉 The 的变体只对多词名生效：`The Last Word` → `Last Word` 有用，
+        // 而 `The Doubt` → `Doubt` 会把正文里的 doubt 也译掉
+        if (langSource === 'en' && source.startsWith('The ') && source.slice(4).includes(' ')) {
             map.set(source.slice(4), target);
         }
     }
@@ -102,6 +121,7 @@
         const map = new Map();
         const buckets = termMapData.data || termMapData;
         for (const bucketName of Object.keys(buckets)) {
+            if (disabledBuckets.has(bucketName)) continue;
             const bucket = buckets[bucketName];
             for (const hashKey of Object.keys(bucket)) {
                 const entry = bucket[hashKey];
@@ -288,6 +308,27 @@
         }
         .d2tr-section.open .d2tr-section-body {
             display: block;
+        }
+
+        /* 词库分类开关 */
+        .d2tr-bucket-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 10px;
+        }
+        .d2tr-bucket-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            color: var(--destiny-text-muted);
+            cursor: pointer;
+            min-width: 68px;
+        }
+        .d2tr-bucket-item input {
+            accent-color: var(--destiny-accent);
+            cursor: pointer;
+            margin: 0;
         }
 
         /* 语言选择器 */
@@ -733,6 +774,49 @@
         return section;
     }
 
+    /* --- Section: 词库分类 --- */
+    function createBucketSection() {
+        const section = document.createElement('div');
+        section.className = 'd2tr-section';
+
+        const secHeader = createSectionHeader('词库分类');
+        secHeader.addEventListener('click', () => section.classList.toggle('open'));
+        section.appendChild(secHeader);
+
+        const body = document.createElement('div');
+        body.className = 'd2tr-section-body';
+
+        const grid = document.createElement('div');
+        grid.className = 'd2tr-bucket-grid';
+
+        for (const [name, label] of Object.entries(BUCKET_LABELS)) {
+            const item = document.createElement('label');
+            item.className = 'd2tr-bucket-item';
+
+            const box = document.createElement('input');
+            box.type = 'checkbox';
+            box.checked = !disabledBuckets.has(name);
+            box.addEventListener('change', async () => {
+                if (box.checked) disabledBuckets.delete(name);
+                else disabledBuckets.add(name);
+                GM_setValue(DISABLED_BUCKETS_KEY, [...disabledBuckets]);
+                await reloadTermMap();
+                showToast(`${label}词库已${box.checked ? '启用' : '关闭'}`);
+            });
+
+            const text = document.createElement('span');
+            text.textContent = label;
+
+            item.appendChild(box);
+            item.appendChild(text);
+            grid.appendChild(item);
+        }
+
+        body.appendChild(grid);
+        section.appendChild(body);
+        return section;
+    }
+
     /* --- Section: 替换模式 --- */
     function createModeSection() {
         const section = document.createElement('div');
@@ -964,10 +1048,12 @@
 
     /* === 组装面板 === */
     const langSection = createLangSection();
+    const bucketSection = createBucketSection();
     const modeSection = createModeSection();
     const termSection = createTermSection();
 
     panel.appendChild(langSection);
+    panel.appendChild(bucketSection);
     panel.appendChild(modeSection);
     panel.appendChild(termSection);
     document.body.appendChild(panel);
@@ -1174,22 +1260,120 @@
 
     function performReplace(rules) {
         if (!rules.length) return 0;
+
+        // 词条与页面文本都折成"单空格 + 小写"再查表，两侧口径必须一致（见 buildRegex）
+        const normalize = (s) => s.toLowerCase().replace(/\s+/g, ' ').trim();
+
         const regex = buildRegex(rules);
-        const lowerMap = new Map(rules.map(([k, v]) => [k.toLowerCase(), v]));
+        const lowerMap = new Map(rules.map(([k, v]) => [normalize(k), v]));
         const snapshot = [];
         const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'CODE', 'PRE', 'TEXTAREA', 'NOSCRIPT']);
+        const BLOCK_TAGS = new Set([
+            'ADDRESS', 'ARTICLE', 'ASIDE', 'BLOCKQUOTE', 'BODY', 'BUTTON', 'DD', 'DIV', 'DL', 'DT',
+            'FIELDSET', 'FIGCAPTION', 'FIGURE', 'FOOTER', 'FORM', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
+            'HEADER', 'LABEL', 'LI', 'MAIN', 'NAV', 'OL', 'OPTION', 'P', 'SECTION', 'SELECT',
+            'TABLE', 'TBODY', 'TD', 'TFOOT', 'TH', 'THEAD', 'TR', 'UL'
+        ]);
+
+        // 最近的块级祖先：同一块内的文本节点拼起来匹配，跨块不拼（相邻单元格不会连成一句）
+        function blockOf(el) {
+            let cur = el;
+            while (cur && !BLOCK_TAGS.has(cur.nodeName)) cur = cur.parentNode;
+            return cur || null;
+        }
+
+        /* 一、按块分组收集文本节点，元素边界补合成空白（node 为 null，不回写） */
+        const groups = [];
+        let parts = null;
+        let block;
+        let prev = null;
 
         const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
         while (walker.nextNode()) {
             const node = walker.currentNode;
-            if (processedNodes.has(node)) continue;
-            if (SKIP_TAGS.has(node.parentNode && node.parentNode.nodeName)) continue;
-            const original = node.nodeValue;
-            const replaced = original.replace(regex, (m) => lowerMap.get(m.toLowerCase()) ?? m);
-            if (replaced !== original) {
-                snapshot.push({ node, text: original });
-                node.nodeValue = replaced;
-                processedNodes.add(node);
+            const parent = node.parentNode;
+            const skip = processedNodes.has(node)
+                || SKIP_TAGS.has(parent && parent.nodeName)
+                || (parent && parent.closest && parent.closest('.d2tr-panel, .d2tr-fab, .d2tr-toast'));
+            if (skip) { parts = null; prev = null; continue; }
+
+            const nodeBlock = blockOf(parent);
+            if (!parts || nodeBlock !== block) {
+                parts = [];
+                groups.push(parts);
+                block = nodeBlock;
+            } else if (node.previousSibling !== prev) {
+                // 中间隔着 <br> 或 </span><span>，补空白免得 Fever + and 粘成 Feverand
+                parts.push({ node: null, text: ' ' });
+            }
+            parts.push({ node, text: node.nodeValue });
+            prev = node;
+        }
+
+        /* 二、逐组拼接匹配，命中从右往左回写（保证左侧偏移不失效） */
+        for (const group of groups) {
+            const starts = [];
+            let full = '';
+            for (const part of group) {
+                starts.push(full.length);
+                full += part.text;
+            }
+
+            // 把连续空白折成单空格再匹配，换行/&nbsp;/多空格都能命中词条里的空格。
+            // 不能改用 \s+ 正则：两万个分支加上可变长量词，扫描会慢二十倍。
+            // offsets[i] 记下归一化后第 i 个字符在 full 里的下标，命中后映射回原串。
+            let norm = '';
+            const offsets = [];
+            let inSpace = false;
+            for (let i = 0; i < full.length; i++) {
+                const ch = full[i];
+                const isSpace = ch === ' ' || ch === '\n' || ch === '\t' || ch === '\r' || ch === ' ' || ch === '\f' || ch === '\v';
+                if (isSpace && inSpace) continue;
+                norm += isSpace ? ' ' : ch;
+                offsets.push(i);
+                inSpace = isSpace;
+            }
+            offsets.push(full.length);
+
+            const matches = [];
+            regex.lastIndex = 0;
+            let m;
+            while ((m = regex.exec(norm)) !== null) {
+                const replacement = lowerMap.get(normalize(m[0]));
+                if (replacement !== undefined) {
+                    matches.push({
+                        start: offsets[m.index],
+                        end: offsets[m.index + m[0].length],
+                        replacement
+                    });
+                }
+                if (m.index === regex.lastIndex) regex.lastIndex++;
+            }
+            if (!matches.length) continue;
+
+            const edits = new Map();
+            for (let i = matches.length - 1; i >= 0; i--) {
+                const { start, end, replacement } = matches[i];
+                let first = true;
+                for (let j = 0; j < group.length; j++) {
+                    const part = group[j];
+                    const partEnd = starts[j] + part.text.length;
+                    if (!part.node || partEnd <= start || starts[j] >= end) continue;
+                    // 整段译文落在首个被覆盖的节点，其余节点把覆盖区间清空
+                    const from = start > starts[j] ? start - starts[j] : 0;
+                    const to = end - starts[j] < part.text.length ? end - starts[j] : part.text.length;
+                    const cur = edits.has(j) ? edits.get(j) : part.text;
+                    edits.set(j, cur.slice(0, from) + (first ? replacement : '') + cur.slice(to));
+                    first = false;
+                }
+            }
+
+            for (const [j, text] of edits) {
+                const part = group[j];
+                if (text === part.text) continue;
+                snapshot.push({ node: part.node, text: part.text });
+                part.node.nodeValue = text;
+                processedNodes.add(part.node);
             }
         }
 
@@ -1202,10 +1386,13 @@
     }
 
     function buildRegex(rules) {
-        const sortedKeys = [...new Set(rules.map(([k]) => k))]
+        // 词条里的空白同样折成单空格，与 performReplace 归一化后的文本对齐
+        const keys = [...new Set(rules.map(([k]) => k.replace(/\s+/g, ' ').trim()))]
             .sort((a, b) => b.length - a.length)
             .map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-        return new RegExp(`\\b(${sortedKeys.join('|')})\\b`, 'gi');
+        const body = `(${keys.join('|')})`;
+        // 无 u 标志时 \b 走 ASCII 词字符语义，中文词条两端都不是词字符，套上就永远匹配不上
+        return new RegExp(langSource === 'en' ? `\\b${body}\\b` : body, 'gi');
     }
 
     function undoReplace() {

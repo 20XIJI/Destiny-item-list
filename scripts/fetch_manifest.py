@@ -10,19 +10,8 @@ from builders import term_map_builder
 BUNGIE_API_KEY = os.getenv('BUNGIE_API_KEY')
 LANG_LIST = ['en', 'zh-chs', 'zh-cht']
 
-ALL_DEFINITION_TYPES = [
-    'DestinyInventoryItemDefinition',
-    'DestinyActivityDefinition',
-    'DestinyActivityTypeDefinition',
-    'DestinyActivityModeDefinition',
-    'DestinyActivityModifierDefinition',
-    'DestinyDestinationDefinition',
-    'DestinyStatDefinition',
-    'DestinySandboxPerkDefinition',
-    'DestinyItemCategoryDefinition',
-    'DestinyDamageTypeDefinition',
-    'DestinyClassDefinition',
-]
+# 与 builders/term_map_builder.py 的 DEFINITION_BUCKET_MAP 一一对应，改一处要同步另一处
+ALL_DEFINITION_TYPES = list(term_map_builder.DEFINITION_BUCKET_MAP)
 
 DOWNLOAD_DELAY = 1.5
 
@@ -47,6 +36,7 @@ def download_definitions(manifest, definition_types, lang_list):
 
             try:
                 import requests
+
                 response = requests.get(url, headers={'X-API-Key': BUNGIE_API_KEY}, timeout=60)
                 response.raise_for_status()
                 data = response.json()

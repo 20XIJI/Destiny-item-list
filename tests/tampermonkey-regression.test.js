@@ -60,6 +60,7 @@ test('Destiny term replacement can be applied again after undo restores text', (
         WeakSet,
         Map,
         RegExp,
+        langSource: 'en',
         replacementHistory: [],
         HISTORY_LIMIT: 20,
         processedNodes: new WeakSet(),
@@ -92,6 +93,7 @@ test('Destiny undo only makes restored nodes eligible for replacement', () => {
         WeakSet,
         Map,
         RegExp,
+        langSource: 'en',
         replacementHistory: [],
         HISTORY_LIMIT: 20,
         processedNodes: new WeakSet(),
@@ -128,6 +130,7 @@ test('Destiny no-match scan does not block later matching rules', () => {
         WeakSet,
         Map,
         RegExp,
+        langSource: 'en',
         replacementHistory: [],
         HISTORY_LIMIT: 20,
         processedNodes: new WeakSet()
@@ -163,6 +166,7 @@ test('Destiny empty rules do not scan or replace text', () => {
         WeakSet,
         Map,
         RegExp,
+        langSource: 'en',
         replacementHistory: [],
         HISTORY_LIMIT: 20,
         processedNodes: new WeakSet()
@@ -177,6 +181,83 @@ test('Destiny empty rules do not scan or replace text', () => {
 
     assert.equal(context.count, 0);
     assert.equal(scanned, false);
+});
+
+function createDestinyContext(nodes) {
+    return {
+        document: createTextDocument(nodes),
+        NodeFilter: { SHOW_TEXT: 4 },
+        Set,
+        WeakSet,
+        Map,
+        RegExp,
+        langSource: 'en',
+        replacementHistory: [],
+        HISTORY_LIMIT: 20,
+        processedNodes: new WeakSet()
+    };
+}
+
+function runPerformReplace(context, rules) {
+    const source = readScript('tampermonkey/Destiny2_Term_replace.user.js');
+    vm.createContext(context);
+    context.rules = rules;
+    vm.runInContext(`
+        ${extractFunction(source, 'performReplace')}
+        ${extractFunction(source, 'buildRegex')}
+        this.count = performReplace(rules);
+    `, context);
+    return context.count;
+}
+
+test('Destiny term with a space matches text broken by a newline', () => {
+    // 表格单元格里的手动换行：词条的空格必须能吃掉 \n、&nbsp; 与连续空格
+    const node = createTextNode('Fever\nand  Chill');
+    const count = runPerformReplace(createDestinyContext([node]), [['Fever and Chill', '发热寒颤']]);
+
+    assert.equal(count, 1);
+    assert.equal(node.nodeValue, '发热寒颤');
+});
+
+test('Destiny term matches across sibling elements inside one block', () => {
+    // <td><span>Fever </span>and <span>Chill</span></td>：译文整段落到首个节点，其余清空
+    const td = { nodeName: 'TD' };
+    const nodes = [
+        { nodeValue: 'Fever ', parentNode: { nodeName: 'SPAN', parentNode: td } },
+        { nodeValue: 'and ', parentNode: td },
+        { nodeValue: 'Chill', parentNode: { nodeName: 'SPAN', parentNode: td } }
+    ];
+    const count = runPerformReplace(createDestinyContext(nodes), [['Fever and Chill', '发热寒颤']]);
+
+    assert.equal(count, 3);
+    assert.equal(nodes[0].nodeValue, '发热寒颤');
+    assert.equal(nodes[1].nodeValue, '');
+    assert.equal(nodes[2].nodeValue, '');
+});
+
+test('Destiny term does not stitch text across block boundaries', () => {
+    // 相邻单元格的文字不能拼成一句，否则整张表格会被连锁误译
+    const nodes = [
+        { nodeValue: 'Fever ', parentNode: { nodeName: 'TD' } },
+        { nodeValue: 'and Chill', parentNode: { nodeName: 'TD' } }
+    ];
+    const count = runPerformReplace(createDestinyContext(nodes), [['Fever and Chill', '发热寒颤']]);
+
+    assert.equal(count, 0);
+    assert.equal(nodes[0].nodeValue, 'Fever ');
+    assert.equal(nodes[1].nodeValue, 'and Chill');
+});
+
+test('Destiny replacement keeps text outside the match intact', () => {
+    // 一个节点里多处命中：从右往左回写，左侧偏移不能失效
+    const node = createTextNode('Equip Thorn then Gjallarhorn now');
+    const count = runPerformReplace(createDestinyContext([node]), [
+        ['Thorn', '荆棘'],
+        ['Gjallarhorn', '加拉尔号角']
+    ]);
+
+    assert.equal(count, 1);
+    assert.equal(node.nodeValue, 'Equip 荆棘 then 加拉尔号角 now');
 });
 
 test('Destiny script does not use Trusted Types blocked HTML sinks', () => {
