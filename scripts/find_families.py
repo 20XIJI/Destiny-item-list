@@ -92,7 +92,10 @@ def analyse(key, members, entries):
         en_part = en[: -len(shared)].strip() if at_end else en[len(shared) :].strip()
         matched = zh_const and (zh.endswith(zh_const) if zh_at_end else zh.startswith(zh_const))
         zh_part = (zh[: -len(zh_const)] if zh_at_end else zh[len(zh_const) :]).strip() if matched else ''
-        # 中文剩余不足两个字，多半是把词从中间切开了（`深` 会把"深度炼金"切成"度炼金"）
+        # 短词以虚词开头说明共享词切少了（`首 Spark` 会剥出 `of Amplitude`，该看 `首 Spark of`）；
+        # 中文剩余不足两个字则多半是把词从中间切开了（`深` 会把"深度炼金"切成"度炼金"）
+        if re.match(r'(of|the|to|and|for|in|on|a|an)\b', en_part, re.I):
+            en_part = ''
         if not en_part or len(zh_part) < 2:
             zh_part = None
         else:
