@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "244213.26.06.29.2000-1-bnet.65583",
-    "timestamp": "2026-08-08T14:06:49.235206+00:00",
-    "data_hash": "a559456f60b476544458d1058b921a7fb2e69a8e279773dd5b384aa10866f97a",
+    "timestamp": "2026-08-08T14:35:34.018031+00:00",
+    "data_hash": "c68caae19c58f4bc00dd687864c08e9c3650e1c918c1d2d820c097df7ef15fd2",
     "source": "Bungie Destiny 2 Manifest",
     "languages": [
       "en",
@@ -19,7 +19,6 @@
       "DestinyStatDefinition",
       "DestinySandboxPerkDefinition",
       "DestinyItemCategoryDefinition",
-      "DestinyDamageTypeDefinition",
       "DestinyClassDefinition",
       "DestinyRecordDefinition",
       "DestinyVendorDefinition",
@@ -200169,43 +200168,6 @@
         "zh-cht": "終結技"
       }
     },
-    "damage_types": {
-      "3373582085": {
-        "en": "Kinetic",
-        "zh-chs": "动能伤害",
-        "zh-cht": "動能傷害"
-      },
-      "2303181850": {
-        "en": "Arc",
-        "zh-chs": "电弧伤害",
-        "zh-cht": "電弧傷害"
-      },
-      "1847026933": {
-        "en": "Solar",
-        "zh-chs": "烈日伤害",
-        "zh-cht": "灼燒傷害"
-      },
-      "3454344768": {
-        "en": "Void",
-        "zh-chs": "虚空伤害",
-        "zh-cht": "虛空傷害"
-      },
-      "1067729826": {
-        "en": "Raid",
-        "zh-chs": "突袭",
-        "zh-cht": "掠奪任務"
-      },
-      "151347233": {
-        "en": "Stasis",
-        "zh-chs": "冰影",
-        "zh-cht": "冰凝"
-      },
-      "3949783978": {
-        "en": "Strand",
-        "zh-chs": "缚丝",
-        "zh-cht": "縈絲傷害"
-      }
-    },
     "classes": {
       "3655393761": {
         "en": "Titan",
@@ -226361,6 +226323,11 @@
         "en": "drum",
         "zh-chs": "弹鼓",
         "zh-cht": "彈鼓"
+      },
+      "216": {
+        "en": "Kinetic",
+        "zh-chs": "动能",
+        "zh-cht": "動能"
       }
     },
     "partials": {

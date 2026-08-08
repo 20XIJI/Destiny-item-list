@@ -53,7 +53,6 @@
         destinations: '目的地',
         stats: '属性',
         categories: '分类',
-        damage_types: '伤害类型',
         classes: '职业',
         records: '成就',
         npcs: 'NPC',

@@ -49,7 +49,9 @@ DEFINITION_BUCKET_MAP = {
     'DestinyStatDefinition': 'stats',
     'DestinySandboxPerkDefinition': 'perks',
     'DestinyItemCategoryDefinition': 'categories',
-    'DestinyDamageTypeDefinition': 'damage_types',
+    # DestinyDamageTypeDefinition 不收：整表只有 7 条，且译文都带「伤害」后缀
+    # （Arc → 电弧伤害），页面上的 Arc 多半指元素本身，items 桶里的 Arc → 电弧 才对。
+    # 唯一独占的 Kinetic 已写进 custom_terms.json。
     'DestinyClassDefinition': 'classes',
     'DestinyRecordDefinition': 'records',
     'DestinyVendorDefinition': 'npcs',

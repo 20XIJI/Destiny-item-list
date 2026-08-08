@@ -214,7 +214,8 @@
     "Grenade launcher": "榴弹发射器",
     "Disruption": "干扰",
     "breech": "后膛",
-    "drum": "弹鼓"
+    "drum": "弹鼓",
+    "Kinetic": "动能"
   },
   "zh-cht": {
     "Weapon Mods:": "武器模組",
@@ -224,7 +225,8 @@
     "Grenade launcher": "榴彈發射器",
     "Disruption": "干擾",
     "breech": "後填式",
-    "drum": "彈鼓"
+    "drum": "彈鼓",
+    "Kinetic": "動能"
   },
   "partials": {
     "zh-chs": {

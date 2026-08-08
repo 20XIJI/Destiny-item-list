@@ -38,7 +38,7 @@ python scripts/build_dataset.py                  # reads manifest_raw/ → items
 Two independent pipelines share `scripts/utils.py` (API-key check, manifest fetch with retry, data hashing) but produce different outputs from different execution models:
 
 **1. term-map pipeline** — `fetch_manifest.py` → `builders/term_map_builder.py` → `term-map.json`
-- Downloads 16 definition types × 3 langs (en, zh-chs, zh-cht) **in memory**, never touching disk. `ALL_DEFINITION_TYPES` is derived from `term_map_builder.DEFINITION_BUCKET_MAP`, so adding a table means editing only that map.
+- Downloads 15 definition types × 3 langs (en, zh-chs, zh-cht) **in memory**, never touching disk. `ALL_DEFINITION_TYPES` is derived from `term_map_builder.DEFINITION_BUCKET_MAP`, so adding a table means editing only that map.
 - `term_map_builder.build()` keeps only entries present in ≥2 languages, drops blacklisted item categories, routes decorative categories to a separate `cosmetics` bucket, applies `BUCKET_FILTERS` (vendors need a `subtitle` to count as an NPC) and `custom_terms.json`'s `_exclude` hash list, then appends the `custom` and `partials` buckets.
 - Output shape: `{metadata, data: {items, cosmetics, …, custom, partials}}`, each entry `{en, zh-chs, zh-cht}` (`zh-cht` optional).
 - **This is the only file the userscripts consume** — fetched from `https://20xiji.github.io/Destiny-item-list/term-map.json`.
