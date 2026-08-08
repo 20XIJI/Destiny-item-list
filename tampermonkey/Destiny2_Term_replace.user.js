@@ -31,7 +31,8 @@
     const PAUSED_KEY = 'd2tr_paused';
     const WELCOME_KEY = 'hasShownWelcome_v5_panel';
     const PANEL_OPEN_KEY = 'd2tr_panel_open';
-    const DISABLED_BUCKETS_KEY = 'd2tr_disabled_buckets';
+    // 改默认分类时给键号加一，让已经存过旧默认值的浏览器重新落到新默认上
+    const DISABLED_BUCKETS_KEY = 'd2tr_disabled_buckets_v2';
 
     const LANGUAGES = {
         'en': 'English',
@@ -39,8 +40,7 @@
         'zh-cht': '繁體中文'
     };
 
-    // term-map.json 的词库分类。装饰品名（Help/Soon/Trust）和短词（Chill/Balance）多是日常英文，
-    // 开着会把整页普通文字也译掉，默认关闭；未列出的新分类一律默认启用。
+    // term-map.json 的词库分类；未列出的新分类没有复选框，一律启用。
     const BUCKET_LABELS = {
         items: '物品',
         cosmetics: '装饰品',
@@ -62,7 +62,19 @@
         custom: '自定义'
     };
 
-    const DEFAULT_DISABLED_BUCKETS = ['cosmetics', 'partials'];
+    // 装饰品名（Help / Soon / Trust）是日常英文，成就与 NPC 条目多且长，默认都关掉
+    const DEFAULT_DISABLED_BUCKETS = ['cosmetics', 'records', 'npcs', 'factions', 'milestones'];
+
+    // 同一个英文在多个分类里译文不同时（Control 在 activities 是「占领」、在 activity_modes
+    // 是「占领模式」）由档位决定谁赢：档位数字小的优先级高，未列出的走 DEFAULT_TIER。
+    const BUCKET_TIERS = {
+        custom: 1,
+        activities: 3,
+        activity_types: 3,
+        activity_modes: 3,
+        destinations: 3
+    };
+    const DEFAULT_TIER = 2;
 
     const ITEM_LIST_URL = 'https://20xiji.github.io/Destiny-item-list/term-map.json';
 
@@ -132,8 +144,11 @@
         const map = new Map();
         const buckets = termMapData.data || termMapData;
         const pairs = [];
-        for (const bucketName of Object.keys(buckets)) {
-            if (disabledBuckets.has(bucketName)) continue;
+        // 低档位先写，高档位后写盖上去
+        const ordered = Object.keys(buckets)
+            .filter(name => !disabledBuckets.has(name))
+            .sort((a, b) => (BUCKET_TIERS[b] || DEFAULT_TIER) - (BUCKET_TIERS[a] || DEFAULT_TIER));
+        for (const bucketName of ordered) {
             const bucket = buckets[bucketName];
             for (const hashKey of Object.keys(bucket)) {
                 const entry = bucket[hashKey];

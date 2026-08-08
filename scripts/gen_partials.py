@@ -32,6 +32,8 @@ RULES = [
     (r'^Facet of (.+)$', ['琢面'], ['面向']),
     (r'^Thread of (.+)$', ['丝线'], ['之線']),
     (r'^Whisper of (.+)$', ['之吟', '的低语', '低语'], ['的低語', '低語']),
+    # 不收 `Season of X`：剥出的 Lost / Deep / Hunt / Wish / Chosen / Worthy 全是日常英文，
+    # 而 partials 默认开启，会把普通句子一起译掉，得不偿失。
 ]
 
 
@@ -102,6 +104,15 @@ def main():
     old_chs = partials.setdefault('zh-chs', {})
     old_cht = partials.setdefault('zh-cht', {})
 
+    # 手删没用，下次生成又写回来，所以剔除写在 _skip 里。
+    # 放这里的都是日常英文（lost / deep / hunt…），译了会把普通句子也带走。
+    skip = set(partials.get('_skip') or ())
+    for en in skip:
+        chs.pop(en, None)
+        cht.pop(en, None)
+        old_chs.pop(en, None)
+        old_cht.pop(en, None)
+
     added = [k for k in chs if k not in old_chs]
     changed = [k for k in chs if k in old_chs and old_chs[k] != chs[k]]
 
@@ -113,8 +124,12 @@ def main():
     print(f'生成 {len(chs)} 条（新增 {len(added)}，覆盖 {len(changed)}），繁体 {len(cht)} 条')
     for en in changed:
         print(f'  覆盖 {en}: {chs[en]}')
-    for en, zh in skipped:
+    for en, zh in skipped[:5]:
         print(f'  跳过 {en}: 中文 "{zh}" 不以族名后缀结尾')
+    if len(skipped) > 5:
+        print(f'  …另有 {len(skipped) - 5} 条同样剥不动')
+    if skip:
+        print(f'  按 _skip 剔除 {len(skip)} 条: {"、".join(sorted(skip))}')
 
     if dry_run:
         print('\n--dry-run，未写入')

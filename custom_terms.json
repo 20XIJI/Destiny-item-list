@@ -479,7 +479,8 @@
       "Wave Sword": "浪劍",
       "Wisdom": "智慧",
       "Wonder": "奇蹟"
-    }
+    },
+    "_skip": []
   },
   "_exclude": [
     "1264358026",

@@ -269,6 +269,8 @@ function buildDestinyTermMap(buckets, disabled = []) {
         RegExp,
         langSource: 'en',
         disabledBuckets: new Set(disabled),
+        BUCKET_TIERS: { custom: 1, activities: 3, activity_types: 3, activity_modes: 3, destinations: 3 },
+        DEFAULT_TIER: 2,
         termMapData: { data: buckets }
     };
     vm.createContext(context);
@@ -303,6 +305,24 @@ test('Destiny real terms outrank generated variants', () => {
 
     assert.equal(map.get('Lucent Blades'), '光明利刃');
     assert.equal(map.get('Lucent Blade'), '光亮之刃');
+});
+
+test('Destiny higher-tier buckets win translation conflicts', () => {
+    // Control 在三个活动类桶里译文不同，档位低的活动桶必须让位给 custom
+    const map = buildDestinyTermMap({
+        activities: { 1: { en: 'Control', 'zh-chs': '占领' } },
+        activity_modes: { 2: { en: 'Control', 'zh-chs': '占领模式' } },
+        items: { 3: { en: 'Control', 'zh-chs': '控制' } },
+        custom: { 4: { en: 'Control', 'zh-chs': '占领玩法' } }
+    });
+
+    assert.equal(map.get('Control'), '占领玩法');
+    // 去掉 custom 后由第二档的 items 接手，而不是任何一个活动桶
+    const noCustom = buildDestinyTermMap({
+        activities: { 1: { en: 'Control', 'zh-chs': '占领' } },
+        items: { 3: { en: 'Control', 'zh-chs': '控制' } }
+    });
+    assert.equal(noCustom.get('Control'), '控制');
 });
 
 test('Destiny disabled buckets are excluded from the term map', () => {
