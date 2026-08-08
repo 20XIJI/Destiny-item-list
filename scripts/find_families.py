@@ -20,15 +20,18 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import family_report  # noqa: E402
 from gen_partials import RULES, SOURCE_BUCKETS  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[1]
 TERM_MAP = REPO / 'term-map.json'
 
 
-def dominant_affix(values, at_end, min_ratio=0.6):
-    """占多数的中文常量。不用严格公共前后缀：一个异常成员就会把整族的常量吃光
-    （`Unidentified Radiant Frame` 中文收尾是"模型"，能让 Frame 族的"框架"消失）。
+def best_affix(values, at_end):
+    """出现次数最多的中文常量；次数持平时取更长的。
+
+    常量至少两个字：`Deep` 一会儿对 `深度炼金` 一会儿对 `深渊探索者臂环`，
+    字面公共前缀只有一个 `深`，剥掉会得到 `度炼金` 这种从词中间劈开的结果。
     """
     best, best_hits = '', 0
     for size in range(2, 9):
@@ -36,9 +39,23 @@ def dominant_affix(values, at_end, min_ratio=0.6):
         if not pool:
             break
         affix, hits = Counter(pool).most_common(1)[0]
-        if hits >= 2 and hits / len(values) >= min_ratio:
+        if hits >= 2 and hits >= best_hits:
             best, best_hits = affix, hits
     return best, best_hits
+
+
+def dominant_affixes(values, at_end, limit=3):
+    """一族可以有多个常量：`Whisper of X` 的简体收尾既有 `之吟` 也有 `的低语`。
+    贪心地一轮轮取，每轮只在还没被覆盖的成员里找，直到没有出现两次以上的常量。
+    """
+    affixes, rest = [], list(values)
+    while len(affixes) < limit and rest:
+        affix, _ = best_affix(rest, at_end)
+        if not affix:
+            break
+        affixes.append(affix)
+        rest = [v for v in rest if not (v.endswith(affix) if at_end else v.startswith(affix))]
+    return affixes, len(values) - len(rest)
 
 
 def collect(term_map):
@@ -82,28 +99,40 @@ def analyse(key, members, entries):
     shared = key[2:]
     zh_values = [entries[en] for en in members]
 
-    suffix, suffix_hits = dominant_affix(zh_values, True)
-    prefix, prefix_hits = dominant_affix(zh_values, False)
-    zh_const, zh_at_end = (suffix, True) if suffix_hits >= prefix_hits else (prefix, False)
+    suffixes, suffix_hits = dominant_affixes(zh_values, True)
+    prefixes, prefix_hits = dominant_affixes(zh_values, False)
+    zh_consts, zh_at_end = (suffixes, True) if suffix_hits >= prefix_hits else (prefixes, False)
+    # 长的排前面，`的低语` 要先于 `低语` 试，否则 `锁链的低语` 会剩个孤零零的 `的`
+    zh_consts = sorted(zh_consts, key=len, reverse=True)
 
     samples, ok, fresh = [], 0, 0
     for en in sorted(members):
         zh = entries[en]
         en_part = en[: -len(shared)].strip() if at_end else en[len(shared) :].strip()
-        matched = zh_const and (zh.endswith(zh_const) if zh_at_end else zh.startswith(zh_const))
-        zh_part = (zh[: -len(zh_const)] if zh_at_end else zh[len(zh_const) :]).strip() if matched else ''
-        # 短词以虚词开头说明共享词切少了（`首 Spark` 会剥出 `of Amplitude`，该看 `首 Spark of`）；
-        # 中文剩余不足两个字则多半是把词从中间切开了（`深` 会把"深度炼金"切成"度炼金"）
+        # 短词以虚词开头说明共享词切少了：`首 Spark` 会剥出 `of Amplitude`，该看 `首 Spark of`
         if re.match(r'(of|the|to|and|for|in|on|a|an)\b', en_part, re.I):
             en_part = ''
-        if not en_part or len(zh_part) < 2:
+
+        zh_part = None
+        for const in zh_consts:
+            if not (zh.endswith(const) if zh_at_end else zh.startswith(const)):
+                continue
+            stripped = (zh[: -len(const)] if zh_at_end else zh[len(const) :]).strip()
+            # 常量取到 `低语` 时 `锁链的低语` 会剩个尾巴 `的`，助词一并去掉
+            stripped = stripped.rstrip('的之') if zh_at_end else stripped.lstrip('的之')
+            # 只剩一个汉字的当词条噪音太大，不如不剥
+            if len(stripped) >= 2:
+                zh_part = stripped
+            break
+
+        if not en_part or zh_part is None:
             zh_part = None
         else:
             ok += 1
             if en_part not in entries:
                 fresh += 1  # 短词还不在词库里，补进去才有意义
         samples.append((en, en_part, zh, zh_part))
-    return zh_const, zh_at_end, ok, fresh, samples
+    return zh_consts, zh_at_end, ok, fresh, samples
 
 
 def plural_of(word):
@@ -156,7 +185,7 @@ def covered_by_rules(key):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--min', type=int, default=3, help='命名族最少成员数（默认 3）')
-    parser.add_argument('-o', '--out', default=str(Path.home() / 'Desktop' / 'term-families.md'))
+    parser.add_argument('-o', '--out', default=str(Path.home() / 'Desktop' / 'term-families.html'))
     args = parser.parse_args()
 
     entries = collect(json.loads(TERM_MAP.read_text(encoding='utf-8')))
@@ -164,9 +193,9 @@ def main():
 
     candidates = []
     for key, members in build_families(entries, args.min):
-        zh_const, zh_at_end, ok, fresh, samples = analyse(key, members, entries)
+        zh_consts, zh_at_end, ok, fresh, samples = analyse(key, members, entries)
         if ok >= args.min and fresh >= args.min:
-            candidates.append((key, zh_const, zh_at_end, fresh, samples))
+            candidates.append((key, zh_consts, zh_at_end, fresh, samples))
 
     # 同一个短词被多少个族剥出来。护甲部件族（Boots/Helm/Gloves…）剥出的都是同一批
     # 套装名，复用度高；碎片、框架这类族剥出的短词只属于自己，复用度为 1。
@@ -176,67 +205,26 @@ def main():
             if zh_part is not None:
                 reuse[en_part].add(key)
 
-    scored = []
-    for key, zh_const, zh_at_end, fresh, samples in candidates:
+    families = []
+    for key, zh_consts, zh_at_end, fresh, samples in candidates:
         hit = [s for s in samples if s[3] is not None]
-        dup = sum(1 for _, p, _, _ in hit if len(reuse[p]) > 1) / len(hit)
-        scored.append((fresh, key, zh_const, zh_at_end, samples, dup))
-    scored.sort(key=lambda row: -len(row[4]))
+        families.append(
+            {
+                'key': key,
+                'consts': zh_consts,
+                'at': 'suffix' if zh_at_end else 'prefix',
+                'fresh': fresh,
+                'total': len(samples),
+                'dup': round(sum(1 for _, p, _, _ in hit if len(reuse[p]) > 1) / len(hit), 3),
+                'adopted': covered_by_rules(key),
+                'rows': [[en, part, zh, zh_part, part not in entries] for en, part, zh, zh_part in samples],
+            }
+        )
+    families.sort(key=lambda fam: -fam['total'])
 
-    lines = [
-        '# term-map 命名族候选',
-        '',
-        f'取数：`term-map.json` 的 {" + ".join(SOURCE_BUCKETS)} 桶，{len(entries)} 个去重英文名。',
-        f'门槛：同族至少 {args.min} 个成员，且至少 {args.min} 个短词尚未在词库里。',
-        '',
-        '判定方式：要采用的族把规则加进 `scripts/gen_partials.py` 的 `RULES`，'
-        '零散的词直接写进 `custom_terms.json` 的 `partials`。',
-        '',
-        '## 一、总览',
-        '',
-        '按成员数排。「复用率」= 该族剥出的短词有多大比例也被别的族剥出——'
-        '护甲部件族（`X Boots` / `X Helm` 剥的都是同一批套装名）复用率高，通常可以跳过。',
-        '',
-        '| 采用 | 共享词 | 复用率 | 新增短词 | 成员 | 中文常量 | 样例 |',
-        '|---|---|---|---|---|---|---|',
-    ]
-    for fresh, key, zh_const, zh_at_end, samples, dup in scored:
-        mark = '✅' if covered_by_rules(key) else '[ ]'
-        where = '后' if zh_at_end else '前'
-        hit = [s for s in samples if s[3] is not None]
-        sample = '；'.join(f'{en}→**{ep}** {zp}' for en, ep, _, zp in hit[:2])
-        lines.append(f'| {mark} | `{key}` | {dup:.0%} | {fresh} | {len(samples)} | {where}`{zh_const}` | {sample} |')
-
-    lines += ['', '## 二、逐族明细', '']
-    for fresh, key, zh_const, zh_at_end, samples, _ in scored:
-        mark = ' ✅已采用' if covered_by_rules(key) else ''
-        where = '后缀' if zh_at_end else '前缀'
-        lines.append(f'### `{key}` — {len(samples)} 个成员 / 新增 {fresh} 个短词，中文{where} `{zh_const}`{mark}')
-        lines += ['', '| 英文全名 | 短词 | 中文全名 | 中文短词 |', '|---|---|---|---|']
-        for en, en_part, zh, zh_part in samples[:12]:
-            if zh_part is None:
-                lines.append(f'| {en} | — | {zh} | 剥不动，跳过 |')
-                continue
-            flag = '' if en_part in entries else ' 🆕'
-            lines.append(f'| {en} | **{en_part}**{flag} | {zh} | **{zh_part}** |')
-        if len(samples) > 12:
-            lines.append(f'| …另 {len(samples) - 12} 个 | | | |')
-        lines.append('')
-
-    lines += [
-        '## 三、单复数冲突（两种形式都在库里且译文不同）',
-        '',
-        '其余单复数变体由油猴脚本 `addVariants` 运行时生成，真实条目优先，无需逐条判定。',
-        '',
-        '| A | B | 译文 |',
-        '|---|---|---|',
-    ]
-    for a, b, zh in sorted(conflicts):
-        lines.append(f'| {a} | {b} | {zh} |')
-    lines.append('')
-
-    Path(args.out).write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    print(f'候选命名族 {len(scored)} 个，单复数冲突 {len(conflicts)} 组')
+    html = family_report.render(families, len(entries), sorted(conflicts), SOURCE_BUCKETS, args.min)
+    Path(args.out).write_text(html, encoding='utf-8')
+    print(f'候选命名族 {len(families)} 个，单复数冲突 {len(conflicts)} 组')
     print(f'已写入 {args.out}')
 
 
