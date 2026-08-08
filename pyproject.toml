@@ -3,3 +3,7 @@ line-length = 120
 
 [tool.ruff.format]
 quote-style = "single"
+
+[tool.pyright]
+# 脚本之间按平铺模块名互相 import（utils / builders / gen_partials），不是包
+extraPaths = ["scripts"]

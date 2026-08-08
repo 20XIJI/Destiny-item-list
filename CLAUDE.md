@@ -45,6 +45,8 @@ Two independent pipelines share `scripts/utils.py` (API-key check, manifest fetc
 
 `custom_terms.json` is the only hand-edited input. Shape: `{"zh-chs": {EN: 简}, "zh-cht": {EN: 繁}, "partials": {"zh-chs": …, "zh-cht": …}, "_exclude": [hash, …]}`. `partials` holds the short forms communities actually write (`Chill` for `Whisper of Chill`, `Adaptive` for `Adaptive Frame`) — regenerate with `python scripts/gen_partials.py`, which strips a fixed family suffix and skips anything that doesn't end in one. `_exclude` suppresses manifest entries by hash; without it a rebuild silently resurrects deletions.
 
+`python scripts/find_families.py` writes a review sheet of every shared-prefix/suffix naming family (`X Frame`, `Whisper of X`, …) with its dominant Chinese constant and the short forms it would yield — use it to decide what else belongs in `gen_partials.py`'s `RULES`. Singular/plural is **not** on that sheet: the userscript's `addVariants` generates both forms at runtime, and `buildTermMapFromData` seeds all real terms before any variant so a genuine entry always wins (`Lucent Blade 光亮之刃` vs `Lucent Blades 光明利刃`).
+
 **2. rich dataset pipeline** — `download_all_manifest.py` (to disk) → `build_dataset.py` (from disk)
 - `download_all_manifest.py` dumps raw manifest tables to `manifest_raw/<lang>/*.json` (gitignored, large).
 - `build_dataset.py` cross-references EN + zh-chs tables into rich per-entity records (items with slot/damage/lore/icons, activities, npcs, records, lore, seasons, milestones, factions, destinations). zh-chs item names/descs come from the `Lite` table. `clean()` strips empty values; `finalize()` drops entries with no `name`.

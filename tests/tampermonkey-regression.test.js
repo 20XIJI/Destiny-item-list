@@ -260,6 +260,62 @@ test('Destiny replacement keeps text outside the match intact', () => {
     assert.equal(node.nodeValue, 'Equip 荆棘 then 加拉尔号角 now');
 });
 
+function buildDestinyTermMap(buckets, disabled = []) {
+    const source = readScript('tampermonkey/Destiny2_Term_replace.user.js');
+    const context = {
+        Map,
+        Object,
+        Set,
+        RegExp,
+        langSource: 'en',
+        disabledBuckets: new Set(disabled),
+        termMapData: { data: buckets }
+    };
+    vm.createContext(context);
+    vm.runInContext(`
+        ${extractFunction(source, 'addVariants')}
+        ${extractFunction(source, 'buildTermMapFromData')}
+        this.map = buildTermMapFromData(termMapData, 'en', 'zh-chs');
+    `, context);
+    return context.map;
+}
+
+test('Destiny term map generates singular and plural variants', () => {
+    const map = buildDestinyTermMap({
+        items: {
+            1: { en: 'Enhancement Core', 'zh-chs': '强化核心' },
+            2: { en: 'Ascendant Shards', 'zh-chs': '升华碎片' }
+        }
+    });
+
+    assert.equal(map.get('Enhancement Core'), '强化核心');
+    assert.equal(map.get('Enhancement Cores'), '强化核心');
+    assert.equal(map.get('Ascendant Shards'), '升华碎片');
+    assert.equal(map.get('Ascendant Shard'), '升华碎片');
+});
+
+test('Destiny real terms outrank generated variants', () => {
+    // Lucent Blade 与 Lucent Blades 是两个不同词条，变体不能盖掉任何一个
+    const map = buildDestinyTermMap({
+        items: { 1: { en: 'Lucent Blades', 'zh-chs': '光明利刃' } },
+        perks: { 2: { en: 'Lucent Blade', 'zh-chs': '光亮之刃' } }
+    });
+
+    assert.equal(map.get('Lucent Blades'), '光明利刃');
+    assert.equal(map.get('Lucent Blade'), '光亮之刃');
+});
+
+test('Destiny disabled buckets are excluded from the term map', () => {
+    const buckets = {
+        items: { 1: { en: 'Gjallarhorn', 'zh-chs': '加拉尔号角' } },
+        partials: { 2: { en: 'Chill', 'zh-chs': '冰冷' } }
+    };
+
+    assert.equal(buildDestinyTermMap(buckets).get('Chill'), '冰冷');
+    assert.equal(buildDestinyTermMap(buckets, ['partials']).get('Chill'), undefined);
+    assert.equal(buildDestinyTermMap(buckets, ['partials']).get('Gjallarhorn'), '加拉尔号角');
+});
+
 test('Destiny script does not use Trusted Types blocked HTML sinks', () => {
     const source = readScript('tampermonkey/Destiny2_Term_replace.user.js');
 

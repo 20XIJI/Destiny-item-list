@@ -105,21 +105,34 @@
     }
 
     /* === 变体生成 === */
+    // 只在真实词条全部落位后才补变体，且不覆盖已有的键：
+    // `Lucent Blade 光亮之刃` 与 `Lucent Blades 光明利刃` 是两个词条，各自的译文必须保住
     function addVariants(map, source, target) {
-        map.set(source, target);
-        if (langSource === 'en' && source.includes("'")) {
-            map.set(source.replace(/'/g, '’'), target);
-        }
+        if (langSource !== 'en') return;
+        const put = (key) => { if (key && key !== source && !map.has(key)) map.set(key, target); };
+
+        if (source.includes("'")) put(source.replace(/'/g, '’'));
         // 去掉 The 的变体只对多词名生效：`The Last Word` → `Last Word` 有用，
         // 而 `The Doubt` → `Doubt` 会把正文里的 doubt 也译掉
-        if (langSource === 'en' && source.startsWith('The ') && source.slice(4).includes(' ')) {
-            map.set(source.slice(4), target);
-        }
+        if (source.startsWith('The ') && source.slice(4).includes(' ')) put(source.slice(4));
+
+        // 社区写 `Enhancement Core` 还是 `Enhancement Cores` 全看习惯，两种都认
+        const words = source.split(' ');
+        const last = words[words.length - 1];
+        if (!/^[A-Za-z]+$/.test(last)) return;
+        const swapLast = (form) => {
+            if (form !== last) put(words.slice(0, -1).concat(form).join(' '));
+        };
+        swapLast(/(s|x|z|ch|sh)$/i.test(last) ? last + 'es'
+            : /[^aeiou]y$/i.test(last) ? last.slice(0, -1) + 'ies'
+            : last + 's');
+        swapLast(last.replace(/ies$/i, 'y').replace(/(s|x|z|ch|sh)es$/i, '$1').replace(/([^sS])s$/, '$1'));
     }
 
     function buildTermMapFromData(termMapData, sourceLang, targetLang) {
         const map = new Map();
         const buckets = termMapData.data || termMapData;
+        const pairs = [];
         for (const bucketName of Object.keys(buckets)) {
             if (disabledBuckets.has(bucketName)) continue;
             const bucket = buckets[bucketName];
@@ -128,10 +141,12 @@
                 const sourceText = entry[sourceLang];
                 const targetText = entry[targetLang];
                 if (sourceText && targetText && sourceText !== targetText) {
-                    addVariants(map, sourceText, targetText);
+                    map.set(sourceText, targetText);
+                    pairs.push([sourceText, targetText]);
                 }
             }
         }
+        for (const [source, target] of pairs) addVariants(map, source, target);
         return map;
     }
 
