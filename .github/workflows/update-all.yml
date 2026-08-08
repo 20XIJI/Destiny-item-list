@@ -28,10 +28,16 @@ jobs:
     - name: Install dependencies
       run: pip install -r scripts/requirements.txt
 
+    # 逐表下载是 try/except 的，某张表挂掉只会得到空桶；脚本内的 check_buckets
+    # 会在空桶或条目锐减时退出非零，让整个 job 失败，而不是把残缺数据推上 Pages
     - name: Build term-map.json
       env:
         BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_KEY }}
       run: python scripts/fetch_manifest.py
+
+    # 新 manifest 可能带来新的碎片/框架，短词要跟着重算并刷回 term-map.json
+    - name: Regenerate partials
+      run: python scripts/gen_partials.py
 
     - name: Download manifest tables (en + zh-chs)
       env:

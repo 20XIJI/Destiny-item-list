@@ -13,6 +13,9 @@ import re
 import sys
 from pathlib import Path
 
+from builders import term_map_builder
+from utils import generate_data_hash
+
 REPO = Path(__file__).resolve().parents[1]
 TERM_MAP = REPO / 'term-map.json'
 CUSTOM_TERMS = REPO / 'custom_terms.json'
@@ -119,6 +122,24 @@ def main():
 
     CUSTOM_TERMS.write_text(json.dumps(custom, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'\n已写入 {CUSTOM_TERMS.name}: partials 共 {len(old_chs)} 条')
+    apply_to_term_map(term_map, custom)
+
+
+def apply_to_term_map(term_map, custom):
+    """把新的 custom / partials 刷回 term-map.json。
+
+    这两个桶只依赖 custom_terms.json，重刷一遍就够，不必为了几条短词再全量下载一次 manifest。
+    """
+    data = term_map['data']
+    data['custom'] = term_map_builder.build_custom_bucket(custom)
+    data['partials'] = term_map_builder.build_partials_bucket(custom)
+    for hash_key in custom.get('_exclude') or ():
+        for bucket in data.values():
+            bucket.pop(hash_key, None)
+
+    term_map['metadata']['data_hash'] = generate_data_hash(data)
+    TERM_MAP.write_text(json.dumps(term_map, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    print(f'已刷新 {TERM_MAP.name}: custom {len(data["custom"])} 条，partials {len(data["partials"])} 条')
 
 
 if __name__ == '__main__':

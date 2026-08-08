@@ -15,6 +15,9 @@ ALL_DEFINITION_TYPES = list(term_map_builder.DEFINITION_BUCKET_MAP)
 
 DOWNLOAD_DELAY = 1.5
 
+# 某桶条数低于上一版的七成即判定下载不全（见 check_buckets）
+SHRINK_LIMIT = 0.7
+
 
 def download_definitions(manifest, definition_types, lang_list):
     manifest_data = {}
@@ -62,6 +65,32 @@ def save_json(data, filename):
     print(f'已保存 {filename} ({count} 个桶)' if isinstance(data.get('data'), dict) else f'已保存 {filename}')
 
 
+def check_buckets(data, filename):
+    """下载是逐表 try/except 的，某张表挂掉只会得到一个空桶。
+
+    term-map.json 经 GitHub Pages 直接发给用户，不拦就是把残缺数据推上线，
+    所以这里宁可让整个流程失败：桶为空、或比上一版缩水超过 SHRINK_LIMIT 就退出。
+    """
+    empty = [name for name, entries in data.items() if not entries]
+    if empty:
+        raise SystemExit(f'下载不完整，以下桶为空: {", ".join(empty)}')
+
+    path = os.path.join(os.path.dirname(__file__), '..', filename)
+    if not os.path.exists(path):
+        return
+    with open(path, 'r', encoding='utf-8') as f:
+        previous = json.load(f).get('data', {})
+
+    shrunk = [
+        f'{name} {len(previous[name])} → {len(entries)}'
+        for name, entries in data.items()
+        if name in previous and previous[name] and len(entries) < len(previous[name]) * SHRINK_LIMIT
+    ]
+    if shrunk:
+        raise SystemExit('条目锐减，疑似下载不全: ' + '; '.join(shrunk))
+    print(f'门禁通过: {len(data)} 个桶，共 {sum(len(v) for v in data.values())} 条')
+
+
 def main():
     start_time = datetime.now(timezone.utc)
 
@@ -77,6 +106,7 @@ def main():
 
     print('\n正在构建 term-map.json...')
     term_map = term_map_builder.build(manifest_data, version)
+    check_buckets(term_map['data'], 'term-map.json')
     save_json(term_map, 'term-map.json')
 
     duration = datetime.now(timezone.utc) - start_time
