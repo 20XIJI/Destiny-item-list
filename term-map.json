@@ -226328,6 +226328,234 @@
         "en": "Kinetic",
         "zh-chs": "动能",
         "zh-cht": "動能"
+      },
+      "217": {
+        "en": "Cabal",
+        "zh-chs": "卡巴尔"
+      },
+      "218": {
+        "en": "Psion",
+        "zh-chs": "灵能士兵"
+      },
+      "219": {
+        "en": "Scorpius",
+        "zh-chs": "天蝎炮台"
+      },
+      "220": {
+        "en": "War Beast",
+        "zh-chs": "战兽"
+      },
+      "221": {
+        "en": "Incendior",
+        "zh-chs": "焚化者"
+      },
+      "222": {
+        "en": "Legionary",
+        "zh-chs": "军团士兵"
+      },
+      "223": {
+        "en": "Phalanx",
+        "zh-chs": "方阵士兵"
+      },
+      "224": {
+        "en": "Centurion",
+        "zh-chs": "百夫长"
+      },
+      "225": {
+        "en": "Gladiator",
+        "zh-chs": "角斗士"
+      },
+      "226": {
+        "en": "Colossus",
+        "zh-chs": "巨像"
+      },
+      "227": {
+        "en": "Fallen",
+        "zh-chs": "堕落者"
+      },
+      "228": {
+        "en": "Corsair",
+        "zh-chs": "海盗军"
+      },
+      "229": {
+        "en": "Exploding Shank",
+        "zh-chs": "爆炸侦察机"
+      },
+      "230": {
+        "en": "Dreg",
+        "zh-chs": "堕落士兵"
+      },
+      "231": {
+        "en": "Shank",
+        "zh-chs": "侦察机"
+      },
+      "232": {
+        "en": "Tracer Shank",
+        "zh-chs": "狙击侦察机"
+      },
+      "233": {
+        "en": "Wretch",
+        "zh-chs": "堕落枪兵"
+      },
+      "234": {
+        "en": "Marauder",
+        "zh-chs": "狂暴劫匪"
+      },
+      "235": {
+        "en": "Vandal",
+        "zh-chs": "暴徒"
+      },
+      "236": {
+        "en": "Captain",
+        "zh-chs": "队长"
+      },
+      "237": {
+        "en": "Brig",
+        "zh-chs": "机甲"
+      },
+      "238": {
+        "en": "Heavy Shank",
+        "zh-chs": "重型侦察机"
+      },
+      "239": {
+        "en": "Servitor",
+        "zh-chs": "魔眼"
+      },
+      "240": {
+        "en": "Hive",
+        "zh-chs": "邪魔族"
+      },
+      "241": {
+        "en": "Thrall",
+        "zh-chs": "怨魂"
+      },
+      "242": {
+        "en": "Cursed Thrall",
+        "zh-chs": "诅咒怨魂"
+      },
+      "243": {
+        "en": "Acolyte",
+        "zh-chs": "仆从"
+      },
+      "244": {
+        "en": "Knight",
+        "zh-chs": "骑士"
+      },
+      "245": {
+        "en": "Wizard",
+        "zh-chs": "巫师"
+      },
+      "246": {
+        "en": "Shrieker",
+        "zh-chs": "死灵"
+      },
+      "247": {
+        "en": "Ogre",
+        "zh-chs": "虫瘤"
+      },
+      "248": {
+        "en": "Vex",
+        "zh-chs": "VEX"
+      },
+      "249": {
+        "en": "Fanatic",
+        "zh-chs": "狂热者"
+      },
+      "250": {
+        "en": "Goblin",
+        "zh-chs": "哥布林"
+      },
+      "251": {
+        "en": "Hobgoblin",
+        "zh-chs": "顽童"
+      },
+      "252": {
+        "en": "Harpy",
+        "zh-chs": "鹰身女妖"
+      },
+      "253": {
+        "en": "Minotaur",
+        "zh-chs": "米诺陶"
+      },
+      "254": {
+        "en": "Cyclops",
+        "zh-chs": "独眼巨人"
+      },
+      "255": {
+        "en": "Hydra",
+        "zh-chs": "九头蛇"
+      },
+      "256": {
+        "en": "Wyvern",
+        "zh-chs": "飞龙"
+      },
+      "257": {
+        "en": "Scorn",
+        "zh-chs": "嗤魅"
+      },
+      "258": {
+        "en": "Screeb",
+        "zh-chs": "变异体"
+      },
+      "259": {
+        "en": "Stalker",
+        "zh-chs": "潜行者"
+      },
+      "260": {
+        "en": "Ravager",
+        "zh-chs": "掠夺者"
+      },
+      "261": {
+        "en": "Lurker",
+        "zh-chs": "潜伏者"
+      },
+      "262": {
+        "en": "Raider",
+        "zh-chs": "突袭者"
+      },
+      "263": {
+        "en": "Chieftain",
+        "zh-chs": "族长"
+      },
+      "264": {
+        "en": "Wraith",
+        "zh-chs": "幽魂"
+      },
+      "265": {
+        "en": "Abomination",
+        "zh-chs": "憎恶"
+      },
+      "266": {
+        "en": "Dread",
+        "zh-chs": "恐惧"
+      },
+      "267": {
+        "en": "Attendant",
+        "zh-chs": "侍从"
+      },
+      "268": {
+        "en": "Grim",
+        "zh-chs": "狰狞"
+      },
+      "269": {
+        "en": "Weaver",
+        "zh-chs": "编织者"
+      },
+      "270": {
+        "en": "Husk",
+        "zh-chs": "躯壳"
+      },
+      "271": {
+        "en": "Subjugator",
+        "zh-chs": "征服者"
+      },
+      "272": {
+        "en": "Tormentor",
+        "zh-chs": "折磨者"
+      },
+      "273": {
+        "en": "Omen",
+        "zh-chs": "先知"
       }
     },
     "partials": {
