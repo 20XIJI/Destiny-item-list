@@ -1,4 +1,5 @@
 .env
+.archived/
 manifest_raw/
 items-by-type.json
 __pycache__/

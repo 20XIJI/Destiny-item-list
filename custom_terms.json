@@ -285,7 +285,11 @@
     "Husk": "躯壳",
     "Subjugator": "征服者",
     "Tormentor": "折磨者",
-    "Omen": "先知"
+    "Omen": "先知",
+    "minor": "红血",
+    "elite": "橙血",
+    "miniboss": "初级首领",
+    "boss": "首领"
   },
   "zh-cht": {
     "Weapon Mods:": "武器模組",
